@@ -1,0 +1,8 @@
+<gui>
+	<preload texture="guis/textures/computergui/backgrounds/xp_bg"/>
+	
+	<panel name_s="panel" halign_s="grow" valign_s="grow">
+		<bitmap name_s="screen_background" texture_s="guis/textures/computergui/backgrounds/xp_bg" layer="1" color="Color( 1, 1, 1 )"/>
+		<bitmap name_s="pointer" layer="10" texture_s="guis/textures/mouse_pointer" texture_rect="{0,0,19,23}" color="Color(1,0.7,0.7,0.7)" x="500" y="300" visible="true"/>
+	</panel>
+</gui>

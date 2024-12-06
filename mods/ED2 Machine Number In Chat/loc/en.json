@@ -1,0 +1,10 @@
+{
+	"ed2machinechathelper_title" : "ED2 Machine Number In Chat"
+	"ed2machinechathelper_desc" : "Change the values for this mod"
+
+	"prefix_title" : "Chat message prefix"
+	"prefix_desc" : "This will be written alongside the machine's number."
+
+	"takeover_title" : "Alert all machine findings"
+	"takeover_desc" : "Sends a chat message EVERY time a machine is found. If you are going to use this option, let your teammates know beforehand so they don't write their machine findings in chat, or else there will be duplicate messages."
+}

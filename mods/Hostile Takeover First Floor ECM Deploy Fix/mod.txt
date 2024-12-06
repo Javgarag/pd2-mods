@@ -1,0 +1,15 @@
+{
+  "name": "Hostile Takeover First Floor ECM Deploy Fix",
+  "description": "Fixes ECMs dissapearing into thin air.",
+  "author": "Javgarag",
+  "contact": "Discord: Javgarag#0085",
+  "version": "1",
+  "priority": 900,
+  "blt_version": 2,
+  "hooks": [
+    {
+      "script_path": "Base.lua",
+      "hook_id": "lib/units/beings/player/playerequipment"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+<table directory="assets">
+	<add from_db="true" path="units/dev_tools/editable_text_short/editable_text_short" type="unit">
+		<material_config path="units/dev_tools/editable_text_short/editable_text_short"/>
+		<object path="units/dev_tools/editable_text_short/editable_text_short"/>
+		<unit path="units/dev_tools/editable_text_short/editable_text_short"/>
+	</add>
+	<add from_db="true" path="units/pd2_dlc_arena/props/are_prop_security_button/are_prop_security_button" type="unit">
+		<material_config path="units/pd2_dlc_arena/props/are_prop_security_button/are_prop_security_button"/>
+		<object path="units/pd2_dlc_arena/props/are_prop_security_button/are_prop_security_button"/>
+		<sequence_manager path="units/pd2_dlc_arena/props/are_prop_security_button/are_prop_security_button"/>
+		<unit path="units/pd2_dlc_arena/props/are_prop_security_button/are_prop_security_button"/>
+	</add>
+	<add from_db="true" path="units/payday2/architecture/ind/ind_cinderblock_wall_4m_a" type="unit">
+		<material_config path="units/payday2/architecture/ind/ind_cinderblock_wall_4m_a"/>
+		<object path="units/payday2/architecture/ind/ind_cinderblock_wall_4m_a"/>
+		<unit path="units/payday2/architecture/ind/ind_cinderblock_wall_4m_a"/>
+	</add>
+	<add from_db="true" path="units/payday2/architecture/gen_watchdog_2_water/docks_water" type="unit">
+		<unit path="units/payday2/architecture/gen_watchdog_2_water/docks_water"/>
+		<object path="units/payday2/architecture/gen_watchdog_2_water/docks_water"/>
+		<material_config path="units/payday2/architecture/gen_watchdog_2_water/gen_watchdog_2_water"/>
+	</add>
+</table>

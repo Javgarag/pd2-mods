@@ -1,0 +1,15 @@
+{
+	"name" : "Custom Page Up/Page Down Keybind",
+	"description" : "Adds a keybind to switch any menu's pages or tabs.",
+	"author" : "Javgarag",
+	"color" : "186 26 26",
+	"contact" : "Discord: Javgarag#0085",
+	"version" : "1.0.0",
+	"blt_version" : 2,
+	"hooks" : [
+		{   
+			"hook_id" : "lib/managers/menumanager",
+			"script_path" : "menu/menu.lua"
+		}
+	]
+}

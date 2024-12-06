@@ -1,0 +1,36 @@
+{
+	"menu_id" : "menu_reset_skill_profile",
+	"parent_menu_id" : "blt_options",
+	"title" : "rsp_menu_title",
+	"focus_changed_callback" : "rsp_focus_changed_callback",
+	"items" : [	
+		{
+			"type" : "button",
+			"id" : "id_rsp_do_reset",
+			"title" : "rsp_do_reset_title",
+			"description" : "rsp_do_reset_desc",
+			"callback" : "callback_rsp_do_reset"
+		},
+		{
+			"type" : "divider",
+			"size" : 36
+		},
+		{
+			"type" : "divider",
+			"size" : 24
+		},
+		{
+			"type" : "multiple_choice",
+			"id" : "id_rsp_should_untie_skills",
+			"title" : "rsp_should_untie_skills_title",
+			"description" : "rsp_should_untie_skills_desc",
+			"callback" : "callback_rsp_should_untie_skills",
+			"items" : [
+				"rsp_untie_skills_none",
+				"rsp_untie_skills_to_respective",
+				"rsp_untie_skills_to_single"
+			],
+			"value" : "untie"
+		},
+	]
+}

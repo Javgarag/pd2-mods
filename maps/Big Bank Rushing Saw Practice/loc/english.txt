@@ -1,0 +1,9 @@
+{
+	"contact_rushing_name" : "Rushing Practice",
+	"contact_rushing_desc" : "Maps for rushing practice.",
+	"heist_rushing_saw_practice_narr_name" : "Saw Practice Big Bank",
+	"heist_rushing_saw_practice_name" : "Saw Practice Big Bank",
+	"heist_rushing_saw_practice_narr_brief" : "Practice your sawing skills here, learn the deposit box patterns.",
+	"heist_rushing_saw_practice_brief" : "Practice your sawing skills here, learn the deposit box patterns.",
+	"rushing_saw_practice" : "Saw Practice Big Bank"
+}

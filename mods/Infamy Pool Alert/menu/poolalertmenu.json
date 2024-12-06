@@ -1,0 +1,22 @@
+{
+	"menu_id": "poolalertmenu",
+	"parent_menu_id": "blt_options",
+	"title": "poolalert_title",
+	"description": "poolalert_desc",
+	"back_callback": "poolalert_save",
+	"items":
+	[
+		{
+			"type" : "slider",
+			"id" : "poolalert_interval_value",
+			"title" : "poolalert_interval_title",
+			"description" : "poolalert_interval_desc",
+			"callback" : "clbk_poolalert_interval",
+			"value" : "interval",
+			"default_value" : 120,
+			"max" : 1000,
+			"min" : 1,
+			"step" : 1
+		}
+	]
+}

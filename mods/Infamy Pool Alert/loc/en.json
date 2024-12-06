@@ -1,0 +1,7 @@
+{
+	"poolalert_title" : "Full Infamy Pool Alert"
+	"poolalert_desc" : "Change the options for this mod"
+
+	"poolalert_interval_title" : "Full Pool Reminder Interval"
+	"poolalert_interval_desc" : "How often the mod will remind you when your pool is full, in seconds."
+}

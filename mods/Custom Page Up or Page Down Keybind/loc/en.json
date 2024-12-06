@@ -1,0 +1,10 @@
+{
+	"kbp_title" : "Next/Previous Page Keybind"
+	"kbp_desc" : "Change the values for this mod"
+
+	"np_kbp_title" : "Next Page"
+	"np_kbp_desc" : "Keybind for next page."
+	
+	"pp_kbp_title" : "Previous Page"
+	"pp_kbp_desc" : "Keybind for previous page."
+}

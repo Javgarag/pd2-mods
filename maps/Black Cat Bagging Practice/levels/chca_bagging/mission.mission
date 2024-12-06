@@ -1,0 +1,11 @@
+<table>
+	<art_architecture file="art_architecture/art_architecture"/>
+	<art_lighting file="art_lighting/art_lighting"/>
+	<art_props file="art_props/art_props"/>
+	<art_props_2 file="art_props_2/art_props_2"/>
+	<backdrop file="backdrop/backdrop"/>
+	<collision file="collision/collision"/>
+	<editor_only file="editor_only/editor_only"/>
+	<whitebox file="whitebox/whitebox"/>
+	<world file="world/world"/>
+</table>

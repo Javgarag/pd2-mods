@@ -1,0 +1,9 @@
+<table>
+	<cinematics base_id="300000" editor_only="false" enabled="true" enabled_in_simulation="true" locked="false" name="cinematics" visible="true"/>
+	<day base_id="600000" editor_only="false" enabled="true" enabled_in_simulation="true" locked="false" name="day" visible="true"/>
+	<editor_only base_id="200000" editor_only="true" enabled="true" enabled_in_simulation="true" locked="false" name="editor_only" visible="false"/>
+	<mkp base_id="700000" enabled_in_simulation="true" locked="false" name="mkp"/>
+	<night base_id="500000" editor_only="false" enabled="true" enabled_in_simulation="true" locked="false" name="night" visible="true"/>
+	<props base_id="400000" editor_only="false" enabled="true" enabled_in_simulation="true" locked="false" name="props" visible="true"/>
+	<world base_id="100000" editor_only="false" enabled="true" enabled_in_simulation="true" locked="false" name="world" visible="true"/>
+</table>

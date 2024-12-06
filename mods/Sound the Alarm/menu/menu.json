@@ -1,0 +1,20 @@
+{
+	"menu_id": "stamenu",
+	"parent_menu_id": "blt_options",
+	"title": "sta_title",
+	"description": "sta_desc",
+	"back_callback": "sta_save",
+	"items":
+	[
+		{
+			"type" : "keybind",
+			"id" : "sta_activate",
+			"title" : "sta_activate_title",
+			"description" : "sta_activate_desc",
+			"keybind_id" : "sta_activate",
+			"run_in_menu" : false,
+			"run_in_game" : true,
+			"func" : "activate_sta"
+		}
+	]
+}

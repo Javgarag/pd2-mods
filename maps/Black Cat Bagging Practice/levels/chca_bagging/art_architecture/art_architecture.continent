@@ -1,0 +1,80 @@
+<table>
+	<editor_groups/>
+	<statics>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_floor/chca_int_casino_wall_fixtures" name_id="chca_int_casino_wall_fixtures_001" position="-9300 0 0" rotation="0 0 0 -1" unit_id="600008"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_floor/chca_int_casino_floor_pillar" name_id="chca_int_casino_floor_pillar_002" position="-9700 3074 125" rotation="0 0 1 -1.19209e-007" unit_id="600010"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_floor/chca_int_casino_floor_pillar" name_id="chca_int_casino_floor_pillar_003" position="-10527 2421 125" rotation="0 0 1 -1.19209e-007" unit_id="600011"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_floor/chca_int_casino_floor_pillar" name_id="chca_int_casino_floor_pillar_004" position="-10527 2095 125" rotation="0 0 1 -1.19209e-007" unit_id="600012"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_floor/chca_int_casino_floor_pillar" name_id="chca_int_casino_floor_pillar_005" position="-10527 1503 125" rotation="0 0 1 -1.19209e-007" unit_id="600013"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_skylight/chca_int_casino_skylight" name_id="chca_int_casino_skylight_002" position="-9300 1874 2107" rotation="0 0 -0.707107 -0.707107" unit_id="600014"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_floor/chca_int_casino_floor_pillar" name_id="chca_int_casino_floor_pillar_008" position="-8073 2421 125" rotation="0 0 0.707107 -0.707107" unit_id="600015"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_floor/chca_int_casino_floor_pillar" name_id="chca_int_casino_floor_pillar_009" position="-8073 2095 125" rotation="0 0 -2.68221e-007 -1" unit_id="600016"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_floor/chca_int_casino_floor_pillar" name_id="chca_int_casino_floor_pillar_010" position="-8073 1503 125" rotation="0 0 0.923879 -0.382684" unit_id="600017"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_floor/chca_int_casino_floor_pillar" name_id="chca_int_casino_floor_pillar_007" position="-8901 3074 125" rotation="0 0 1 -1.19209e-007" unit_id="600019"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_floor/chca_int_casino_floor_pillar_short" name_id="chca_int_casino_floor_pillar_short_001" position="-10527 1038 225" rotation="0 0 1 -1.19209e-007" unit_id="600020"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_floor/chca_int_casino_floor_pillar_short" name_id="chca_int_casino_floor_pillar_short_002" position="-10527 871 220" rotation="0 0 0.707107 -0.707107" unit_id="600021"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_floor/chca_int_casino_floor_pillar_short" name_id="chca_int_casino_floor_pillar_short_003" position="-8073 871.001 220" rotation="0 0 0.707107 -0.707107" unit_id="600022"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_floor/chca_int_casino_floor_pillar_short" name_id="chca_int_casino_floor_pillar_short_004" position="-8073 1038 225" rotation="0 0 1 -1.19209e-007" unit_id="600023"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_floor/chca_int_casino_balcony_railings" name_id="chca_int_casino_balcony_railings_001" position="-9300 0 0" rotation="0 0 0 -1" unit_id="600028"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_floor/chca_int_casino_lounge_roof" name_id="chca_int_casino_lounge_roof_001" position="-9300 0 0" rotation="0 0 0 -1" unit_id="600026"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_circular_doorway/chca_prop_chinese_circular_doorway" name_id="chca_prop_chinese_circular_doorway_001" position="-9300 3802 0" rotation="0 0 0 -1" unit_id="600000"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_floor/chca_int_casino_lounge" name_id="chca_int_casino_lounge_001" position="-9300 0 0" rotation="0 0 0 -1" unit_id="600029"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_floor/chca_int_casino_vault" name_id="chca_int_casino_vault_001" position="-9300 0 0" rotation="0 0 0 -1" unit_id="600009"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_floor/chca_int_casino_floor" name_id="chca_int_casino_floor_001" position="-9300 0 0" rotation="0 0 0 -1" unit_id="600007"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_floor/chca_int_casino_ceiling_fixtures" name_id="chca_int_casino_ceiling_fixtures_001" position="-9300 0 0" rotation="0 0 0 -1" unit_id="600092"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_fish/lxy_ext_sofa_mod_01/lxy_ext_sofa_mod_end_01_1m" name_id="lxy_ext_sofa_mod_end_01_1m_002" position="-9300 0 0" rotation="0 0 -1.78814e-007 -1" unit_id="600004"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_casino_floor/chca_int_casino_railings" name_id="chca_int_casino_railings_001" position="-9300 0 0" rotation="0 0 0 -1" unit_id="600150"/>
+		</table>
+		<table>
+			<unit_data continent="art_architecture" name="units/pd2_dlc_chca/architecture/int/chca_int_courtyard/chca_courtyard_entrance_to_casino" name_id="chca_courtyard_entrance_to_casino_001" position="0 0 0" rotation="0 0 0 -1" unit_id="600032"/>
+		</table>
+	</statics>
+	<values>
+		<workviews/>
+	</values>
+</table>

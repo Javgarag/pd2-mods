@@ -1,0 +1,26 @@
+{
+	"name": "Enter Inventory with Keybind",
+	"description": "Self descriptive",
+	"author" : "Javgarag",
+	"contact" : "Discord: javgarag",
+	"version": "v1.0.0",
+	"priority": 1,
+	"blt_version": 2,
+	"keybinds" : [
+	{
+		"keybind_id" : "enter_inventory",
+		"name" : "Enter Inventory",
+		"script_path" : "inventory.lua",
+		"run_in_menu" : true,
+		"run_in_game" : false,
+		"localized" : false
+	},
+	{
+		"keybind_id" : "enter_skills",
+		"name" : "Enter Skilling",
+		"script_path" : "skills.lua",
+		"run_in_menu" : true,
+		"run_in_game" : false,
+		"localized" : false
+	}]
+}

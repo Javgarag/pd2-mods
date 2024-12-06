@@ -1,0 +1,49 @@
+<table>
+	<editor_groups>
+		<table continent="world" name="door_001" reference="100002" visible="true">
+			<units>
+				<value_node value="100002"/>
+				<value_node value="100001"/>
+			</units>
+		</table>
+	</editor_groups>
+	<instances/>
+	<statics>
+		<table>
+			<unit_data _prev_pos="0 0 0" _prev_rot="-0 0 -0 -1" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" name="units/test/jocke/oneplanetorulethemall" name_id="oneplanetorulethemall_001" position="0 0 0" rotation="-0 0 -0 -1" unit_id="100000"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="125 525 0" _prev_rot="0 0 0.707107 -0.707107" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="activate_door" name="units/payday2/equipment/gen_interactable_door_reinforced/gen_interactable_door_reinforced" name_id="gen_interactable_door_reinforced_001" position="125 525 0" rotation="0 0 0.707107 -0.707107" unit_id="100001"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="125 525 0" _prev_rot="0 0 0.707107 -0.707107" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" name="units/pd2_mod_custom/sapr/saw_hitboxes/saw_hitboxes" name_id="saw_hitboxes_001" position="125 525 0" rotation="0 0 0.707107 -0.707107" unit_id="100002"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="350 325 15.004" _prev_rot="-0 0 -0 -1" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" name="units/dev_tools/editable_text_long/editable_text_long" name_id="editable_text_long_001" position="-250 325 15.004" rotation="-0 0 -0 -1" unit_id="100003">
+				<editable_gui align="left" alpha="1" blend_mode="normal" font="fonts/font_medium_shadow_mf" font_color="1 1 1" font_size="2.20109" render_template="diffuse_vc_decal" text="Black cube is the hitbox for the saw. If it receives too much damage it will open the door." vertical="center" word_wrap="false" wrap="false">
+					<shape>
+						<value_node value="0"/>
+						<value_node value="0"/>
+						<value_node value="1"/>
+						<value_node value="1"/>
+					</shape>
+				</editable_gui>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data _prev_pos="625 525 0" _prev_rot="0 0 -0.707107 -0.707107" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="activate_door" name="units/payday2/props/gen_prop_door_ind_01/gen_prop_door_ind_01" name_id="gen_prop_door_ind_01_001" position="625 525 0" rotation="0 0 -0.707107 -0.707107" unit_id="100004"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="506 553 0" _prev_rot="0 0 0.707107 -0.707107" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" name="units/pd2_mod_custom/sapr/saw_hitboxes/saw_hitboxes" name_id="saw_hitboxes_002" position="506 553 0" rotation="0 0 0.707107 -0.707107" unit_id="100005"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-350 525 0.004" _prev_rot="0 0 0.707107 -0.707107" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="activate_door" name="units/payday2/architecture/ind/ind_ext_level/ind_ext_fence_door" name_id="ind_ext_fence_door_001" position="-350 525 0.004" rotation="0 0 0.707107 -0.707107" unit_id="100006"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-350 518 0.004" _prev_rot="0 0 0.707107 -0.707107" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" name="units/pd2_mod_custom/sapr/saw_hitboxes/saw_hitboxes" name_id="saw_hitboxes_003" position="-363 518 0.004" rotation="0 0 0.707107 -0.707107" unit_id="100007"/>
+		</table>
+	</statics>
+	<values>
+		<workviews/>
+	</values>
+</table>

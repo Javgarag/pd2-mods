@@ -1,0 +1,94 @@
+<table min_lib_ver="4.5" name="Interactive Computer">
+	<AddFiles directory="assets">
+		<json force="true" path="gamedata/interactive_computer/applications"/>
+		<gui force="true" path="guis/computer_gui/base"/>
+		<gui force="true" path="guis/computer_gui/prompt_access_denied"/>
+		<gui force="true" path="guis/computer_gui/prompt_file_explorer"/>
+		<texture force="true" path="guis/textures/computergui/backgrounds/application_icon_usb"/>
+		<texture force="true" path="guis/textures/computergui/backgrounds/application_icon_file_explorer"/>
+		<texture force="true" path="guis/textures/computergui/backgrounds/application_icon_trash"/>
+		<texture force="true" path="guis/textures/computergui/backgrounds/application_icon_browser"/>
+		<texture force="true" path="guis/textures/computergui/backgrounds/application_window"/>
+		<texture force="true" path="guis/textures/computergui/backgrounds/xp_bg"/>
+	</AddFiles>
+	<Localization default="english.txt" directory="loc">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<level ai_group_type="america" id="intpc" max_bags="54">
+		<assets>
+			<asset name="ammo_bag"/>
+			<asset name="health_bag"/>
+			<asset name="grenade_crate"/>
+			<asset name="bodybags_bag"/>
+		</assets>
+		<classes directory="classes">
+			<class file="computergui.lua"/>
+		</classes>
+		<outro_event/>
+		<packages>
+			<value_node value="levels/instances/unique/kenaz/toilets/world"/>
+		</packages>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<narrative contact="custom" id="intpc_narr">
+		<chain>
+			<table level_id="intpc" type="d" type_id="heist_type_assault"/>
+		</chain>
+		<contract_cost>
+			<value_node value="4000"/>
+			<value_node value="8000"/>
+			<value_node value="20000"/>
+			<value_node value="40000"/>
+			<value_node value="100000"/>
+			<value_node value="100000"/>
+			<value_node value="100000"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value="nothing"/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="cn_branchbank2"/>
+		</crimenet_videos>
+		<debrief_event/>
+		<experience_mul>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="6000"/>
+			<value_node value="12000"/>
+			<value_node value="30000"/>
+			<value_node value="50000"/>
+			<value_node value="60000"/>
+			<value_node value="60000"/>
+			<value_node value="60000"/>
+		</payout>
+	</narrative>
+</table>

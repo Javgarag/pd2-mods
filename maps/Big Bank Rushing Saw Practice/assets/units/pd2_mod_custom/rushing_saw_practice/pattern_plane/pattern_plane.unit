@@ -1,0 +1,8 @@
+<unit type="brb" slot="1">
+	<network sync="spawn"/>
+	<object file="units/pd2_mod_custom/rushing_saw_practice/pattern_plane/pattern_plane" />
+	<extensions>
+		<extension name="damage" class="UnitDamage" />
+		<extension name="unit_data" class="ScriptUnitData" />
+	</extensions>
+</unit>

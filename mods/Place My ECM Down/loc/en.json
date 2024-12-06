@@ -1,0 +1,16 @@
+{
+	"pmed_title" : "Place My ECM Down"
+	"pmed_desc" : "Change the values for this mod"
+
+	"pmedenabled_title" : "Enabled"
+	"pmedenabled_desc" : "Should the mod be enabled? Mission restart required."
+	
+	"haltexec_pmed_title" : "Halt Execution"
+	"haltexec_pmed_desc" : "Keybind to interrupt the execution of the mod. Needs to be applied once per heist."
+	
+	"skip_ecm_pmed_title" : "Skip next ECM check"
+	"skip_ecm_pmed_desc" : "Keybind to skip the check for if the mod should auto-drop the next ECM based on lobby order. Useful for PCM rounds."
+	
+	"ignore_joat_pmed_title" : "Ignore Jack Of All Trades interaction boost"
+	"ignore_joat_pmed_desc" : "Prevents the mod from deploying the ECM a few seconds later if the player has JOAT basic"
+}

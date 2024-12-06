@@ -1,0 +1,67 @@
+<table directory="assets">
+	<add path="units/pd2_mod_custom/sapr/saw_hitboxes/saw_hitboxes" type="unit">
+		<material_config path="units/pd2_mod_custom/sapr/saw_hitboxes/saw_hitboxes"/>
+		<model path="units/pd2_mod_custom/sapr/saw_hitboxes/saw_hitboxes"/>
+		<object path="units/pd2_mod_custom/sapr/saw_hitboxes/saw_hitboxes"/>
+		<unit load="true" path="units/pd2_mod_custom/sapr/saw_hitboxes/saw_hitboxes"/>
+	</add>
+	<add from_db="true" path="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a" type="unit">
+		<material_config path="units/payday2/architecture/mkp/mkp" unload="true"/>
+		<object path="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a" unload="true"/>
+		<unit path="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a" unload="true"/>
+	</add>
+	<add from_db="true" path="units/test/jocke/oneplanetorulethemall" type="unit">
+		<material_config path="units/test/jocke/simple_temp"/>
+		<object path="units/test/jocke/oneplanetorulethemall"/>
+		<unit path="units/test/jocke/oneplanetorulethemall"/>
+	</add>
+	<add from_db="true" path="units/payday2/equipment/gen_interactable_door_reinforced/gen_interactable_door_reinforced" type="unit">
+		<unit path="units/payday2/equipment/gen_interactable_door_reinforced/gen_interactable_door_reinforced"/>
+		<object path="units/payday2/equipment/gen_interactable_door_reinforced/gen_interactable_door_reinforced"/>
+		<unit path="units/payday2/equipment/gen_interactable_door_reinforced/spawn_debris_door_reinforced"/>
+		<object path="units/payday2/equipment/gen_interactable_door_reinforced/spawn_debris_door_reinforced"/>
+		<material_config path="units/payday2/equipment/gen_interactable_door_reinforced/spawn_debris_door_reinforced"/>
+		<effect load="true" path="effects/payday2/particles/wood/wood_door_shotgun_dmg_in"/>
+		<effect load="true" path="effects/payday2/particles/wood/wood_door_shotgun_dmg_out"/>
+		<unit path="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge"/>
+		<object path="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge"/>
+		<material_config path="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge"/>
+		<effect load="true" path="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge"/>
+		<physic_effect path="physic_effects/push_sphere"/>
+		<sequence_manager path="units/payday2/equipment/gen_interactable_door_reinforced/gen_interactable_door_reinforced"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/editable_text_long/editable_text_long" type="unit">
+		<material_config path="units/dev_tools/editable_text_long/editable_text_long"/>
+		<object path="units/dev_tools/editable_text_long/editable_text_long"/>
+		<unit path="units/dev_tools/editable_text_long/editable_text_long"/>
+	</add>
+	<add from_db="true" path="units/payday2/props/gen_prop_door_ind_01/gen_prop_door_ind_01" type="unit">
+		<object path="units/payday2/props/gen_prop_door_ind_01/gen_prop_door_ind_01"/>
+		<material_config path="units/payday2/props/gen_prop_door_ind_01/gen_prop_door_ind_01"/>
+		<object path="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge"/>
+		<material_config path="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge"/>
+		<sequence_manager path="units/payday2/props/gen_prop_door_ind_01/gen_prop_door_ind_01"/>
+		<unit path="units/payday2/props/gen_prop_door_ind_01/gen_prop_door_ind_01"/>
+	</add>
+	<add from_db="true" path="units/payday2/props/gen_prop_door_ind_01/gen_prop_door_ind_02" type="unit">
+		<object path="units/payday2/props/gen_prop_door_ind_01/gen_prop_door_ind_02"/>
+		<material_config path="units/payday2/props/gen_prop_door_ind_01/gen_prop_door_ind_01"/>
+		<object path="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge"/>
+		<material_config path="units/payday2/equipment/gen_equipment_shape_charge/gen_equipment_shape_charge"/>
+		<sequence_manager path="units/payday2/props/gen_prop_door_ind_01/gen_prop_door_ind_02"/>
+		<unit path="units/payday2/props/gen_prop_door_ind_01/gen_prop_door_ind_02"/>
+	</add>
+	<add from_db="true" path="units/payday2/architecture/ind/ind_ext_level/ind_ext_fence_door" type="unit">
+		<unit path="units/payday2/architecture/ind/ind_ext_level/ind_ext_fence_door"/>
+		<object path="units/payday2/architecture/ind/ind_ext_level/ind_ext_fence_door"/>
+		<material_config path="units/payday2/architecture/ind/ind_ext_level/ind_ext_level_railing_v2"/>
+		<sequence_manager path="units/payday2/architecture/ind/ind_ext_level/ind_ext_fence_door"/>
+		<unit path="units/payday2/equipment/item_door_drill_small/item_door_drill_small"/>
+		<object path="units/payday2/equipment/item_door_drill_small/item_door_drill_small"/>
+		<material_config path="units/payday2/equipment/item_door_drill_small/item_door_drill_small"/>
+		<gui path="guis/timer_gui"/>
+		<effect load="true" path="effects/payday2/environment/drill"/>
+		<effect load="true" path="effects/payday2/environment/parts/drill_sparks_particles"/>
+		<effect load="true" path="effects/payday2/environment/parts/drill_sparks"/>
+	</add>
+</table>

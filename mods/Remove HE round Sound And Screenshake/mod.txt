@@ -1,0 +1,16 @@
+{
+	"name" : "Remove HE round Sound And Screenshake",
+	"description" : "Remove HE round Sound And Screenshake.",
+	"author" : "Javgarag",
+	"contact" : "Discord: Javgarag#0085",
+	"version" : "1.0.0",
+	"blt_version" : 2,
+	"priority" : -1, 
+	"color" : "54 63 163",
+	"hooks" : [
+		{
+			"hook_id" : "lib/managers/explosionmanager",
+			"script_path" : "explosionmanager.lua"
+		},
+	]
+}

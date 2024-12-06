@@ -1,0 +1,66 @@
+{
+	"sm_act_4_name" : "Chapter 4: The B-Teams"
+	
+	
+	"sm_54_name" : "Somewhere in Mexico"
+	"sm_54_desc" : "During the days leading up to the White House heist, crews of 4 decided to head to multiple locations to tie up loose ends. Only then did the thought of intercepting Murkywater's business enter their heads."
+	"sm_54_obj" : "Complete the Border Crossing job on the Very Hard difficulty or higher. \nThis assignment requires you to play from the lobby to the end of the heist."
+	"menu_sm_very_hard_mex" : "Border Crossing"
+	
+	"sm_55_name" : "Payback"
+	"sm_55_desc" : "Soon after the job in the border, the crew got an unexpected last-minute call from Vlad, looking for some loot kept safe in a bank in return for all his help towards the PAYDAY gang over the years."
+	"sm_55_obj" : "Complete the San Martín Bank job on the Very Hard difficulty or higher. \nThis assignment requires you to play from the lobby to the end of the heist."
+	"menu_sm_very_hard_bex" : "San Martín Bank"
+	
+	"sm_56_name" : "A Troublesome Breakout"
+	"sm_56_desc" : "The mexican police force would cause quite some trouble after the bank hit. Hajrudin, Vlad's brother-in-law, got arrested following his involvement with the gang and got locked up in a maximum security prison over in Tijuana. The gang were now tasked with setting him free."
+	"sm_56_obj" : "Complete the Breakfast in Tijuana job on the Very Hard difficulty or higher. \nThis assignment requires you to play from the lobby to the end of the heist."
+	"menu_sm_very_hard_pex" : "Breakfast in Tijuana"
+	
+	"sm_57_name" : "God of Thunder"
+	"sm_57_desc" : "Vlad, after thanking the gang for the release of his brother-in-law, asked for one more favor. Buluc, the Coyopa cartel's leader, was responsible for the arrest of Hajrudin. The gang would need to take him out and steal his contact list, Ernesto Sosa style."
+	"sm_57_obj" : "Complete the Buluc's Mansion job on the Very Hard difficulty or higher. \nThis assignment requires you to play from the lobby to the end of the heist."
+	"menu_sm_very_hard_fex" : "Buluc's Mansion"
+	
+	
+	"sm_58_name" : "The Golden Dragon"
+	"sm_58_desc" : "While a team of 4 carried out jobs in Mexico, another 4 heisters were tasked with traveling to China, the land of warriors. Jiu Feng, a potential contractor for the crew, got in touch with Locke and then and there arranged one more job to be carried out."
+	"sm_58_obj" : "Complete the Dragon Heist job on the Very Hard difficulty or higher. \nThis assignment requires you to play from the lobby to the end of the heist."
+	"menu_sm_very_hard_chas" : "Dragon Heist"
+	
+	"sm_59_name" : "Disruption"
+	"sm_59_desc" : "The triad the gang stole the dragon statue from were now attempting to sabotage the crew. They located Vlad through their contact network and subsequently took him hostage and tortured him, all for the location of the PAYDAY gang. Jiu Feng was willing to lend a hand."
+	"sm_59_obj" : "Complete the Ukrainian Prisoner job on the Very Hard difficulty or higher. \nThis assignment requires you to play from the lobby to the end of the heist."
+	"menu_sm_very_hard_sand" : "Ukrainian Prisoner"
+	
+	"sm_60_name" : "No One Is Unsinkable"
+	"sm_60_desc" : "Vlad was now extremely angry towards Xun Kang and the triad. His last assignment for the PAYDAY gang would consist on a full assault to the Black Cat, a cruise ship owned and operated by the Golden Dagger."
+	"sm_60_obj" : "Complete the Black Cat job on the Very Hard difficulty or higher. \nThis assignment requires you to play from the lobby to the end of the heist."
+	"menu_sm_very_hard_chca" : "Black Cat"
+	
+	"sm_61_name" : "The Head Of The Snake"
+	"sm_61_desc" : "Having dealt with Xun Kang, the crew were headed for D.C. However, Shayu, part of the Golden Dagger, had other plans for them. In order for her to become the head of the triad, Yufu Wang first needed to... retire. The gang knew exactly how to make him do this."
+	"sm_61_obj" : "Complete the Mountain Master job on the Very Hard difficulty or higher. \nThis assignment requires you to play from the lobby to the end of the heist."
+	"menu_sm_very_hard_pent" : "Mountain Master"
+	
+	
+	"sm_62_name" : "The Lone Star State"
+	"sm_62_desc" : "The fourth team's adventure started right when Gemma McShay contracted the gang to carry out hits in Texas. Their first job would be quite unusual, being tasked with eliminating Esteban Santiago. Not like they haven't dealt with these types of contracts before, though."
+	"sm_62_obj" : "Complete the Midland Ranch job on the Very Hard difficulty or higher. \nThis assignment requires you to play from the lobby to the end of the heist."
+	"menu_sm_very_hard_ranc" : "Midland Ranch"
+	
+	"sm_63_name" : "Florida All Over Again"
+	"sm_63_desc" : "Gemma had a new job for the crew. Stealing printing plates was something they were familiar with, and so when she caught wind of the Army moving some in train carts, she knew exactly who to contact."
+	"sm_63_obj" : "Complete the Lost in Transit job on the Very Hard difficulty or higher. \nThis assignment requires you to play from the lobby to the end of the heist."
+	"menu_sm_very_hard_trai" : "Lost in Transit"
+	
+	"sm_64_name" : "Making Way"
+	"sm_64_desc" : "Blaine Keegan, McShay's associate, was now offering a job to the PAYDAY gang too. His competitor in the oil industry, SERA Inc, was preventing him from developing in the field. Alice Rainey had to go, and what better way to get rid of her that to expose her illicit operations to the media."
+	"sm_64_obj" : "Complete the Hostile Takeover job on the Very Hard difficulty or higher. \nThis assignment requires you to play from the lobby to the end of the heist."
+	"menu_sm_very_hard_corp" : "Hostile Takeover"
+	
+	"sm_65_name" : "A Crude Awakening"
+	"sm_65_desc" : "As the White House heist came about, Keegan wanted to follow up his ordeal with SERA, by destroying everything Alice Rainey had left. SERA Inc. would go out with a bang, and too would the PAYDAY gang."
+	"sm_65_obj" : "Complete the Crude Awakening job on the Very Hard difficulty or higher. \nThis assignment requires you to play from the lobby to the end of the heist."
+	"menu_sm_very_hard_deep" : "Crude Awakening"
+}

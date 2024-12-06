@@ -1,0 +1,32 @@
+{
+	"name" : "Health Turns Red When Under 225",
+	"description" : "Health bar will turn red when the player's health is less than 225. Configurable in the options menu.",
+	"author" : "Javgarag",
+	"contact" : "Discord: Javgarag#0085",
+	"version" : "1.4.0",
+	"blt_version" : 2,
+	"priority" : -1, 
+	"color" : "232 30 30",
+	"hooks" : [
+		{
+			"hook_id" : "lib/managers/hud/Hudteammate",
+			"script_path" : "hudteammate.lua"
+		},
+		{
+			"hook_id" : "lib/managers/hudmanagerpd2",
+			"script_path" : "hudteammate.lua"
+		},
+		{
+			"hook_id" : "lib/managers/menumanager",
+			"script_path" : "menu/menurh.lua"
+		}
+	]
+	"updates" : [
+		{
+			"identifier" : "pd2_red_health_below_225",
+			"host" : {
+			"meta" : "https://github.com/Javgarag/PD2RedHealthBelow225/releases/download/v1.2.0/meta.json"
+			}
+		}
+	]
+}

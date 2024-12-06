@@ -1,0 +1,58 @@
+<table directory="assets">
+	<add from_db="true" path="units/payday2/architecture/mkp/mkp_int_pillar_1m_b_round" type="unit">
+		<material_config path="units/payday2/architecture/mkp/mkp"/>
+		<object path="units/payday2/architecture/mkp/mkp_int_pillar_1m_b_round"/>
+		<unit path="units/payday2/architecture/mkp/mkp_int_pillar_1m_b_round"/>
+	</add>
+	<add from_db="true" path="units/payday2/architecture/mkp/mkp_int_pillar_1m_a" type="unit">
+		<material_config path="units/payday2/architecture/mkp/mkp"/>
+		<object path="units/payday2/architecture/mkp/mkp_int_pillar_1m_a"/>
+		<unit path="units/payday2/architecture/mkp/mkp_int_pillar_1m_a"/>
+	</add>
+	<add from_db="true" path="units/payday2/architecture/mkp/mkp_int_pillar_05m_a" type="unit">
+		<material_config path="units/payday2/architecture/mkp/mkp"/>
+		<object path="units/payday2/architecture/mkp/mkp_int_pillar_05m_a"/>
+		<unit path="units/payday2/architecture/mkp/mkp_int_pillar_05m_a"/>
+	</add>
+	<add from_db="true" path="units/payday2/architecture/mkp/mkp_int_wall_1m_a" type="unit">
+		<material_config path="units/payday2/architecture/mkp/mkp"/>
+		<object path="units/payday2/architecture/mkp/mkp_int_wall_1m_a"/>
+		<unit path="units/payday2/architecture/mkp/mkp_int_wall_1m_a"/>
+	</add>
+	<add from_db="true" path="units/test/jocke/oneplanetorulethemall" type="unit">
+		<material_config path="units/test/jocke/simple_temp"/>
+		<object path="units/test/jocke/oneplanetorulethemall"/>
+		<unit path="units/test/jocke/oneplanetorulethemall"/>
+	</add>
+	<add from_db="true" path="units/payday2/architecture/mkp/mkp_ext_wall_8m_a" type="unit">
+		<material_config path="units/payday2/architecture/mkp/mkp"/>
+		<object path="units/payday2/architecture/mkp/mkp_ext_wall_8m_a"/>
+		<unit path="units/payday2/architecture/mkp/mkp_ext_wall_8m_a"/>
+	</add>
+	<add from_db="true" path="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a" type="unit">
+		<material_config path="units/payday2/architecture/mkp/mkp"/>
+		<object path="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a"/>
+		<unit path="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a"/>
+	</add>
+	<add from_db="true" path="units/payday2/architecture/mkp/mkp_int_stairs_bottom" type="unit">
+		<material_config path="units/payday2/architecture/mkp/mkp"/>
+		<object path="units/payday2/architecture/mkp/mkp_int_stairs_bottom"/>
+		<unit path="units/payday2/architecture/mkp/mkp_int_stairs_bottom"/>
+	</add>
+	<add from_db="true" path="units/payday2/architecture/mkp/mkp_int_floor_2x2m_a" type="unit">
+		<material_config path="units/payday2/architecture/mkp/mkp"/>
+		<object path="units/payday2/architecture/mkp/mkp_int_floor_2x2m_a"/>
+		<unit path="units/payday2/architecture/mkp/mkp_int_floor_2x2m_a"/>
+	</add>
+	<add from_db="true" path="units/payday2/architecture/mkp/mkp_int_floor_1x1m_a" type="unit">
+		<material_config path="units/payday2/architecture/mkp/mkp"/>
+		<object path="units/payday2/architecture/mkp/mkp_int_floor_1x1m_a"/>
+		<unit path="units/payday2/architecture/mkp/mkp_int_floor_1x1m_a"/>
+	</add>
+	<add from_db="true" path="units/dev_tools/level_tools/shadow_caster_100x100" type="unit">
+		<unit path="units/dev_tools/level_tools/shadow_caster_100x100"/>
+		<object path="units/dev_tools/level_tools/shadow_caster_100x100"/>
+		<material_config path="units/dev_tools/level_tools/shadow_caster"/>
+		<sequence_manager path="units/dev_tools/level_tools/shadow_caster"/>
+	</add>
+</table>

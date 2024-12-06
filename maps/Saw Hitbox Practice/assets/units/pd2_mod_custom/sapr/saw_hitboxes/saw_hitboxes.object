@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<dynamic_object>
+  <diesel materials="units/pd2_mod_custom/sapr/saw_hitboxes/saw_hitboxes" orientation_object="rp_saw_hitboxes" />
+
+  <bodies>
+    <body name="body" enabled="true" template="static">
+      <object name="g_hitbox_door_handle_in" />
+	  <object name="g_hitbox_door_handle_out" />
+    </body>
+  </bodies>
+
+  <graphics>
+    <object name="g_hitbox_door_handle_in" enabled="true" />    
+	<object name="g_hitbox_door_handle_out" enabled="true" /> 
+  </graphics>
+</dynamic_object> 

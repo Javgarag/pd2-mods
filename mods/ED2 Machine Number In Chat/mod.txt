@@ -1,0 +1,24 @@
+{
+	"name" : "ED2 Machine Number In Chat",
+	"description" : "No more typing a machine's number manually in chat.",
+	"author" : "Javgarag",
+	"contact" : "Discord: Javgarag#0085",
+	"version" : "1.2.1",
+	"blt_version" : 2,
+	"priority" : -1, 
+	"color" : "54 63 163",
+	"hooks" : [
+		{
+			"hook_id" : "lib/units/interactions/interactionext",
+			"script_path" : "interactionext.lua"
+		},
+		{
+			"hook_id" : "lib/managers/menumanager",
+			"script_path" : "menu/menu.lua"
+		},
+		{
+			"script_path": "interactionext.lua",
+			"hook_id": "core/lib/managers/mission/coremissionscriptelement"
+		}
+	]
+}

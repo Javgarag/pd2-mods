@@ -1,0 +1,25 @@
+<table>
+	<world path="world" script_data_type="generic_xml"/>
+	<continents path="continents" script_data_type="custom_xml"/>
+	<mission path="mission" script_data_type="custom_xml"/>
+	<nav_data path="nav_manager_data" script_data_type="generic_xml"/>
+	<world_sounds path="world_sounds" script_data_type="generic_xml"/>
+	<world_cameras path="world_cameras" script_data_type="generic_xml"/>
+	<massunit path="massunit" reload="true"/>
+	<continent path="day/day" script_data_type="custom_xml"/>
+	<mission path="day/day" script_data_type="generic_xml"/>
+	<continent path="night/night" script_data_type="custom_xml"/>
+	<mission path="night/night" script_data_type="generic_xml"/>
+	<continent path="cinematics/cinematics" script_data_type="custom_xml"/>
+	<mission path="cinematics/cinematics" script_data_type="generic_xml"/>
+	<continent path="props/props" script_data_type="custom_xml"/>
+	<mission path="props/props" script_data_type="generic_xml"/>
+	<continent path="mkp/mkp" script_data_type="custom_xml"/>
+	<mission path="mkp/mkp" script_data_type="generic_xml"/>
+	<continent path="world/world" script_data_type="custom_xml"/>
+	<mission path="world/world" script_data_type="generic_xml"/>
+	<continent path="editor_only/editor_only" script_data_type="custom_xml"/>
+	<mission path="editor_only/editor_only" script_data_type="generic_xml"/>
+	<cover_data path="cover_data" script_data_type="custom_xml"/>
+	<texture path="cube_lights/dome_occlusion"/>
+</table>

@@ -1,0 +1,23 @@
+<materials version="3">
+	<material render_template="generic:DIFFUSE_TEXTURE" name="mat_pattern_finding" version="2">
+		<diffuse_texture file="units/pd2_mod_custom/rushing_saw_practice/pattern_plane/pattern_05"/>
+	</material>
+	<material render_template="generic:DIFFUSE_TEXTURE" name="mat_pattern_01" version="2">
+		<diffuse_texture file="units/pd2_mod_custom/rushing_saw_practice/pattern_plane/pattern_05"/>
+	</material>
+	<material render_template="generic:DIFFUSE_TEXTURE" name="mat_pattern_02" version="2">
+		<diffuse_texture file="units/pd2_mod_custom/rushing_saw_practice/pattern_plane/pattern_05"/>
+	</material>
+	<material render_template="generic:DIFFUSE_TEXTURE" name="mat_pattern_03" version="2">
+		<diffuse_texture file="units/pd2_mod_custom/rushing_saw_practice/pattern_plane/pattern_05"/>
+	</material>
+	<material render_template="generic:DIFFUSE_TEXTURE" name="mat_pattern_04" version="2">
+		<diffuse_texture file="units/pd2_mod_custom/rushing_saw_practice/pattern_plane/pattern_05"/>
+	</material>
+	<material render_template="generic:DIFFUSE_TEXTURE" name="mat_pattern_05" version="2">
+		<diffuse_texture file="units/pd2_mod_custom/rushing_saw_practice/pattern_plane/pattern_05"/>
+	</material>
+	<material render_template="generic:DIFFUSE_TEXTURE" name="mat_pattern_06" version="2">
+		<diffuse_texture file="units/pd2_mod_custom/rushing_saw_practice/pattern_plane/pattern_05"/>
+	</material>
+</materials>

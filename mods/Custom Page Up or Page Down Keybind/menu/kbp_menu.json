@@ -1,0 +1,30 @@
+{
+	"menu_id": "kbp",
+	"parent_menu_id": "blt_options",
+	"title": "kbp_title",
+	"description": "kbp_desc",
+	"back_callback": "kbp_save",
+	"items":
+	[
+		{
+			"type" : "keybind",
+			"id" : "np_kbp",
+			"title" : "np_kbp_title",
+			"description" : "np_kbp_desc",
+			"keybind_id" : "np_kbp",
+			"run_in_menu" : true,
+			"run_in_game" : false,
+			"func" : "np_kbp_func"
+		},
+		{
+			"type" : "keybind",
+			"id" : "pp_kbp",
+			"title" : "pp_kbp_title",
+			"description" : "pp_kbp_desc",
+			"keybind_id" : "pp_kbp",
+			"run_in_menu" : true,
+			"run_in_game" : false,
+			"func" : "pp_kbp_func"
+		},
+	]
+}

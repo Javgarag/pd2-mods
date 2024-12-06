@@ -1,0 +1,16 @@
+{
+	"name" : "Reassign Skill Sets",
+	"description" : "Adds the ability to reset skillsets. (Located in Mod Options)",
+	"author" : "Orig. Version: Offyerrocker, Modif. Version: Javgarag",
+	"image" : "icon.png",
+	"color" : "64 128 255",
+	"contact" : "Discord: Offyerrocker#3878, Javgarag#0085",
+	"version" : "2.1",
+	"blt_version" : 2,
+	"hooks" : [
+		{
+			"hook_id" : "lib/managers/menumanager",
+			"script_path" : "menumanager.lua"
+		}
+	]
+}

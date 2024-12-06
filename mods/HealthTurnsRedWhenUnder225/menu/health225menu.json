@@ -1,0 +1,22 @@
+{
+	"menu_id": "health225menu",
+	"parent_menu_id": "blt_options",
+	"title": "redhealth_title",
+	"description": "redhealth_desc",
+	"back_callback": "redhealth_save",
+	"items":
+	[
+		{
+			"type" : "slider",
+			"id" : "rh_health_value",
+			"title" : "rh_health_value_title",
+			"description" : "rh_health_value_desc",
+			"callback" : "callback_rh_health_value",
+			"value" : "health_value",
+			"default_value" : 225,
+			"max" : 500,
+			"min" : 1,
+			"step" : 1
+		}
+	]
+}

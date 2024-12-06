@@ -1,0 +1,28 @@
+{
+	"name" : "Revert Infamy",
+	"description" : "Adds a button to revert infamy back a level. USE AT YOUR OWN DISCRETION.",
+	"author" : "Javgarag",
+	"image" : "icon.png",
+	"color" : "186 26 26",
+	"contact" : "Discord: Javgarag#0085",
+	"version" : "1.0.6",
+	"blt_version" : 2,
+	"hooks" : [
+		{   
+			"hook_id" : "lib/managers/menu/menuscenegui",
+			"script_path" : "core.lua"
+		},
+		{   
+			"hook_id" : "lib/managers/menumanager",
+			"script_path" : "core.lua"
+		},	
+		{   
+			"hook_id" : "lib/managers/menumanagerdialogs",
+			"script_path" : "core.lua"
+		},	
+		{   
+			"hook_id" : "lib/managers/menu/infamytreeguinew",
+			"script_path" : "core.lua"
+		},	
+	]
+}

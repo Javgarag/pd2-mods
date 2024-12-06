@@ -1,0 +1,19 @@
+{
+	"fiwb_title" : "Fuck it this is nightclub now"
+	"fiwb_desc" : "Change the options for this mod"
+	"fiwb_enabled_title" : "Enabled"
+	"fiwb_enabled_desc" : "Should this mod be enabled?"
+	"fiwb_enabled_assets_title" : "Enable Decorations"
+	"fiwb_enabled_assets_desc" : "Should the mod spawn party assets around the instigator player? If disabled, only music will be played."
+	"fiwb_activate_title" : "Activation Keybind"
+	"fiwb_activate_desc" : "Keybind that will start the party"
+	"fiwb_deactivate_title" : "Deactivation Keybind"
+	"fiwb_deactivate_desc" : "Keybind that will stop the party"
+	
+	"fiwb_custom_sound_id_title" : "Music" 
+	"fiwb_custom_sound_id_desc" : "The music to be played."
+	"fiwb_sound_id_001" : "Diamond Heist Party"
+	"fiwb_sound_id_002" : "Nightclub (Good music)"
+	"fiwb_sound_id_003" : "Nightclub (Bad music)"
+	
+}

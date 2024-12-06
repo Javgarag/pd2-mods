@@ -1,0 +1,15 @@
+{
+	"name" : "Sound the Alarm",
+	"description" : "whar",
+	"author" : "Javgarag",
+	"color" : "64 128 255",
+	"contact" : "Discord: Javgarag#0085",
+	"version" : "1.0.0",
+	"blt_version" : 2,
+	"hooks" : [
+		{
+			"hook_id" : "lib/managers/menumanager",
+			"script_path" : "menu/menumanager.lua"
+		}
+	]
+}

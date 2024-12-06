@@ -1,0 +1,33 @@
+{
+	"name": "Interaction Disabler",
+	"description": "Self descriptive",
+	"author" : "Javgarag",
+	"contact" : "Discord: javgarag",
+	"version": "v1.0.0",
+	"priority": 999999,
+	"blt_version": 2,
+	"hooks": [
+		{
+			"hook_id" : "lib/tweak_data/interactiontweakdata",
+			"script_path" : "main.lua"
+		},
+		{
+			"hook_id" : "lib/units/interactions/interactionext",
+			"script_path" : "main.lua"
+		},
+		{
+			"hook_id" : "lib/managers/menumanager",
+			"script_path" : "main.lua"
+		}
+	]
+	"keybinds" : [
+	{
+		"keybind_id" : "block_interactions_dynamic",
+		"name" : "Block Interactions Mode",
+		"description" : "When activated, the mod will start saving every completed interaction for the remainder of the mission to block them, until a mission restart or leave deactivates it.",
+		"script_path" : "block_interactions.lua",
+		"run_in_menu" : false,
+		"run_in_game" : true,
+		"localized" : false
+	}]
+}

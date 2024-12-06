@@ -1,0 +1,6 @@
+<materials version="3">
+    <material render_template="generic:CUBE_ENVIRONMENT_MAPPING:DIFFUSE_TEXTURE" name="mat_black" version="2">
+        <diffuse_texture file="units/black_df"/>
+        <reflection_texture type="cube" global_texture="current_global_texture"/>
+    </material>
+</materials>

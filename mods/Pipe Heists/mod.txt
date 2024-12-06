@@ -1,0 +1,15 @@
+{
+	"name" : "Pipe Heists",
+	"description" : "Changes all heist names to pipe.",
+	"author" : "Javgarag",
+	"contact" : "Discord: Javgarag#0085",
+	"version" : "1.0.0",
+	"blt_version" : 2,
+	"color" : "255 128 0",
+	"hooks" : [
+		{
+			"hook_id" : "lib/managers/localizationmanager",
+			"script_path" : "pipe.lua"
+		}
+	]
+}

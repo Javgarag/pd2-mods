@@ -1,0 +1,10 @@
+<gui>
+	<preload texture="guis/textures/computergui/backgrounds/application_window"/>
+	<preload texture="guis/textures/pd2/specialization/points_reduce"/>
+	
+	<panel name_s="panel" halign_s="grow" valign_s="grow" w="1280/1.2" h="720/1.2" layer="3" x="175" y="75">
+		<rect name_s="drag_hitbox" alpha="0" w="305" h="10"/>
+		<bitmap name_s="application_window" texture_s="guis/textures/computergui/backgrounds/application_window" color="Color( 1, 1, 1 )" w="1280/1.2" h="720/1.2"/>
+		<bitmap name_s="close_button" texture_s="guis/textures/pd2/specialization/points_reduce" w="25" h="25" x="1280/1.2 - 20" y="720/1.2 - 20"/>
+	</panel>
+</gui>

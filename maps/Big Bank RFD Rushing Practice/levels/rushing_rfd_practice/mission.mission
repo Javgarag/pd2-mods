@@ -1,0 +1,9 @@
+<table>
+	<cinematics file="cinematics/cinematics"/>
+	<day file="day/day"/>
+	<editor_only file="editor_only/editor_only"/>
+	<mkp file="mkp/mkp"/>
+	<night file="night/night"/>
+	<props file="props/props"/>
+	<world file="world/world"/>
+</table>

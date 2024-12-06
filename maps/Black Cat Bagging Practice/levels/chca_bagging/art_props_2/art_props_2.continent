@@ -1,0 +1,2256 @@
+<table>
+	<editor_groups>
+		<table continent="art_props_2" name="wash2" reference="800093">
+			<units>
+				<value_node value="700923"/>
+				<value_node value="700918"/>
+				<value_node value="501232"/>
+				<value_node value="501235"/>
+				<value_node value="700971"/>
+				<value_node value="700905"/>
+				<value_node value="700412"/>
+				<value_node value="100620"/>
+				<value_node value="700998"/>
+				<value_node value="701000"/>
+				<value_node value="700986"/>
+				<value_node value="700973"/>
+				<value_node value="700969"/>
+				<value_node value="501233"/>
+				<value_node value="700988"/>
+				<value_node value="700991"/>
+				<value_node value="501234"/>
+				<value_node value="700997"/>
+				<value_node value="700902"/>
+				<value_node value="700413"/>
+				<value_node value="700797"/>
+				<value_node value="700796"/>
+				<value_node value="303006"/>
+				<value_node value="700795"/>
+				<value_node value="100623"/>
+				<value_node value="700898"/>
+				<value_node value="700904"/>
+				<value_node value="103147"/>
+				<value_node value="700916"/>
+				<value_node value="700800"/>
+				<value_node value="700798"/>
+				<value_node value="700915"/>
+				<value_node value="700799"/>
+				<value_node value="103148"/>
+				<value_node value="700802"/>
+				<value_node value="700914"/>
+				<value_node value="103275"/>
+				<value_node value="103149"/>
+				<value_node value="701209"/>
+				<value_node value="103820"/>
+				<value_node value="701210"/>
+				<value_node value="100950"/>
+				<value_node value="100952"/>
+				<value_node value="100638"/>
+				<value_node value="100060"/>
+				<value_node value="100639"/>
+				<value_node value="103408"/>
+				<value_node value="100642"/>
+				<value_node value="103409"/>
+				<value_node value="100643"/>
+				<value_node value="103410"/>
+				<value_node value="100645"/>
+			</units>
+		</table>
+		<table continent="art_props_2" name="sd5" reference="800284">
+			<units>
+				<value_node value="501237"/>
+				<value_node value="103445"/>
+				<value_node value="103439"/>
+				<value_node value="700826"/>
+				<value_node value="700883"/>
+				<value_node value="700892"/>
+				<value_node value="700875"/>
+				<value_node value="501238"/>
+				<value_node value="700852"/>
+				<value_node value="501236"/>
+				<value_node value="700895"/>
+				<value_node value="103444"/>
+				<value_node value="103438"/>
+				<value_node value="700501"/>
+				<value_node value="700271"/>
+				<value_node value="700894"/>
+				<value_node value="700405"/>
+				<value_node value="700237"/>
+				<value_node value="700283"/>
+				<value_node value="700281"/>
+				<value_node value="700236"/>
+				<value_node value="700238"/>
+				<value_node value="700229"/>
+				<value_node value="600006"/>
+				<value_node value="700285"/>
+				<value_node value="103437"/>
+				<value_node value="700204"/>
+				<value_node value="700206"/>
+				<value_node value="700241"/>
+				<value_node value="700591"/>
+				<value_node value="700523"/>
+				<value_node value="700208"/>
+				<value_node value="700345"/>
+				<value_node value="701370"/>
+				<value_node value="700203"/>
+				<value_node value="700232"/>
+				<value_node value="700233"/>
+				<value_node value="700155"/>
+				<value_node value="700308"/>
+				<value_node value="700292"/>
+				<value_node value="700522"/>
+				<value_node value="700304"/>
+				<value_node value="700224"/>
+				<value_node value="700293"/>
+				<value_node value="700310"/>
+				<value_node value="700220"/>
+				<value_node value="700348"/>
+				<value_node value="700219"/>
+				<value_node value="700196"/>
+				<value_node value="700306"/>
+				<value_node value="700307"/>
+				<value_node value="700216"/>
+				<value_node value="700217"/>
+				<value_node value="700305"/>
+				<value_node value="700215"/>
+				<value_node value="700205"/>
+				<value_node value="700295"/>
+				<value_node value="700521"/>
+				<value_node value="700265"/>
+				<value_node value="700266"/>
+				<value_node value="700214"/>
+				<value_node value="700194"/>
+				<value_node value="700223"/>
+				<value_node value="700297"/>
+				<value_node value="700218"/>
+				<value_node value="700195"/>
+				<value_node value="700690"/>
+				<value_node value="700294"/>
+				<value_node value="700284"/>
+				<value_node value="700291"/>
+				<value_node value="700282"/>
+				<value_node value="700296"/>
+				<value_node value="700243"/>
+				<value_node value="700274"/>
+				<value_node value="700321"/>
+				<value_node value="700200"/>
+				<value_node value="700239"/>
+				<value_node value="700190"/>
+				<value_node value="700202"/>
+				<value_node value="700153"/>
+				<value_node value="700302"/>
+				<value_node value="700303"/>
+				<value_node value="700198"/>
+				<value_node value="700286"/>
+				<value_node value="700299"/>
+				<value_node value="700350"/>
+				<value_node value="100624"/>
+				<value_node value="700311"/>
+				<value_node value="100621"/>
+				<value_node value="700199"/>
+				<value_node value="700342"/>
+				<value_node value="700207"/>
+				<value_node value="701206"/>
+				<value_node value="700520"/>
+				<value_node value="700213"/>
+				<value_node value="700191"/>
+				<value_node value="700316"/>
+				<value_node value="700209"/>
+				<value_node value="700212"/>
+				<value_node value="700300"/>
+				<value_node value="700197"/>
+				<value_node value="700349"/>
+				<value_node value="700312"/>
+				<value_node value="701205"/>
+				<value_node value="700287"/>
+				<value_node value="700319"/>
+				<value_node value="700326"/>
+				<value_node value="700328"/>
+				<value_node value="700298"/>
+				<value_node value="700240"/>
+				<value_node value="700315"/>
+				<value_node value="700201"/>
+				<value_node value="700234"/>
+				<value_node value="700327"/>
+				<value_node value="700192"/>
+				<value_node value="700231"/>
+				<value_node value="700323"/>
+				<value_node value="700188"/>
+				<value_node value="102718"/>
+				<value_node value="700263"/>
+				<value_node value="700325"/>
+				<value_node value="700185"/>
+				<value_node value="700330"/>
+				<value_node value="700318"/>
+				<value_node value="700329"/>
+				<value_node value="700172"/>
+				<value_node value="700288"/>
+				<value_node value="700354"/>
+				<value_node value="700225"/>
+				<value_node value="700322"/>
+				<value_node value="701015"/>
+				<value_node value="700111"/>
+				<value_node value="700331"/>
+				<value_node value="700324"/>
+				<value_node value="700193"/>
+				<value_node value="700332"/>
+				<value_node value="700226"/>
+				<value_node value="700264"/>
+				<value_node value="700320"/>
+				<value_node value="700317"/>
+				<value_node value="700176"/>
+				<value_node value="701020"/>
+				<value_node value="700189"/>
+				<value_node value="600025"/>
+				<value_node value="500854"/>
+				<value_node value="701014"/>
+				<value_node value="700177"/>
+				<value_node value="700337"/>
+				<value_node value="700694"/>
+				<value_node value="700242"/>
+				<value_node value="700334"/>
+				<value_node value="700360"/>
+				<value_node value="700333"/>
+				<value_node value="700161"/>
+				<value_node value="700222"/>
+				<value_node value="700277"/>
+				<value_node value="700338"/>
+				<value_node value="700336"/>
+				<value_node value="700314"/>
+				<value_node value="700339"/>
+				<value_node value="700340"/>
+				<value_node value="700344"/>
+				<value_node value="700343"/>
+				<value_node value="700022"/>
+				<value_node value="700498"/>
+				<value_node value="700160"/>
+				<value_node value="700174"/>
+				<value_node value="700280"/>
+				<value_node value="700335"/>
+				<value_node value="700272"/>
+				<value_node value="700289"/>
+				<value_node value="700290"/>
+				<value_node value="700175"/>
+				<value_node value="700169"/>
+				<value_node value="700268"/>
+				<value_node value="701032"/>
+				<value_node value="700260"/>
+				<value_node value="700259"/>
+				<value_node value="700256"/>
+				<value_node value="700258"/>
+				<value_node value="700257"/>
+				<value_node value="700687"/>
+				<value_node value="700254"/>
+				<value_node value="700173"/>
+				<value_node value="700163"/>
+				<value_node value="700270"/>
+				<value_node value="700021"/>
+				<value_node value="700346"/>
+				<value_node value="501142"/>
+				<value_node value="700162"/>
+				<value_node value="700252"/>
+				<value_node value="700145"/>
+				<value_node value="700499"/>
+				<value_node value="700253"/>
+				<value_node value="700250"/>
+				<value_node value="700251"/>
+				<value_node value="700279"/>
+				<value_node value="700347"/>
+				<value_node value="700122"/>
+				<value_node value="700102"/>
+				<value_node value="700245"/>
+				<value_node value="700313"/>
+				<value_node value="700157"/>
+				<value_node value="700186"/>
+				<value_node value="700248"/>
+				<value_node value="501146"/>
+				<value_node value="700341"/>
+				<value_node value="700156"/>
+				<value_node value="700244"/>
+				<value_node value="700261"/>
+				<value_node value="700262"/>
+				<value_node value="700247"/>
+				<value_node value="600083"/>
+				<value_node value="701019"/>
+				<value_node value="700246"/>
+				<value_node value="501141"/>
+				<value_node value="700249"/>
+				<value_node value="100063"/>
+				<value_node value="700975"/>
+				<value_node value="700114"/>
+				<value_node value="700517"/>
+				<value_node value="100067"/>
+				<value_node value="700115"/>
+				<value_node value="700131"/>
+				<value_node value="700210"/>
+				<value_node value="700509"/>
+				<value_node value="700510"/>
+				<value_node value="700164"/>
+				<value_node value="700127"/>
+				<value_node value="700120"/>
+				<value_node value="700020"/>
+				<value_node value="700168"/>
+				<value_node value="700112"/>
+				<value_node value="700025"/>
+				<value_node value="700128"/>
+				<value_node value="600082"/>
+				<value_node value="700165"/>
+				<value_node value="700701"/>
+				<value_node value="700508"/>
+				<value_node value="700132"/>
+				<value_node value="700507"/>
+				<value_node value="700041"/>
+				<value_node value="700227"/>
+				<value_node value="700142"/>
+				<value_node value="700660"/>
+				<value_node value="700228"/>
+				<value_node value="700181"/>
+				<value_node value="700119"/>
+				<value_node value="700230"/>
+				<value_node value="700700"/>
+				<value_node value="700184"/>
+				<value_node value="700719"/>
+				<value_node value="700106"/>
+				<value_node value="700182"/>
+				<value_node value="700688"/>
+				<value_node value="700129"/>
+				<value_node value="700125"/>
+				<value_node value="700183"/>
+				<value_node value="700130"/>
+				<value_node value="700105"/>
+				<value_node value="700113"/>
+				<value_node value="700698"/>
+				<value_node value="700787"/>
+				<value_node value="700746"/>
+				<value_node value="700269"/>
+				<value_node value="700768"/>
+				<value_node value="700037"/>
+				<value_node value="700384"/>
+				<value_node value="700024"/>
+				<value_node value="700152"/>
+				<value_node value="700147"/>
+				<value_node value="700117"/>
+				<value_node value="700121"/>
+				<value_node value="700235"/>
+				<value_node value="700631"/>
+				<value_node value="700705"/>
+				<value_node value="700607"/>
+				<value_node value="700749"/>
+				<value_node value="700040"/>
+				<value_node value="700151"/>
+				<value_node value="700042"/>
+				<value_node value="701369"/>
+				<value_node value="700124"/>
+				<value_node value="701017"/>
+				<value_node value="700519"/>
+				<value_node value="700500"/>
+				<value_node value="700704"/>
+				<value_node value="700702"/>
+				<value_node value="700703"/>
+				<value_node value="700506"/>
+				<value_node value="700769"/>
+				<value_node value="701018"/>
+				<value_node value="700109"/>
+				<value_node value="700505"/>
+				<value_node value="700661"/>
+				<value_node value="700664"/>
+				<value_node value="700696"/>
+				<value_node value="700148"/>
+				<value_node value="700788"/>
+				<value_node value="700149"/>
+				<value_node value="700116"/>
+				<value_node value="700108"/>
+				<value_node value="100066"/>
+				<value_node value="700146"/>
+				<value_node value="700772"/>
+				<value_node value="700036"/>
+				<value_node value="102411"/>
+				<value_node value="700158"/>
+				<value_node value="700110"/>
+				<value_node value="700159"/>
+				<value_node value="700401"/>
+				<value_node value="700408"/>
+				<value_node value="700397"/>
+				<value_node value="700352"/>
+				<value_node value="700167"/>
+				<value_node value="700351"/>
+				<value_node value="700525"/>
+				<value_node value="700780"/>
+				<value_node value="700524"/>
+				<value_node value="103076"/>
+				<value_node value="700748"/>
+				<value_node value="700770"/>
+				<value_node value="700407"/>
+				<value_node value="700409"/>
+				<value_node value="700720"/>
+				<value_node value="700278"/>
+				<value_node value="700757"/>
+				<value_node value="700393"/>
+				<value_node value="700781"/>
+				<value_node value="700144"/>
+				<value_node value="700392"/>
+				<value_node value="700104"/>
+				<value_node value="700370"/>
+				<value_node value="700526"/>
+				<value_node value="700714"/>
+				<value_node value="700766"/>
+				<value_node value="700717"/>
+				<value_node value="700369"/>
+				<value_node value="600081"/>
+				<value_node value="700715"/>
+				<value_node value="700626"/>
+				<value_node value="700103"/>
+				<value_node value="701013"/>
+				<value_node value="700402"/>
+				<value_node value="700782"/>
+				<value_node value="700377"/>
+				<value_node value="700774"/>
+				<value_node value="700760"/>
+				<value_node value="700786"/>
+				<value_node value="700396"/>
+				<value_node value="700755"/>
+				<value_node value="700711"/>
+				<value_node value="700713"/>
+				<value_node value="700706"/>
+				<value_node value="700395"/>
+				<value_node value="700723"/>
+				<value_node value="700785"/>
+				<value_node value="700527"/>
+				<value_node value="700773"/>
+				<value_node value="700101"/>
+				<value_node value="700783"/>
+				<value_node value="700759"/>
+				<value_node value="700141"/>
+				<value_node value="700716"/>
+				<value_node value="700695"/>
+				<value_node value="700771"/>
+				<value_node value="700381"/>
+				<value_node value="700578"/>
+				<value_node value="700756"/>
+				<value_node value="701016"/>
+				<value_node value="700697"/>
+				<value_node value="700663"/>
+				<value_node value="700387"/>
+				<value_node value="700662"/>
+				<value_node value="700699"/>
+				<value_node value="700751"/>
+				<value_node value="700019"/>
+				<value_node value="700187"/>
+				<value_node value="700665"/>
+				<value_node value="700353"/>
+				<value_node value="700707"/>
+				<value_node value="700577"/>
+				<value_node value="700502"/>
+				<value_node value="700778"/>
+				<value_node value="700400"/>
+				<value_node value="700763"/>
+				<value_node value="700417"/>
+				<value_node value="700727"/>
+				<value_node value="700627"/>
+				<value_node value="100068"/>
+				<value_node value="700380"/>
+				<value_node value="700726"/>
+				<value_node value="700017"/>
+				<value_node value="700511"/>
+				<value_node value="700512"/>
+				<value_node value="700762"/>
+				<value_node value="700725"/>
+				<value_node value="700023"/>
+				<value_node value="700721"/>
+				<value_node value="700764"/>
+				<value_node value="700399"/>
+				<value_node value="700398"/>
+				<value_node value="700513"/>
+				<value_node value="700390"/>
+				<value_node value="700404"/>
+				<value_node value="700514"/>
+				<value_node value="100622"/>
+				<value_node value="700394"/>
+				<value_node value="100064"/>
+				<value_node value="700628"/>
+				<value_node value="700357"/>
+				<value_node value="700391"/>
+				<value_node value="700712"/>
+				<value_node value="700625"/>
+				<value_node value="700018"/>
+				<value_node value="700758"/>
+				<value_node value="700791"/>
+				<value_node value="700790"/>
+				<value_node value="700389"/>
+				<value_node value="700753"/>
+				<value_node value="103819"/>
+				<value_node value="700765"/>
+				<value_node value="600027"/>
+				<value_node value="700733"/>
+				<value_node value="700383"/>
+				<value_node value="700789"/>
+				<value_node value="700777"/>
+				<value_node value="700724"/>
+				<value_node value="700776"/>
+				<value_node value="700368"/>
+				<value_node value="700738"/>
+				<value_node value="700784"/>
+				<value_node value="700376"/>
+				<value_node value="700367"/>
+				<value_node value="700744"/>
+				<value_node value="700732"/>
+				<value_node value="700710"/>
+				<value_node value="700722"/>
+				<value_node value="700515"/>
+				<value_node value="700752"/>
+				<value_node value="700729"/>
+				<value_node value="700734"/>
+				<value_node value="700737"/>
+				<value_node value="700728"/>
+				<value_node value="700736"/>
+				<value_node value="700735"/>
+				<value_node value="700767"/>
+				<value_node value="700709"/>
+				<value_node value="700516"/>
+				<value_node value="700708"/>
+				<value_node value="700033"/>
+				<value_node value="700754"/>
+				<value_node value="700740"/>
+				<value_node value="700743"/>
+				<value_node value="700718"/>
+				<value_node value="700741"/>
+				<value_node value="700739"/>
+				<value_node value="700027"/>
+				<value_node value="700371"/>
+				<value_node value="700382"/>
+				<value_node value="700742"/>
+				<value_node value="700750"/>
+				<value_node value="103366"/>
+				<value_node value="700624"/>
+				<value_node value="700779"/>
+				<value_node value="700359"/>
+				<value_node value="700761"/>
+				<value_node value="700358"/>
+				<value_node value="700775"/>
+				<value_node value="700497"/>
+				<value_node value="600084"/>
+				<value_node value="700731"/>
+				<value_node value="700528"/>
+				<value_node value="700745"/>
+				<value_node value="700730"/>
+				<value_node value="700378"/>
+				<value_node value="700055"/>
+				<value_node value="103384"/>
+				<value_node value="701365"/>
+				<value_node value="305563"/>
+				<value_node value="701027"/>
+				<value_node value="700379"/>
+				<value_node value="700054"/>
+				<value_node value="102951"/>
+				<value_node value="700355"/>
+				<value_node value="102894"/>
+				<value_node value="700518"/>
+				<value_node value="700356"/>
+				<value_node value="100065"/>
+				<value_node value="700059"/>
+				<value_node value="701185"/>
+				<value_node value="700052"/>
+				<value_node value="700416"/>
+				<value_node value="305562"/>
+				<value_node value="305216"/>
+				<value_node value="600078"/>
+				<value_node value="700375"/>
+				<value_node value="500329"/>
+				<value_node value="700031"/>
+				<value_node value="100625"/>
+				<value_node value="600087"/>
+				<value_node value="700038"/>
+				<value_node value="700053"/>
+				<value_node value="305561"/>
+				<value_node value="100995"/>
+				<value_node value="100997"/>
+				<value_node value="100993"/>
+				<value_node value="100059"/>
+				<value_node value="600079"/>
+				<value_node value="700415"/>
+				<value_node value="701366"/>
+				<value_node value="700118"/>
+				<value_node value="700026"/>
+				<value_node value="305560"/>
+				<value_node value="700548"/>
+			</units>
+		</table>
+	</editor_groups>
+	<statics>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_015" position="-10749 5300 160" rotation="0 0 1 -4.17233e-007" unit_id="800732"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_016" position="-11055 5300 160" rotation="0 0 1 -1.19209e-007" unit_id="800733"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_parking_garage_signs/com_prop_parking_garage_sign_fire_exit" name_id="com_prop_parking_garage_sign_fire_exit_002" position="-7700 5290 291" rotation="0 0 -2.68221e-007 -1" unit_id="800755"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_025" position="-7855 5300 160" rotation="0 0 1 -1.19209e-007" unit_id="800350"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_large_ceiling_lamp/chca_prop_large_ceiling_lamp" name_id="chca_prop_large_ceiling_lamp_017" position="-9301 -146 457.876" rotation="-4.17233e-007 -1.42109e-014 1 -1.19209e-007" unit_id="800982"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_038" position="-9899 3901 163" rotation="0 0 0.707107 -0.707107" unit_id="800987"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_041" position="-10502 3901 163" rotation="0 0 -0.707107 -0.707107" unit_id="800988"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_040" position="-8260 4500 158" rotation="0 0 -2.68221e-007 -1" unit_id="800983"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_043" position="-8701 3912 153" rotation="0 0 -0.707107 -0.707107" unit_id="800986"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_044" position="-9538 3801 163" rotation="0 0 0 -1" unit_id="800989"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_045" position="-9061 3801 163" rotation="0 0 0 -1" unit_id="800990"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_048" position="-7425 3032 158" rotation="0 0 0.707107 -0.707107" unit_id="800993"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_051" position="-7424 644 352.659" rotation="0 0 0.707107 -0.707107" unit_id="800996"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_052" position="-7424 1509 158" rotation="0 0 0.707107 -0.707107" unit_id="801005"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_053" position="-7425 2082 158" rotation="0 0 0.707107 -0.707107" unit_id="801006"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chas/props/chas_prop_chinese_ceiling_lamp/chas_prop_chinese_ceiling_lamp" name_id="chas_prop_chinese_ceiling_lamp_040" position="-9299 3709 300" rotation="0 0 0 -1" unit_id="801016"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chas/props/chas_prop_chinese_ceiling_lamp/chas_prop_chinese_ceiling_lamp" name_id="chas_prop_chinese_ceiling_lamp_041" position="-8895 3709 300" rotation="0 0 0 -1" unit_id="801017"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chas/props/chas_prop_chinese_ceiling_lamp/chas_prop_chinese_ceiling_lamp" name_id="chas_prop_chinese_ceiling_lamp_042" position="-9686 3709 300" rotation="0 0 0 -1" unit_id="801018"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_dah/props/dah_prop_light_switch/dah_prop_light_switch" name_id="dah_prop_light_switch_015" position="-10175 4047 533.087" rotation="0 0 -0.707107 -0.707107" unit_id="801023"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_dah/props/dah_prop_light_switch/dah_prop_light_switch" name_id="dah_prop_light_switch_018" position="-10328 4526 111.739" rotation="0 0 1 -1.19209e-007" unit_id="801026"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_dah/props/dah_prop_light_switch/dah_prop_light_switch" name_id="dah_prop_light_switch_019" position="-8274 4526 111.739" rotation="0 0 1 -1.19209e-007" unit_id="801027"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_061" position="-11176 1510 158" rotation="0 0 -0.707107 -0.707107" unit_id="801028"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_062" position="-11175 2080 158" rotation="0 0 -0.707107 -0.707107" unit_id="801029"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_dah/props/dah_prop_light_switch/dah_prop_light_switch" name_id="dah_prop_light_switch_020" position="-9901 3977 115.66" rotation="0 0 0.707107 -0.707107" unit_id="801032"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/world/props/apartment/cords/wall_socket" name_id="wall_socket_027" position="-11175 2639 9.6429" rotation="0 0 -0.707107 -0.707107" unit_id="801045"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_lounge_set_sofa/chca_prop_chinese_lounge_set_sofa" name_id="chca_prop_chinese_lounge_set_sofa_001" position="-8039 1295 104" rotation="0 0 0.707107 -0.707107" unit_id="801051"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_lounge_set_sofa/chca_prop_chinese_lounge_set_sofa" name_id="chca_prop_chinese_lounge_set_sofa_002" position="-10566 1287 104" rotation="0 0 -0.71325 -0.700909" unit_id="801049"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_carpet_cabin/chca_prop_chinese_carpet_cabin" name_id="chca_prop_chinese_carpet_cabin_029" position="-9296 -122 200" rotation="0 0 0 -1" unit_id="801050"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chas/props/chas_prop_auction_table_stand/chas_prop_auction_table_stand" name_id="chas_prop_auction_table_stand_004" position="-9296 -128 198.106" rotation="0 0 1 -1.19209e-007" unit_id="801062"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_lounge_set_chair/chca_prop_chinese_lounge_set_chair" name_id="chca_prop_chinese_lounge_set_chair_013" position="-8058.58 2316.02 104.089" rotation="0 0 0.681998 -0.731354" unit_id="801040"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_lounge_set_chair/chca_prop_chinese_lounge_set_chair" name_id="chca_prop_chinese_lounge_set_chair_014" position="-8058.93 2194 103.089" rotation="0 0 0.731353 -0.681999" unit_id="801048"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_lounge_set_chair/chca_prop_chinese_lounge_set_chair" name_id="chca_prop_chinese_lounge_set_chair_015" position="-10556.2 2197.08 104.089" rotation="0 0 -0.737277 -0.67559" unit_id="801002"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_lounge_set_chair/chca_prop_chinese_lounge_set_chair" name_id="chca_prop_chinese_lounge_set_chair_016" position="-10556.3 2318.88 104.089" rotation="0 0 -0.656059 -0.75471" unit_id="801070"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_friend/props/sfm_prop_int_sofa/sfm_prop_int_sofa" name_id="sfm_prop_int_sofa_005" position="-10524 -414 600" rotation="0 0 1 -1.19209e-007" unit_id="800847"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_friend/props/sfm_prop_int_sofa/sfm_prop_int_sofa" name_id="sfm_prop_int_sofa_006" position="-8107 -416 600" rotation="0 0 1 -1.19209e-007" unit_id="800884"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_wall_trim/chca_prop_chinese_wall_trim" name_id="chca_prop_chinese_wall_trim_001" position="-11169 1438 618.14" rotation="0.5 -0.5 -0.5 -0.5" unit_id="801104"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_001" position="-11164 2037 617.689" rotation="0 0 -0.707107 -0.707107" unit_id="801105"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_002" position="-11164 1937 617.689" rotation="0 0 -0.707107 -0.707107" unit_id="801117"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_003" position="-11164 1637 617.689" rotation="0 0 -0.707107 -0.707107" unit_id="801118"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_004" position="-11164 1837 617.689" rotation="0 0 -0.707107 -0.707107" unit_id="801119"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_005" position="-11164 1737 617.689" rotation="0 0 -0.707107 -0.707107" unit_id="801120"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_006" position="-11164 1537 617.689" rotation="0 0 -0.707107 -0.707107" unit_id="801121"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_007" position="-11164 1437 617.689" rotation="0 0 -0.707107 -0.707107" unit_id="801122"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_wall_trim/chca_prop_chinese_wall_trim" name_id="chca_prop_chinese_wall_trim_002" position="-7434 2140 617.137" rotation="-0.5 -0.5 0.5 -0.5" unit_id="801152"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_008" position="-7435 2141 616.686" rotation="8.9407e-007 -5.51343e-007 0.707107 -0.707107" unit_id="801153"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_009" position="-7435 2041 616.687" rotation="8.9407e-007 -5.51343e-007 0.707107 -0.707107" unit_id="801154"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_010" position="-7435 1941 616.687" rotation="8.9407e-007 -5.51343e-007 0.707107 -0.707107" unit_id="801155"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_011" position="-7435 1841 616.687" rotation="8.9407e-007 -5.51343e-007 0.707107 -0.707107" unit_id="801156"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_012" position="-7435 1741 616.687" rotation="8.9407e-007 -5.51343e-007 0.707107 -0.707107" unit_id="801157"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_013" position="-7435 1641 616.687" rotation="8.9407e-007 -5.51343e-007 0.707107 -0.707107" unit_id="801159"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_014" position="-7435 1541 616.687" rotation="8.9407e-007 -5.51343e-007 0.707107 -0.707107" unit_id="801161"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_dah/props/dah_prop_wall_lamp_b/dah_prop_wall_lamp_b" name_id="dah_prop_wall_lamp_b_013" position="-11205 4631 195.913" rotation="0 0 0.707107 -0.707107" unit_id="801112"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_dah/props/dah_prop_wall_lamp_b/dah_prop_wall_lamp_b" name_id="dah_prop_wall_lamp_b_016" position="-11205 3829 195.913" rotation="0 0 0.707107 -0.707107" unit_id="801115"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_dah/props/dah_prop_wall_lamp_b/dah_prop_wall_lamp_b" name_id="dah_prop_wall_lamp_b_018" position="-11205 3027 195.913" rotation="0 0 0.707107 -0.707107" unit_id="801123"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_dah/props/dah_prop_wall_lamp_b/dah_prop_wall_lamp_b" name_id="dah_prop_wall_lamp_b_020" position="-11205 2230 195.913" rotation="0 0 0.707107 -0.707107" unit_id="801125"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_ext_wicker/lxy_prop_ext_wicker_chair_01" name_id="lxy_prop_ext_wicker_chair_01_005" position="-11413.7 2864.56 0.230194" rotation="0 0 0.309017 -0.951057" unit_id="801149"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_ext_wicker/lxy_prop_ext_wicker_chair_01" name_id="lxy_prop_ext_wicker_chair_01_007" position="-11412.4 2661.28 0.23018" rotation="0 0 0.953717 -0.300706" unit_id="801150"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_ext_wicker/lxy_prop_ext_wicker_chair_01" name_id="lxy_prop_ext_wicker_chair_01_008" position="-11598.7 2755.46 0.23018" rotation="0 0 -0.707107 -0.707106" unit_id="801158"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_ext_wicker/lxy_prop_ext_wicker_sofa_01" name_id="lxy_prop_ext_wicker_sofa_01_003" position="-11413 3969.84 -0.444458" rotation="0 0 0.681999 -0.731353" unit_id="801163"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_ext_wicker_table_02/lxy_prop_ext_wicker_table_02" name_id="lxy_prop_ext_wicker_table_02_006" position="-11463 4374 -0.444458" rotation="0 0 0 -1" unit_id="801169"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_ext_wicker/lxy_prop_ext_wicker_chair_01" name_id="lxy_prop_ext_wicker_chair_01_009" position="-11394 4276 -0.444458" rotation="0 0 0.798636 -0.601815" unit_id="801170"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_ext_wicker/lxy_prop_ext_wicker_chair_01" name_id="lxy_prop_ext_wicker_chair_01_010" position="-11587.9 3840.32 -0.444458" rotation="0 0 0.979925 0.199368" unit_id="801171"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_ext_wicker/lxy_prop_ext_wicker_chair_01" name_id="lxy_prop_ext_wicker_chair_01_016" position="-11636.7 4043.4 0.555542" rotation="0 0 -0.446197 -0.894935" unit_id="801172"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_ext_wicker/lxy_prop_ext_wicker_chair_01" name_id="lxy_prop_ext_wicker_chair_01_017" position="-11418.1 4482.53 -0.444458" rotation="0 0 0.45399 -0.891007" unit_id="801164"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_friend/props/sfm_prop_int_sofa/sfm_prop_int_sofa_small" name_id="sfm_prop_int_sofa_small_003" position="-10125 4265.94 401" rotation="0 0 -0.700909 -0.713251" unit_id="801180"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/bnk_prop_lounge_tables/bnk_prop_lounge_table_round" name_id="bnk_prop_lounge_table_round_001" position="-9967 4265 400" rotation="0 0 0 -1" unit_id="801182"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/bnk_prop_lounge_tables/bnk_prop_lounge_table_round" name_id="bnk_prop_lounge_table_round_002" position="-8647 4296 400" rotation="0 0 0 -1" unit_id="801192"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_friend/props/sfm_prop_int_sofa/sfm_prop_int_sofa_small" name_id="sfm_prop_int_sofa_small_005" position="-8488.89 4284.9 400" rotation="0 0 0.743145 -0.669131" unit_id="801193"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_friend/props/sfm_prop_int_sofa/sfm_prop_int_sofa_small" name_id="sfm_prop_int_sofa_small_006" position="-8630.83 4440.68 399" rotation="0 0 0.0610481 -0.998135" unit_id="801194"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_bph/props/bph_prop_paspeaker/bph_prop_paspeaker" name_id="bph_prop_paspeaker_003" position="-6875 2800 505.136" rotation="0 0 -0.707107 -0.707107" unit_id="801175"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_bph/props/bph_prop_paspeaker/bph_prop_paspeaker" name_id="bph_prop_paspeaker_005" position="-11725 2801 505.136" rotation="0 0 0.707107 -0.707107" unit_id="801202"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_bph/props/bph_prop_paspeaker/bph_prop_paspeaker" name_id="bph_prop_paspeaker_006" position="-11222 1316 508.948" rotation="0 0 0 -1" unit_id="801203"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_bph/props/bph_prop_paspeaker/bph_prop_paspeaker" name_id="bph_prop_paspeaker_007" position="-11222 5260 504.948" rotation="0 0 1 -4.17233e-007" unit_id="801204"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/off_prop_officehigh_chair/off_prop_officehigh_chair_standard_black" name_id="off_prop_officehigh_chair_standard_black_001" position="-9106.06 4239.9 400" rotation="0 0 0.382683 -0.92388" unit_id="801205"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_lxy/architecture/yacht_dhruva/ceiling/lxy_int_ceiling_sprinkle" name_id="lxy_int_ceiling_sprinkle_007" position="-9311 758 650" rotation="0 0 0 -1" unit_id="801218"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_lxy/architecture/yacht_dhruva/ceiling/lxy_int_ceiling_sprinkle" name_id="lxy_int_ceiling_sprinkle_008" position="-8503 758 650" rotation="0 0 0 -1" unit_id="801219"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_lxy/architecture/yacht_dhruva/ceiling/lxy_int_ceiling_sprinkle" name_id="lxy_int_ceiling_sprinkle_009" position="-7714 758 650" rotation="0 0 0 -1" unit_id="801220"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_lxy/architecture/yacht_dhruva/ceiling/lxy_int_ceiling_sprinkle" name_id="lxy_int_ceiling_sprinkle_010" position="-10095 758 650" rotation="0 0 0 -1" unit_id="801221"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_lxy/architecture/yacht_dhruva/ceiling/lxy_int_ceiling_sprinkle" name_id="lxy_int_ceiling_sprinkle_011" position="-10884 758 650" rotation="0 0 0 -1" unit_id="801222"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_lxy/architecture/yacht_dhruva/ceiling/lxy_int_ceiling_sprinkle" name_id="lxy_int_ceiling_sprinkle_013" position="-10783 3079 700" rotation="0 0 0 -1" unit_id="801224"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_lxy/architecture/yacht_dhruva/ceiling/lxy_int_ceiling_sprinkle" name_id="lxy_int_ceiling_sprinkle_015" position="-8410 3698 300" rotation="0 0 0 -1" unit_id="801226"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_lxy/architecture/yacht_dhruva/ceiling/lxy_int_ceiling_sprinkle" name_id="lxy_int_ceiling_sprinkle_016" position="-10163 3705 300" rotation="0 0 0 -1" unit_id="801227"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_parking_garage_signs/com_prop_parking_garage_sign_fire_exit" name_id="com_prop_parking_garage_sign_fire_exit_003" position="-8403 4512 286.605" rotation="2.68221e-007 0 1 -4.17233e-007" unit_id="801230"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_parking_garage_signs/com_prop_parking_garage_sign_fire_exit" name_id="com_prop_parking_garage_sign_fire_exit_006" position="-10200 4512 286.606" rotation="2.68221e-007 0 1 -4.17233e-007" unit_id="801231"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_lxy/architecture/yacht_dhruva/ceiling/lxy_int_ceiling_sprinkle" name_id="lxy_int_ceiling_sprinkle_018" position="-8875 3854 743.095" rotation="0 0 0 -1" unit_id="801217"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_lxy/architecture/yacht_dhruva/ceiling/lxy_int_ceiling_sprinkle" name_id="lxy_int_ceiling_sprinkle_019" position="-9732 3854 743.095" rotation="0 0 0 -1" unit_id="801240"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_lxy/architecture/yacht_dhruva/ceiling/lxy_int_ceiling_sprinkle" name_id="lxy_int_ceiling_sprinkle_020" position="-10345 3655 700" rotation="0 0 0 -1" unit_id="801241"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_friend/props/sfm_prop_office_armchair/sfm_prop_office_armchair" name_id="sfm_prop_office_armchair_001" position="-9299.29 4256.92 400" rotation="0 0 0 -1" unit_id="801206"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/world/props/office/desk_accessories/desk_pencils_02" name_id="desk_pencils_02_003" position="-9045.76 4098.7 499.303" rotation="0 0 -0.636078 -0.771625" unit_id="801257"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chas/props/chas_prop_iphone/chas_prop_iphone" name_id="chas_prop_iphone_005" position="-9202.8 4171.8 500.303" rotation="0 0 -0.866025 -0.5" unit_id="801258"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_club_bottles/com_prop_club_bottle_6" name_id="com_prop_club_bottle_6_002" position="-7209 1536 88.191" rotation="0 0 0 -1" unit_id="801259"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_club_bottles/com_prop_club_bottle_7" name_id="com_prop_club_bottle_7_002" position="-7209 1547 89.1909" rotation="0 0 0 -1" unit_id="801260"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_club_beer_tap/com_prop_club_beer_tap" name_id="com_prop_club_beer_tap_001" position="-11495 1591 108.578" rotation="0 0 1 -1.19209e-007" unit_id="801132"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_club_beer_tap/com_prop_club_beer_tap" name_id="com_prop_club_beer_tap_002" position="-7095 1594 108.573" rotation="0 0 1 -1.19209e-007" unit_id="801251"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_bar_chinese_liquor_bottles/chca_prop_bar_chinese_liquor_bottles_01" name_id="chca_prop_bar_chinese_liquor_bottles_01_002" position="-7199 1539 89.191" rotation="0 0 0 -1" unit_id="801254"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_bar_chinese_liquor_bottles/chca_prop_bar_chinese_liquor_bottles_03" name_id="chca_prop_bar_chinese_liquor_bottles_03_002" position="-7210.14 1528.07 89.191" rotation="0 0 -0.382683 -0.92388" unit_id="801255"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_bar_chinese_liquor_bottles/chca_prop_bar_chinese_liquor_bottles_04" name_id="chca_prop_bar_chinese_liquor_bottles_04_002" position="-11612 1527 89.191" rotation="0 0 0 -1" unit_id="801268"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_club_bottles/com_prop_club_bottle_2" name_id="com_prop_club_bottle_2_001" position="-11607 1552 88.1909" rotation="0 0 0 -1" unit_id="801271"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_club_bottles/com_prop_club_bottle_5" name_id="com_prop_club_bottle_5_001" position="-11592 1533 88.1909" rotation="0 0 0 -1" unit_id="801272"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_casino/props/cas_prop_lounge_seat/cas_prop_lounge_seat_end_2" name_id="cas_prop_lounge_seat_end_2_005" position="-10899 4530 0" rotation="0 0 0.707107 -0.707107" unit_id="801273"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_casino/props/cas_prop_lounge_seat/cas_prop_lounge_seat_inner" name_id="cas_prop_lounge_seat_inner_003" position="-11046 4530 0" rotation="0 0 1 -1.19209e-007" unit_id="801274"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_casino/props/cas_prop_lounge_seat/cas_prop_lounge_seat_end" name_id="cas_prop_lounge_seat_end_003" position="-11170 4655 0" rotation="0 0 -0.707107 -0.707107" unit_id="801275"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_casino/props/cas_prop_lounge_seat/cas_prop_lounge_seat_straight" name_id="cas_prop_lounge_seat_straight_002" position="-10899 4530 0" rotation="0 0 1 -1.19209e-007" unit_id="801276"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_side_table/chca_prop_small_side_table" name_id="chca_prop_small_side_table_079" position="-11143 4826 -1" rotation="0 0 0 -1" unit_id="801279"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_casino/props/cas_prop_lounge_seat/cas_prop_lounge_seat_end_2" name_id="cas_prop_lounge_seat_end_2_006" position="-10548 4530 0" rotation="0 0 0.707107 -0.707107" unit_id="801280"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_casino/props/cas_prop_lounge_seat/cas_prop_lounge_seat_end" name_id="cas_prop_lounge_seat_end_006" position="-10548 4530 0" rotation="0 0 1 -4.17233e-007" unit_id="801281"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_casino/props/cas_prop_lounge_seat/cas_prop_lounge_seat_end_2" name_id="cas_prop_lounge_seat_end_2_007" position="-10242 5269 0" rotation="0 0 -0.707107 -0.707107" unit_id="801282"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_casino/props/cas_prop_lounge_seat/cas_prop_lounge_seat_end" name_id="cas_prop_lounge_seat_end_007" position="-10242 5269 0" rotation="0 -0 -5.66244e-007 -1" unit_id="801283"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_side_table/chca_prop_small_side_table" name_id="chca_prop_small_side_table_075" position="-10412 5241 0" rotation="0 0 0 -1" unit_id="801284"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_side_table/chca_prop_small_side_table" name_id="chca_prop_small_side_table_076" position="-10077 5241 -1" rotation="0 0 0 -1" unit_id="801285"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_casino/props/cas_prop_lounge_seat/cas_prop_lounge_seat_end_2" name_id="cas_prop_lounge_seat_end_2_008" position="-8359 5269 0" rotation="0 0 -0.707107 -0.707107" unit_id="801286"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_casino/props/cas_prop_lounge_seat/cas_prop_lounge_seat_end" name_id="cas_prop_lounge_seat_end_008" position="-8359 5269 0" rotation="0 -0 -5.66244e-007 -1" unit_id="801287"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_side_table/chca_prop_small_side_table" name_id="chca_prop_small_side_table_074" position="-8529 5240 -1" rotation="0 0 0 -1" unit_id="801289"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_side_table/chca_prop_small_side_table" name_id="chca_prop_small_side_table_080" position="-8195 5240 -2" rotation="0 0 0 -1" unit_id="801290"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_side_table/chca_prop_small_side_table" name_id="chca_prop_small_side_table_084" position="-8235 4560 -1" rotation="0 0 0 -1" unit_id="801291"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_casino/props/cas_prop_lounge_seat/cas_prop_lounge_seat_end" name_id="cas_prop_lounge_seat_end_009" position="-8059 4530 0" rotation="0 0 1 -4.17233e-007" unit_id="801292"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_casino/props/cas_prop_lounge_seat/cas_prop_lounge_seat_end_2" name_id="cas_prop_lounge_seat_end_2_009" position="-8059 4530 0" rotation="0 0 0.707107 -0.707107" unit_id="801293"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_casino/props/cas_prop_lounge_seat/cas_prop_lounge_seat_end_2" name_id="cas_prop_lounge_seat_end_2_010" position="-7432 4656 0" rotation="0 0 -2.38419e-007 -1" unit_id="801294"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_casino/props/cas_prop_lounge_seat/cas_prop_lounge_seat_inner" name_id="cas_prop_lounge_seat_inner_004" position="-7432 4655 0" rotation="0 0 0.707107 -0.707107" unit_id="801296"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_casino/props/cas_prop_lounge_seat/cas_prop_lounge_seat_end" name_id="cas_prop_lounge_seat_end_010" position="-7702 4531 0" rotation="0 0 1 -4.17233e-007" unit_id="801297"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_casino/props/cas_prop_lounge_seat/cas_prop_lounge_seat_straight" name_id="cas_prop_lounge_seat_straight_004" position="-7557 4531 0" rotation="0 0 1 -1.19209e-007" unit_id="801295"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_side_table/chca_prop_small_side_table" name_id="chca_prop_small_side_table_086" position="-7460 4819 -1" rotation="0 0 0 -1" unit_id="801300"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_side_table/chca_prop_small_side_table" name_id="chca_prop_small_side_table_087" position="-10372 4556 -1" rotation="0 0 0 -1" unit_id="801301"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_023" position="-11771 5138 472.67" rotation="0 0 0 -1" unit_id="801166">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_055" position="-11771 4062 472.67" rotation="0 0 0 -1" unit_id="801305">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_057" position="-11771 3938 472.67" rotation="0 0 0 -1" unit_id="801306">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_060" position="-11771 2865 472.67" rotation="0 0 0 -1" unit_id="801308">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_062" position="-11771 2735 472.67" rotation="0 0 0 -1" unit_id="801309">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_112" position="-11771 1663 472.67" rotation="0 0 0 -1" unit_id="801311">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_113" position="-11771 1538 472.67" rotation="0 0 0 -1" unit_id="801312">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_dah/props/dah_prop_light_switch/dah_prop_light_switch" name_id="dah_prop_light_switch_006" position="-7397 3434 104.868" rotation="0 0 -0.707107 -0.707107" unit_id="801424"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_dah/props/dah_prop_light_switch/dah_prop_light_switch" name_id="dah_prop_light_switch_007" position="-7397 4863 104.868" rotation="0 0 -0.707107 -0.707107" unit_id="801425"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_dah/props/dah_prop_light_switch/dah_prop_light_switch" name_id="dah_prop_light_switch_008" position="-11207 3445 104.868" rotation="0 0 0.707106 -0.707107" unit_id="801426"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_bar_stool_01/lxy_prop_bar_stool_01" name_id="lxy_prop_bar_stool_01_001" position="-9123.24 2242.31 100.723" rotation="0 0 0.39073 -0.920505" unit_id="801431"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_bar_stool_01/lxy_prop_bar_stool_01" name_id="lxy_prop_bar_stool_01_002" position="-9289 2302 100.723" rotation="0 0 -0.0174524 -0.999848" unit_id="801432"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_bar_stool_01/lxy_prop_bar_stool_01" name_id="lxy_prop_bar_stool_01_003" position="-9461 2249 100.723" rotation="0 0 -0.325568 -0.945519" unit_id="801433"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_060" position="-8097 3912 158" rotation="0 0 0.707107 -0.707107" unit_id="801014"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_carpet_hallway/chca_prop_chinese_carpet_hallway" name_id="chca_prop_chinese_carpet_hallway_003" position="-9298 452 200" rotation="0 0 -0.707107 -0.707107" unit_id="801666"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_carpet_hallway/chca_prop_chinese_carpet_hallway" name_id="chca_prop_chinese_carpet_hallway_012" position="-10248 174 200" rotation="0 0 0 -1" unit_id="801667"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_carpet_hallway/chca_prop_chinese_carpet_hallway" name_id="chca_prop_chinese_carpet_hallway_013" position="-8411 174 200" rotation="0 0 0 -1" unit_id="801668"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_office_filecabinet_a_02/stn_prop_office_filecabinet_a_02" name_id="stn_prop_office_filecabinet_a_02_002" position="-9453 4169 415" rotation="0 0 1 -4.47035e-008" unit_id="801703"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_dah/props/dah_prop_light_switch/dah_prop_light_switch" name_id="dah_prop_light_switch_009" position="-11204 4863 104.868" rotation="0 0 0.707107 -0.707107" unit_id="801720"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_bar_stool_01/lxy_prop_bar_stool_01" name_id="lxy_prop_bar_stool_01_004" position="-9037 2101 100.722" rotation="0 0 0.707107 -0.707107" unit_id="801721"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_bar_stool_01/lxy_prop_bar_stool_01" name_id="lxy_prop_bar_stool_01_005" position="-9566 2108 100.723" rotation="0 0 -0.642788 -0.766044" unit_id="801722"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_bar_chinese_liquor_bottles/chca_prop_bar_chinese_liquor_bottles_03" name_id="chca_prop_bar_chinese_liquor_bottles_03_007" position="-7050 3100 59.7671" rotation="0 0 0 -1" unit_id="801742"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_club_bottles/com_prop_club_bottle_3" name_id="com_prop_club_bottle_3_005" position="-11574 1551 88.191" rotation="0 0 0 -1" unit_id="801749"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_club_bottles/com_prop_club_bottle_8" name_id="com_prop_club_bottle_8_034" position="-7195 1550 89.1909" rotation="0 0 0 -1" unit_id="801750"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_club_beer_coaster/com_prop_club_beer_coaster_holder" name_id="com_prop_club_beer_coaster_holder_002" position="-9106 1779 177.702" rotation="0 0 -0.707107 -0.707107" unit_id="801763"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_club_beer_coaster/com_prop_club_beer_coaster_holder" name_id="com_prop_club_beer_coaster_holder_003" position="-9114 1779 177.702" rotation="0 0 -0.707107 -0.707107" unit_id="801764"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_club_beer_coaster/com_prop_club_beer_coaster_holder" name_id="com_prop_club_beer_coaster_holder_004" position="-9121 1779 177.702" rotation="0 0 -0.707107 -0.707107" unit_id="801765"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_club_beer_coaster/com_prop_club_beer_coaster_holder" name_id="com_prop_club_beer_coaster_holder_005" position="-9129 1779 177.702" rotation="0 0 -0.707107 -0.707107" unit_id="801766"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_casino/dev/cas_dev_gambling_chips/cas_dev_gambling_chips" name_id="cas_dev_gambling_chips_002" position="-8494 1757 199.971" rotation="0 0 -0.707107 -0.707107" unit_id="801314"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chill/characters/npc_acc_gambling_chips_stack/npc_acc_gambling_chips_stack" name_id="npc_acc_gambling_chips_stack_003" position="-8560 1781 194.971" rotation="0 0 0 -1" unit_id="801320"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chill/characters/npc_acc_gambling_chips_stack/npc_acc_gambling_chips_stack" name_id="npc_acc_gambling_chips_stack_004" position="-8498 1942 196.971" rotation="0 0 -0.707107 -0.707107" unit_id="801767"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chill/characters/npc_acc_gambling_chips_stack/npc_acc_gambling_chips_stack" name_id="npc_acc_gambling_chips_stack_005" position="-10051 1831 202.971" rotation="0 0 -0.707107 -0.707107" unit_id="801768"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chill/characters/npc_acc_gambling_chips_stack/npc_acc_gambling_chips_stack" name_id="npc_acc_gambling_chips_stack_006" position="-10051 1831 196.971" rotation="0 0 -0.707107 -0.707107" unit_id="801769"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chill/characters/npc_acc_gambling_chips_stack/npc_acc_gambling_chips_stack" name_id="npc_acc_gambling_chips_stack_007" position="-10013 1694 194.971" rotation="0 0 0 -1" unit_id="801770"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chill/characters/npc_acc_gambling_chips_stack/npc_acc_gambling_chips_stack" name_id="npc_acc_gambling_chips_stack_008" position="-10050 1728 196.971" rotation="0 0 0 -1" unit_id="801771"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chill/characters/npc_acc_gambling_chips_stack/npc_acc_gambling_chips_stack" name_id="npc_acc_gambling_chips_stack_009" position="-10335 403 295.971" rotation="0 0 0 -1" unit_id="801772"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chill/characters/npc_acc_gambling_chips_stack/npc_acc_gambling_chips_stack" name_id="npc_acc_gambling_chips_stack_010" position="-10206 414 294.971" rotation="0 0 0 -1" unit_id="801773"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_casino/dev/cas_dev_gambling_chips/cas_dev_gambling_chips" name_id="cas_dev_gambling_chips_003" position="-10277 426 294.971" rotation="0 0 1 -1.19209e-007" unit_id="801774"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chill/characters/npc_acc_gambling_chips_stack/npc_acc_gambling_chips_stack" name_id="npc_acc_gambling_chips_stack_011" position="-9788 2462 173.31" rotation="0 0 0 -1" unit_id="801775"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chill/characters/npc_acc_gambling_chips_stack/npc_acc_gambling_chips_stack" name_id="npc_acc_gambling_chips_stack_012" position="-8885 2422 171.31" rotation="0 0 0 -1" unit_id="801776"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chill/characters/npc_acc_gambling_chips_stack/npc_acc_gambling_chips_stack" name_id="npc_acc_gambling_chips_stack_013" position="-10052.4 1825.24 196.971" rotation="0 0 0.92388 0.382683" unit_id="801783"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_bar_stool_01/lxy_prop_bar_stool_01" name_id="lxy_prop_bar_stool_01_006" position="-7163.03 1621.16 2.27775" rotation="0 0 -0.224951 -0.97437" unit_id="801635"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_bar_stool_01/lxy_prop_bar_stool_01" name_id="lxy_prop_bar_stool_01_007" position="-6970.22 1631.56 2.27775" rotation="0 0 0.241921 -0.970296" unit_id="801428"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_bar_stool_01/lxy_prop_bar_stool_01" name_id="lxy_prop_bar_stool_01_008" position="-11636.1 1614.67 -0.722229" rotation="0 0 -0.224951 -0.97437" unit_id="801427"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_bar_stool_01/lxy_prop_bar_stool_01" name_id="lxy_prop_bar_stool_01_009" position="-11432.2 1618.99 -0.722231" rotation="0 0 0.241922 -0.970296" unit_id="801429"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_015" position="-7435 1544 517.687" rotation="0.707107 0.707107 -7.15167e-007 -6.11959e-007" unit_id="801200"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_016" position="-7435 1444 517.688" rotation="0.707107 0.707107 -7.15167e-007 -6.11958e-007" unit_id="801237"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_017" position="-7435 1644 517.687" rotation="0.707107 0.707107 -7.15167e-007 -6.11958e-007" unit_id="801277"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_018" position="-7435 1744 517.687" rotation="0.707107 0.707107 -7.15167e-007 -6.11958e-007" unit_id="801278"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_019" position="-7435 1844 517.687" rotation="0.707107 0.707107 -7.15167e-007 -6.11958e-007" unit_id="801299"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_020" position="-7435 1944 517.687" rotation="0.707107 0.707107 -7.15167e-007 -6.11958e-007" unit_id="801304"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_021" position="-7435 2044 517.687" rotation="0.707107 0.707107 -7.15167e-007 -6.11958e-007" unit_id="801307"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_054" position="-7424 1294 158" rotation="0 0 0.707107 -0.707107" unit_id="800992"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_055" position="-7425 2268 158" rotation="0 0 0.707107 -0.707107" unit_id="801007"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_047" position="-8541 4500 158" rotation="0 0 -2.68221e-007 -1" unit_id="801036"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_076" position="-7495.44 3195.61 158" rotation="0 0 0.382683 -0.92388" unit_id="801000"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_056" position="-7424 -384 352.659" rotation="0 0 0.707107 -0.707107" unit_id="801009"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_077" position="-7513 -469 352.659" rotation="0 0 1 -1.19209e-007" unit_id="801021"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_078" position="-8243 -469 352.659" rotation="0 0 1 -1.19209e-007" unit_id="801430"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_079" position="-8922 -469 352.659" rotation="0 0 1 -1.19209e-007" unit_id="801636"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_081" position="-9115 -469 352.659" rotation="0 0 1 -1.19209e-007" unit_id="801637"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_082" position="-9485 -469 352.659" rotation="0 0 1 -1.19209e-007" unit_id="801639"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_083" position="-9680 -469.001 352.659" rotation="0 0 1 -1.19209e-007" unit_id="801640"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_091" position="-11086 -469.001 352.659" rotation="0 0 1 -1.19209e-007" unit_id="800921"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_094" position="-11175 -378.001 352.659" rotation="0 0 -0.707107 -0.707107" unit_id="800980"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_095" position="-11175 649.999 352.659" rotation="0 0 -0.707107 -0.707107" unit_id="801011"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_042" position="-10059 4500 158" rotation="0 0 -2.68221e-007 -1" unit_id="800985"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_049" position="-10340 4500 158" rotation="0 0 -2.68221e-007 -1" unit_id="800991"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_063" position="-11176 1291 158" rotation="0 0 -0.707107 -0.707107" unit_id="800994"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_064" position="-11175 2268 158" rotation="0 0 -0.707107 -0.707107" unit_id="800995"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_065" position="-11175 3033 158" rotation="0 0 -0.707107 -0.707107" unit_id="800997"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_066" position="-11106.8 3194.09 158" rotation="0 0 -0.382683 -0.92388" unit_id="801008"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_mall_ceiling_lamp/com_prop_mall_ceiling_lamp_wall" name_id="com_prop_mall_ceiling_lamp_wall_010" position="-11077 -468 769.701" rotation="0 0 0 -1" unit_id="801010"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_mall_ceiling_lamp/com_prop_mall_ceiling_lamp_wall" name_id="com_prop_mall_ceiling_lamp_wall_012" position="-10723 -468 769.701" rotation="0 0 0 -1" unit_id="801012"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_mall_ceiling_lamp/com_prop_mall_ceiling_lamp_wall" name_id="com_prop_mall_ceiling_lamp_wall_013" position="-7524 -468 769.701" rotation="0 0 0 -1" unit_id="801020"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_mall_ceiling_lamp/com_prop_mall_ceiling_lamp_wall" name_id="com_prop_mall_ceiling_lamp_wall_014" position="-7878 -468 769.701" rotation="0 0 0 -1" unit_id="801030"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_024" position="-11077 924 700" rotation="0 0 0 -1" unit_id="801035">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_030" position="-10707 924 700" rotation="0 0 0 -1" unit_id="801037">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_058" position="-10707 2498 700" rotation="0 0 0 -1" unit_id="801038">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_111" position="-11077 2498 700" rotation="0 0 0 -1" unit_id="801061">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chas/props/chas_prop_dragon_wall_ornament/chas_prop_dragon_wall_ornament" name_id="chas_prop_dragon_wall_ornament_001" position="-9299 4501 433.891" rotation="0 0 1 -1.19209e-007" unit_id="801139"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_light_wall_01/lxy_prop_light_wall_01" name_id="lxy_prop_light_wall_01_023" position="-8425 4255 569.973" rotation="0 0 0.707107 -0.707107" unit_id="801199"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_light_wall_01/lxy_prop_light_wall_01" name_id="lxy_prop_light_wall_01_024" position="-8656 4500 569.973" rotation="0 0 -2.68221e-007 -1" unit_id="801004"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_friend/props/sfm_prop_int_sofa/sfm_prop_int_sofa" name_id="sfm_prop_int_sofa_007" position="-9931 4446 400" rotation="0 0 0 -1" unit_id="801208"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_office_filecabinet_a_02/stn_prop_office_filecabinet_a_02" name_id="stn_prop_office_filecabinet_a_02_003" position="-9109 4169 415" rotation="0 0 1 -4.47035e-008" unit_id="801003"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/off_prop_officehigh_chair/off_prop_officehigh_chair_standard_black" name_id="off_prop_officehigh_chair_standard_black_002" position="-9409.06 3958.75 400" rotation="0 0 0.976296 0.216439" unit_id="801063"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/off_prop_officehigh_chair/off_prop_officehigh_chair_standard_black" name_id="off_prop_officehigh_chair_standard_black_003" position="-9302.51 3965.87 400" rotation="0 0 0.999848 -0.017453" unit_id="801196"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/off_prop_officehigh_chair/off_prop_officehigh_chair_standard_black" name_id="off_prop_officehigh_chair_standard_black_004" position="-9150.17 3950.68 400" rotation="0 0 0.976296 -0.21644" unit_id="801198"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_light_wall_01/lxy_prop_light_wall_01" name_id="lxy_prop_light_wall_01_026" position="-10175 4254 569.973" rotation="0 0 -0.707107 -0.707107" unit_id="801207"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_119" position="-7876 2444 700" rotation="0 0 0 -1" unit_id="801210">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_120" position="-7506 2444 700" rotation="0 0 0 -1" unit_id="801211">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_122" position="-7876 924 700" rotation="0 0 0 -1" unit_id="801212">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_125" position="-7506 924 700" rotation="0 0 0 -1" unit_id="801214">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_128" position="-9833 3246 700" rotation="0 0 -0.707107 -0.707107" unit_id="801190">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_131" position="-9833 3576 700" rotation="0 0 -0.707107 -0.707107" unit_id="801262">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_132" position="-8778 3576 700" rotation="0 0 -0.707107 -0.707107" unit_id="801310">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_133" position="-8778 3246 700" rotation="0 0 -0.707107 -0.707107" unit_id="801641">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_small_wall_lamp/chca_prop_small_wall_lamp" name_id="chca_prop_small_wall_lamp_096" position="-10356 -469.001 352.659" rotation="0 0 1 -1.19209e-007" unit_id="801124"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_parking_garage_signs/com_prop_parking_garage_sign_fire_exit" name_id="com_prop_parking_garage_sign_fire_exit_005" position="-10900 5304 291" rotation="0 0 1 -4.17233e-007" unit_id="800772"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_dah/props/dah_prop_wall_lamp_b/dah_prop_wall_lamp_b" name_id="dah_prop_wall_lamp_b_021" position="-11205 1444 195.913" rotation="0 0 0.707107 -0.707107" unit_id="800445"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_027" position="-11094 656 700" rotation="0 0 0 -1" unit_id="801677">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_light_wall_01/lxy_prop_light_wall_01" name_id="lxy_prop_light_wall_01_027" position="-8260 4000 569.973" rotation="0 0 0 -1" unit_id="800448"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_light_wall_01/lxy_prop_light_wall_01" name_id="lxy_prop_light_wall_01_028" position="-10336 4000 569.973" rotation="0 0 0 -1" unit_id="801673"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_ext_bar_01/lxy_ext_bar_end_02" name_id="lxy_ext_bar_end_02_003" position="-7096.99 1517 -1.99997" rotation="0 0 1 -6.55651e-007" unit_id="801179"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_ext_bar_01/lxy_ext_bar_end_01" name_id="lxy_ext_bar_end_01_003" position="-7096.99 1517 -1.99997" rotation="0 0 -0.707107 -0.707107" unit_id="801781"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_ext_bar_01/lxy_ext_bar_end_01" name_id="lxy_ext_bar_end_01_004" position="-11496 1517 -1.99997" rotation="0 0 -0.707107 -0.707107" unit_id="801174"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_ext_bar_01/lxy_ext_bar_end_02" name_id="lxy_ext_bar_end_02_004" position="-11496 1517 -1.99997" rotation="0 0 1 -6.55651e-007" unit_id="801216"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_fridge_casino_bar_1_m/chca_prop_fridge_casino_bar_1m" name_id="chca_prop_fridge_casino_bar_1m_001" position="-9119 1815 99" rotation="0 0 0.707107 -0.707107" unit_id="802046"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_fridge_casino_bar_1_m/chca_prop_fridge_casino_bar_1m" name_id="chca_prop_fridge_casino_bar_1m_002" position="-9119 1915 99" rotation="0 0 0.707107 -0.707107" unit_id="802047"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_fridge_casino_bar_1_m/chca_prop_fridge_casino_bar_1m" name_id="chca_prop_fridge_casino_bar_1m_003" position="-9119 2015 99" rotation="0 0 0.707107 -0.707107" unit_id="802048"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_fridge_casino_bar_1_m/chca_prop_fridge_casino_bar_1m" name_id="chca_prop_fridge_casino_bar_1m_004" position="-9481 1821 99" rotation="0 0 -0.707107 -0.707107" unit_id="802050"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/mcm_prop_kitchen_wastebin/mcm_prop_kitchen_wastebin" name_id="mcm_prop_kitchen_wastebin_003" position="-9464 2083 100.446" rotation="0 0 -0.656059 -0.75471" unit_id="800208"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chill/props/chl_prop_dos_calveras/chl_prop_sicario_beer_crate" name_id="chl_prop_sicario_beer_crate_001" position="-9499.07 1910.58 101.069" rotation="-0.00566743 -0.00663571 -0.688328 -0.725347" unit_id="802059"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chill/props/chl_prop_dos_calveras/chl_prop_sicario_beer_crate" name_id="chl_prop_sicario_beer_crate_003" position="-9498.64 1909.6 125.066" rotation="-0.00583919 -0.00648508 -0.70708 -0.70708" unit_id="802060"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_large_ceiling_lamp/chca_prop_large_ceiling_lamp" name_id="chca_prop_large_ceiling_lamp_001" position="-10203 4100 282" rotation="0 0 0 -1" unit_id="802209"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_large_ceiling_lamp/chca_prop_large_ceiling_lamp" name_id="chca_prop_large_ceiling_lamp_003" position="-8396 4100 282" rotation="0 0 0 -1" unit_id="801013"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_spa_room_divider/chca_prop_spa_room_divider_v2" name_id="chca_prop_spa_room_divider_v2_002" position="-8704 5295 302.371" rotation="5.21541e-008 1 0 -1.19209e-007" unit_id="802267"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" mesh_variation="light_off" name="units/pd2_mcmansion/props/mcm_prop_kitchen_spotlight_ceiling/mcm_prop_kitchen_spotlight_ceiling" name_id="mcm_prop_kitchen_spotlight_ceiling_038" position="-8703 5450 712.374" rotation="0 0 0 -1" unit_id="802312">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="false" falloff_exponent="4" far_range="150" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" mesh_variation="light_off" name="units/pd2_mcmansion/props/mcm_prop_kitchen_spotlight_ceiling/mcm_prop_kitchen_spotlight_ceiling" name_id="mcm_prop_kitchen_spotlight_ceiling_053" position="-9886 5757 712.374" rotation="0 0 0 -1" unit_id="802327">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="false" falloff_exponent="4" far_range="150" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" mesh_variation="light_off" name="units/pd2_mcmansion/props/mcm_prop_kitchen_spotlight_ceiling/mcm_prop_kitchen_spotlight_ceiling" name_id="mcm_prop_kitchen_spotlight_ceiling_054" position="-9886 5450 712.374" rotation="0 0 0 -1" unit_id="802328">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="false" falloff_exponent="4" far_range="150" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" mesh_variation="light_off" name="units/pd2_mcmansion/props/mcm_prop_kitchen_spotlight_ceiling/mcm_prop_kitchen_spotlight_ceiling" name_id="mcm_prop_kitchen_spotlight_ceiling_066" position="-9886 5757 1127.37" rotation="0 0 0 -1" unit_id="802340">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="false" falloff_exponent="4" far_range="150" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" mesh_variation="light_off" name="units/pd2_mcmansion/props/mcm_prop_kitchen_spotlight_ceiling/mcm_prop_kitchen_spotlight_ceiling" name_id="mcm_prop_kitchen_spotlight_ceiling_067" position="-9886 5450 1127.37" rotation="0 0 0 -1" unit_id="802341">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="false" falloff_exponent="4" far_range="150" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" mesh_variation="light_off" name="units/pd2_mcmansion/props/mcm_prop_kitchen_spotlight_ceiling/mcm_prop_kitchen_spotlight_ceiling" name_id="mcm_prop_kitchen_spotlight_ceiling_079" position="-8703 5757 1127.37" rotation="0 0 0 -1" unit_id="802353">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="false" falloff_exponent="4" far_range="150" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" mesh_variation="light_off" name="units/pd2_mcmansion/props/mcm_prop_kitchen_spotlight_ceiling/mcm_prop_kitchen_spotlight_ceiling" name_id="mcm_prop_kitchen_spotlight_ceiling_080" position="-8703 5450 1127.37" rotation="0 0 0 -1" unit_id="802354">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="false" falloff_exponent="4" far_range="150" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_fridge_casino_bar_50_cm/chca_prop_fridge_casino_bar_50_cm" name_id="chca_prop_fridge_casino_bar_50_cm_003" position="-9132.66 1731.92 99" rotation="0 0 0.848048 -0.529919" unit_id="802355"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_fridge_casino_bar_50_cm/chca_prop_fridge_casino_bar_50_cm" name_id="chca_prop_fridge_casino_bar_50_cm_007" position="-9170.38 1685.69 99" rotation="0 0 0.945519 -0.325568" unit_id="802356"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_fridge_casino_bar_50_cm/chca_prop_fridge_casino_bar_50_cm" name_id="chca_prop_fridge_casino_bar_50_cm_011" position="-9219.91 1658.56 99" rotation="0 0 0.984808 -0.173649" unit_id="802357"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_fridge_casino_bar_50_cm/chca_prop_fridge_casino_bar_50_cm" name_id="chca_prop_fridge_casino_bar_50_cm_012" position="-9274.25 1646.81 99" rotation="0 0 0.99863 -0.0523364" unit_id="802358"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_fridge_casino_bar_50_cm/chca_prop_fridge_casino_bar_50_cm" name_id="chca_prop_fridge_casino_bar_50_cm_013" position="-9329.51 1646.33 99" rotation="0 0 0.99863 0.0523355" unit_id="802359"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_fridge_casino_bar_50_cm/chca_prop_fridge_casino_bar_50_cm" name_id="chca_prop_fridge_casino_bar_50_cm_014" position="-9384.72 1661.95 99" rotation="0 0 0.978148 0.207912" unit_id="802360"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_fridge_casino_bar_50_cm/chca_prop_fridge_casino_bar_50_cm" name_id="chca_prop_fridge_casino_bar_50_cm_015" position="-9432.91 1691.59 99" rotation="0 0 0.936672 0.350207" unit_id="802058"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_fridge_casino_bar_50_cm/chca_prop_fridge_casino_bar_50_cm" name_id="chca_prop_fridge_casino_bar_50_cm_016" position="-9469.69 1737.06 99" rotation="0 0 -0.852641 -0.522497" unit_id="802361"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_club_beer_keg/com_prop_club_beer_keg" name_id="com_prop_club_beer_keg_001" position="-9477 1891 100" rotation="0 0 0 -1" unit_id="802382"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_club_beer_keg/com_prop_club_beer_keg" name_id="com_prop_club_beer_keg_002" position="-9125 2096 100" rotation="0 0 0 -1" unit_id="802184"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_armory_locker/stn_prop_armory_locker" name_id="stn_prop_armory_locker_001" position="-9854 4408 0.499927" rotation="0 0 -0.707107 -0.707107" unit_id="802486"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_armory_locker/stn_prop_armory_locker" name_id="stn_prop_armory_locker_002" position="-9854 4310 0.499927" rotation="0 0 -0.707107 -0.707107" unit_id="802487"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_armory_locker/stn_prop_armory_locker" name_id="stn_prop_armory_locker_003" position="-9854 4506 0.499927" rotation="0 0 -0.707107 -0.707107" unit_id="802488"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_armory_locker/stn_prop_armory_locker" name_id="stn_prop_armory_locker_004" position="-9854 4604 0.499927" rotation="0 0 -0.707107 -0.707107" unit_id="802489"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_armory_locker/stn_prop_armory_locker" name_id="stn_prop_armory_locker_005" position="-9854 4702 0.499927" rotation="0 0 -0.707107 -0.707107" unit_id="802490"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_armory_locker/stn_prop_armory_locker" name_id="stn_prop_armory_locker_006" position="-9854 4800 0.499927" rotation="0 0 -0.707107 -0.707107" unit_id="802491"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_armory_locker/stn_prop_armory_locker" name_id="stn_prop_armory_locker_007" position="-8747 4310 0.499927" rotation="0 0 0.707107 -0.707107" unit_id="802492"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_armory_locker/stn_prop_armory_locker" name_id="stn_prop_armory_locker_008" position="-8747 4408 0.499927" rotation="0 0 0.707107 -0.707107" unit_id="802493"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_armory_locker/stn_prop_armory_locker" name_id="stn_prop_armory_locker_009" position="-8747 4506 0.499927" rotation="0 0 0.707107 -0.707107" unit_id="802494"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_armory_locker/stn_prop_armory_locker" name_id="stn_prop_armory_locker_010" position="-8747 4604 0.499927" rotation="0 0 0.707107 -0.707107" unit_id="802495"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_armory_locker/stn_prop_armory_locker" name_id="stn_prop_armory_locker_011" position="-8747 4702 0.499927" rotation="0 0 0.707107 -0.707107" unit_id="802496"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_armory_locker/stn_prop_armory_locker" name_id="stn_prop_armory_locker_012" position="-8747 4800 0.499927" rotation="0 0 0.707107 -0.707107" unit_id="802497"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_armory_locker/stn_prop_armory_locker" name_id="stn_prop_armory_locker_013" position="-9080 4271 0.499927" rotation="0 0 1 -4.17233e-007" unit_id="802498"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_armory_locker/stn_prop_armory_locker" name_id="stn_prop_armory_locker_014" position="-8982 4271 0.499927" rotation="0 0 1 -4.17233e-007" unit_id="802499"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_armory_locker/stn_prop_armory_locker" name_id="stn_prop_armory_locker_015" position="-8884 4271 0.499927" rotation="0 0 1 -4.17233e-007" unit_id="802500"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_armory_locker/stn_prop_armory_locker" name_id="stn_prop_armory_locker_016" position="-8786 4271 0.499927" rotation="0 0 1 -4.17233e-007" unit_id="802501"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_armory_locker/stn_prop_armory_locker" name_id="stn_prop_armory_locker_017" position="-9815 4271 0.499927" rotation="0 0 1 -4.17233e-007" unit_id="802502"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_armory_locker/stn_prop_armory_locker" name_id="stn_prop_armory_locker_018" position="-9717 4271 0.499927" rotation="0 0 1 -4.17233e-007" unit_id="802503"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_armory_locker/stn_prop_armory_locker" name_id="stn_prop_armory_locker_019" position="-9619 4271 0.499927" rotation="0 0 1 -4.17233e-007" unit_id="802504"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/stn_prop_armory_locker/stn_prop_armory_locker" name_id="stn_prop_armory_locker_020" position="-9521 4271 0.499927" rotation="0 0 1 -4.17233e-007" unit_id="802505"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_signs/chca_prop_sign_suites" name_id="chca_prop_sign_suites_003" position="-7700 5275 247.606" rotation="0 0 1 -1.19209e-007" unit_id="802598"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_signs/chca_prop_sign_suites" name_id="chca_prop_sign_suites_004" position="-10901 5275 247.606" rotation="0 0 1 -1.19209e-007" unit_id="802599"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_signs/chca_prop_sign_casino" name_id="chca_prop_sign_casino_001" position="-8400 4525 247.324" rotation="0 0 -2.68221e-007 -1" unit_id="802670"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_signs/chca_prop_sign_lifeboats" name_id="chca_prop_sign_lifeboats_001" position="-7425 4998 247.501" rotation="0 0 -0.707107 -0.707107" unit_id="802672"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_signs/chca_prop_sign_inner_courtyard" name_id="chca_prop_sign_inner_courtyard_003" position="-8831 5275 126.235" rotation="0 0 1 -1.19209e-007" unit_id="802674"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_signs/chca_prop_sign_casino" name_id="chca_prop_sign_casino_002" position="-10199 4525 247.324" rotation="0 0 -2.68221e-007 -1" unit_id="802671"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_signs/chca_prop_sign_lifeboats" name_id="chca_prop_sign_lifeboats_002" position="-11175 4997 246.804" rotation="0 0 0.707107 -0.707107" unit_id="802675"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_signs/chca_prop_sign_management" name_id="chca_prop_sign_management_001" position="-10140.5 3914.41 634.229" rotation="0 0 -0.866025 -0.5" unit_id="800181"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_signs/chca_prop_sign_management" name_id="chca_prop_sign_management_002" position="-8463.21 3907.99 634.229" rotation="0 0 0.866025 -0.5" unit_id="800190"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_spa_room_divider/chca_prop_spa_room_divider_v2" name_id="chca_prop_spa_room_divider_v2_003" position="-9894 5295 303.371" rotation="0 1 0 -1.19209e-007" unit_id="802268"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_champagne_crates/lxy_prop_champagne_crate_closed" name_id="lxy_prop_champagne_crate_closed_035" position="-9239.73 2175.31 100.596" rotation="0 0 0.991445 0.130525" unit_id="801342"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_013" position="-9296 5317 1081.99" rotation="0 0 0 -1" unit_id="801623">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_014" position="-9049 5317 1081.99" rotation="0 0 0 -1" unit_id="801624">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_015" position="-9526 5317 1081.99" rotation="0 0 0 -1" unit_id="801625">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_089" position="-7028 5339 298.5" rotation="-0.707106 0.707107 3.09086e-008 -3.09086e-008" unit_id="801630"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_022" position="-11165 1547 517.694" rotation="-0.707107 0.707107 6.11958e-007 -7.15167e-007" unit_id="800063"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_023" position="-11165 1647 517.694" rotation="-0.707107 0.707107 6.11958e-007 -7.15167e-007" unit_id="800064"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_024" position="-11165 1747 517.694" rotation="-0.707107 0.707107 6.11958e-007 -7.15167e-007" unit_id="800067"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_025" position="-11165 1847 517.694" rotation="-0.707107 0.707107 6.11958e-007 -7.15167e-007" unit_id="800068"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_026" position="-11165 1947 517.694" rotation="-0.707107 0.707107 6.11958e-007 -7.15167e-007" unit_id="800069"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_027" position="-11165 2047 517.694" rotation="-0.707107 0.707107 6.11957e-007 -7.15167e-007" unit_id="800070"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_chinese_floor_trim/chca_prop_chinese_floor_trim" name_id="chca_prop_chinese_floor_trim_028" position="-11165 2147 517.695" rotation="-0.707107 0.707107 6.11958e-007 -7.15167e-007" unit_id="800071"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chill/props/chl_prop_dos_calveras/chl_prop_sicario_beer_crate" name_id="chl_prop_sicario_beer_crate_004" position="-9438.64 2114.6 144.066" rotation="0.00291298 0.00822599 0.923844 0.382669" unit_id="801345"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_fish/lxy_prop_cardboard_boxes/lxy_prop_cardboard_box_03" name_id="lxy_prop_cardboard_box_03_001" position="-9307.11 2175.03 100.513" rotation="0.00870528 0.000608733 0.99981 0.0174521" unit_id="800072"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_champagne_crates/lxy_prop_champagne_crate_closed" name_id="lxy_prop_champagne_crate_closed_036" position="-9175.34 2150.03 100.596" rotation="0 0 0.961262 0.275636" unit_id="800888"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="-9300 1920 100" _prev_rot="0 0 0.707107 -0.707107" _visibility_counter="0" continent="art_props_2" disable_shadows="true" local_pos="0 0 0" local_rot="0 0 0 1" name="units/pd2_dlc_chca/props/chca_prop_chinese_bar/chca_prop_chinese_bar_arranged" name_id="chca_prop_chinese_bar_arranged_002" position="-9300 1920 100" rotation="0 0 0.707107 -0.707107" unit_id="800894"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_flat/props/flt_prop_apartment_phonebook_open/flt_prop_apartment_phonebook_open" name_id="flt_prop_apartment_phonebook_open_002" position="-9329.9 4155.88 500.303" rotation="0 0 0.995396 0.0958456" unit_id="802145"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_dah/props/dah_prop_phone_desk/dah_prop_phone_desk" name_id="dah_prop_phone_desk_002" position="-9515.01 4152.64 500.303" rotation="0 0 0.325568 -0.945519" unit_id="802146"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/world/props/office/desk_accessories/desk_folderpile_02" name_id="desk_folderpile_02_007" position="-9329.74 4096.5 500.015" rotation="2.76007e-008 1.13893e-008 -0.866025 -0.500001" unit_id="801195"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/world/props/office/desk_accessories/desk_folderpile_03" name_id="desk_folderpile_03_010" position="-9288.45 4108.77 504.131" rotation="3.64511e-009 2.94368e-009 0.669131 -0.743144" unit_id="801302"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/world/props/office/desk_accessories/desk_folderpile_03" name_id="desk_folderpile_03_011" position="-9286.2 4108.82 500.131" rotation="2.47751e-009 -3.97669e-009 -0.819152 -0.573577" unit_id="801303"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/world/props/office/desk_accessories/desk_mat" name_id="desk_mat_005" position="-9245.71 4154.69 500.006" rotation="0 0 0.694658 -0.71934" unit_id="801700"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/world/props/diamond_heist/apartment/apartment_room/mousepad/mousepad" name_id="mousepad_005" position="-9460.02 4160.66 500.007" rotation="0 0 -0.130527 -0.991445" unit_id="801739"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_des/props/des_prop_mouse_01/des_mouse_01" name_id="des_mouse_01_007" position="-9453.77 4159.17 501.655" rotation="0 0 -0.798636 -0.601815" unit_id="802148"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_dah/props/dah_prop_keyboard/dah_prop_keyboard" name_id="dah_prop_keyboard_007" position="-9399.1 4157.6 501.015" rotation="0 0 0.992546 0.121869" unit_id="802149"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/world/props/apartment/clockradio_2/clockradio_2" name_id="clockradio_2_004" position="-9483.13 4121.91 499.132" rotation="0 0 0.968148 0.25038" unit_id="802150"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/world/props/office/computer/computer_monitor" name_id="computer_monitor_004" position="-9427.24 4126.94 500.015" rotation="0 0 0.996195 0.0871557" unit_id="802151"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/air_prop_terminal_coffecup/air_prop_terminal_coffecup" name_id="air_prop_terminal_coffecup_007" position="-9373.03 4130.33 500.013" rotation="0 0 0.891006 0.453991" unit_id="802152"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chas/props/chas_prop_codenotebook/chas_prop_codenotebook" name_id="chas_prop_codenotebook_005" position="-9324.43 4115.1 500.015" rotation="0 0 -0.469471 -0.882948" unit_id="802154"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/mullplan_branchbank_round_small" name_id="mullplan_branchbank_round_small_113" position="-11140 5239 0.999954" rotation="0 0 0 -1" unit_id="800671"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_038" position="-9060 4151 401" rotation="0 0 0 -1" unit_id="800710"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_039" position="-9060 4049 401" rotation="0 0 0 -1" unit_id="802195"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_040" position="-9540 4049 401" rotation="0 0 0 -1" unit_id="802196"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_041" position="-9540 4151 401" rotation="0 0 0 -1" unit_id="802197"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_028" position="-9300 3994 401" rotation="0 0 -0.707107 -0.707107" unit_id="802198"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_134" position="-9300 4189 401" rotation="0 0 0.707107 -0.707107" unit_id="802199"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_135" position="-9974 4486 402" rotation="0 0 -0.707107 -0.707107" unit_id="802200"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_136" position="-9574 4486 402" rotation="0 0 -0.707107 -0.707107" unit_id="802201"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_137" position="-8774 4486 402" rotation="0 0 -0.707107 -0.707107" unit_id="802202"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_138" position="-9174 4486 402" rotation="0 0 -0.707107 -0.707107" unit_id="802213"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_short" name_id="chl_int_mullplan_short_052" position="-8474 4487 402" rotation="0 0 -0.707107 -0.707107" unit_id="802228"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_dah/props/dah_prop_light_switch/dah_prop_light_switch" name_id="dah_prop_light_switch_037" position="-8426 4047 533.087" rotation="0 0 0.707107 -0.707107" unit_id="802389"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/com_prop_club_beer_keg/com_prop_club_beer_keg" name_id="com_prop_club_beer_keg_003" position="-9849 3905 0.000283867" rotation="0 0 -0.241922 -0.970296" unit_id="801022"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/com_prop_club_beer_keg/com_prop_club_beer_keg" name_id="com_prop_club_beer_keg_004" position="-9806.89 3900.82 0.000283867" rotation="0 0 -0.507538 -0.861629" unit_id="802390"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_light_wall_01/lxy_prop_light_wall_01" name_id="lxy_prop_light_wall_01_025" position="-9947 4500 569.973" rotation="0 0 -2.68221e-007 -1" unit_id="801185"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_fish/lxy_prop_ext_wicker_table_02/lxy_prop_ext_wicker_table_02" name_id="lxy_prop_ext_wicker_table_02_003" position="-11476.9 2765.26 0.23019" rotation="0 0 1 -8.9407e-008" unit_id="801151"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_club_bottles/com_prop_club_bottle_5" name_id="com_prop_club_bottle_5_002" position="-11592 1545 88.1909" rotation="0 0 -0.382683 -0.92388" unit_id="800175"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_club_bottles/com_prop_club_bottle_2" name_id="com_prop_club_bottle_2_002" position="-11611 1540 88.1909" rotation="0 0 0 -1" unit_id="800747"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_club_bottles/com_prop_club_bottle_2" name_id="com_prop_club_bottle_2_003" position="-11560 1540 88.1909" rotation="0 0 0 -1" unit_id="800748"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_club_bottles/com_prop_club_bottle_8" name_id="com_prop_club_bottle_8_043" position="-6998 1550 89.1909" rotation="0 0 -0.707107 -0.707107" unit_id="800378"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_club_bottles/com_prop_club_bottle_6" name_id="com_prop_club_bottle_6_019" position="-6984 1536 88.191" rotation="0 0 -0.707107 -0.707107" unit_id="800750"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/payday2/props/com_prop_club_bottles/com_prop_club_bottle_6" name_id="com_prop_club_bottle_6_020" position="-6996 1526 88.191" rotation="0 0 0.92388 0.382683" unit_id="800756"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chas/props/chas_prop_chinese_square_table/chas_prop_chinese_square_table" name_id="chas_prop_chinese_square_table_042" position="-10124 4447 400" rotation="0 0 0 -1" unit_id="801188"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chas/props/chas_prop_chinese_square_table/chas_prop_chinese_square_table" name_id="chas_prop_chinese_square_table_041" position="-8479 4436 400" rotation="0 0 0 -1" unit_id="801213"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_indiana/props/mus_prop_courtyard_planter/mus_prop_courtyard_planter" name_id="mus_prop_courtyard_planter_012" position="-8476 4438 477.097" rotation="0 0 0.446198 -0.894934" unit_id="801215"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_indiana/props/mus_prop_courtyard_planter/mus_prop_courtyard_planter" name_id="mus_prop_courtyard_planter_017" position="-10122.7 4447.27 477.097" rotation="0 0 0.0697568 -0.997564" unit_id="801298"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_short" name_id="chl_int_mullplan_short_053" position="-11704 5253 1" rotation="0 0 -0.707107 -0.707107" unit_id="800780"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chca/props/chca_prop_casino_balconies_trim/chca_prop_casino_balconies_trim" name_id="chca_prop_casino_balconies_trim_001" position="0 0 0" rotation="0 0 0 -1" unit_id="801729"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_spa_grass_plant/chca_prop_spa_grass_plant_01" name_id="chca_prop_spa_grass_plant_01_017" position="-11292 5255 22.5" rotation="0 0 0.382684 -0.923879" unit_id="801732"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_spa_grass_plant/chca_prop_plantpot_c" name_id="chca_prop_plantpot_c_007" position="-11292.6 5255.3 -0.499969" rotation="0 0 -0.707107 -0.707107" unit_id="801733"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_spa_grass_plant/chca_prop_spa_grass_plant_01" name_id="chca_prop_spa_grass_plant_01_018" position="-11716 5255 22.5" rotation="0 0 0.382684 -0.923879" unit_id="800851"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_spa_grass_plant/chca_prop_plantpot_c" name_id="chca_prop_plantpot_c_008" position="-11716.6 5255.3 -0.499969" rotation="0 0 -0.707107 -0.707107" unit_id="800966"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_spa_grass_plant/chca_prop_plantpot_c" name_id="chca_prop_plantpot_c_009" position="-11292.6 1315.3 -0.499969" rotation="0 0 -0.707107 -0.707107" unit_id="800967"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_spa_grass_plant/chca_prop_spa_grass_plant_01" name_id="chca_prop_spa_grass_plant_01_019" position="-11292 1315 22.5" rotation="0 0 0.382684 -0.923879" unit_id="801734"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_spa_grass_plant/chca_prop_plantpot_c" name_id="chca_prop_plantpot_c_010" position="-11716.6 1315.3 -0.499969" rotation="0 0 -0.707107 -0.707107" unit_id="801735"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_spa_grass_plant/chca_prop_spa_grass_plant_01" name_id="chca_prop_spa_grass_plant_01_020" position="-11716 1315 22.5" rotation="0 0 0.382684 -0.923879" unit_id="801736"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_spa_grass_plant/chca_prop_plantpot_c" name_id="chca_prop_plantpot_c_011" position="-6876.61 1315.3 -0.499969" rotation="0 0 -0.707107 -0.707107" unit_id="801737"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_spa_grass_plant/chca_prop_spa_grass_plant_01" name_id="chca_prop_spa_grass_plant_01_021" position="-6876 1315 22.5" rotation="0 0 0.382684 -0.923879" unit_id="801738"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_spa_grass_plant/chca_prop_plantpot_c" name_id="chca_prop_plantpot_c_012" position="-7300.61 1315.3 -0.499969" rotation="0 0 -0.707107 -0.707107" unit_id="801740"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" disable_shadows="true" name="units/pd2_dlc_chca/props/chca_prop_spa_grass_plant/chca_prop_spa_grass_plant_01" name_id="chca_prop_spa_grass_plant_01_022" position="-7300 1315 22.5" rotation="0 0 0.382684 -0.923879" unit_id="801741"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chca/props/chca_prop_large_ceiling_lamp/chca_prop_extra_large_ceiling_lamp" name_id="chca_prop_extra_large_ceiling_lamp_001" position="-10903 2714 533.999" rotation="0 0 0 -1" unit_id="800150"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chca/props/chca_prop_large_ceiling_lamp/chca_prop_extra_large_ceiling_lamp" name_id="chca_prop_extra_large_ceiling_lamp_002" position="-10894 1797 533.999" rotation="0 0 0 -1" unit_id="800151"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chca/props/chca_prop_large_ceiling_lamp/chca_prop_extra_large_ceiling_lamp" name_id="chca_prop_extra_large_ceiling_lamp_003" position="-7703 1806 533.999" rotation="0 0 0 -1" unit_id="800853"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chca/props/chca_prop_large_ceiling_lamp/chca_prop_extra_large_ceiling_lamp" name_id="chca_prop_extra_large_ceiling_lamp_004" position="-7702 2714 533.999" rotation="0 0 0 -1" unit_id="800897"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chca/architecture/int/chca_int_open_spa/chca_prop_spa_ceiling_lamp" name_id="chca_prop_spa_ceiling_lamp_016" position="-9674 4025 300" rotation="0 0 0 -1" unit_id="801140">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="4" far_range="100" multiplier="@ID18ceffa252d5a43d@" name="li_small" near_range="0" spot_angle_end="0" spot_angle_start="0"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_174" position="-11225 4662 1.27778" rotation="0 0 0 -1" unit_id="802425"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_175" position="-11225 5062 1.27778" rotation="0 0 0 -1" unit_id="802426"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_176" position="-11225 4262 1.27778" rotation="0 0 0 -1" unit_id="802427"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_177" position="-11225 3862 1.27778" rotation="0 0 0 -1" unit_id="802428"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_178" position="-11225 2662 1.27778" rotation="0 0 0 -1" unit_id="802429"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_179" position="-11225 2262 1.27778" rotation="0 0 0 -1" unit_id="802430"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_180" position="-11225 3062 1.27778" rotation="0 0 0 -1" unit_id="802431"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_181" position="-11225 3462 1.27778" rotation="0 0 0 -1" unit_id="802432"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_182" position="-11225 1462 1.27778" rotation="0 0 0 -1" unit_id="802433"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_184" position="-11417 1323 0.277777" rotation="0 0 0.707107 -0.707107" unit_id="802435"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_short" name_id="chl_int_mullplan_short_061" position="-11717 1323 0.277777" rotation="0 0 0.707107 -0.707107" unit_id="802436"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_short" name_id="chl_int_mullplan_short_062" position="-7282 1323 0.277777" rotation="0 0 0.707107 -0.707107" unit_id="802437"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_185" position="-6982 1323 0.277777" rotation="0 0 0.707107 -0.707107" unit_id="802442"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_183" position="-11225 1862 1.27778" rotation="0 0 0 -1" unit_id="802434"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_short" name_id="chl_int_mullplan_short_063" position="-11178 1802 1.00017" rotation="0 0 1 -1.19209e-007" unit_id="802443"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_short" name_id="chl_int_mullplan_short_064" position="-7421 1802 1.00017" rotation="0 0 -2.68221e-007 -1" unit_id="802444"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_short" name_id="chl_int_mullplan_short_065" position="-11178 5000 1.00017" rotation="0 0 1 -1.19209e-007" unit_id="802446"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_186" position="-7374 1503 1.27778" rotation="0 0 1 -1.19209e-007" unit_id="802482"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_187" position="-7374 1903 1.27778" rotation="0 0 1 -1.19209e-007" unit_id="802483"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_188" position="-7374 2303 1.27778" rotation="0 0 1 -1.19209e-007" unit_id="802484"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_189" position="-7374 2703 1.27778" rotation="0 0 1 -1.19209e-007" unit_id="802485"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_190" position="-7374 3103 1.27778" rotation="0 0 1 -1.19209e-007" unit_id="802506"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_191" position="-7374 3503 1.27778" rotation="0 0 1 -1.19209e-007" unit_id="802507"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_192" position="-7374 3903 1.27778" rotation="0 0 1 -1.19209e-007" unit_id="802515"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_193" position="-7374 4303 1.27778" rotation="0 0 1 -1.19209e-007" unit_id="802516"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_194" position="-7374 4703 1.27778" rotation="0 0 1 -1.19209e-007" unit_id="802517"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_long" name_id="chl_int_mullplan_long_195" position="-7374 5103 1.27778" rotation="0 0 1 -1.19209e-007" unit_id="802518"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_short" name_id="chl_int_mullplan_short_066" position="-7421 5000 1.00017" rotation="0 0 -2.68221e-007 -1" unit_id="802573"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_165" position="-11505 1571 0.277777" rotation="0 0 0 -1" unit_id="802596"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_166" position="-11505 1519 0.277777" rotation="0 0 0 -1" unit_id="802597"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_094" position="-11373 1542 0.277777" rotation="0 0 0 -1" unit_id="802600"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_095" position="-11621 1542 0.277777" rotation="0 0 0 -1" unit_id="802601"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_096" position="-7214 1542 0.277777" rotation="0 0 0 -1" unit_id="802602"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_167" position="-7098 1571 0.277777" rotation="0 0 0 -1" unit_id="802614"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_097" position="-6966 1542 0.277777" rotation="0 0 0 -1" unit_id="802615"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_168" position="-7098 1519 0.277777" rotation="0 0 0 -1" unit_id="802618"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_169" position="-7118.99 2299.65 0.277777" rotation="0 0 0.430511 -0.902585" unit_id="802619"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_170" position="-7120.88 2622.91 0.277777" rotation="0 0 0.909961 -0.414693" unit_id="802665"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_171" position="-7109.24 2947.06 0.277777" rotation="0 0 0.430511 -0.902585" unit_id="802680"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_098" position="-7107 4526 2.27778" rotation="0 0 0 -1" unit_id="802681"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_099" position="-7113.01 3970.97 2.27778" rotation="0 0 -0.317305 -0.948324" unit_id="802682"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_100" position="-7060.87 3117.49 2.27778" rotation="0 0 -0.317305 -0.948324" unit_id="802683"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_172" position="-7282 1310 0.277777" rotation="0 0 0 -1" unit_id="802684"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_173" position="-6909 1310 0.277777" rotation="0 0 0 -1" unit_id="802685"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_174" position="-11302 1310 0.277777" rotation="0 0 0 -1" unit_id="802686"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_175" position="-11675 1310 0.277777" rotation="0 0 0 -1" unit_id="802687"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_101" position="-11482 2765 1.27778" rotation="0 0 0 -1" unit_id="802688"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_102" position="-11424 3894 1.27778" rotation="0 0 0 -1" unit_id="802689"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_103" position="-11617 4033 1.27778" rotation="0 0 0 -1" unit_id="802690"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_104" position="-11447 4378 1.27778" rotation="0 0 0 -1" unit_id="802691"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_178" position="-11680 5264 0.277777" rotation="0 0 0 -1" unit_id="802694"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_179" position="-11297 5264 0.277777" rotation="0 0 0 -1" unit_id="802695"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_180" position="-8748.6 4710.21 1.49981" rotation="0 0 0.700909 -0.713251" unit_id="802696"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_181" position="-8744.6 4481.24 1.49981" rotation="0 0 0.700909 -0.713251" unit_id="802697"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_182" position="-9016.25 4286.47 1.49981" rotation="0 0 -0.00872678 -0.999962" unit_id="802698"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_183" position="-8845.27 4289.46 1.49981" rotation="0 0 -0.00872678 -0.999962" unit_id="802699"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_184" position="-9744.13 4273.77 1.49981" rotation="0 0 -0.00872678 -0.999962" unit_id="802700"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_185" position="-9573.16 4276.75 1.49981" rotation="0 0 -0.00872678 -0.999962" unit_id="802701"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_186" position="-9848.43 4461.97 1.49981" rotation="0 0 0.700909 -0.713251" unit_id="802702"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_187" position="-9852.43 4690.94 1.49981" rotation="0 0 0.700909 -0.713251" unit_id="802703"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_105" position="-9537 3936 1.00026" rotation="0 0 0 -1" unit_id="802704"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_106" position="-9537 3979 1.00026" rotation="0 0 0 -1" unit_id="802705"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_107" position="-9519 4168 1.00026" rotation="0 0 0 -1" unit_id="802706"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/mullplan_branchbank_round_small" name_id="mullplan_branchbank_round_small_154" position="-9807 3904 0.000277996" rotation="0 0 0 -1" unit_id="802707"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/mullplan_branchbank_round_small" name_id="mullplan_branchbank_round_small_155" position="-9849 3907 0.000277996" rotation="0 0 -0.707107 -0.707107" unit_id="802708"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/mullplan_branchbank_round_small" name_id="mullplan_branchbank_round_small_156" position="-9823 4152 0.000277996" rotation="0 0 0 -1" unit_id="802709"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/mullplan_branchbank_round_small" name_id="mullplan_branchbank_round_small_157" position="-9689 4172 0.000278473" rotation="0 0 0 -1" unit_id="802710"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_188" position="-9890 4063 1.00024" rotation="0 0 -0.707107 -0.707107" unit_id="802711"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_189" position="-10209 4513 1.00024" rotation="0 0 1 -1.19209e-007" unit_id="802712"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_190" position="-8411 4513 1.00024" rotation="0 0 1 -1.19209e-007" unit_id="802713"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_115" position="-10074 417 201" rotation="0 0 0 -1" unit_id="801509"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_116" position="-10376 417 201" rotation="0 0 0 -1" unit_id="802727"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_202" position="-9781.91 2473.24 100" rotation="0 0 0.92388 0.382683" unit_id="802732"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_round" name_id="chl_int_mullplan_round_075" position="-9882 2538 101" rotation="0 0 0 -1" unit_id="802733"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_round" name_id="chl_int_mullplan_round_076" position="-9720 2375 101" rotation="0 0 0 -1" unit_id="802734"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_round" name_id="chl_int_mullplan_round_077" position="-9664 2423 101" rotation="0 0 0 -1" unit_id="802735"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_round" name_id="chl_int_mullplan_round_078" position="-9833 2593 101" rotation="0 0 0 -1" unit_id="802736"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_round" name_id="chl_int_mullplan_round_079" position="-10050 1615 101" rotation="0 0 0 -1" unit_id="802728"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_round" name_id="chl_int_mullplan_round_080" position="-9981 1608 101" rotation="0 0 0 -1" unit_id="802729"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_round" name_id="chl_int_mullplan_round_081" position="-9979 1948 101" rotation="0 0 0 -1" unit_id="802730"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_round" name_id="chl_int_mullplan_round_082" position="-10043 1943 101" rotation="0 0 0 -1" unit_id="802731"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_203" position="-8854.9 2493.75 100" rotation="0 0 0.923879 -0.382684" unit_id="802737"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_round" name_id="chl_int_mullplan_round_083" position="-8789 2606 101" rotation="0 0 0 -1" unit_id="802738"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_round" name_id="chl_int_mullplan_round_084" position="-8962 2438 101" rotation="0 0 0 -1" unit_id="802739"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_round" name_id="chl_int_mullplan_round_085" position="-8905 2390 101" rotation="0 0 0 -1" unit_id="802740"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_round" name_id="chl_int_mullplan_round_086" position="-8736 2549 101" rotation="0 0 0 -1" unit_id="802741"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_round" name_id="chl_int_mullplan_round_087" position="-8506 1961 101" rotation="0 0 0 -1" unit_id="802742"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_round" name_id="chl_int_mullplan_round_088" position="-8574 1963 101" rotation="0 0 0 -1" unit_id="802743"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_round" name_id="chl_int_mullplan_round_089" position="-8574 1638 101" rotation="0 0 0 -1" unit_id="802744"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_round" name_id="chl_int_mullplan_round_090" position="-8501 1635 101" rotation="0 0 0 -1" unit_id="802745"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_round" name_id="chl_int_mullplan_round_091" position="-9179 1422 101" rotation="0 0 0 -1" unit_id="802746"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_round" name_id="chl_int_mullplan_round_092" position="-9187 1335 101" rotation="0 0 0 -1" unit_id="802747"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_round" name_id="chl_int_mullplan_round_093" position="-9419 1412 101" rotation="0 0 0 -1" unit_id="802748"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/pd2_dlc_chill/architecture/chl_int_mullplan/chl_int_mullplan_round" name_id="chl_int_mullplan_round_094" position="-9424 1339 101" rotation="0 0 0 -1" unit_id="802749"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_204" position="-9281.2 1382.46 100" rotation="0 0 -2.68221e-007 -1" unit_id="802750"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_205" position="-10254 -463.316 516" rotation="-6.32203e-008 0.707107 0.707107 -6.32203e-008" unit_id="802751"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_206" position="-10434 -463.316 516" rotation="-6.32203e-008 0.707107 0.707107 -6.32203e-008" unit_id="802752"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_207" position="-10809 -463.316 516" rotation="-6.32203e-008 0.707107 0.707107 -6.32203e-008" unit_id="802753"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_208" position="-10629 -463.316 516" rotation="-6.32203e-008 0.707107 0.707107 -6.32203e-008" unit_id="802754"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_209" position="-11205 -463.316 516" rotation="-6.32203e-008 0.707107 0.707107 -6.32203e-008" unit_id="802755"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_210" position="-11025 -463.316 516" rotation="-6.32203e-008 0.707107 0.707107 -6.32203e-008" unit_id="802756"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_211" position="-8320.97 -463.315 516" rotation="-6.32203e-008 0.707107 0.707107 -6.32203e-008" unit_id="802757"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_212" position="-8140.97 -463.315 516" rotation="-6.32203e-008 0.707107 0.707107 -6.32203e-008" unit_id="802758"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_213" position="-7924.97 -463.315 516" rotation="-6.32203e-008 0.707107 0.707107 -6.32203e-008" unit_id="802759"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_214" position="-7744.97 -463.315 516" rotation="-6.32203e-008 0.707107 0.707107 -6.32203e-008" unit_id="802760"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_215" position="-7549.97 -463.315 516" rotation="-6.32203e-008 0.707107 0.707107 -6.32203e-008" unit_id="802761"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_216" position="-7369.97 -463.315 516" rotation="-6.32203e-008 0.707107 0.707107 -6.32203e-008" unit_id="802762"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_117" position="-8612 417 201" rotation="0 0 0 -1" unit_id="802763"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_118" position="-8310 417 201" rotation="0 0 0 -1" unit_id="802764"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_119" position="-8372 -71 202" rotation="0 0 0 -1" unit_id="802765"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_120" position="-8406 -124 202" rotation="0 0 0 -1" unit_id="802766"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_121" position="-8428 -102 202" rotation="0 0 0 -1" unit_id="802767"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_122" position="-8344 -34 202" rotation="0 0 0 -1" unit_id="802768"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_123" position="-8317 -107 202" rotation="0 0 0 -1" unit_id="802769"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_124" position="-8357 -194 202" rotation="0 0 0 -1" unit_id="802770"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_125" position="-8409 -235 202" rotation="0 0 0 -1" unit_id="802771"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_126" position="-8494 -203 202" rotation="0 0 0 -1" unit_id="802772"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_127" position="-8510 -103 202" rotation="0 0 0 -1" unit_id="802773"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_128" position="-8477 -46 202" rotation="0 0 0 -1" unit_id="802774"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_129" position="-8401 6 202" rotation="0 0 0 -1" unit_id="802775"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_130" position="-10290 -84 202" rotation="0 0 0 -1" unit_id="802776"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_131" position="-10292 -116 202" rotation="0 0 0 -1" unit_id="802777"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_132" position="-10330 -114 202" rotation="0 0 0 -1" unit_id="802778"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_133" position="-10316 -7 202" rotation="0 0 0 -1" unit_id="802779"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_134" position="-10390 -23 202" rotation="0 0 0 -1" unit_id="802780"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_135" position="-10397 -94 202" rotation="0 0 0 -1" unit_id="802781"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_136" position="-10370 -153 202" rotation="0 0 0 -1" unit_id="802782"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_137" position="-10317 -208 202" rotation="0 0 0 -1" unit_id="802783"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_138" position="-10225 -181 202" rotation="0 0 0 -1" unit_id="802784"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_139" position="-10198 -105 202" rotation="0 0 0 -1" unit_id="802785"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_140" position="-10238 -42 202" rotation="0 0 0 -1" unit_id="802786"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_141" position="-10863 294 202" rotation="0 0 0 -1" unit_id="802787"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_142" position="-10942 294 202" rotation="0 0 0 -1" unit_id="802788"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_143" position="-10908 294 202" rotation="0 0 0 -1" unit_id="802789"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_144" position="-10908 204 202" rotation="0 0 0 -1" unit_id="802790"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_145" position="-10863 204 202" rotation="0 0 0 -1" unit_id="802791"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_146" position="-10942 204 202" rotation="0 0 0 -1" unit_id="802792"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_147" position="-10908 137 202" rotation="0 0 0 -1" unit_id="802793"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_148" position="-10863 137 202" rotation="0 0 0 -1" unit_id="802794"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_149" position="-10942 137 202" rotation="0 0 0 -1" unit_id="802795"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_150" position="-7660 290 202" rotation="0 0 0 -1" unit_id="802796"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_151" position="-7705 290 202" rotation="0 0 0 -1" unit_id="802797"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_152" position="-7739 290 202" rotation="0 0 0 -1" unit_id="802798"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_153" position="-7660 208 202" rotation="0 0 0 -1" unit_id="802799"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_154" position="-7705 208 202" rotation="0 0 0 -1" unit_id="802800"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_155" position="-7739 208 202" rotation="0 0 0 -1" unit_id="802801"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_156" position="-7660 144 202" rotation="0 0 0 -1" unit_id="802802"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_157" position="-7705 144 202" rotation="0 0 0 -1" unit_id="802803"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_158" position="-7739 144 202" rotation="0 0 0 -1" unit_id="802804"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_159" position="-7660 206 202" rotation="0 0 0 -1" unit_id="802805"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_160" position="-7705 206 202" rotation="0 0 0 -1" unit_id="802806"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_02" name_id="nmh_mullplan_small_light_02_161" position="-7739 206 202" rotation="0 0 0 -1" unit_id="802807"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_217" position="-7423.97 -360.315 516" rotation="-0.5 0.5 0.5 -0.5" unit_id="802808"/>
+		</table>
+		<table>
+			<unit_data continent="art_props_2" name="units/payday2/props/shadow_mullplan/nmh_mullplan_small_light_01" name_id="nmh_mullplan_small_light_01_218" position="-11174 -351.316 516" rotation="-0.5 -0.5 -0.5 -0.5" unit_id="802809"/>
+		</table>
+	</statics>
+	<values>
+		<workviews/>
+	</values>
+</table>

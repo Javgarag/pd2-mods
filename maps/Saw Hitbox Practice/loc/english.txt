@@ -1,0 +1,7 @@
+{
+	"contact_rushing_name" : "Rushing Practice",
+	"contact_rushing_desc" : "Maps for rushing practice.",
+	"heist_sapr_name" : "Saw Hitbox Practice",
+	"heist_sapr_brief" : "I saw you sawing a saw the other day with a saw. it's safe to say that what I saw was sawmazing!",
+	"sapr" : "Saw Hitbox Practice"
+}

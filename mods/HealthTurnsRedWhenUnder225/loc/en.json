@@ -1,0 +1,13 @@
+{
+	"redhealth_title" : "Red Health"
+	"redhealth_desc" : "Change the values for this mod"
+	
+	"rh_customhud_fix_title" : "CustomHud Version"
+	"rh_customhud_fix_desc" : "Enable this only if you're using CustomHud."
+
+	"rh_mui_fix_title" : "MUI Version"
+	"rh_mui_fix_desc" : "Enable this only if you're using MUI."
+
+	"rh_health_value_title" : "Health Threshold"
+	"rh_health_value_desc" : "Health will turn red when lower than this"
+}

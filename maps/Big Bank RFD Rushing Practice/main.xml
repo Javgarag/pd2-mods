@@ -1,0 +1,143 @@
+<table min_lib_ver="4.5" name="rushing_rfd_practice">
+	<Localization default="english.txt" directory="loc">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<Hooks directory="Hooks">
+		<hook file="guitweakdata.lua" source_file="lib/tweak_data/guitweakdata"/>
+	</Hooks>
+	<contact assets_gui="guis/mission_briefing/preload_contact_bain" desc_id="contact_rushing_desc" id="rushing_practice" name_id="contact_rushing_name" package="packages/contact_bain"/>
+	<level ai_group_type="america" briefing_dialog="Play_pln_bb1_brf_01" cube="cube_apply_heist_bank" id="rushing_rfd_practice" intro_event="Play_pln_bb1_intro_01" max_bags="28" music="big_bank" player_style="generic" team_ai_off="true">
+		<assets/>
+		<outro_event>
+			<value_node value="Play_pln_bb1_end_01"/>
+			<value_node value="Play_pln_bb1_end_02"/>
+			<value_node value="Play_pln_bb1_end_03"/>
+			<value_node value="Play_pln_bb1_end_04"/>
+		</outro_event>
+		<packages>
+			<value_node value="packages/narr_big"/>
+			<value_node value="levels/narratives/bain/big/world"/>
+			<value_node value="levels/narratives/bain/big/world_sounds"/>
+			<value_node value="levels/narratives/bain/big/day/day"/>
+			<value_node value="levels/narratives/bain/big/night/night"/>
+			<value_node value="levels/narratives/bain/big/props/props"/>
+			<value_node value="levels/narratives/bain/big/world/world"/>
+			<value_node value="levels/narratives/bain/big/editor_only/editor_only"/>
+		</packages>
+		<preplanning mission_briefing_texture="guis/textures/pd2/pre_planning/mission_briefing_big" total_budget="10">
+			<table map_size="1" map_x="-1.1" map_y="0.5" name_id="menu_pp_big_loc_a" rotation="90" texture="guis/dlcs/big_bank/textures/pd2/pre_planning/big_lobby" x1="-250" x2="5750" y1="-3000" y2="3000">
+				<custom_points>
+					<table icon="45" post_event="pln_pp_bb1_a" rotation="-90" text_id="menu_pp_info_frontdoor" to_upper="true" x="1500" y="1025"/>
+					<table icon="45" post_event="pln_pp_bb1_c" rotation="-90" text_id="menu_pp_info_backoffices" to_upper="true" x="800" y="480"/>
+					<table icon="45" post_event="pln_pp_bb1_l" rotation="-90" text_id="menu_pp_info_garage" to_upper="true" x="1300" y="1690"/>
+					<table icon="45" post_event="pln_pp_bb1_n" rotation="-90" text_id="menu_pp_info_mainhall" to_upper="true" x="1000" y="1025"/>
+					<table icon="45" post_event="pln_pp_bb1_o" rotation="-90" text_id="menu_pp_info_entrypoint" to_upper="true" x="1950" y="350"/>
+					<table icon="45" post_event="pln_pp_bb1_d" rotation="-90" text_id="menu_pp_info_timelock" to_upper="true" x="90" y="1024"/>
+					<table icon="45" post_event="pln_pp_bb1_i" rotation="-90" text_id="menu_pp_info_securityroom" to_upper="true" x="348" y="590"/>
+					<table icon="45" post_event="pln_pp_bb1_i" rotation="-90" text_id="menu_pp_info_securityroom" to_upper="true" x="574" y="1742"/>
+				</custom_points>
+			</table>
+			<table map_size="1" map_x="0" map_y="0.5" name_id="menu_pp_big_loc_b" rotation="90" texture="guis/dlcs/big_bank/textures/pd2/pre_planning/big_level_2" x1="-250" x2="5750" y1="-3000" y2="3000">
+				<custom_points>
+					<table icon="45" post_event="pln_pp_bb1_k" rotation="-90" text_id="menu_pp_info_mgroffices" to_upper="true" x="190" y="1700"/>
+					<table icon="45" post_event="pln_pp_bb1_c" rotation="-90" text_id="menu_pp_info_backoffices" to_upper="true" x="800" y="480"/>
+					<table icon="45" post_event="pln_pp_bb1_d" rotation="-90" text_id="menu_pp_info_timelock" to_upper="true" x="90" y="1024"/>
+					<table icon="45" post_event="pln_pp_bb1_b" rotation="-90" text_id="menu_pp_info_ladder" to_upper="true" x="870" y="1625"/>
+					<table icon="45" post_event="pln_pp_bb1_i" rotation="-90" text_id="menu_pp_info_securityroom" to_upper="true" x="164" y="1437"/>
+				</custom_points>
+			</table>
+			<table map_size="1" map_x="1.1" map_y="0.5" name_id="menu_pp_big_loc_c" rotation="90" texture="guis/dlcs/big_bank/textures/pd2/pre_planning/big_roof" x1="-250" x2="5750" y1="-3000" y2="3000">
+				<custom_points>
+					<table icon="45" post_event="pln_pp_bb1_b" rotation="-90" text_id="menu_pp_info_ladder" to_upper="true" x="869" y="1629"/>
+					<table icon="45" post_event="pln_pp_bb1_m" rotation="-90" text_id="menu_pp_info_zipline" to_upper="true" x="1356" y="1164"/>
+					<table icon="45" post_event="pln_pp_bb1_h" rotation="-90" text_id="menu_pp_info_roof" to_upper="true" x="782" y="1458"/>
+				</custom_points>
+			</table>
+			<table map_size="1" map_x="-0" map_y="-0.6" name_id="menu_pp_big_loc_d" rotation="90" texture="guis/dlcs/big_bank/textures/pd2/pre_planning/big_level_vault_2" x1="-5771" x2="229" y1="-3000" y2="3000">
+				<custom_points>
+					<table icon="45" post_event="pln_pp_bb1_g" rotation="-90" text_id="menu_pp_info_vaultsecurity1" to_upper="true" x="1152" y="1298"/>
+					<table icon="45" post_event="pln_pp_bb1_g" rotation="-90" text_id="menu_pp_info_vaultsecurity2" to_upper="true" x="1152" y="746"/>
+					<table icon="45" post_event="pln_pp_bb1_f" rotation="-90" text_id="menu_pp_info_vault" to_upper="true" x="465" y="1365"/>
+				</custom_points>
+			</table>
+			<table map_size="1" map_x="-1.1" map_y="-0.6" name_id="menu_pp_big_loc_e" rotation="90" texture="guis/dlcs/big_bank/textures/pd2/pre_planning/big_level_vault" x1="-5771" x2="229" y1="-3000" y2="3000">
+				<custom_points>
+					<table icon="45" post_event="pln_pp_bb1_e" rotation="-90" text_id="menu_pp_info_moneycounting" to_upper="true" x="1154" y="1015"/>
+					<table icon="45" post_event="pln_pp_bb1_f" rotation="-90" text_id="menu_pp_info_vault" to_upper="true" x="465" y="1365"/>
+				</custom_points>
+			</table>
+			<default_plans escape_plan="escape_helicopter_loud" vault_plan="vault_big_drill"/>
+			<start_location group="a" x="1500" y="1025" zoom="1.5"/>
+		</preplanning>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<narrative briefing_event="gus_bb1_cbf_01" contact="rushing_practice" dlc="big_bank" id="rushing_rfd_practice_narr" jc="60" load_screen="guis/dlcs/pic/textures/loading/job_bigbank" region="street">
+		<chain>
+			<table dlc="big_bank" level_id="rushing_rfd_practice" type="d" type_id="heist_type_assault" world_setting="day">
+				<mission_filter>
+					<value_node value="1"/>
+				</mission_filter>
+			</table>
+		</chain>
+		<contract_cost>
+			<value_node value="47000"/>
+			<value_node value="94000"/>
+			<value_node value="235000"/>
+			<value_node value="470000"/>
+			<value_node value="600000"/>
+			<value_node value="600000"/>
+			<value_node value="600000"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value="gus_bb1_cnc_01"/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="cn_big1"/>
+			<value_node value="cn_big2"/>
+			<value_node value="cn_big3"/>
+		</crimenet_videos>
+		<debrief_event>
+			<value_node value="gus_bb1_debrief_01"/>
+		</debrief_event>
+		<experience_mul>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="75000"/>
+			<value_node value="75000"/>
+			<value_node value="75000"/>
+			<value_node value="75000"/>
+			<value_node value="75000"/>
+			<value_node value="75000"/>
+			<value_node value="75000"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="34000"/>
+			<value_node value="34000"/>
+			<value_node value="34000"/>
+			<value_node value="34000"/>
+			<value_node value="34000"/>
+			<value_node value="34000"/>
+			<value_node value="34000"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="90000"/>
+			<value_node value="135000"/>
+			<value_node value="180000"/>
+			<value_node value="310000"/>
+			<value_node value="380000"/>
+			<value_node value="380000"/>
+			<value_node value="380000"/>
+		</payout>
+	</narrative>
+</table>

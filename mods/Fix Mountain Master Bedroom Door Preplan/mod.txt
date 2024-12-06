@@ -1,0 +1,15 @@
+{
+  "name": "Fix Mountain Master Bedroom Door Preplan",
+  "description": "omg hi",
+  "author": "Javgarag",
+  "contact": "Discord: Javgarag#0085",
+  "version": "1",
+  "priority": 900,
+  "blt_version": 2,
+  "hooks": [
+    {
+      "script_path": "Base.lua",
+      "hook_id": "core/lib/managers/mission/coremissionscriptelement"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+<table>
+	<unit>
+		<sequence editable_state="true" name="'state_reset'" triggable="true">
+			<function extension="'computer_gui'" function="'
+			'" param1="false"/>
+			<function extension="'computer_gui'" function="'reset'" start_time="0/30"/>
+			<interaction enabled="true"/>
+		</sequence>
+		<sequence editable_state="false" name="'starup_seq'" startup="true" triggable="false">
+			<function extension="'computer_gui'" function="'set_visible'" param1="false"/>
+		</sequence>
+		<sequence editable_state="false" name="'interact'" triggable="false">
+			<function extension="'computer_gui'" function="'start'" param1="'100'"/>
+			<function extension="'computer_gui'" function="'set_visible'" param1="true"/>
+			<object enabled="true" name="'g_off'"/>
+			<object enabled="false" name="'g_on_v1'"/>
+			<object enabled="false" name="'g_on_v2'"/>
+			<object enabled="false" name="'g_on_v3'"/>
+			<object enabled="false" name="'g_on_v4'"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_interaction_disabled'" triggable="true">
+			<interaction enabled="false"/>
+		</sequence>
+		<sequence editable_state="true" name="'state_interaction_enabled'" triggable="true">
+			<interaction enabled="true"/>
+		</sequence>
+		<sequence name="'power_off'" triggable="true">
+			<function extension="'computer_gui'" function="'set_powered'" param1="false"/>
+		</sequence>
+		<sequence name="'power_on'" triggable="true">
+			<function extension="'computer_gui'" function="'set_powered'" param1="true"/>
+		</sequence>
+		<sequence name="'state_device_jammed'" triggable="true">
+			<function extension="'computer_gui'" function="'set_jammed'" param1="true"/>
+		</sequence>
+		<sequence name="'state_device_resumed'" triggable="true">
+			<function extension="'computer_gui'" function="'set_jammed'" param1="false"/>
+		</sequence>
+		<sequence editable_state="true" name=" 'state_hide' " triggable="true">
+			<body enabled="false" name="'body0'"/>
+			<object enabled="false" name="'g_off' "/>
+			<object enabled="false" name="'g_on_v1'"/>
+			<object enabled="false" name="'g_on_v2'"/>
+			<object enabled="false" name="'g_on_v3'"/>
+			<object enabled="false" name="'g_on_v4'"/>
+			<object enabled="false" name=" 'g_computerscreen' "/>
+			<interaction enabled="false"/>
+		</sequence>
+		<sequence editable_state="true" name=" 'state_show' " triggable="true">
+			<body enabled="true" name="'body0'"/>
+			<object enabled="true" name=" 'g_off' "/>
+			<object enabled="true" name=" 'g_computerscreen' "/>
+		</sequence>
+		<sequence editable_state="true" name="'main_screen_off'" triggable="true">
+			<object enabled="true" name="'g_off'"/>
+			<object enabled="false" name="'g_on_v1'"/>
+			<object enabled="false" name="'g_on_v2'"/>
+			<object enabled="false" name="'g_on_v3'"/>
+			<object enabled="false" name="'g_on_v4'"/>
+		</sequence>
+	</unit>
+</table>

@@ -1,0 +1,7 @@
+{
+	"sta_title" : "Sound the Alarm"
+	"sta_desc" : "Change the options for this mod"
+	"sta_activate_title" : "Sound Alarm"
+	"sta_activate_desc" : "Activate alarm keybind"
+	
+}

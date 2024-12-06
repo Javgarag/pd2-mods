@@ -1,0 +1,23 @@
+{
+	"name" : "Fuck it, This is Nightclub Now",
+	"description" : "balling.",
+	"author" : "Javgarag",
+	"color" : "64 128 255",
+	"contact" : "Discord: Javgarag#0085",
+	"version" : "1.0.0",
+	"blt_version" : 2,
+	"hooks" : [
+		{
+			"hook_id" : "lib/setups/setup",
+			"script_path" : "main.lua"
+		},
+		{
+			"hook_id" : "lib/managers/gameplaycentralmanager",
+			"script_path" : "main.lua"
+		},
+		{
+			"hook_id" : "lib/managers/menumanager",
+			"script_path" : "menu/menumanager.lua"
+		}
+	]
+}

@@ -1,0 +1,36 @@
+<table>
+	<editor_groups/>
+	<instances/>
+	<statics>
+		<table>
+			<unit_data _prev_pos="-37.71 -73.26 -15.74" _prev_rot="0 0 0 -1" continent="world" instance_data="false" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="display_off" name="units/payday2/architecture/mkp/mkp_int_floor_4x4m_a" name_id="mkp_int_floor_4x4m_a_001" position="0 0 0" rotation="-0 0 -0 -1" unit_id="100000"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="200 300 0" _prev_rot="0 0 0 -1" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/props/com_prop_election_table/com_prop_election_table" name_id="com_prop_election_table_001" position="200 300 0" rotation="0 0 0 -1" unit_id="100001"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="25 475 75" _prev_rot="0 0 0 -1" continent="world" local_pos="-300 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/mkp/mkp_int_cube_1x1" name_id="mkp_int_cube_1x1_001" position="0 475 75" rotation="0 0 0 -1" unit_id="100002"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="175 475 75" _prev_rot="0 0 0 -1" continent="world" local_pos="-150 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/mkp/mkp_int_cube_1x1" name_id="mkp_int_cube_1x1_002" position="150 475 75" rotation="0 0 0 -1" unit_id="100005"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="325 475 75" _prev_rot="0 0 0 -1" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/mkp/mkp_int_cube_1x1" name_id="mkp_int_cube_1x1_003" position="300 475 75" rotation="0 0 0 -1" unit_id="100006"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="300 475 75" _prev_rot="0 0 0 -1" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/mkp/mkp_int_cube_1x1" name_id="mkp_int_cube_1x1_004" position="300 475 225" rotation="0 0 0 -1" unit_id="100007"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="150 475 75" _prev_rot="0 0 0 -1" continent="world" local_pos="-150 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/mkp/mkp_int_cube_1x1" name_id="mkp_int_cube_1x1_005" position="150 475 225" rotation="0 0 0 -1" unit_id="100008"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="0 475 75" _prev_rot="0 0 0 -1" continent="world" local_pos="-300 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/mkp/mkp_int_cube_1x1" name_id="mkp_int_cube_1x1_006" position="0 475 225" rotation="0 0 0 -1" unit_id="100009"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="200 313 75.15" _prev_rot="-3.09086e-008 0.707107 0.707107 -3.09086e-008" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="state_interaction_enabled" name="units/pd2_mod_custom/interactive_computer/interactive_computer" name_id="interactive_computer_001" position="200 298 75.15" rotation="-3.09086e-008 0.707107 0.707107 -3.09086e-008" unit_id="100004"/>
+		</table>
+	</statics>
+	<values>
+		<workviews/>
+	</values>
+</table>

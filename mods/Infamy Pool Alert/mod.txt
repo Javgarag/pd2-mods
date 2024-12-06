@@ -1,0 +1,24 @@
+{
+	"name" : "Infamy Pool Full Alert",
+	"description" : "Get an alert when your infamy pool is full, making you avoid wasting XP.",
+	"author" : "Javgarag",
+	"contact" : "Discord: Javgarag#0085",
+	"version" : "1.0.1",
+	"blt_version" : 2,
+	"priority" : -999, 
+	"color" : "156 50 209",
+	"hooks" : [
+		{
+			"hook_id" : "lib/managers/experiencemanager",
+			"script_path" : "poolcurrentvalue.lua"
+		},
+		{
+			"hook_id" : "lib/setups/gamesetup",
+			"script_path" : "poolcurrentvalue.lua"
+		},
+		{
+			"hook_id" : "lib/managers/menumanager",
+			"script_path" : "menu/menupoolalert.lua"
+		}
+	]
+}

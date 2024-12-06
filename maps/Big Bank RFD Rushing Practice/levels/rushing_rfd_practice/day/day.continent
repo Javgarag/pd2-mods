@@ -1,0 +1,1027 @@
+<table>
+	<editor_groups>
+		<table continent="day" name="big_bank_lights" reference="600001">
+			<units>
+				<value_node value="600001"/>
+				<value_node value="600002"/>
+				<value_node value="600003"/>
+				<value_node value="600004"/>
+				<value_node value="600005"/>
+				<value_node value="600006"/>
+				<value_node value="600007"/>
+				<value_node value="600008"/>
+				<value_node value="600009"/>
+				<value_node value="600010"/>
+				<value_node value="600011"/>
+				<value_node value="600012"/>
+				<value_node value="600013"/>
+				<value_node value="600014"/>
+				<value_node value="600015"/>
+				<value_node value="600016"/>
+				<value_node value="600017"/>
+				<value_node value="600018"/>
+				<value_node value="600019"/>
+				<value_node value="600020"/>
+				<value_node value="600021"/>
+				<value_node value="600022"/>
+				<value_node value="600023"/>
+				<value_node value="600024"/>
+				<value_node value="600025"/>
+				<value_node value="600026"/>
+				<value_node value="600027"/>
+				<value_node value="600028"/>
+				<value_node value="600029"/>
+				<value_node value="600030"/>
+				<value_node value="600031"/>
+				<value_node value="600032"/>
+				<value_node value="600033"/>
+				<value_node value="600034"/>
+				<value_node value="600035"/>
+				<value_node value="600036"/>
+				<value_node value="600037"/>
+				<value_node value="600038"/>
+				<value_node value="600039"/>
+				<value_node value="600040"/>
+				<value_node value="600041"/>
+				<value_node value="600042"/>
+				<value_node value="600043"/>
+				<value_node value="600044"/>
+				<value_node value="600045"/>
+				<value_node value="600046"/>
+				<value_node value="600047"/>
+				<value_node value="600048"/>
+				<value_node value="600049"/>
+				<value_node value="600050"/>
+				<value_node value="600051"/>
+				<value_node value="600052"/>
+				<value_node value="600053"/>
+				<value_node value="600054"/>
+				<value_node value="600055"/>
+				<value_node value="600056"/>
+				<value_node value="600057"/>
+				<value_node value="600058"/>
+				<value_node value="600059"/>
+				<value_node value="600060"/>
+				<value_node value="600061"/>
+				<value_node value="600062"/>
+				<value_node value="600063"/>
+				<value_node value="600064"/>
+				<value_node value="600065"/>
+				<value_node value="600066"/>
+				<value_node value="600067"/>
+				<value_node value="600068"/>
+				<value_node value="600069"/>
+				<value_node value="600070"/>
+				<value_node value="600071"/>
+				<value_node value="600072"/>
+				<value_node value="600073"/>
+				<value_node value="600074"/>
+				<value_node value="600075"/>
+				<value_node value="600076"/>
+				<value_node value="600077"/>
+				<value_node value="600078"/>
+				<value_node value="600079"/>
+				<value_node value="600080"/>
+				<value_node value="600081"/>
+				<value_node value="600082"/>
+				<value_node value="600083"/>
+				<value_node value="600084"/>
+				<value_node value="600085"/>
+				<value_node value="600086"/>
+				<value_node value="600087"/>
+				<value_node value="600088"/>
+				<value_node value="600089"/>
+				<value_node value="600090"/>
+				<value_node value="600091"/>
+				<value_node value="600092"/>
+				<value_node value="600093"/>
+				<value_node value="600094"/>
+				<value_node value="600095"/>
+				<value_node value="600096"/>
+				<value_node value="600097"/>
+				<value_node value="600098"/>
+				<value_node value="600099"/>
+				<value_node value="600100"/>
+				<value_node value="600101"/>
+				<value_node value="600102"/>
+				<value_node value="600103"/>
+				<value_node value="600104"/>
+				<value_node value="600105"/>
+				<value_node value="600106"/>
+				<value_node value="600107"/>
+				<value_node value="600108"/>
+				<value_node value="600109"/>
+				<value_node value="600110"/>
+				<value_node value="600111"/>
+				<value_node value="600112"/>
+				<value_node value="600113"/>
+				<value_node value="600114"/>
+				<value_node value="600115"/>
+				<value_node value="600116"/>
+				<value_node value="600117"/>
+				<value_node value="600118"/>
+				<value_node value="600119"/>
+				<value_node value="600120"/>
+				<value_node value="600121"/>
+				<value_node value="600122"/>
+				<value_node value="600123"/>
+				<value_node value="600124"/>
+				<value_node value="600125"/>
+			</units>
+		</table>
+	</editor_groups>
+	<statics>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_128" position="-870 -1199 -991.26" rotation="0 0 -5.96046e-008 -1" unit_id="600001">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.678431 0.294118 0.305882" enabled="true" falloff_exponent="1" far_range="500" multiplier="@ID18ceffa252d5a43d@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_129" position="4375 475 -125.01" rotation="0 0 -5.96046e-008 -1" unit_id="600002">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.933333 0.611765 0.290196" enabled="true" falloff_exponent="7" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_130" position="4400 315 -875" rotation="0 0 -5.96046e-008 -1" unit_id="600003">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.933333 0.611765 0.290196" enabled="true" falloff_exponent="7" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_131" position="4375 -475 -150.01" rotation="0 0 -5.96046e-008 -1" unit_id="600004">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.933333 0.611765 0.290196" enabled="true" falloff_exponent="7" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_132" position="3494 1200 -850" rotation="0 0 -5.96046e-008 -1" unit_id="600005">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.894118 0.607843 0.321569" enabled="true" falloff_exponent="7" far_range="650" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_133" position="2825 1925 -415.99" rotation="0 0 -0.707107 -0.707107" unit_id="600006">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.729412 0.607843 0.486275" enabled="true" falloff_exponent="7" far_range="450" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_134" position="4400 -321 -875" rotation="0 0 -5.96046e-008 -1" unit_id="600007">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.933333 0.611765 0.290196" enabled="true" falloff_exponent="7" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_135" position="2625 1600 -815.99" rotation="0 0 -0.707107 -0.707107" unit_id="600008">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.894118 0.607843 0.321569" enabled="true" falloff_exponent="7" far_range="450" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_136" position="2825 925 -840" rotation="0 0 -5.96046e-008 -1" unit_id="600009">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.933333 0.611765 0.290196" enabled="true" falloff_exponent="7" far_range="250" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_137" position="2025 1925 -415.99" rotation="0 0 -0.707107 -0.707107" unit_id="600010">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.729412 0.607843 0.486275" enabled="true" falloff_exponent="7" far_range="450" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_138" position="2425 925 -840" rotation="0 0 -5.96046e-008 -1" unit_id="600011">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.933333 0.611765 0.290196" enabled="true" falloff_exponent="7" far_range="250" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_139" position="2025 1600 -815.99" rotation="0 0 -0.707107 -0.707107" unit_id="600012">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.894118 0.607843 0.321569" enabled="true" falloff_exponent="7" far_range="450" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_140" position="2625 -0.000488281 -490" rotation="0 0 -5.96046e-008 -1" unit_id="600013">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.745098 0.686275 0.486275" enabled="true" falloff_exponent="1" far_range="1250" multiplier="@ID18ceffa252d5a43d@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_141" position="2025 925 -840" rotation="0 0 -5.96046e-008 -1" unit_id="600014">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.933333 0.611765 0.290196" enabled="true" falloff_exponent="7" far_range="250" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_142" position="1225 1925 -415.99" rotation="0 0 -0.707107 -0.707107" unit_id="600015">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.729412 0.607843 0.486275" enabled="true" falloff_exponent="7" far_range="450" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_143" position="-200 1400 -475" rotation="0 0 1 -1.58932e-008" unit_id="600016">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="1" far_range="200" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_144" position="1425 1600 -815.99" rotation="0 0 -0.707107 -0.707107" unit_id="600017">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.894118 0.607843 0.321569" enabled="true" falloff_exponent="7" far_range="450" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_145" position="1625 925 -840" rotation="0 0 -5.96046e-008 -1" unit_id="600018">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.933333 0.611765 0.290196" enabled="true" falloff_exponent="7" far_range="250" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_146" position="2800 -1032 -826" rotation="0 0 -0.707107 -0.707107" unit_id="600019">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.894118 0.607843 0.321569" enabled="true" falloff_exponent="7" far_range="400" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_147" position="1225 925 -840" rotation="0 0 -5.96046e-008 -1" unit_id="600020">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.933333 0.611765 0.290196" enabled="true" falloff_exponent="7" far_range="250" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_148" position="2400 -1032 -826" rotation="0 0 -0.707107 -0.707107" unit_id="600021">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.894118 0.607843 0.321569" enabled="true" falloff_exponent="7" far_range="400" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_149" position="1525 0.000106812 -490" rotation="0 0 -5.96046e-008 -1" unit_id="600022">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.745098 0.686275 0.486275" enabled="true" falloff_exponent="1" far_range="1250" multiplier="@ID18ceffa252d5a43d@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_150" position="300 849.71 -835.355" rotation="0 0 -5.96046e-008 -1" unit_id="600023">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.894118 0.603922 0.321569" enabled="true" falloff_exponent="1" far_range="400" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_151" position="200 -0.290329 -460.355" rotation="0 0 -5.96046e-008 -1" unit_id="600024">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_152" position="300 199.71 -835.355" rotation="0 0 -5.96046e-008 -1" unit_id="600025">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.894118 0.603922 0.321569" enabled="true" falloff_exponent="1" far_range="400" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_153" position="-1325 1024.71 -860.355" rotation="0 0 -5.96046e-008 -1" unit_id="600026">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="1" far_range="200" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_154" position="-1200 1300 -407.854" rotation="0 0 -5.96046e-008 -1" unit_id="600027">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.85098 0.572549" enabled="true" falloff_exponent="1" far_range="1000" multiplier="@ID18ceffa252d5a43d@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_155" position="-825 199.71 -385.355" rotation="0 0 -5.96046e-008 -1" unit_id="600028">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.564706" enabled="true" falloff_exponent="1" far_range="600" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_156" position="1800 -1650 -450" rotation="0 0 1 -1.03316e-007" unit_id="600029">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="1" far_range="350" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_157" position="-2550 724.714 -460.355" rotation="0 0 0.707107 -0.707107" unit_id="600030">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.556863 0.745098 0.933333" enabled="true" falloff_exponent="1" far_range="250" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_158" position="-1800 1024.71 -860.355" rotation="0 0 -5.96046e-008 -1" unit_id="600031">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_159" position="-2125 624.715 -435.355" rotation="0 0 0.707107 -0.707107" unit_id="600032">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.556863 0.745098 0.933333" enabled="true" falloff_exponent="1" far_range="150" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_160" position="-3100 1200 -416.892" rotation="0 0 -5.96046e-008 -1" unit_id="600033">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_161" position="-1550 199.709 -385.355" rotation="0 0 -5.96046e-008 -1" unit_id="600034">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.564706" enabled="true" falloff_exponent="1" far_range="600" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_162" position="2775 -1350 -500.003" rotation="0 0 -5.96046e-008 -1" unit_id="600035">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.152941 0.2 0.219608" enabled="true" falloff_exponent="1" far_range="300" multiplier="@ID18ceffa252d5a43d@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_163" position="-2575 -625.286 -460.355" rotation="0 0 0.707107 -0.707107" unit_id="600036">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.556863 0.745098 0.933333" enabled="true" falloff_exponent="1" far_range="250" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_164" position="-2425 874.709 -785.355" rotation="0 0 -5.96046e-008 -1" unit_id="600037">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_165" position="300 -500.29 -835.355" rotation="0 0 -5.96046e-008 -1" unit_id="600038">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.894118 0.603922 0.321569" enabled="true" falloff_exponent="1" far_range="400" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_166" position="-3700 1200 -416.892" rotation="0 0 -5.96046e-008 -1" unit_id="600039">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_167" position="-2150 -525.286 -435.355" rotation="0 0 0.707107 -0.707107" unit_id="600040">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.556863 0.745098 0.933333" enabled="true" falloff_exponent="1" far_range="150" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_168" position="-4400 1100 -16.8921" rotation="0 0 -5.96046e-008 -1" unit_id="600041">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_169" position="-800 -650.29 -460.355" rotation="0 0 -5.96046e-008 -1" unit_id="600042">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_170" position="-3050 1050 -841.892" rotation="0 0 -5.96046e-008 -1" unit_id="600043">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_171" position="-3575 449.714 -35.3555" rotation="0 0 0.707107 -0.707107" unit_id="600044">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="700" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_172" position="2025 -1032 -826" rotation="0 0 -0.707107 -0.707107" unit_id="600045">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.894118 0.607843 0.321569" enabled="true" falloff_exponent="7" far_range="400" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_173" position="1574 -1225 -305.003" rotation="0 0 -5.96046e-008 -1" unit_id="600046">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.894118 0.607843 0.321569" enabled="true" falloff_exponent="7" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_174" position="774.999 -5.00034 -825" rotation="0 0 -5.96046e-008 -1" unit_id="600047">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.894118 0.607843 0.321569" enabled="true" falloff_exponent="7" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_175" position="1177 -1225 -305.003" rotation="0 0 -5.96046e-008 -1" unit_id="600048">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.894118 0.607843 0.321569" enabled="true" falloff_exponent="7" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_176" position="808 -1225 -305.003" rotation="0 0 -5.96046e-008 -1" unit_id="600049">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.894118 0.607843 0.321569" enabled="true" falloff_exponent="7" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_177" position="-1200 -650.29 -460.355" rotation="0 0 -5.96046e-008 -1" unit_id="600050">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_178" position="1800 -2125 -525" rotation="0 0 1 -1.03316e-007" unit_id="600051">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="1" far_range="350" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_179" position="-3450 1050 -841.892" rotation="0 0 -5.96046e-008 -1" unit_id="600052">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_180" position="-4400 1100 -441.892" rotation="0 0 -5.96046e-008 -1" unit_id="600053">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_181" position="-1600 -650.291 -460.355" rotation="0 0 -5.96046e-008 -1" unit_id="600054">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_182" position="-800 -650.29 -860.355" rotation="0 0 -5.96046e-008 -1" unit_id="600055">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_183" position="-3200 -275.286 -35.3555" rotation="0 0 0.707107 -0.707107" unit_id="600056">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.564706" enabled="true" falloff_exponent="1" far_range="700" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_184" position="-3850 1050 -841.892" rotation="0 0 -5.96046e-008 -1" unit_id="600057">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_185" position="1800 -1750 -800" rotation="0 0 1 -1.03316e-007" unit_id="600058">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="1" far_range="350" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_186" position="-4400 399.999 -16.8921" rotation="0 0 -5.96046e-008 -1" unit_id="600059">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_187" position="-2400 74.7145 -785.355" rotation="0 0 0.707107 -0.707107" unit_id="600060">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.564706" enabled="true" falloff_exponent="1" far_range="550" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_188" position="-1200 -650.29 -860.355" rotation="0 0 -5.96046e-008 -1" unit_id="600061">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_189" position="-4250 1050 -841.892" rotation="0 0 -5.96046e-008 -1" unit_id="600062">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_190" position="-1600 -650.291 -860.355" rotation="0 0 -5.96046e-008 -1" unit_id="600063">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_191" position="1225 -1900 -350" rotation="0 0 1 -1.03316e-007" unit_id="600064">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.792157 0.745098 0.701961" enabled="true" falloff_exponent="1" far_range="450" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_192" position="-4400 399.999 -441.892" rotation="0 0 -5.96046e-008 -1" unit_id="600065">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_193" position="-5575 1775 -450.007" rotation="0 0 -5.96046e-008 -1" unit_id="600066">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.819608 0.490196 0.270588" enabled="true" falloff_exponent="1" far_range="400" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_194" position="-3575 249.999 -966.892" rotation="0 0 -0.707107 -0.707107" unit_id="600067">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="1" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_195" position="-3575 -0.000740051 -816.892" rotation="0 0 -0.382683 -0.92388" unit_id="600068">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="400" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_196" position="-3350 -0.000717163 -966.892" rotation="0 0 -5.96046e-008 -1" unit_id="600069">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="1" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_197" position="-5100 1550 -450.007" rotation="0 0 -5.96046e-008 -1" unit_id="600070">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.819608 0.490196 0.270588" enabled="true" falloff_exponent="1" far_range="400" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_198" position="-4350 349.999 -841.892" rotation="0 0 -5.96046e-008 -1" unit_id="600071">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="600" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_199" position="-3200 -1450.29 -35.3555" rotation="0 0 0.707107 -0.707107" unit_id="600072">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="700" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_200" position="-2400 -1775.29 -435.355" rotation="0 0 -5.96046e-008 -1" unit_id="600073">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="600" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_201" position="-4700 -500.286 -460.355" rotation="0 0 0.707107 -0.707107" unit_id="600074">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.67451 0.87451 0.984314" enabled="true" falloff_exponent="1" far_range="350" multiplier="@ID18ceffa252d5a43d@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_202" position="-4100 -500.286 -860.355" rotation="0 0 0.707107 -0.707107" unit_id="600075">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.67451 0.87451 0.984314" enabled="true" falloff_exponent="1" far_range="350" multiplier="@ID18ceffa252d5a43d@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_203" position="-4700 -500.286 -860.355" rotation="0 0 0.707107 -0.707107" unit_id="600076">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.67451 0.87451 0.984314" enabled="true" falloff_exponent="1" far_range="350" multiplier="@ID18ceffa252d5a43d@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_204" position="-4700 -950.286 -460.355" rotation="0 0 0.707107 -0.707107" unit_id="600077">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.67451 0.87451 0.984314" enabled="true" falloff_exponent="1" far_range="350" multiplier="@ID18ceffa252d5a43d@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_205" position="-4100 -950.286 -860.355" rotation="0 0 0.707107 -0.707107" unit_id="600078">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.67451 0.87451 0.984314" enabled="true" falloff_exponent="1" far_range="350" multiplier="@ID18ceffa252d5a43d@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_206" position="-3450 -1400.29 -860.355" rotation="0 0 -5.96046e-008 -1" unit_id="600079">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.67451 0.87451 0.984314" enabled="true" falloff_exponent="1" far_range="400" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_207" position="-4700 -950.286 -860.355" rotation="0 0 0.707107 -0.707107" unit_id="600080">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.67451 0.87451 0.984314" enabled="true" falloff_exponent="1" far_range="350" multiplier="@ID18ceffa252d5a43d@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_208" position="-4700 -1400.29 -460.355" rotation="0 0 0.707107 -0.707107" unit_id="600081">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.67451 0.87451 0.984314" enabled="true" falloff_exponent="1" far_range="350" multiplier="@ID18ceffa252d5a43d@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_209" position="-4100 -1400.29 -860.355" rotation="0 0 0.707107 -0.707107" unit_id="600082">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.67451 0.87451 0.984314" enabled="true" falloff_exponent="1" far_range="350" multiplier="@ID18ceffa252d5a43d@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_210" position="-1650 -3375 -350" rotation="0 0 -5.96046e-008 -1" unit_id="600083">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.988235 0.866667 0.639216" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_211" position="-4700 -1400.29 -860.355" rotation="0 0 0.707107 -0.707107" unit_id="600084">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.67451 0.87451 0.984314" enabled="true" falloff_exponent="1" far_range="350" multiplier="@ID18ceffa252d5a43d@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_212" position="-2425 -3375 -350" rotation="0 0 -5.96046e-008 -1" unit_id="600085">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.988235 0.866667 0.639216" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_213" position="-5225 -1400.29 -860.355" rotation="0 0 -5.96046e-008 -1" unit_id="600086">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_214" position="-3250 -3375 -350" rotation="0 0 -5.96046e-008 -1" unit_id="600087">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.988235 0.866667 0.639216" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_215" position="-4025 -3375 -300" rotation="0 0 -5.96046e-008 -1" unit_id="600088">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.988235 0.866667 0.639216" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_216" position="-1650 -5175 -350" rotation="0 0 -5.96046e-008 -1" unit_id="600089">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.988235 0.866667 0.639216" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_217" position="-2425 -5175 -350" rotation="0 0 -5.96046e-008 -1" unit_id="600090">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.988235 0.866667 0.639216" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_218" position="-3250 -5175 -350" rotation="0 0 -5.96046e-008 -1" unit_id="600091">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.988235 0.866667 0.639216" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_219" position="-4025 -5175 -350" rotation="0 0 -5.96046e-008 -1" unit_id="600092">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.988235 0.866667 0.639216" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_220" position="-1650 -6900 -350" rotation="0 0 -5.96046e-008 -1" unit_id="600093">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.988235 0.866667 0.639216" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_221" position="-2425 -6900 -350" rotation="0 0 -5.96046e-008 -1" unit_id="600094">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.988235 0.866667 0.639216" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_222" position="-3250 -6900 -350" rotation="0 0 -5.96046e-008 -1" unit_id="600095">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.988235 0.866667 0.639216" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_223" position="-4025 -6900 -350" rotation="0 0 -5.96046e-008 -1" unit_id="600096">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.988235 0.866667 0.639216" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_224" position="-1650 -8600 -350" rotation="0 0 -5.96046e-008 -1" unit_id="600097">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.988235 0.866667 0.639216" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_225" position="-2425 -8600 -350" rotation="0 0 -5.96046e-008 -1" unit_id="600098">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.988235 0.866667 0.639216" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_226" position="-3250 -8600 -350" rotation="0 0 -5.96046e-008 -1" unit_id="600099">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.988235 0.866667 0.639216" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_227" position="-4025 -8600 -350" rotation="0 0 -5.96046e-008 -1" unit_id="600100">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.988235 0.866667 0.639216" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_228" position="1350 -2075 -800" rotation="0 0 -0.707107 -0.707107" unit_id="600101">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.556863 0.745098 0.933333" enabled="true" falloff_exponent="1" far_range="250" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_229" position="775 1275 -800" rotation="0 0 0.707107 -0.707107" unit_id="600102">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.556863 0.745098 0.933333" enabled="true" falloff_exponent="1" far_range="250" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_230" position="525 -1900 -350" rotation="0 0 1 -1.03316e-007" unit_id="600103">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.792157 0.745098 0.701961" enabled="true" falloff_exponent="1" far_range="450" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_231" position="225 -1225 -400" rotation="0 0 -5.96046e-008 -1" unit_id="600104">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.556863 0.745098 0.933333" enabled="true" falloff_exponent="1" far_range="250" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_232" position="-200 1400 -875" rotation="0 0 1 -1.03316e-007" unit_id="600105">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="1" far_range="200" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_233" position="-200 -1100 -425" rotation="0 0 1 -1.03316e-007" unit_id="600106">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.996078 0.929412 0.670588" enabled="true" falloff_exponent="1" far_range="400" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_234" position="-250 674.71 -835.355" rotation="0 0 -5.96046e-008 -1" unit_id="600107">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.564706" enabled="true" falloff_exponent="1" far_range="400" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_235" position="-200 -1000 -825" rotation="0 0 0.707107 -0.707107" unit_id="600108">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.996078 0.929412 0.670588" enabled="true" falloff_exponent="1" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_236" position="-800 999.71 -835.355" rotation="0 0 -5.96046e-008 -1" unit_id="600109">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.564706" enabled="true" falloff_exponent="1" far_range="400" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_237" position="-1731 -1300 -425" rotation="0 0 1 -1.03316e-007" unit_id="600110">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.564706" enabled="true" falloff_exponent="1" far_range="300" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_238" position="-1706 -1825 -475" rotation="0 0 0.707107 -0.707107" unit_id="600111">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.564706" enabled="true" falloff_exponent="1" far_range="350" multiplier="@IDc1749c1433ffb099@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_239" position="-2200 1500 -425" rotation="0 0 -5.96046e-008 -1" unit_id="600112">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.996078 0.929412 0.670588" enabled="true" falloff_exponent="1" far_range="400" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_240" position="-2200 1400 -825" rotation="0 0 -0.707107 -0.707107" unit_id="600113">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.996078 0.929412 0.670588" enabled="true" falloff_exponent="1" far_range="300" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_241" position="-2648 1847 -425" rotation="0 0 -0.707107 -0.707107" unit_id="600114">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.556863 0.745098 0.933333" enabled="true" falloff_exponent="1" far_range="250" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_242" position="-3000 -2250 -425" rotation="0 0 0.707107 -0.707107" unit_id="600115">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.556863 0.745098 0.933333" enabled="true" falloff_exponent="1" far_range="250" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_243" position="-3848 1547 -825" rotation="0 0 -0.707107 -0.707107" unit_id="600116">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.556863 0.745098 0.933333" enabled="true" falloff_exponent="1" far_range="250" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_244" position="2375 -1897 -800.01" rotation="0 0 0.707107 -0.707107" unit_id="600117">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.988235 0.866667 0.639216" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_245" position="3200 -1897 -800.01" rotation="0 0 0.707107 -0.707107" unit_id="600118">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.988235 0.866667 0.639216" enabled="true" falloff_exponent="1" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_246" position="325 1325 -875" rotation="0 0 1 -1.03316e-007" unit_id="600119">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="1 1 1" enabled="true" falloff_exponent="1" far_range="200" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_247" position="-1000 -150 -1279.43" rotation="0 0 -5.96046e-008 -1" unit_id="600120">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="600" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_248" position="-2675 -150.001 -1279.43" rotation="0 0 -5.96046e-008 -1" unit_id="600121">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.929412 0.847059 0.568627" enabled="true" falloff_exponent="1" far_range="600" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_249" position="775 -1200 -850" rotation="0 0 -5.96046e-008 -1" unit_id="600122">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.894118 0.607843 0.321569" enabled="true" falloff_exponent="7" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_250" position="416 -1200 -850" rotation="0 0 -5.96046e-008 -1" unit_id="600123">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.894118 0.603922 0.321569" enabled="true" falloff_exponent="7" far_range="500" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_251" position="1362 -1725 -840" rotation="0 0 -5.96046e-008 -1" unit_id="600124">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.894118 0.607843 0.321569" enabled="true" falloff_exponent="7" far_range="275" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_252" position="1362 -975 -840" rotation="0 0 -5.96046e-008 -1" unit_id="600125">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.894118 0.607843 0.321569" enabled="true" falloff_exponent="7" far_range="275" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_253" position="-7211 2594 -450" rotation="0 0 -0.707107 -0.707107" unit_id="600000">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.819608 0.490196 0.270588" enabled="true" falloff_exponent="1" far_range="400" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+		<table>
+			<unit_data continent="day" name="core/units/light_omni/light_omni" name_id="light_omni_254" position="-7636 2594 -450" rotation="0 0 -0.707107 -0.707107" unit_id="600126">
+				<lights>
+					<table clipping_values="10000 -10000 0" color="0.819608 0.490196 0.270588" enabled="true" falloff_exponent="1" far_range="400" multiplier="@IDbca13ba1d306f87b@" name="lo_omni" near_range="80" spot_angle_end="-1" spot_angle_start="-1"/>
+				</lights>
+			</unit_data>
+		</table>
+	</statics>
+	<values>
+		<workviews/>
+	</values>
+</table>

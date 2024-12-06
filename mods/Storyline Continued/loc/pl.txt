@@ -1,0 +1,66 @@
+{
+	"sm_act_4_name" : "Rozdział 4: Drużyna B"
+	
+	
+	"sm_54_name" : "Gdzieś w Meksyku"
+	"sm_54_desc" : "W dniach poprzedzających napad na Biały Dom, czteroosobowa ekipa postanowiła udać się do wielu miejsc, aby związać koniec z końcem. Dopiero wtedy w ich głowach pojawiła się myśl o przechwyceniu działalności Murkywater."
+	"sm_54_obj" : "Ukończ kontrakt \"Przejście graniczne\" grając co najmniej na poziomie trudności \"Bardzo trudny\". \r\nTo zadanie można ukończyć jedynie poprzez rozegranie całego skoku od początku do końca."	
+	"menu_sm_very_hard_mex" : "Przejście graniczne"
+	
+	"sm_55_name" : "Zemsta"
+	"sm_55_desc" : "Wkrótce po wykonaniu zadania na granicy, ekipa otrzymała niespodziewany telefon w ostatniej chwili od Vlada, który szukał łupu przechowywanego bezpiecznie w banku w zamian za całą swoją pomoc dla gangu PAYDAY na przestrzeni lat."
+	"sm_55_obj" : "Ukończ kontrakt \"Bank w San Martín\" grając co najmniej na poziomie trudności \"Bardzo trudny\". \r\nTo zadanie można ukończyć jedynie poprzez rozegranie całego skoku od początku do końca."
+	"menu_sm_very_hard_bex" : "Bank w San Martín"
+	
+	"sm_56_name" : "Kłopotliwa ucieczka"
+	"sm_56_desc" : "Meksykańska policja sprawiła sporo kłopotów po napadzie na bank. Hajrudin, szwagier Vlada, został aresztowany w związku ze swoją współpracą z gangiem i zamknięty w więzieniu o zaostrzonym rygorze w Tijuanie. Gang miał teraz za zadanie go uwolnić."
+	"sm_56_obj" : "Ukończ kontrakt \"Śniadanie w Tijuanie\" grając co najmniej na poziomie trudności \"Bardzo trudny\". \r\nTo zadanie można ukończyć jedynie poprzez rozegranie całego skoku od początku do końca."
+	"menu_sm_very_hard_pex" : "Śniadanie w Tijuanie"
+	
+	"sm_57_name" : "Bóg Piorunów"
+	"sm_57_desc" : "Vlad, po podziękowaniu gangowi za uwolnienie szwagra, poprosił o jeszcze jedną przysługę. Buluc, przywódca kartelu Coyopa, był odpowiedzialny za aresztowanie Hajrudina. Gang musiałby go zlikwidować i ukraść jego listę kontaktów, w stylu Ernesto Sosy."
+	"sm_57_obj" : "Ukończ kontrakt \"Posiadłość Buluca\" grając co najmniej na poziomie trudności \"Bardzo trudny\". \r\nTo zadanie można ukończyć jedynie poprzez rozegranie całego skoku od początku do końca."
+	"menu_sm_very_hard_fex" : "Posiadłość Buluca"
+	
+	
+	"sm_58_name" : "Złoty Smok"
+	"sm_58_desc" : "Podczas gdy 4-osobowy zespół wykonywał prace w Meksyku, kolejnych 4 członków gangu PAYDAY miało za zadanie udać się do Chinatown w San Francisco. Jiu Feng, potencjalny wykonawca dla ekipy, skontaktował się z Locke'em i tam zaaranżował jeszcze jedno zadanie do wykonania."
+	"sm_58_obj" : "Ukończ kontrakt \"Ukryty smok\" grając co najmniej na poziomie trudności \"Bardzo trudny\". \r\nTo zadanie można ukończyć jedynie poprzez rozegranie całego skoku od początku do końca."
+	"menu_sm_very_hard_chas" : "Ukryty smok"
+	
+	"sm_59_name" : "Zakłócenie"
+	"sm_59_desc" : "Triada, której gang ukradł posąg smoka, próbowała teraz sabotować załogę. Zlokalizowali Vlada poprzez swoją sieć kontaktów, a następnie wzięli go jako zakładnika i torturowali, a wszystko to w zamian za lokalizację gangu PAYDAY. Jiu Feng był gotów pomóc."
+	"sm_59_obj" : "Ukończ kontrakt \"Ukraiński więzień\" grając co najmniej na poziomie trudności \"Bardzo trudny\". \r\nTo zadanie można ukończyć jedynie poprzez rozegranie całego skoku od początku do końca."
+	"menu_sm_very_hard_sand" : "Ukraiński więzień"
+	
+	"sm_60_name" : "Nikt nie jest niezatapialny"
+	"sm_60_desc" : "Vlad był teraz bardzo zły na Xun Kanga i triadę. Jego ostatnie zadanie dla gangu PAYDAY polegało na pełnym ataku na Black Cat, statek wycieczkowy należący i obsługiwany przez Golden Dagger."
+	"sm_60_obj" : "Ukończ kontrakt \"Black Cat\" grając co najmniej na poziomie trudności \"Bardzo trudny\". \r\nTo zadanie można ukończyć jedynie poprzez rozegranie całego skoku od początku do końca."
+	"menu_sm_very_hard_chca" : "Black Cat"
+	
+	"sm_61_name" : "Głowa Węża"
+	"sm_61_desc" : "Po uporaniu się z Xun Kangiem, załoga zmierzała do Waszyngtonu. Jednak Shayu, członkini Złotego Sztyletu, miała wobec nich inne plany. Aby mogła zostać szefem triady, Yufu Wang musiał najpierw... przejść na emeryturę. Gang dokładnie wiedział, jak go do tego zmusić."
+	"sm_61_obj" : "Ukończ kontrakt \"Pan Gór\" grając co najmniej na poziomie trudności \"Bardzo trudny\". \r\nTo zadanie można ukończyć jedynie poprzez rozegranie całego skoku od początku do końca."
+	"menu_sm_very_hard_pent" : "Pan Gór"
+	
+	
+	"sm_62_name" : "Stan Samotnej Gwiazdy"
+	"sm_62_desc" : "Przygoda czwartej drużyny rozpoczęła się w momencie, gdy Gemma McShay zleciła gangowi przeprowadzanie napadów w Teksasie. Ich pierwsze zadanie było dość nietypowe - mieli wyeliminować Estebana Santiago. Nie jest jednak tak, że wcześniej nie mieli do czynienia z tego typu kontraktami."
+	"sm_62_obj" : "Ukończ kontrakt \"Ranczo Midland\" grając co najmniej na poziomie trudności \"Bardzo trudny\". \r\nTo zadanie można ukończyć jedynie poprzez rozegranie całego skoku od początku do końca."
+	"menu_sm_very_hard_ranc" : "Ranczo Midland"
+	
+	"sm_63_name" : "Floryda raz jeszcze"
+	"sm_63_desc" : "Gemma miała nowe zadanie dla ekipy. Kradzież matryc drukarskich była czymś, na czym się znali, więc kiedy dowiedziała się, że armia przewozi je w wagonach kolejowych, wiedziała dokładnie, z kim się skontaktować."
+	"sm_63_obj" : "Ukończ kontrakt \"Zaginiony transport\" grając co najmniej na poziomie trudności \"Bardzo trudny\". \r\nTo zadanie można ukończyć jedynie poprzez rozegranie całego skoku od początku do końca."
+	"menu_sm_very_hard_trai" : "Zaginiony transport"
+	
+	"sm_64_name" : "Wytaczanie drogi"
+	"sm_64_desc" : "Blaine Keegan, współpracownik McShaya, oferował teraz pracę także gangowi PAYDAY. Jego konkurent w przemyśle naftowym, SERA Inc, uniemożliwiał mu rozwój w terenie. Alice Rainey musiała odejść, a czy jest lepszy sposób na pozbycie się jej niż ujawnienie jej nielegalnych operacji mediom."
+	"sm_64_obj" : "Ukończ kontrakt \"Wrogie przejęcie\" grając co najmniej na poziomie trudności \"Bardzo trudny\". \r\nTo zadanie można ukończyć jedynie poprzez rozegranie całego skoku od początku do końca."
+	"menu_sm_very_hard_corp" : "Wrogie przejęcie"
+	
+	"sm_65_name" : "Czarna godzina"
+	"sm_65_desc" : "Gdy doszło do napadu na Biały Dom, Keegan chciał kontynuować swoją próbę z SERA, niszcząc wszystko, co Alice Rainey zostawiła. SERA Inc. odeszłaby z hukiem, podobnie jak gang PAYDAY."
+	"sm_65_obj" : "Ukończ faktyczny finałowy kontrakt w grze - \"Czarna godzina\" - grając co najmniej na poziomie trudności \"Bardzo trudny\". \r\nTo zadanie można ukończyć jedynie poprzez rozegranie całego skoku od początku do końca."
+	"menu_sm_very_hard_deep" : "Czarna godzina"
+}

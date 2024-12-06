@@ -1,0 +1,11 @@
+<table>
+	<art_architecture base_id="600000" editor_only="false" enabled="true" enabled_in_simulation="true" locked="false" name="art_architecture" visible="true"/>
+	<art_lighting base_id="500000" editor_only="false" enabled="true" enabled_in_simulation="true" locked="false" name="art_lighting" visible="true"/>
+	<art_props base_id="700000" editor_only="false" enabled="true" enabled_in_simulation="true" locked="false" name="art_props" visible="true"/>
+	<art_props_2 base_id="800000" editor_only="false" enabled="true" enabled_in_simulation="true" locked="false" name="art_props_2" visible="false"/>
+	<backdrop base_id="900000" editor_only="false" enabled="true" enabled_in_simulation="true" locked="false" name="backdrop" visible="false"/>
+	<collision base_id="400000" editor_only="false" enabled="true" enabled_in_simulation="true" locked="false" name="collision" visible="true"/>
+	<editor_only base_id="200000" editor_only="true" enabled="true" enabled_in_simulation="true" locked="false" name="editor_only" visible="true"/>
+	<whitebox base_id="300000" editor_only="false" enabled="true" enabled_in_simulation="true" locked="false" name="whitebox" visible="true"/>
+	<world base_id="100000" editor_only="false" enabled="true" enabled_in_simulation="true" locked="false" name="world" visible="true"/>
+</table>

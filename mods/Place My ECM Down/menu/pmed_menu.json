@@ -1,0 +1,53 @@
+{
+	"menu_id": "pmed",
+	"parent_menu_id": "blt_options",
+	"title": "pmed_title",
+	"description": "pmed_desc",
+	"back_callback": "pmed_save",
+	"items":
+	[
+		{
+			"type": "toggle",
+			"id": "toggle_pmedenabled",
+			"title": "pmedenabled_title",
+			"description": "pmedenabled_desc",
+			"callback": "callback_pmedenabled_input",
+			"value": "enabled"
+		},
+		{
+			"type": "toggle",
+			"id": "ignore_joat_pmed",
+			"title": "ignore_joat_pmed_title",
+			"description": "ignore_joat_pmed_desc",
+			"callback": "callback_ignore_joat_pmed_input",
+			"value": "ignore_joat"
+		},
+		
+		{
+			"type" : "divider",
+			"size" : 15
+		},
+		
+		{
+			"type" : "keybind",
+			"id" : "haltexec_pmed",
+			"title" : "haltexec_pmed_title",
+			"description" : "haltexec_pmed_desc",
+			"keybind_id" : "haltexec_pmed",
+			"run_in_menu" : false,
+			"run_in_game" : true,
+			"func" : "haltexec_pmed"
+		},
+		{
+			"type" : "keybind",
+			"id" : "skip_ecm_pmed",
+			"title" : "skip_ecm_pmed_title",
+			"description" : "skip_ecm_pmed_desc",
+			"keybind_id" : "skip_ecm_pmed",
+			"run_in_menu" : false,
+			"run_in_game" : true,
+			"func" : "skip_ecm_pmed"
+		},
+		
+	]
+}

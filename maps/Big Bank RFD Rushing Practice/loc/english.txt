@@ -1,0 +1,9 @@
+{
+	"contact_rushing_name" : "Rushing Practice",
+	"contact_rushing_desc" : "Maps for rushing practice.",
+	"heist_rushing_rfd_practice_narr_name" : "Big Bank RFD Practice",
+	"heist_rushing_rfd_practice_name" : "Big Bank RFD Practice",
+	"heist_rushing_rfd_practice_narr_brief" : "Practice your Running From Death skills here. Make sure you have both the RFD and Second Wind skills for the buffs to activate.",
+	"heist_rushing_rfd_practice_brief" : "Practice your Running From Death skills here. Make sure you have both the RFD and Second Wind skills for the buffs to activate.",
+	"rushing_rfd_practice" : "Big Bank RFD Practice"
+}

@@ -1,0 +1,19 @@
+{
+	"name" : "No Mercy Nurse Dialog Subtitles",
+	"description" : "Adds subtitles for the nurse's dialog.",
+	"author" : "Javgarag",
+	"color" : "186 26 26",
+	"contact" : "Discord: Javgarag#0085",
+	"version" : "1.0.0",
+	"blt_version" : 2,
+	"hooks" : [
+		{   
+			"hook_id" : "core/lib/managers/mission/coreelementplaysound",
+			"script_path" : "core.lua"
+		},
+		{
+			"hook_id" : "lib/managers/localizationmanager",
+			"script_path" : "subtitles.lua"
+		}
+	]
+}

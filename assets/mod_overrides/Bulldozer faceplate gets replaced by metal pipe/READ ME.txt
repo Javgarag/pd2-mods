@@ -1,0 +1,1 @@
+This mod is not compatible with any soundpacks (e.g hawk's soundpack) that change the soundbank file "regular_sfx".

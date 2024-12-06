@@ -1,0 +1,87 @@
+<table min_lib_ver="4.5" name="rushing_saw_practice">
+	<AddFiles directory="assets">
+		<texture force="true" path="units/pd2_mod_custom/rushing_saw_practice/pattern_plane/pattern_01"/>
+		<texture force="true" path="units/pd2_mod_custom/rushing_saw_practice/pattern_plane/pattern_02"/>
+		<texture force="true" path="units/pd2_mod_custom/rushing_saw_practice/pattern_plane/pattern_03"/>
+		<texture force="true" path="units/pd2_mod_custom/rushing_saw_practice/pattern_plane/pattern_04"/>
+		<texture force="true" path="units/pd2_mod_custom/rushing_saw_practice/pattern_plane/pattern_05"/>
+		<texture force="true" path="units/pd2_mod_custom/rushing_saw_practice/pattern_plane/pattern_06"/>
+		<texture force="true" path="units/pd2_mod_custom/rushing_saw_practice/pattern_plane/pattern_finding"/>
+	</AddFiles>
+	<Hooks directory="Hooks">
+		<hook file="guitweakdata.lua" source_file="lib/tweak_data/guitweakdata"/>
+	</Hooks>
+	<Localization default="english.txt" directory="loc">
+		<loc file="english.txt" language="english"/>
+	</Localization>
+	<contact assets_gui="guis/mission_briefing/preload_contact_bain" desc_id="contact_rushing_desc" id="rushing_practice" name_id="contact_rushing_name" package="packages/contact_bain"/>
+	<level ai_group_type="america" id="rushing_saw_practice" max_bags="54">
+		<packages>
+			<value_node value="levels/narratives/bain/big/world/world"/>
+		</packages>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<narrative briefing_event="" contact="rushing_practice" id="rushing_saw_practice_narr">
+		<chain>
+			<table level_id="rushing_saw_practice" type="d" type_id="heist_type_assault"/>
+		</chain>
+		<contract_cost>
+			<value_node value="4000"/>
+			<value_node value="8000"/>
+			<value_node value="20000"/>
+			<value_node value="40000"/>
+			<value_node value="100000"/>
+			<value_node value="100000"/>
+			<value_node value="100000"/>
+		</contract_cost>
+		<crimenet_callouts>
+			<value_node value="nothing"/>
+		</crimenet_callouts>
+		<crimenet_videos>
+			<value_node value="cn_branchbank2"/>
+		</crimenet_videos>
+		<debrief_event>
+			<value_node value=""/>
+		</debrief_event>
+		<experience_mul>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="1"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+			<value_node value="3"/>
+		</experience_mul>
+		<max_mission_xp>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+			<value_node value="8000"/>
+		</max_mission_xp>
+		<min_mission_xp>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+			<value_node value="2000"/>
+		</min_mission_xp>
+		<payout>
+			<value_node value="6000"/>
+			<value_node value="12000"/>
+			<value_node value="30000"/>
+			<value_node value="50000"/>
+			<value_node value="60000"/>
+			<value_node value="60000"/>
+			<value_node value="60000"/>
+		</payout>
+	</narrative>
+</table>

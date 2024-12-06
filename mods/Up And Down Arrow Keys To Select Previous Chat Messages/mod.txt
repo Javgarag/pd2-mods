@@ -1,0 +1,19 @@
+{
+	"name" : "Up And Down Arrow Keys To Select Previous Chat Messages",
+	"description" : "Adds the ability to use previous chat messages in chat again. Kind of how Minecraft allows.",
+	"author" : "Javgarag",
+	"color" : "186 26 26",
+	"contact" : "Discord: Javgarag#0085",
+	"version" : "1.0.0",
+	"blt_version" : 2,
+	"hooks" : [
+		{   
+			"hook_id" : "lib/managers/hud/hudchat",
+			"script_path" : "core.lua"
+		},
+		{
+			"hook_id" : "lib/managers/chatmanager",
+			"script_path" : "core.lua"
+		}
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"menu_id": "ed2machinechathelper",
+	"parent_menu_id": "blt_options",
+	"title": "ed2machinechathelper_title",
+	"description": "ed2machinechathelper_desc",
+	"back_callback": "ed2machinechathelper_save",
+	"items":
+	[
+		{
+			"type": "input",
+			"id": "prefix_input",
+			"title": "prefix_title",
+			"description": "prefix_desc",
+			"callback": "callback_prefix_input",
+			"value": "prefix"
+		},
+		{
+			"type": "toggle",
+			"id": "toggle_takeover",
+			"title": "takeover_title",
+			"description": "takeover_desc",
+			"callback": "callback_takeover_input",
+			"value": "takeover"
+		},
+	]
+}

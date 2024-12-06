@@ -1,0 +1,26 @@
+{
+	"name": "Hide UI Text In Lobby",
+	"description": "Self descriptive",
+	"author" : "Javgarag",
+	"contact" : "Discord: javgarag",
+	"version": "v1.0.0",
+	"priority": 999999,
+	"blt_version": 2,
+	"hooks": [
+		{
+			"hook_id" : "lib/managers/menumanager",
+			"script_path" : "main.lua"
+		}
+	]
+	"keybinds" : [
+		{
+			"keybind_id" : "hide_ui_lobby",
+			"name" : "Toggle Lobby UI",
+			"description" : "Toggle lobby UI",
+			"script_path" : "main.lua",
+			"run_in_menu" : true,
+			"run_in_game" : false,
+			"localized" : false
+		}
+	]
+}

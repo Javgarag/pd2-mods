@@ -1,0 +1,70 @@
+{
+	"menu_id": "fiwbmenu",
+	"parent_menu_id": "blt_options",
+	"title": "fiwb_title",
+	"description": "fiwb_desc",
+	"back_callback": "fiwb_save",
+	"items":
+	[
+		{
+			"type": "toggle",
+			"id": "toggle_fiwb_enabled",
+			"title": "fiwb_enabled_title",
+			"description": "fiwb_enabled_desc",
+			"callback": "callback_fiwb_enabled",
+			"value": "enabled",
+			"default_value" : true
+		},
+		{
+			"type": "toggle",
+			"id": "toggle_fiwb_enabled_assets",
+			"title": "fiwb_enabled_assets_title",
+			"description": "fiwb_enabled_assets_desc",
+			"callback": "callback_fiwb_enabled_assets",
+			"value": "assets_enabled",
+			"default_value" : true
+		},
+		{
+			"type" : "divider",
+			"size" : 15
+		},
+		{
+			"type" : "keybind",
+			"id" : "fiwb_activate",
+			"title" : "fiwb_activate_title",
+			"description" : "fiwb_activate_desc",
+			"keybind_id" : "fiwb_activate",
+			"run_in_menu" : false,
+			"run_in_game" : true,
+			"func" : "activate_fiwb"
+		},
+		{
+			"type" : "keybind",
+			"id" : "fiwb_deactivate",
+			"title" : "fiwb_deactivate_title",
+			"description" : "fiwb_deactivate_desc",
+			"keybind_id" : "fiwb_deactivate",
+			"run_in_menu" : false,
+			"run_in_game" : true,
+			"func" : "deactivate_fiwb"
+		},
+		{
+			"type" : "divider",
+			"size" : 15
+		},		
+		{
+			"type": "multiple_choice",
+			"id": "fiwb_custom_sound",
+			"title": "fiwb_custom_sound_id_title",
+			"description": "fiwb_custom_sound_id_desc",
+			"callback": "callback_fiwb_custom_sound",
+			"value": "custom_sound_id",
+			"default_value" : 1,
+			"items": [
+				"fiwb_sound_id_001",
+				"fiwb_sound_id_002",
+				"fiwb_sound_id_003"
+			]
+		}
+	]
+}

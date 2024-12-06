@@ -1,0 +1,15 @@
+{
+  "name": "Disable Tuto Vault",
+  "description": "Disables vault #1 in Big Bank.",
+  "author": "Javgarag",
+  "contact": "Discord: Javgarag#0085",
+  "version": "1",
+  "priority": 900,
+  "blt_version": 2,
+  "hooks": [
+    {
+      "script_path": "Base.lua",
+      "hook_id": "core/lib/managers/mission/coremissionscriptelement"
+    }
+  ]
+}

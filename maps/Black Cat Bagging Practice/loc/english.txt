@@ -1,0 +1,7 @@
+{
+	"contact_rushing_name" : "Rushing Practice",
+	"contact_rushing_desc" : "Maps for rushing practice.",
+	"heist_chca_bagging_name" : "Black Cat Rushing Bagging Practice",
+	"heist_chca_bagging_brief" : "Meant to be practiced with 4 players. Instructions inside.",
+	"" : ""
+}
