@@ -21,9 +21,6 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install GitHub CLI
-        uses: cli/gh-action@v2
-
       - name: Run hash.py
         run: python .github/scripts/hash.py
 
