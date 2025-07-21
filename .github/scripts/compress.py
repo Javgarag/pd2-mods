@@ -5,7 +5,12 @@ OUTPUT_DIR = "compressed"
 
 def compress_mod(mod_name, ident):
     mod_path = os.path.join(MODS_DIR, mod_name)
-    shutil.make_archive(os.path.join(OUTPUT_DIR, ident), 'zip', mod_path)
+    shutil.make_archive(
+        base_name = os.path.join(OUTPUT_DIR, ident),
+        format = "zip", 
+        root_dir = MODS_DIR,
+        base_dir = mod_name
+    )
 
 def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
