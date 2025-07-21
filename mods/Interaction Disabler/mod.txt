@@ -19,7 +19,7 @@
 			"hook_id" : "lib/managers/menumanager",
 			"script_path" : "main.lua"
 		}
-	]
+	],
 	"keybinds" : [
 		{
 			"keybind_id" : "block_interactions_dynamic",
