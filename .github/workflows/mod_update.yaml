@@ -1,11 +1,12 @@
-name: Update Mod Metafiles
+name: Update Mod Downloads
 
 on:
   push:
     branches: [ "main" ]
     paths:
-      - 'mods/**'
-      - 'scripts/hash_mods.py'
+      - "mods/**"
+      - "scripts/hash.py"
+      - "scripts/compress.py"
   workflow_dispatch:
 
 jobs:
@@ -34,6 +35,34 @@ jobs:
         run: |
           for file in meta_out/*.meta.json; do
             gh release upload metafiles "$file" --clobber
+          done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  compress-mods:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run compress.py
+        run: python .github/scripts/compress.py
+
+      - name: Ensure updates release exists
+        run: |
+          gh release view updates || gh release create updates -t "Mod Updates" -n "Most recent compressed versions of auto-updating mods for in-game downloading."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload updated zips to release
+        run: |
+          for file in compressed/*.zip; do
+            gh release upload updates "$file" --clobber
           done
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

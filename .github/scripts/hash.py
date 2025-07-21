@@ -3,32 +3,23 @@ import hashlib, os, json
 MODS_DIR = "mods"
 OUTPUT_DIR = "meta_out"
 
-def hash_mod(mod_name):
+def hash_mod(mod_name): # Hash mod folder according to SuperBLT specification
     file_hashes = []
 
-    # Walk the folder and get all file paths
     for root, _, files in os.walk(MODS_DIR + os.path.sep + mod_name):
         for file in files:
-            # Get full file path
             full_path = os.path.join(root, file)
+            rel_path = os.path.relpath(full_path, MODS_DIR + os.path.sep + mod_name).replace(os.path.sep, '/').lower()
 
-            # Get relative path from mod_path
-            rel_path = os.path.relpath(full_path, MODS_DIR + os.path.sep + mod_name).lower()
-
-            # Read file content and hash it
             with open(full_path, "rb") as f:
                 file_content = f.read()
                 file_hash = hashlib.sha256(file_content).hexdigest()
 
             file_hashes.append((rel_path, file_hash))
 
-    # Sort by relative file path (case-insensitive)
     file_hashes.sort(key=lambda x: x[0])
-
-    # Concatenate all individual hashes
     concatenated = "".join([h[1] for h in file_hashes])
 
-    # Hash the final concatenated string
     return hashlib.sha256(concatenated.encode("utf-8")).hexdigest()
 
 def main():
@@ -37,6 +28,7 @@ def main():
 
     for mod in mods:
         if not os.path.exists(os.path.join(MODS_DIR, mod, "mod.txt")):
+            print("Skipping '" + mod + "' (no mod.txt)")
             continue
 
         print("\nProcessing: " + mod)
@@ -48,9 +40,12 @@ def main():
             print("Skipped hashing (no auto-updating)")
             continue
 
+        mod_identifier = mod_definition["updates"][0]["identifier"]
         meta = [{
-            "ident" : mod_definition["updates"][0]["identifier"],
-            "hash" : hash_mod(mod)
+            "ident" : mod_identifier,
+            "hash" : hash_mod(mod),
+            "patchnotes_url" : "https://github.com/Javgarag/pd2-mods/tree/main/changelogs/" + mod_identifier + ".md",
+            "download_url" : "https://github.com/Javgarag/pd2-mods/releases/download/updates/" + mod_identifier + ".zip",
         }]
 
         print(meta[0]["hash"])
