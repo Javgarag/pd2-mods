@@ -39,18 +39,21 @@ def main():
         if not os.path.exists(os.path.join(MODS_DIR, mod, "mod.txt")):
             continue
 
-        print(mod)
+        print("\nProcessing: " + mod)
 
         with open(os.path.join(MODS_DIR, mod, "mod.txt"), "r") as f:
             mod_definition = json.load(f)
         
         if "updates" not in mod_definition:
+            print("Skipped hashing (no auto-updating)")
             continue
 
         meta = [{
             "ident" : mod_definition["updates"][0]["identifier"],
             "hash" : hash_mod(mod)
         }]
+
+        print(meta[0]["hash"])
         
         with open(os.path.join(OUTPUT_DIR, meta[0]["ident"] + ".meta.json"), "w") as f:
             json.dump(meta, f, indent=4)
