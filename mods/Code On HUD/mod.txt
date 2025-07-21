@@ -18,6 +18,6 @@
 		{
 			"hook_id" : "lib/managers/hudmanager",
 			"script_path" : "core.lua"
-		},
+		}
 	]
 }

@@ -20,12 +20,12 @@
 			"hook_id" : "lib/managers/menumanager",
 			"script_path" : "menu/menurh.lua"
 		}
-	]
+	],
 	"updates" : [
 		{
 			"identifier" : "pd2_red_health_below_225",
 			"host" : {
-			"meta" : "https://github.com/Javgarag/PD2RedHealthBelow225/releases/download/v1.2.0/meta.json"
+				"meta" : "https://github.com/Javgarag/PD2RedHealthBelow225/releases/download/v1.2.0/meta.json"
 			}
 		}
 	]

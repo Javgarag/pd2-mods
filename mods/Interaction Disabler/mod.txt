@@ -21,13 +21,14 @@
 		}
 	]
 	"keybinds" : [
-	{
-		"keybind_id" : "block_interactions_dynamic",
-		"name" : "Block Interactions Mode",
-		"description" : "When activated, the mod will start saving every completed interaction for the remainder of the mission to block them, until a mission restart or leave deactivates it.",
-		"script_path" : "block_interactions.lua",
-		"run_in_menu" : false,
-		"run_in_game" : true,
-		"localized" : false
-	}]
+		{
+			"keybind_id" : "block_interactions_dynamic",
+			"name" : "Block Interactions Mode",
+			"description" : "When activated, the mod will start saving every completed interaction for the remainder of the mission to block them, until a mission restart or leave deactivates it.",
+			"script_path" : "block_interactions.lua",
+			"run_in_menu" : false,
+			"run_in_game" : true,
+			"localized" : false
+		}
+	]
 }

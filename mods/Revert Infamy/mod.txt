@@ -23,6 +23,6 @@
 		{   
 			"hook_id" : "lib/managers/menu/infamytreeguinew",
 			"script_path" : "core.lua"
-		},	
+		}
 	]
 }

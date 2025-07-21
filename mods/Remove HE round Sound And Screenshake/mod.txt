@@ -11,6 +11,6 @@
 		{
 			"hook_id" : "lib/managers/explosionmanager",
 			"script_path" : "explosionmanager.lua"
-		},
+		}
 	]
 }

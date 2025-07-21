@@ -1,0 +1,42 @@
+name: Update Mod Metafiles
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - 'mods/**'
+      - 'scripts/hash_mods.py'
+  workflow_dispatch:
+
+jobs:
+  generate-meta:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install GitHub CLI
+        uses: cli/gh-action@v2
+
+      - name: Run hash.py
+        run: python .github/scripts/hash.py
+
+      - name: Ensure metafiles release exists
+        run: |
+          gh release view metafiles || gh release create metafiles -t "Mod Metafiles" -n "Metafiles for SuperBLT to compare hashes against local versions."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload metafiles to release
+        run: |
+          for file in meta_out/*.meta.json; do
+            gh release upload metafiles "$file" --clobber
+          done
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
