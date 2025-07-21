@@ -24,7 +24,7 @@
 	
 	
 	"sm_58_name" : "The Golden Dragon"
-	"sm_58_desc" : "While a team of 4 carried out jobs in Mexico, another 4 heisters were tasked with traveling to China, the land of warriors. Jiu Feng, a potential contractor for the crew, got in touch with Locke and then and there arranged one more job to be carried out."
+	"sm_58_desc" : "While a team of 4 carried out jobs in Mexico, another 4 heisters were tasked with hitting a shop in Chinatown. Jiu Feng, a potential contractor for the crew, got in touch with Locke and then and there arranged one more job to be carried out."
 	"sm_58_obj" : "Complete the Dragon Heist job on the Very Hard difficulty or higher. \nThis assignment requires you to play from the lobby to the end of the heist."
 	"menu_sm_very_hard_chas" : "Dragon Heist"
 	

@@ -4,7 +4,7 @@
 	"author" : "Javgarag",
 	"color" : "64 128 255",
 	"contact" : "Discord: Javgarag#0085",
-	"version" : "1.2.0",
+	"version" : "v1.2.1",
 	"blt_version" : 2,
 	"hooks" : [
 		{
@@ -18,6 +18,14 @@
 		{
 			"hook_id" : "lib/managers/menumanager",
 			"script_path" : "storymissionstweakdata.lua"
+		}
+	],
+	"updates" : [
+		{
+			"identifier" : "pd2_storyline_continued",
+			"host" : {
+				"meta" : "https://github.com/Javgarag/pd2-mods/releases/download/metafiles/pd2_storyline_continued.meta.json"
+			}
 		}
 	]
 }
