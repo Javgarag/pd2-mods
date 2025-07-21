@@ -14,16 +14,18 @@ local function look_for_code(message)
 	if msg_length == 2 then
 		local r, g, b = look_for_code_parts(message)
 		if r or g or b then
-			hud_manager._hud_code_display.code = message:match("(%d)")
+			hud_manager._hud_code_display.code = message
 			hud_manager._hud_code_display.is_part = true
 			hud_manager._hud_code_display.is_rgb = false
 		end
 	elseif msg_length == 3 then
-		hud_manager._hud_code_display.code = message
-		hud_manager._hud_code_display.is_part = false
-		hud_manager._hud_code_display.is_rgb = true
+		if tonumber(message) ~= nil and tonumber(message) >= 0 then
+			hud_manager._hud_code_display.code = message
+			hud_manager._hud_code_display.is_part = false
+			hud_manager._hud_code_display.is_rgb = true
+		end
 	elseif msg_length == 4 then
-		if tonumber(message) ~= nil and tonumber(message) > 0 then
+		if tonumber(message) ~= nil and tonumber(message) >= 0 then
 			hud_manager._hud_code_display.code = message
 			hud_manager._hud_code_display.is_part = false
 			hud_manager._hud_code_display.is_rgb = false
@@ -134,11 +136,18 @@ end
 
 function HUDCodeDisplay:update()
 	if self.close_on_next_update then
+		self._digit_red:set_text("")
+		self._digit_green:set_text("")
+		self._digit_blue:set_text("")
+		self._code:set_text("")
+
 		self._panel:set_visible(false)
+
 		self.close_on_next_update = false
 		self.code = nil
 		self.is_part = nil
 		self.is_rgb = nil
+
 		return
 	end
 
@@ -169,6 +178,7 @@ function HUDCodeDisplay:update()
 			self._digit_blue:set_text(b)
 			self._digit_blue:set_visible(true)
 		end
+
 		self.code = nil
 		self.is_part = nil
 		self.is_rgb = nil
@@ -179,15 +189,18 @@ function HUDCodeDisplay:update()
 		local r, g, b = look_for_code_parts(self.code)
 		self._panel:set_visible(true)
 		self._code:set_visible(false)
-		if r then
-			self._digit_red:set_text(self.code)
-			self._digit_red:set_visible(true)
-		elseif g then
-			self._digit_green:set_text(self.code)
-			self._digit_green:set_visible(true)
-		elseif b then
-			self._digit_blue:set_text(self.code)
-			self._digit_blue:set_visible(true)
+
+		if tonumber(self.code:match("(%d)")) then
+			if r then
+				self._digit_red:set_text(self.code:match("(%d)"))
+				self._digit_red:set_visible(true)
+			elseif g then
+				self._digit_green:set_text(self.code:match("(%d)"))
+				self._digit_green:set_visible(true)
+			elseif b then
+				self._digit_blue:set_text(self.code:match("(%d)"))
+				self._digit_blue:set_visible(true)
+			end
 		end
 
 		self.code = nil
@@ -220,7 +233,9 @@ end)
 Hooks:PostHook(ChatManager, "send_message", "send_message_coh", function(self, channel_id, sender, message)
 	look_for_code(message)
 	if string.lower(message) == "close_code" then
-		managers.hud._hud_code_display.close_on_next_update = true
+		if managers.hud then
+			managers.hud._hud_code_display.close_on_next_update = true
+		end
 	end
 end)
 
