@@ -17,6 +17,15 @@
 			"max" : 500,
 			"min" : 1,
 			"step" : 1
+		},
+		{
+			"type" : "toggle",
+			"id" : "rh_death_sentence_only",
+			"title" : "rh_death_sentence_only_title",
+			"description" : "rh_death_sentence_only_desc",
+			"callback" : "callback_rh_death_sentence_only",
+			"value" : "death_sentence_only",
+			"default_value" : false
 		}
 	]
 }

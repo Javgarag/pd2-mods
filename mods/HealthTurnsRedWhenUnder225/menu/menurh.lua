@@ -34,10 +34,20 @@ Hooks:Add( "MenuManagerInitialize", "MenuManagerInitialize_RedHealth", function(
 		RedHealth:Save()
 	end
 
+	MenuCallbackHandler.callback_rh_death_sentence_only = function(self, item)
+		RedHealth._data.death_sentence_only = item:value() == "on" or false
+		RedHealth:Save()
+	end
+
 	RedHealth:Load()
 
 	if RedHealth._data.health_value == nil then
 		RedHealth._data.health_value = 225
+		RedHealth:Save()
+	end
+
+	if RedHealth._data.death_sentence_only == nil then
+		RedHealth._data.death_sentence_only = false
 		RedHealth:Save()
 	end
 	

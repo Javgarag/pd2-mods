@@ -1,8 +1,12 @@
 local RedHealth = _G.RedHealth
 BLT.AssetManager:CreateEntry(Idstring("guis/textures/custom/hud_health_below_225"), Idstring("texture"), ModPath.. "guis/textures/pd2/hud_health_below_225.texture")
 
--- // HUD compatibility checks \\ --
+-- // Death Sentence check \\ --
+if RedHealth._data and Global.game_settings.difficulty ~= "sm_wish" and RedHealth._data.death_sentence_only then
+	return
+end
 
+-- // HUD compatibility checks \\ --
 if _G.ArmStatic then
 	if _G.MUIMenu:ClassEnabled(MUITeammate) == true then
 		MUIIsActive = true
