@@ -36,8 +36,8 @@ function RedHealth:set_health(health_data, armor_data, radial_health, radial_hea
 
 	local health_damage_reductions = self:calculate_health_with_reductions(currentHealth)
 
-	if health_damage_reductions and RedHealth._data.substract_armor then
-		health_damage_reductions = health_damage_reductions - (armor_data and armor_data.current * 10 or 0)
+	if health_damage_reductions and RedHealth._data.add_armor then
+		health_damage_reductions = health_damage_reductions + (armor_data and armor_data.current * 10 or 0)
 	end
 
 	if health_damage_reductions and health_damage_reductions <= self._data.health_value then
@@ -136,8 +136,8 @@ if not RedHealth.done and _G.VoidUI and _G.VoidUI.options.teammate_panels and Re
 
 		local health_damage_reductions = RedHealth:calculate_health_with_reductions(current_health)
 
-		if health_damage_reductions and RedHealth._data.substract_armor then
-			health_damage_reductions = health_damage_reductions - (self._armor_data and self._armor_data.current * 10 or 0)
+		if health_damage_reductions and RedHealth._data.add_armor then
+			health_damage_reductions = health_damage_reductions + (self._armor_data and self._armor_data.current * 10 or 0)
 		end
 
 		if health_damage_reductions and health_damage_reductions <= RedHealth._data.health_value then
@@ -188,8 +188,8 @@ if not RedHealth.done and _G.NepgearsyHUDReborn then
 
 			local health_damage_reductions = RedHealth:calculate_health_with_reductions(current_health)
 
-			if health_damage_reductions and RedHealth._data.substract_armor then
-				health_damage_reductions = health_damage_reductions - (self._armor_data and self._armor_data.current * 10 or 0)
+			if health_damage_reductions and RedHealth._data.add_armor then
+				health_damage_reductions = health_damage_reductions + (self._armor_data and self._armor_data.current * 10 or 0)
 			end
 
 			if health_damage_reductions and health_damage_reductions <= RedHealth._data.health_value then

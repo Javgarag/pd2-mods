@@ -1,4 +1,6 @@
 # Health Turns Red When Under 225
+## 1.6.1
+Meant to add option to ADD armor, not substract it.
 ## 1.6.0
 Extensive code cleanup. Added Sora's HUD support. Added an option to substract armor amount to the health amount.
 ## 1.5.0

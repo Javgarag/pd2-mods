@@ -39,8 +39,8 @@ Hooks:Add( "MenuManagerInitialize", "MenuManagerInitialize_RedHealth", function(
 		RedHealth:Save()
 	end
 
-	MenuCallbackHandler.callback_rh_substract_armor = function(self, item)
-		RedHealth._data.substract_armor = item:value() == "on" or false
+	MenuCallbackHandler.callback_rh_add_armor = function(self, item)
+		RedHealth._data.add_armor = item:value() == "on" or false
 		RedHealth:Save()
 	end
 
@@ -56,8 +56,8 @@ Hooks:Add( "MenuManagerInitialize", "MenuManagerInitialize_RedHealth", function(
 		RedHealth:Save()
 	end
 
-	if RedHealth._data.substract_armor == nil then
-		RedHealth._data.substract_armor = false
+	if RedHealth._data.add_armor == nil then
+		RedHealth._data.add_armor = false
 		RedHealth:Save()
 	end
 	

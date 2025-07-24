@@ -29,11 +29,11 @@
 		},
 		{
 			"type" : "toggle",
-			"id" : "rh_substract_armor",
-			"title" : "rh_substract_armor_title",
-			"description" : "rh_substract_armor_desc",
-			"callback" : "callback_rh_substract_armor",
-			"value" : "substract_armor",
+			"id" : "rh_add_armor",
+			"title" : "rh_add_armor_title",
+			"description" : "rh_add_armor_desc",
+			"callback" : "callback_rh_add_armor",
+			"value" : "add_armor",
 			"default_value" : false
 		}
 	]
