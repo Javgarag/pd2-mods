@@ -1,5 +1,5 @@
 {
-	"redhealth_title" : "Red Health"
+	"redhealth_title" : "Health Turns Red When Under 225"
 	"redhealth_desc" : "Change the values for this mod"
 
 	"rh_health_value_title" : "Health Threshold"
@@ -7,4 +7,7 @@
 
 	"rh_death_sentence_only_title" : "Only on Death Sentence"
 	"rh_death_sentence_only_desc" : "Enable the mod only on the Death Sentence difficulty."
+	
+	"rh_substract_armor_title" : "Substract armor"
+	"rh_substract_armor_desc" : "Substract the current armor value to the current health value and use the result to compare against the threshold."
 }

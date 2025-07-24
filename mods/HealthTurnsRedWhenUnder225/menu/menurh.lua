@@ -1,4 +1,4 @@
-_G.RedHealth = _G.RedHealth or {}
+RedHealth = RedHealth or class()
 RedHealth._path = ModPath
 RedHealth._data_path = SavePath .. "RedHealth_data.txt"
 RedHealth._data = {}
@@ -39,6 +39,11 @@ Hooks:Add( "MenuManagerInitialize", "MenuManagerInitialize_RedHealth", function(
 		RedHealth:Save()
 	end
 
+	MenuCallbackHandler.callback_rh_substract_armor = function(self, item)
+		RedHealth._data.substract_armor = item:value() == "on" or false
+		RedHealth:Save()
+	end
+
 	RedHealth:Load()
 
 	if RedHealth._data.health_value == nil then
@@ -48,6 +53,11 @@ Hooks:Add( "MenuManagerInitialize", "MenuManagerInitialize_RedHealth", function(
 
 	if RedHealth._data.death_sentence_only == nil then
 		RedHealth._data.death_sentence_only = false
+		RedHealth:Save()
+	end
+
+	if RedHealth._data.substract_armor == nil then
+		RedHealth._data.substract_armor = false
 		RedHealth:Save()
 	end
 	

@@ -1,4 +1,6 @@
 # Health Turns Red When Under 225
+## 1.6.0
+Extensive code cleanup. Added Sora's HUD support. Added an option to substract armor amount to the health amount.
 ## 1.5.0
 Added option to only enable the mod on the Death Sentence difficulty.
 ## 1.4.2

@@ -14,9 +14,9 @@
 			"callback" : "callback_rh_health_value",
 			"value" : "health_value",
 			"default_value" : 225,
-			"max" : 500,
+			"max" : 600,
 			"min" : 1,
-			"step" : 1
+			"step" : 5
 		},
 		{
 			"type" : "toggle",
@@ -25,6 +25,15 @@
 			"description" : "rh_death_sentence_only_desc",
 			"callback" : "callback_rh_death_sentence_only",
 			"value" : "death_sentence_only",
+			"default_value" : false
+		},
+		{
+			"type" : "toggle",
+			"id" : "rh_substract_armor",
+			"title" : "rh_substract_armor_title",
+			"description" : "rh_substract_armor_desc",
+			"callback" : "callback_rh_substract_armor",
+			"value" : "substract_armor",
 			"default_value" : false
 		}
 	]
