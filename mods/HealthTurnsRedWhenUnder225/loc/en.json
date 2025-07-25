@@ -8,6 +8,6 @@
 	"rh_death_sentence_only_title" : "Only on Death Sentence"
 	"rh_death_sentence_only_desc" : "Enable the mod only on the Death Sentence difficulty."
 	
-	"rh_substract_armor_title" : "Add armor"
-	"rh_substract_armor_desc" : "Add the current armor value to the current health value and use the result to compare against the threshold."
+	"rh_add_armor_title" : "Add armor"
+	"rh_add_armor_desc" : "Add the current armor value to the current health value and use the result to compare against the threshold."
 }

@@ -1,4 +1,6 @@
 # Health Turns Red When Under 225
+## 1.6.2
+Fixed localization issue.
 ## 1.6.1
 Meant to add option to ADD armor, not substract it.
 ## 1.6.0
