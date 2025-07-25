@@ -1,6 +1,15 @@
 {
-	"sm_act_4_name" : "Rozdział 4: Drużyna B"
+	"storyline_continued_title" : "Storyline Continued"
+	"storyline_continued_desc" : "Zmień wartości dla tego modu"
+	"storyline_continued_language_title" : "Język"
+	"storyline_continued_language_desc" : "Zmiana języka dla moda. Wymagane przeładowanie."
 	
+	"storyline_continued_en" : "English"
+	"storyline_continued_pl" : "Polish"
+	"storyline_continued_chs" : "Chinese"
+	"storyline_continued_ru" : "Russian"
+	
+	"sm_act_4_name" : "Rozdział 4: Drużyna B"
 	
 	"sm_54_name" : "Gdzieś w Meksyku"
 	"sm_54_desc" : "W dniach poprzedzających napad na Biały Dom, czteroosobowa ekipa postanowiła udać się do wielu miejsc, aby związać koniec z końcem. Dopiero wtedy w ich głowach pojawiła się myśl o przechwyceniu działalności Murkywater."

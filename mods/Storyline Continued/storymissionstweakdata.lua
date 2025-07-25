@@ -12,21 +12,8 @@
 		rewards = self:_default_reward()
 	}))
 ]]
-StorylineContinued = StorylineContinued or class()
-StorylineContinued._path = ModPath
 
 local orig_td = StoryMissionsTweakData._init_missions
-
-Hooks:Add("LocalizationManagerPostInit", "LocalizationManagerPostInit_StorylineContinued", function( loc )
-	if BLT.Localization._current == "pl" then
-		loc:load_localization_file( StorylineContinued._path .. "loc/pl.txt", false)
-	elseif BLT.Localization._current == "chs" then
-		loc:load_localization_file( StorylineContinued._path .. "loc/chs.txt", false)
-	else
-		loc:load_localization_file( StorylineContinued._path .. "loc/en.txt", false)
-	end
-end)
-
 function StoryMissionsTweakData:_init_missions(tweak_data)
 
 	orig_td(self, tweak_data)

@@ -1,6 +1,15 @@
 {
-	"sm_act_4_name" : "Chapter 4: The B-Teams"
+	"storyline_continued_title" : "Storyline Continued"
+	"storyline_continued_desc" : "Change the values for this mod"
+	"storyline_continued_language_title" : "Language"
+	"storyline_continued_language_desc" : "Change the language for the mod. Reload required."
 	
+	"storyline_continued_en" : "English"
+	"storyline_continued_pl" : "Polish"
+	"storyline_continued_chs" : "Chinese"
+	"storyline_continued_ru" : "Russian"
+	
+	"sm_act_4_name" : "Chapter 4: The B-Teams"
 	
 	"sm_54_name" : "Somewhere in Mexico"
 	"sm_54_desc" : "During the days leading up to the White House heist, crews of 4 decided to head to multiple locations to tie up loose ends. Only then did the thought of intercepting Murkywater's business enter their heads."

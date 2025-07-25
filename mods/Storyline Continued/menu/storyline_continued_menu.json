@@ -1,0 +1,26 @@
+{
+	"menu_id": "storyline_continued_menu",
+	"parent_menu_id": "blt_options",
+	"title": "storyline_continued_title",
+	"description": "storyline_continued_desc",
+	"back_callback": "storyline_continued_save",
+	"items":
+	[
+		{
+			"type" : "multiple_choice",
+			"id" : "storyline_continued_language",
+			"title" : "storyline_continued_language_title",
+			"description" : "storyline_continued_language_desc",
+			"callback" : "callback_storyline_continued_language",
+			"value" : "language",
+			"items" : [
+				"storyline_continued_en",
+				"storyline_continued_pl",
+				"storyline_continued_chs",
+				"storyline_continued_ru"
+			],
+			"localized_items" : true,
+			"default_value" : 1
+		}
+	]
+}

@@ -1,6 +1,15 @@
 {
-	"sm_act_4_name" : "第4章: 暗度陈仓"
+	"storyline_continued_title" : "Storyline Continued"
+	"storyline_continued_desc" : "更改该模式的值"
+	"storyline_continued_language_title" : "语言"
+	"storyline_continued_language_desc" : "更改 MOD 的语言。需要重新加载."
 	
+	"storyline_continued_en" : "English"
+	"storyline_continued_pl" : "Polish"
+	"storyline_continued_chs" : "Chinese"
+	"storyline_continued_ru" : "Russian"
+
+	"sm_act_4_name" : "第4章: 暗度陈仓"
 	
 	"sm_54_name" : "墨西哥某地"
 	"sm_54_desc" : "在准备白宫大劫案的几天里，4人小队决定前往多个地点为未尽的事情收尾。此时此刻，他们脑中浮现出干扰莫奇沃特公司业务的计划。"
