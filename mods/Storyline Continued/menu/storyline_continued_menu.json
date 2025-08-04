@@ -17,7 +17,8 @@
 				"storyline_continued_en",
 				"storyline_continued_pl",
 				"storyline_continued_chs",
-				"storyline_continued_ru"
+				"storyline_continued_ru",
+				"storyline_continued_fr"
 			],
 			"localized_items" : true,
 			"default_value" : 1

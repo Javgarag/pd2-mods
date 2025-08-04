@@ -1,0 +1,75 @@
+{
+	"storyline_continued_title" : "Storyline Continued",
+	"storyline_continued_desc" : "Modifier les valeurs pour ce mod",
+	"storyline_continued_language_title" : "Langue",
+	"storyline_continued_language_desc" : "Changer la langue pour le mod. Rechargement requis.",
+	
+	"storyline_continued_en" : "English"
+	"storyline_continued_pl" : "Polish"
+	"storyline_continued_chs" : "Chinese"
+	"storyline_continued_ru" : "Russian"
+	"storyline_continued_fr" : "French"
+	
+	"sm_act_4_name" : "Chapitre 4 : Les Équipes B",
+	
+	"sm_54_name" : "Quelque part au Mexique",
+	"sm_54_desc" : "Pendant les jours précédant le braquage de la Maison Blanche, des équipes de 4 ont décidé de se rendre à plusieurs endroits pour régler des affaires en suspens. Ce n'est qu'alors que l'idée d'intercepter les affaires de Murkywater leur est venue à l'esprit.",
+	"sm_54_obj" : "Terminer le travail de Traversée de Frontière en difficulté Très Difficile ou plus élevée. \nCette mission vous oblige à jouer depuis le lobby jusqu'à la fin du braquage.",
+	"menu_sm_very_hard_mex" : "Traversée de Frontière",
+	
+	"sm_55_name" : "Règlement de Comptes",
+	"sm_55_desc" : "Peu après le travail à la frontière, l'équipe a reçu un appel de dernière minute inattendu de Vlad, cherchant un butin gardé en sécurité dans une banque en échange de toute son aide envers le gang PAYDAY au fil des années.",
+	"sm_55_obj" : "Terminer le travail de la Banque San Martín en difficulté Très Difficile ou plus élevée. \nCette mission vous oblige à jouer depuis le lobby jusqu'à la fin du braquage.",
+	"menu_sm_very_hard_bex" : "Banque San Martín",
+	
+	"sm_56_name" : "Une Évasion Problématique",
+	"sm_56_desc" : "La police mexicaine causerait pas mal de problèmes après le braquage de la banque. Hajrudin, le beau-frère de Vlad, a été arrêté suite à son implication avec le gang et a été enfermé dans une prison de sécurité maximale à Tijuana. Le gang devait maintenant le libérer.",
+	"sm_56_obj" : "Terminer le travail de Petit Déjeuner à Tijuana en difficulté Très Difficile ou plus élevée. \nCette mission vous oblige à jouer depuis le lobby jusqu'à la fin du braquage.",
+	"menu_sm_very_hard_pex" : "Petit Déjeuner à Tijuana",
+	
+	"sm_57_name" : "Dieu du Tonnerre",
+	"sm_57_desc" : "Vlad, après avoir remercié le gang pour la libération de son beau-frère, a demandé une dernière faveur. Buluc, le chef du cartel Coyopa, était responsable de l'arrestation d'Hajrudin. Le gang devait l'éliminer et voler sa liste de contacts, style Ernesto Sosa.",
+	"sm_57_obj" : "Terminer le travail du Manoir de Buluc en difficulté Très Difficile ou plus élevée. \nCette mission vous oblige à jouer depuis le lobby jusqu'à la fin du braquage.",
+	"menu_sm_very_hard_fex" : "Manoir de Buluc",
+	
+	
+	"sm_58_name" : "Le Dragon d'Or",
+	"sm_58_desc" : "Pendant qu'une équipe de 4 effectuait des travaux au Mexique, quatre autres braqueurs étaient chargés de s'attaquer à une boutique de Chinatown. Jiu Feng, un entrepreneur potentiel pour l'équipe, a contacté Locke et a immédiatement organisé un autre travail à effectuer.",
+	"sm_58_obj" : "Terminer le travail du Braquage du Dragon en difficulté Très Difficile ou plus élevée. \nCette mission vous oblige à jouer depuis le lobby jusqu'à la fin du braquage.",
+	"menu_sm_very_hard_chas" : "Braquage du Dragon",
+	
+	"sm_59_name" : "Perturbation",
+	"sm_59_desc" : "La triade dont le gang avait volé la statue de dragon tentait maintenant de saboter l'équipe. Ils ont localisé Vlad grâce à leur réseau de contacts et l'ont ensuite pris en otage et torturé, tout cela pour connaître l'emplacement du gang PAYDAY. Jiu Feng était prêt à donner un coup de main.",
+	"sm_59_obj" : "Terminer le travail du Prisonnier Ukrainien en difficulté Très Difficile ou plus élevée. \nCette mission vous oblige à jouer depuis le lobby jusqu'à la fin du braquage.",
+	"menu_sm_very_hard_sand" : "Prisonnier Ukrainien",
+	
+	"sm_60_name" : "Personne N'est Insubmersible",
+	"sm_60_desc" : "Vlad était maintenant extrêmement en colère contre Xun Kang et la triade. Sa dernière mission pour le gang PAYDAY consisterait en un assaut complet du Black Cat, un navire de croisière appartenant et exploité par le Poignard d'Or.",
+	"sm_60_obj" : "Terminer le travail du Black Cat en difficulté Très Difficile ou plus élevée. \nCette mission vous oblige à jouer depuis le lobby jusqu'à la fin du braquage.",
+	"menu_sm_very_hard_chca" : "Black Cat",
+	
+	"sm_61_name" : "La Tête du Serpent",
+	"sm_61_desc" : "Ayant réglé le compte de Xun Kang, l'équipe se dirigeait vers Washington D.C. Cependant, Shayu, membre du Poignard d'Or, avait d'autres projets pour eux. Pour qu'elle devienne la tête de la triade, Yufu Wang devait d'abord... prendre sa retraite. Le gang savait exactement comment le faire.",
+	"sm_61_obj" : "Terminer le travail du Maître de la Montagne en difficulté Très Difficile ou plus élevée. \nCette mission vous oblige à jouer depuis le lobby jusqu'à la fin du braquage.",
+	"menu_sm_very_hard_pent" : "Maître de la Montagne",
+	
+	"sm_62_name" : "L'État de l'Étoile Solitaire",
+	"sm_62_desc" : "L'aventure de la quatrième équipe a commencé juste quand Gemma McShay a contracté le gang pour effectuer des éliminations au Texas. Leur premier travail serait assez inhabituel, étant chargé d'éliminer Esteban Santiago. Pas comme s'ils n'avaient jamais traité ce type de contrats auparavant, cependant.",
+	"sm_62_obj" : "Terminer le travail du Ranch Midland en difficulté Très Difficile ou plus élevée. \nCette mission vous oblige à jouer depuis le lobby jusqu'à la fin du braquage.",
+	"menu_sm_very_hard_ranc" : "Ranch Midland",
+	
+	"sm_63_name" : "La Floride Encore Une Fois",
+	"sm_63_desc" : "Gemma avait un nouveau travail pour l'équipe. Voler des plaques d'impression était quelque chose qu'ils connaissaient bien, et donc quand elle a appris que l'Armée en déplaçait dans des wagons de train, elle savait exactement qui contacter.",
+	"sm_63_obj" : "Terminer le travail de Perdu en Transit en difficulté Très Difficile ou plus élevée. \nCette mission vous oblige à jouer depuis le lobby jusqu'à la fin du braquage.",
+	"menu_sm_very_hard_trai" : "Perdu en Transit",
+	
+	"sm_64_name" : "Se Frayer un Chemin",
+	"sm_64_desc" : "Blaine Keegan, l'associé de McShay, proposait maintenant un travail au gang PAYDAY aussi. Son concurrent dans l'industrie pétrolière, SERA Inc, l'empêchait de se développer dans ce domaine. Alice Rainey devait partir, et quel meilleur moyen de s'en débarrasser que d'exposer ses opérations illicites aux médias.",
+	"sm_64_obj" : "Terminer le travail de Prise de Contrôle Hostile en difficulté Très Difficile ou plus élevée. \nCette mission vous oblige à jouer depuis le lobby jusqu'à la fin du braquage.",
+	"menu_sm_very_hard_corp" : "Prise de Contrôle Hostile",
+	
+	"sm_65_name" : "Un Réveil Brutal",
+	"sm_65_desc" : "Alors que le braquage de la Maison Blanche approchait, Keegan voulait faire suite à son épreuve avec SERA, en détruisant tout ce qu'Alice Rainey avait laissé. SERA Inc. partirait en bang, et le gang PAYDAY aussi.",
+	"sm_65_obj" : "Terminer le travail de Réveil Brutal en difficulté Très Difficile ou plus élevée. \nCette mission vous oblige à jouer depuis le lobby jusqu'à la fin du braquage.",
+	"menu_sm_very_hard_deep" : "Réveil Brutal"
+}

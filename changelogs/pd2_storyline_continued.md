@@ -1,4 +1,6 @@
 # Storyline Continued
+## v1.4.0
+Added support for French language.
 ## v1.3.0
 Added support for Russian language; added options menu to change language instead of relying on BLT's.
 ## v1.2.1

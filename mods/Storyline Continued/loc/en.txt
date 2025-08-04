@@ -8,6 +8,7 @@
 	"storyline_continued_pl" : "Polish"
 	"storyline_continued_chs" : "Chinese"
 	"storyline_continued_ru" : "Russian"
+	"storyline_continued_fr" : "French"
 	
 	"sm_act_4_name" : "Chapter 4: The B-Teams"
 	
