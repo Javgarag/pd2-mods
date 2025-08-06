@@ -97,6 +97,10 @@ function ComputerGui:_start()
 	self:show()
 	self._unit:base():start()
 
+	if Network:is_client() then
+		return
+	end
+
 	self._camera_pos = self._unit:get_object(Idstring("camera_pos"))
 	self._teleport_pos = self._unit:get_object(Idstring("teleport_pos"))
 	if not (self._camera_pos or self._teleport_pos) then
@@ -124,13 +128,6 @@ function ComputerGui:_start()
 	self._quit_text:set_y(self._quit_text:y() + 50)
 
 	self:setup_mouse()
-
-	self._unit:set_extension_update_enabled(Idstring("computer_gui"), true)
-	self._update_enabled = true
-
-	if Network:is_client() then
-		return
-	end
 end
 
 -- ComputerGui:sync_start -> Network version of ComputerGui:start(), called by UnitNetworkHandler (See /hooks/UnitNetworkHandler.lua)
@@ -154,10 +151,10 @@ function ComputerGui:mouse_moved(o, x, y)
 	self._pointer.gui:set_x(x)
 	self._pointer.gui:set_y(y)
 
-	if self:inside_app_icon(x, y) or self:inside_app_window_close_button(x, y) then
-		self._pointer.gui:set_texture_rect(20,0,19,23) -- type "link"
-	elseif self:inside_app_window_drag_hitbox(x, y) and not self._pointer.dragging then
+	if  self:inside_app_window_drag_hitbox(x, y) and not self._pointer.dragging then
 		self._pointer.gui:set_texture_rect(40,0,19,23) -- type "hand"
+	elseif self:inside_app_icon(x, y) or self:inside_app_window_close_button(x, y) then
+		self._pointer.gui:set_texture_rect(20,0,19,23) -- type "link"
 	else
 		self._pointer.gui:set_texture_rect(0,0,19,23) -- type "arrow"
 	end
@@ -229,31 +226,31 @@ function ComputerGui:remove_mouse()
 	managers.mouse_pointer:remove_mouse("computer_gui_mouse")
 end
 
--- ComputerGui:inside_app_icon -> Check if the pointer is currently inside a clickable application button. Returns: is_inside, app_id
+-- ComputerGui:inside_app_icon -> Check if the pointer is currently inside a clickable application button.
 function ComputerGui:inside_app_icon(x,y)
 	for app_index, app in pairs(self._applications) do
-		if self._desktop_apps[app_index]:inside(x,y) and not self:item_obscured(self._desktop_apps[app_index]) then
+		if self._desktop_apps[app_index]:inside(x,y) and self:item_visible(self._desktop_apps[app_index], x, y) then
 			return true, app_index, app
 		end
 	end
 	return false
 end
 
--- ComputerGui:inside_app_window_close_button -> Check if the pointer is currently inside a clickable window close button. Returns: is_inside, app_id
+-- ComputerGui:inside_app_window_close_button -> Check if the pointer is currently inside a clickable window close button.
 function ComputerGui:inside_app_window_close_button(x, y)
 	for app_index, app in pairs(self._applications) do
-		if self._windows[app.name] and self._windows[app.name].gui.close_button:inside(x,y) and not self:item_obscured(self._windows[app.name].gui.close_button) then
+		if self._windows[app.name] and self._windows[app.name].gui.close_button:inside(x,y) and self:item_visible(self._windows[app.name].gui.close_button, x, y) and self._windows[app.name].open then
 			return true, app_index, app
 		end
 	end
 	return false
 end
 
--- ComputerGui:inside_app_window_drag_hitbox -> Check if the pointer is currently inside a clickable window drag button hitbox. Returns: is_inside, app_id
+-- ComputerGui:inside_app_window_drag_hitbox -> Check if the pointer is currently inside a clickable window drag button hitbox.
 function ComputerGui:inside_app_window_drag_hitbox(x, y)
 	for app_index, app in pairs(self._applications) do
 		if self._windows[app.name] and self._windows[app.name].open then
-			if self._windows[app.name].gui.drag_hitbox:inside(x,y) and not self:item_obscured(self._windows[app.name].gui.drag_hitbox) then
+			if self._windows[app.name].gui.drag_hitbox:inside(x,y) and self:item_visible(self._windows[app.name].gui.drag_hitbox, x, y) then
 				return true, app_index, app
 			end
 		end
@@ -261,78 +258,190 @@ function ComputerGui:inside_app_window_drag_hitbox(x, y)
 	return false
 end
 
-function ComputerGui:item_obscured(item)
-    local target_rect = {
-		x = item:x(),
-		y = item:y(),
-		w = item:w(),
-		h = item:h()
-	}
+function ComputerGui:item_visible(item, x, y)
+	if self:get_active_window() and table.contains(self:get_active_window().gui.panel:children(), item) then
+		return true
+	end
 
-    for _,window in pairs(self._windows) do
-		if not window.open then return end
-
-        if window.gui.panel ~= item:parent() then -- Revise
-            local rect = {
-				x = window.gui.panel:x(),
-				y = window.gui.panel:y(),
-				w = window.gui.panel:w(),
-				h = window.gui.panel:h()
-			}
-
-            if self:rect_inside(target_rect, rect) then
-                return true
-            end
-        end
+    for _, window in pairs(self._windows) do
+		if window.open then
+			if not table.contains(window.gui.panel:children(), item) then
+				if window.gui.panel:inside(x, y) then
+					return false
+				end
+			end
+		end
     end
 
-    return false
+    return true
 end
 
-function ComputerGui:rect_inside(target, rect)
-    return rect.x <= target.x and rect.y <= target.y and rect.x + rect.w >= target.x + target.w and rect.y + rect.h >= target.y + target.h
-end
 -- // SCREEN ACTIONS \\
+
+local function HUDBGBox_create_window(panel, params, config)
+	local box_panel = panel
+	local color = config and config.color
+	local bg_color = config and config.bg_color or Color(1, 0, 0, 0)
+
+	box_panel:rect({
+		name = "bg",
+		halign = "grow",
+		alpha = 1,
+		valign = "grow",
+		color = bg_color
+	})
+
+	local left_top = box_panel:bitmap({
+		texture = "guis/textures/pd2/hud_corner",
+		name = "left_top",
+		y = 0,
+		halign = "left",
+		x = 0,
+		valign = "top"
+	})
+
+	local left_bottom = box_panel:bitmap({
+		texture = "guis/textures/pd2/hud_corner",
+		name = "left_bottom",
+		x = 0,
+		y = 0,
+		halign = "left",
+		rotation = -90,
+		blend_mode = "normal",
+		valign = "bottom"
+	})
+	left_bottom:set_bottom(box_panel:h())
+	left_bottom:set_render_template(Idstring("VertexColorTextured"))
+
+	local right_top = box_panel:bitmap({
+		texture = "guis/textures/pd2/hud_corner",
+		name = "right_top",
+		x = 0,
+		y = 0,
+		halign = "right",
+		rotation = 90,
+		blend_mode = "normal",
+		valign = "top"
+	})
+	right_top:set_right(box_panel:w())
+	right_top:set_render_template(Idstring("VertexColorTextured"))
+
+	local right_bottom = box_panel:bitmap({
+		texture = "guis/textures/pd2/hud_corner",
+		name = "right_bottom",
+		x = 0,
+		y = 0,
+		halign = "right",
+		rotation = 180,
+		blend_mode = "normal",
+		valign = "bottom"
+	})
+	right_bottom:set_right(box_panel:w())
+	right_bottom:set_bottom(box_panel:h())
+	right_bottom:set_render_template(Idstring("VertexColorTextured"))
+
+	return box_panel
+end
+
+function HUDBGBox_animate_window(panel, wait_t, target_w, speed, anim, done_cb)
+	local center_x = panel:center_x()
+
+	if anim == "open" then
+		panel:set_w(0)
+		panel:set_visible(true)
+	end
+
+	local TOTAL_T = speed
+	local t = TOTAL_T
+
+	while t > 0 do
+		local dt = coroutine.yield()
+		t = t - dt
+
+		panel:set_w(anim == "open" and ((1 - t / TOTAL_T) * target_w) or ((t / TOTAL_T) * target_w))
+		panel:set_center_x(center_x)
+	end
+
+	panel:set_w(target_w)
+	panel:set_center_x(center_x)
+
+	if anim == "close" then
+		panel:set_visible(false)
+	end
+
+	if done_cb then
+		done_cb()
+	end
+end
+
+function HUDBGBox_animate_window_attention(panel)
+	local TOTAL_T = 1
+	local t = TOTAL_T
+
+	while t > 0 do
+		local dt = coroutine.yield()
+		t = t - dt
+		local var = math.abs(math.cos(t * 180))
+
+		panel:set_alpha(1 * var)
+	end
+
+	panel:set_alpha(1)
+end
 
 -- ComputerGui:open_window -> Open the panel specified in the application configuration of id app_id
 function ComputerGui:open_window(app_index, app)
 	local app_name = app.name
 
-	if DB:has(Idstring("gui"), Idstring(self._applications[app_index].panel)) ~= true then
-			log("[ComputerGui:open_window] Couldn't find the .gui window file for app '" .. app_name .. "' in application definition. Check your paths!")
+	if not DB:has(Idstring("gui"), Idstring(self._applications[app_index].panel)) then
+		log("[ComputerGui:open_window] Couldn't find the .gui window file for app '" .. app_name .. "' in application definition. Check your paths!")
 		return
 	end
 
-	if self._windows[app_name] and self._windows[app_name].open then return end
+	if self._windows[app_name] and self._windows[app_name].open then 
+		self:set_active_window(app_name)
+		self._windows[app_name].gui.panel:animate(callback(nil, _G, "HUDBGBox_animate_window_attention"))
+		return 
+	end
 
 	if not self._windows[app_name] then -- Only create it if it doesn't exist already
 		self._windows[app_name] = {
 			gui = self._gui_script.panel:gui(Idstring(self._applications[app_index].panel)):script(),
 			open = true
 		}
-	else
-		self._windows[app_name].open = true
+
+		local window = self._windows[app_name].gui
+		HUDBGBox_create_window(window.panel, {
+			w = window.panel:w(),
+			h = window.panel:h()
+		})
 	end
 
-	self._windows[app_name].gui.panel:set_visible(true)
+	local function open_done() 
+		self._windows[app_name].open = true
+		self:set_active_window(app_name)
+	end
 
-	self:set_active_window(app_name)
+	self._windows[app_name].gui.panel:animate(callback(nil, _G, "HUDBGBox_animate_window"), nil, self._windows[app_name].gui.panel:w(), 0.1, "open", open_done)
 end
 
 function ComputerGui:close_window(app_name)
-	self._windows[app_name].gui.panel:set_visible(false)
-	self._windows[app_name].open = false
+	local function close_done()
+		self._windows[app_name].open = false
 
-	local app_index = nil
-	for stack_index, stack_name in ipairs(self._window_stack) do
-		if app_name == stack_name then
-			app_index = stack_index
+		local app_index = nil
+		for stack_index, stack_name in ipairs(self._window_stack) do
+			if app_name == stack_name then
+				app_index = stack_index
+			end
+		end
+
+		if app_index ~= nil then
+			table.remove(self._window_stack, app_index)
 		end
 	end
 
-	if app_index ~= nil then
-		table.remove(self._window_stack, app_index)
-	end
+	self._windows[app_name].gui.panel:animate(callback(nil, _G, "HUDBGBox_animate_window"), nil, self._windows[app_name].gui.panel:w(), 0.1, "close", close_done)
 end
 
 function ComputerGui:set_active_window(app_name)
