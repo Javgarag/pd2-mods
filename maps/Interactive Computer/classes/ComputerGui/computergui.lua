@@ -208,12 +208,12 @@ function ComputerGui:mouse_pressed(o, button, x, y)
 end
 
 -- ComputerGui:mouse_released -> Triggers when the mouse, which was previously pressed, is released.
-function ComputerGui:mouse_released()
+function ComputerGui:mouse_released(button, x, y)
 	if self._pointer.dragging then -- Stop dragging
 		self._pointer.dragging = false
 		self._pointer.dragging_offsets.x = nil
 		self._pointer.dragging_offsets.y = nil
-		self._pointer.gui:set_texture_rect(0,0,19,23) -- type "arrow"
+		self._pointer.gui:set_texture_rect(40,0,19,23) -- type "hand"
 	end
 end
 
@@ -258,7 +258,7 @@ end
 -- ComputerGui:inside_app_window_close_button -> Check if the pointer is currently inside a clickable window close button.
 function ComputerGui:inside_app_window_close_button(x, y)
 	for app_index, app in pairs(self._applications) do
-		if self._windows[app.name] and self._windows[app.name].gui.close_button:inside(x,y) and self:item_visible(self._windows[app.name].gui.close_button, x, y) and self._windows[app.name].open then
+		if self._windows[app.name] and self._windows[app.name].gui.panel:child("close_button"):inside(x,y) and self:item_visible(self._windows[app.name].gui.panel:child("close_button"), x, y) and self._windows[app.name].open then
 			return true, app_index, app
 		end
 	end
@@ -269,7 +269,7 @@ end
 function ComputerGui:inside_app_window_drag_hitbox(x, y)
 	for app_index, app in pairs(self._applications) do
 		if self._windows[app.name] and self._windows[app.name].open then
-			if self._windows[app.name].gui.drag_hitbox:inside(x,y) and self:item_visible(self._windows[app.name].gui.drag_hitbox, x, y) then
+			if self._windows[app.name].gui.panel:child("drag_hitbox"):inside(x,y) and self:item_visible(self._windows[app.name].gui.panel:child("drag_hitbox"), x, y) then
 				return true, app_index, app
 			end
 		end
@@ -307,7 +307,8 @@ local function HUDBGBox_create_window(panel, params, config)
 		halign = "grow",
 		alpha = 1,
 		valign = "grow",
-		color = bg_color
+		color = bg_color,
+		layer = -1,
 	})
 
 	local left_top = box_panel:bitmap({
@@ -320,44 +321,38 @@ local function HUDBGBox_create_window(panel, params, config)
 	})
 
 	local left_bottom = box_panel:bitmap({
-		texture = "guis/textures/pd2/hud_corner",
+		texture = "guis/textures/pd2/hud_corner_down_left",
 		name = "left_bottom",
 		x = 0,
 		y = 0,
 		halign = "left",
-		rotation = -90,
 		blend_mode = "normal",
 		valign = "bottom"
 	})
 	left_bottom:set_bottom(box_panel:h())
-	left_bottom:set_render_template(Idstring("VertexColorTextured"))
 
 	local right_top = box_panel:bitmap({
-		texture = "guis/textures/pd2/hud_corner",
+		texture = "guis/textures/pd2/hud_corner_top_right",
 		name = "right_top",
 		x = 0,
 		y = 0,
 		halign = "right",
-		rotation = 90,
 		blend_mode = "normal",
 		valign = "top"
 	})
 	right_top:set_right(box_panel:w())
-	right_top:set_render_template(Idstring("VertexColorTextured"))
 
 	local right_bottom = box_panel:bitmap({
-		texture = "guis/textures/pd2/hud_corner",
+		texture = "guis/textures/pd2/hud_corner_down_right",
 		name = "right_bottom",
 		x = 0,
 		y = 0,
 		halign = "right",
-		rotation = 180,
 		blend_mode = "normal",
 		valign = "bottom"
 	})
 	right_bottom:set_right(box_panel:w())
 	right_bottom:set_bottom(box_panel:h())
-	right_bottom:set_render_template(Idstring("VertexColorTextured"))
 
 	return box_panel
 end
@@ -434,20 +429,38 @@ function ComputerGui:open_window(app_index, app)
 			w = window.panel:w(),
 			h = window.panel:h()
 		})
+
+		local drag_hitbox = window.panel:rect({
+			name = "drag_hitbox",
+			w = window.panel:w() - 35,
+			h = 35,
+			alpha = 0,
+			layer = -1
+		})
+
+		local close_button = window.panel:bitmap({
+			name = "close_button",
+			texture = "guis/textures/pd2/specialization/points_reduce",
+			w = 25,
+			h = 25,
+			x = window.panel:w() - 30,
+			y = 5,
+			layer = -1
+		})
 	end
 
 	local function open_done() 
 		self._windows[app_name].open = true
-		self:set_active_window(app_name)
 	end
 
+	self:set_active_window(app_name)
 	self._windows[app_name].gui.panel:animate(callback(nil, _G, "HUDBGBox_animate_window"), nil, self._windows[app_name].gui.panel:w(), 0.1, "open", open_done)
 end
 
 function ComputerGui:close_window(app_name)
-	local function close_done()
-		self._windows[app_name].open = false
+	self._windows[app_name].open = false
 
+	local function close_done()
 		local app_index = nil
 		for stack_index, stack_name in ipairs(self._window_stack) do
 			if app_name == stack_name then
@@ -483,12 +496,13 @@ function ComputerGui:set_active_window(app_name)
 	end
 
 	for stack_index, stack_name in ipairs(self._window_stack) do
-		if stack_name ~= app_name then
-			self._windows[stack_name].gui.panel:set_layer(stack_index + 2)
-		end
+		self._windows[stack_name].gui.panel:set_layer(stack_index + 2 + 1) -- Each window gets 2 layers. One is for HudBGBox's background; the other is for the contents.
+		--[[ Global layer info:
+		1 - Desktop background
+		2 - Desktop apps
+		Rest (in pairs): windows.
+		]]
 	end
-
-	self._windows[app_name].gui.panel:set_layer(#self._window_stack + 2) -- New active
 end
 
 function ComputerGui:get_active_window()

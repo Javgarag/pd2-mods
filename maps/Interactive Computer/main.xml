@@ -9,6 +9,11 @@
 		<texture path="guis/textures/computergui/backgrounds/application_icon_trash"/>
 		<texture path="guis/textures/computergui/backgrounds/application_icon_browser"/>
 		<texture path="guis/textures/computergui/backgrounds/xp_bg"/>
+		
+		<!-- Window corners (can't rotate vanilla texture or else they escape monitor) -->
+		<dds path="guis/textures/pd2/hud_corner_down_left"/>
+		<dds path="guis/textures/pd2/hud_corner_down_right"/>
+		<dds path="guis/textures/pd2/hud_corner_top_right"/>
 	</AddFiles>
 	<Localization default="english.txt" directory="loc">
 		<loc file="english.txt" language="english"/>

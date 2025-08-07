@@ -2,9 +2,7 @@
 	<preload texture="guis/textures/pd2/specialization/points_reduce"/>
 	<preload texture="guis/textures/pd2/feature_crimenet_heat"/>
 	
-	<panel name_s="panel" halign_s="grow" valign_s="grow" w="340" h="84" layer="3" x="175" y="75">
-		<rect name_s="drag_hitbox" alpha="0" w="305" h="10"/>
-		<bitmap name_s="close_button" texture_s="guis/textures/pd2/specialization/points_reduce" w="25" h="25" x="305" y="10"/>
+	<panel name_s="panel" halign_s="grow" valign_s="grow" w="340" h="84" x="175" y="75">
 		<bitmap name_s="icon" texture_s="guis/textures/pd2/feature_crimenet_heat" w="64" h="64" x="10" y="10"/>
 		<text name_s="text" text_s="Access denied." x="85" vertical_s="center" font_s="fonts/font_medium_noshadow_mf" render_template_s="Text" font_size="40" color="Color.white"/>
 	</panel>
