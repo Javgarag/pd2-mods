@@ -1,15 +1,14 @@
 <table min_lib_ver="4.5" name="Interactive Computer">
 	<AddFiles directory="assets">
-		<json force="true" path="gamedata/interactive_computer/applications"/>
-		<gui force="true" path="guis/computer_gui/base"/>
-		<gui force="true" path="guis/computer_gui/prompt_access_denied"/>
-		<gui force="true" path="guis/computer_gui/prompt_file_explorer"/>
-		<texture force="true" path="guis/textures/computergui/backgrounds/application_icon_usb"/>
-		<texture force="true" path="guis/textures/computergui/backgrounds/application_icon_file_explorer"/>
-		<texture force="true" path="guis/textures/computergui/backgrounds/application_icon_trash"/>
-		<texture force="true" path="guis/textures/computergui/backgrounds/application_icon_browser"/>
-		<texture force="true" path="guis/textures/computergui/backgrounds/application_window"/>
-		<texture force="true" path="guis/textures/computergui/backgrounds/xp_bg"/>
+		<json path="gamedata/interactive_computer/applications"/>
+		<gui path="guis/computer_gui/base"/>
+		<gui path="guis/computer_gui/prompt_access_denied"/>
+		<gui path="guis/computer_gui/prompt_file_explorer"/>
+		<texture path="guis/textures/computergui/backgrounds/application_icon_usb"/>
+		<texture path="guis/textures/computergui/backgrounds/application_icon_file_explorer"/>
+		<texture path="guis/textures/computergui/backgrounds/application_icon_trash"/>
+		<texture path="guis/textures/computergui/backgrounds/application_icon_browser"/>
+		<texture path="guis/textures/computergui/backgrounds/xp_bg"/>
 	</AddFiles>
 	<Localization default="english.txt" directory="loc">
 		<loc file="english.txt" language="english"/>
@@ -22,7 +21,7 @@
 			<asset name="bodybags_bag"/>
 		</assets>
 		<classes directory="classes">
-			<class file="computergui.lua"/>
+			<class file="ComputerGui/computergui.lua"/>
 		</classes>
 		<outro_event/>
 		<packages>
