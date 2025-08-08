@@ -10,10 +10,6 @@
 	<extensions>
 		<extension name="unit_data" class="ScriptUnitData" />
 		<extension name="damage" class="UnitDamage" />
-		<extension name="base" class="Drill">
-			<var name="_use_effect" value="false" />
-			<var name="is_hacking_device" value="true" />
-		</extension>
 		<extension name="interaction" class="UseInteractionExt">
 			<var name="tweak_data" value="hack_suburbia_outline" />
 		</extension>

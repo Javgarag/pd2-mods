@@ -26,7 +26,8 @@
 			<asset name="bodybags_bag"/>
 		</assets>
 		<classes directory="classes">
-			<class file="ComputerGui/computergui.lua"/>
+			<class file="ComputerGui/ComputerGui.lua"/>
+			<class file="ComputerGui/modules/ProgressBar.lua"/>
 		</classes>
 		<outro_event/>
 		<packages>

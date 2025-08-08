@@ -4,9 +4,12 @@
 ComputerGui = ComputerGui or class()
 ComputerGui.BASE_ASSET_PATH = "guis/textures/computergui/"
 
+ComputerGui.modules = {
+	ProgressBar = ProgressBar
+}
+
 -- // INITIALIZATION \\
 
--- ComputerGui:init -> Initial extension setup, when the mission starts up.
 function ComputerGui:init(unit)
     self._unit = unit
 	self._visible = true
@@ -22,7 +25,6 @@ function ComputerGui:init(unit)
 	self._update_enabled = false
 end
 
--- ComputerGui:add_workspace -> Set up GUI workspace for the computer screen.
 function ComputerGui:add_workspace(gui_object)
 	local gui_width, gui_height = managers.gui_data:get_base_res() -- VERY IMPORTANT. This is so the mouse movement is ALWAYS synced with the user's resolution.
 	managers.viewport:add_resolution_changed_func(callback(self, self, "game_resolution_changed"))
@@ -38,9 +40,11 @@ function ComputerGui:add_workspace(gui_object)
 			y = nil
 		}
 	}
+
+	self._gui_script.screen_background:set_w(gui_width)
+	self._gui_script.screen_background:set_h(gui_height)
 end
 
--- ComputerGui:setup -> Populate the desktop with apps specified in .unit. 
 function ComputerGui:setup()
 	self._gui_script.panel:set_size(self._gui_script.panel:parent():size())
 
@@ -57,23 +61,72 @@ function ComputerGui:setup()
 	self._window_stack = {}
 
 	for app_index, app in pairs(self._applications) do
-		-- Icon setup
-		self._desktop_apps[app_index] = self._gui_script.panel:panel({
-			name = app_index,
-			w = 75,
-			h = 95,
-			x = 30 ,
-			y = 30 + 95 * (app_index - 1),
-			layer = 2
-		})
-		self._desktop_apps[app_index]:bitmap({
-			texture = app.icon,
-			name = "app_bg",
-			w = 75,
-			layer = 1,
-			h = 75,
-		})
+		if self:create_window(app_index, app) then
+			self._desktop_apps[app_index] = self._gui_script.panel:panel({
+				name = app_index,
+				w = 75,
+				h = 95,
+				x = 30 ,
+				y = 25 + 100 * (app_index - 1),
+				layer = 2
+			})
+			self._desktop_apps[app_index]:bitmap({
+				texture = app.icon,
+				name = "app_bg",
+				w = 75,
+				layer = 1,
+				h = 75,
+			})
+			local name = self._desktop_apps[app_index]:text({
+				text = app.name,
+				font = tweak_data.menu.pd2_large_font,
+				font_size = 20,
+				color = Color.black,
+				vertical = "bottom",
+				align = "center",
+			})
+			name:set_bottom(self._desktop_apps[app_index]:h())
+		end
 	end
+end
+
+function ComputerGui:create_window(app_index, app)
+	local app_name = app.name
+
+	if not DB:has(Idstring("gui"), Idstring(self._applications[app_index].panel)) then
+		log("[ComputerGui:open_window] Couldn't find the .gui window file for app '" .. app_name .. "' in application definition. Check your paths!")
+		return false
+	end
+
+	self._windows[app_name] = {
+		gui = self._gui_script.panel:gui(Idstring(self._applications[app_index].panel)):script(),
+		open = false
+	}
+
+	local window = self._windows[app_name].gui
+	HUDBGBox_create_window(window.panel, {
+		w = window.panel:w(),
+		h = window.panel:h()
+	})
+
+	local drag_hitbox = window.panel:rect({
+		name = "drag_hitbox",
+		w = window.panel:w() - 35,
+		h = 35,
+		alpha = 0,
+		layer = -1
+	})
+
+	local close_button = window.panel:bitmap({
+		name = "close_button",
+		texture = "guis/textures/pd2/specialization/points_reduce",
+		w = 25,
+		h = 25,
+		x = window.panel:w() - 30,
+		y = 5
+	})
+
+	return true
 end
 
 -- // AT ENTER \\
@@ -87,7 +140,6 @@ function ComputerGui:start()
 	end
 end
 
--- ComputerGui:_start -> Turn on the system, enable mouse control, and lock the camera to the screen.
 function ComputerGui:_start()
 	self._started = true
 	self._unit:set_extension_update_enabled(Idstring("computer_gui"), true)
@@ -95,7 +147,6 @@ function ComputerGui:_start()
 	--self:post_event(self._start_event)
 
 	self:show()
-	self._unit:base():start()
 
 	if Network:is_client() then
 		return
@@ -145,7 +196,6 @@ end
 
 -- // MOUSE MOVEMENT HANDLING \\
 
--- ComputerGui:mouse_moved -> Triggers when the mouse is moved by any distance.
 function ComputerGui:mouse_moved(o, x, y)
 	if not alive(self._unit) then return end -- Prevent crash on restart
 
@@ -169,7 +219,6 @@ function ComputerGui:mouse_moved(o, x, y)
 	end
 end
 
--- ComputerGui:mouse_pressed -> Triggers when the mouse is pressed.
 function ComputerGui:mouse_pressed(o, button, x, y)
 	if button == Idstring("0") then
 
@@ -207,7 +256,6 @@ function ComputerGui:mouse_pressed(o, button, x, y)
 	end
 end
 
--- ComputerGui:mouse_released -> Triggers when the mouse, which was previously pressed, is released.
 function ComputerGui:mouse_released(button, x, y)
 	if self._pointer.dragging then -- Stop dragging
 		self._pointer.dragging = false
@@ -233,7 +281,6 @@ function ComputerGui:remove_mouse()
 	managers.mouse_pointer:remove_mouse("computer_gui_mouse")
 end
 
--- ComputerGui:inside_app_icon -> Check if the pointer is currently inside a clickable application button.
 function ComputerGui:inside_app_icon(x,y)
 	for app_index, app in pairs(self._applications) do
 		if self._desktop_apps[app_index]:inside(x,y) and self:item_visible(self._desktop_apps[app_index], x, y) then
@@ -243,7 +290,6 @@ function ComputerGui:inside_app_icon(x,y)
 	return false
 end
 
--- ComputerGui:inside_app_window -> Check if the pointer is currently inside a window.
 function ComputerGui:inside_app_window(x,y)
 	for app_index, app in pairs(self._applications) do
 		if self._windows[app.name] and self._windows[app.name].open then
@@ -255,7 +301,6 @@ function ComputerGui:inside_app_window(x,y)
 	return false
 end
 
--- ComputerGui:inside_app_window_close_button -> Check if the pointer is currently inside a clickable window close button.
 function ComputerGui:inside_app_window_close_button(x, y)
 	for app_index, app in pairs(self._applications) do
 		if self._windows[app.name] and self._windows[app.name].gui.panel:child("close_button"):inside(x,y) and self:item_visible(self._windows[app.name].gui.panel:child("close_button"), x, y) and self._windows[app.name].open then
@@ -265,7 +310,6 @@ function ComputerGui:inside_app_window_close_button(x, y)
 	return false
 end
 
--- ComputerGui:inside_app_window_drag_hitbox -> Check if the pointer is currently inside a clickable window drag button hitbox.
 function ComputerGui:inside_app_window_drag_hitbox(x, y)
 	for app_index, app in pairs(self._applications) do
 		if self._windows[app.name] and self._windows[app.name].open then
@@ -297,7 +341,7 @@ end
 
 -- // SCREEN ACTIONS \\
 
-local function HUDBGBox_create_window(panel, params, config)
+function HUDBGBox_create_window(panel, params, config)
 	local box_panel = panel
 	local color = config and config.color
 	local bg_color = config and config.bg_color or Color(1, 0, 0, 0)
@@ -403,62 +447,33 @@ function HUDBGBox_animate_window_attention(panel)
 	panel:set_alpha(1)
 end
 
--- ComputerGui:open_window -> Open the panel specified in the application configuration of id app_id
 function ComputerGui:open_window(app_index, app)
-	local app_name = app.name
+	local window = self._windows[app.name]
 
-	if not DB:has(Idstring("gui"), Idstring(self._applications[app_index].panel)) then
-		log("[ComputerGui:open_window] Couldn't find the .gui window file for app '" .. app_name .. "' in application definition. Check your paths!")
+	if window.opening then 
 		return
 	end
 
-	if self._windows[app_name] and self._windows[app_name].open then 
-		self:set_active_window(app_name)
-		self._windows[app_name].gui.panel:animate(callback(nil, _G, "HUDBGBox_animate_window_attention"))
+	if window.open then 
+		self:set_active_window(app.name)
+		window.gui.panel:animate(callback(nil, _G, "HUDBGBox_animate_window_attention"))
 		return 
 	end
 
-	if not self._windows[app_name] then -- Only create it if it doesn't exist already
-		self._windows[app_name] = {
-			gui = self._gui_script.panel:gui(Idstring(self._applications[app_index].panel)):script(),
-			open = true
-		}
-
-		local window = self._windows[app_name].gui
-		HUDBGBox_create_window(window.panel, {
-			w = window.panel:w(),
-			h = window.panel:h()
-		})
-
-		local drag_hitbox = window.panel:rect({
-			name = "drag_hitbox",
-			w = window.panel:w() - 35,
-			h = 35,
-			alpha = 0,
-			layer = -1
-		})
-
-		local close_button = window.panel:bitmap({
-			name = "close_button",
-			texture = "guis/textures/pd2/specialization/points_reduce",
-			w = 25,
-			h = 25,
-			x = window.panel:w() - 30,
-			y = 5,
-			layer = -1
-		})
-	end
+	window.opening = true
 
 	local function open_done() 
-		self._windows[app_name].open = true
+		window.opening = false
+		window.open = true
 	end
 
-	self:set_active_window(app_name)
-	self._windows[app_name].gui.panel:animate(callback(nil, _G, "HUDBGBox_animate_window"), nil, self._windows[app_name].gui.panel:w(), 0.1, "open", open_done)
+	self:set_active_window(app.name)
+	window.gui.panel:animate(callback(nil, _G, "HUDBGBox_animate_window"), nil, window.gui.panel:w(), 0.1, "open", open_done)
 end
 
 function ComputerGui:close_window(app_name)
-	self._windows[app_name].open = false
+	local window = self._windows[app_name]
+	window.open = false
 
 	local function close_done()
 		local app_index = nil
@@ -473,7 +488,7 @@ function ComputerGui:close_window(app_name)
 		end
 	end
 
-	self._windows[app_name].gui.panel:animate(callback(nil, _G, "HUDBGBox_animate_window"), nil, self._windows[app_name].gui.panel:w(), 0.1, "close", close_done)
+	window.gui.panel:animate(callback(nil, _G, "HUDBGBox_animate_window"), nil, window.gui.panel:w(), 0.1, "close", close_done)
 end
 
 function ComputerGui:set_active_window(app_name)
@@ -496,11 +511,12 @@ function ComputerGui:set_active_window(app_name)
 	end
 
 	for stack_index, stack_name in ipairs(self._window_stack) do
-		self._windows[stack_name].gui.panel:set_layer(stack_index + 2 + 1) -- Each window gets 2 layers. One is for HudBGBox's background; the other is for the contents.
+		self._windows[stack_name].gui.panel:set_layer(stack_index + 2 + 1) -- Each window is separated by a layer. This is so HudBGBox can have background on -1.
 		--[[ Global layer info:
 		1 - Desktop background
 		2 - Desktop apps
 		Rest (in pairs): windows.
+		30 - Mouse pointer
 		]]
 	end
 end
@@ -513,23 +529,19 @@ function ComputerGui:get_stack_top_app_name()
 	return self._window_stack[#self._window_stack]
 end
 
--- ComputerGui:hide -> Turn off the workspace.
 function ComputerGui:hide()
 	self._ws:hide()
 end
 
--- ComputerGui:show -> Turn on the workspace.
 function ComputerGui:show()
 	self._ws:show()
 end
 
--- ComputerGui:set_visible -> Set the screen's visibility.
 function ComputerGui:set_visible(visible)
 	self._visible = visible
 	self._gui:set_visible(visible)
 end
 
--- ComputerGui:lock_gui -> Freeze the screen.
 function ComputerGui:lock_gui()
 	self._ws:set_cull_distance(self._cull_distance)
 	self._ws:set_frozen(true)
@@ -537,7 +549,6 @@ end
 
 -- // AT EXIT \\
 
--- ComputerGui:destroy -> Destroy the workspace and all the screen-related information.
 function ComputerGui:destroy()
 	if alive(self._new_gui) and alive(self._ws) then
 		self._new_gui:destroy_workspace(self._ws)
@@ -551,11 +562,11 @@ function ComputerGui:destroy()
 	end
 end
 
--- ComputerGui:_close -> Return the camera to the player, remove virtual mouse.
 function ComputerGui:_close()
 	managers.worldcamera:stop_world_camera()
 	self._text_workspace:destroy_workspace(self._hud)
 	self:remove_mouse()
+
 	local state = managers.player:get_current_state()
 	state:_toggle_gadget(state._equipped_unit:base())
 	self._unit:interaction():set_active(true)
@@ -567,13 +578,13 @@ end
 
 -- // MISC. \\
 
--- ComputerGui:game_resolution_changed -> Adjust the mouse's boundaries so they correctly match the new resolution.
 function ComputerGui:game_resolution_changed()
 	local gui_width, gui_height = managers.gui_data:get_base_res()
 	self._ws:panel():set_size(gui_width, gui_height)
+	self._gui_script.screen_background:set_w(gui_width)
+	self._gui_script.screen_background:set_h(gui_height)
 end
 
--- ComputerGui:update -> Runs every frame.
 function ComputerGui:update(unit, t, dt)
 	if Input:keyboard():down(Idstring("space")) then
 		self:_close()
