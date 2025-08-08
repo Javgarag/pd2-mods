@@ -11,6 +11,13 @@ ComputerGui.modules = {
 -- // INITIALIZATION \\
 
 function ComputerGui:init(unit)
+	local config_file = io.open(BeardLib.current_level._mod.ModPath.. self._config_file .. ".json", "r")
+	if not config_file then
+		log("[ComputerGui:setup] Could not find configuration file. Make sure you have included it inside the unit's configuration.")
+		return
+	end
+
+	self._config = json.decode(config_file:read("*all"))
     self._unit = unit
 	self._visible = true
 	self._cull_distance = self._cull_distance or 5000
@@ -30,10 +37,33 @@ function ComputerGui:add_workspace(gui_object)
 	managers.viewport:add_resolution_changed_func(callback(self, self, "game_resolution_changed"))
 
 	self._ws = self._new_gui:create_object_workspace(gui_width, gui_height, gui_object, Vector3(0, 0, 0))
-	self._gui = self._ws:panel():gui(Idstring("guis/computer_gui/base"))
-	self._gui_script = self._gui:script()
+	self._gui = self._ws:panel():panel({
+		name = "panel",
+		halign = "grow",
+		valign = "grow",
+		layer = 0,
+	})
+	self._gui:bitmap({
+		name = "screen_background",
+		texture = self._config.background_texture,
+		w = gui_width,
+		h = gui_height,
+		layer = 1,
+		color = Color(1, 1, 1)
+	})
+	self._gui:bitmap({
+		name = "pointer",
+		texture = "guis/textures/mouse_pointer",
+		texture_rect = {0, 0, 19, 23},
+		layer = 30,
+		color = Color(1, 0.7, 0.7, 0.7),
+		x = gui_width / 2,
+		y = gui_height / 2,
+		visible = true
+	})
+
 	self._pointer = {
-		gui = self._gui_script.pointer,
+		gui = self._gui:child("pointer"),
 		dragging = false,
 		dragging_offsets = {
 			x = nil,
@@ -41,28 +71,19 @@ function ComputerGui:add_workspace(gui_object)
 		}
 	}
 
-	self._gui_script.screen_background:set_w(gui_width)
-	self._gui_script.screen_background:set_h(gui_height)
+	self._gui:child("screen_background"):set_w(gui_width)
+	self._gui:child("screen_background"):set_h(gui_height)
+	self._gui:set_size(self._gui:parent():size())
 end
 
 function ComputerGui:setup()
-	self._gui_script.panel:set_size(self._gui_script.panel:parent():size())
-
-	-- APPLICATION CONFIGURATION
-	local application_file = io.open(BeardLib.current_level._mod.ModPath.. self._application_config.. ".json", "r")
-	if not application_file then
-		log("[ComputerGui:setup] Could not find applications file. Make sure you have included it inside the unit's configuration.")
-		return
-	end
-
-	self._applications = json.decode(application_file:read("*all"))
 	self._desktop_apps = {}
 	self._windows = {}
 	self._window_stack = {}
 
-	for app_index, app in pairs(self._applications) do
+	for app_index, app in pairs(self._config.applications) do
 		if self:create_window(app_index, app) then
-			self._desktop_apps[app_index] = self._gui_script.panel:panel({
+			self._desktop_apps[app_index] = self._gui:panel({
 				name = app_index,
 				w = 75,
 				h = 95,
@@ -93,13 +114,13 @@ end
 function ComputerGui:create_window(app_index, app)
 	local app_name = app.name
 
-	if not DB:has(Idstring("gui"), Idstring(self._applications[app_index].panel)) then
+	if not DB:has(Idstring("gui"), Idstring(self._config.applications[app_index].panel)) then
 		log("[ComputerGui:open_window] Couldn't find the .gui window file for app '" .. app_name .. "' in application definition. Check your paths!")
 		return false
 	end
 
 	self._windows[app_name] = {
-		gui = self._gui_script.panel:gui(Idstring(self._applications[app_index].panel)):script(),
+		gui = self._gui:gui(Idstring(self._config.applications[app_index].panel)):script(),
 		open = false
 	}
 
@@ -226,6 +247,7 @@ function ComputerGui:mouse_pressed(o, button, x, y)
 		if inside then
 			self:open_window(app_index, app)
 			self._pointer.gui:set_texture_rect(0,0,19,23) -- type "arrow"
+			return
 		end
 
 		-- Close the window if click over the button to close
@@ -234,6 +256,7 @@ function ComputerGui:mouse_pressed(o, button, x, y)
 			self:close_window(app.name)
 			self:set_active_window(self:get_stack_top_app_name())
 			self._pointer.gui:set_texture_rect(0,0,19,23) -- type "arrow"
+			return
 		end
 
 		-- Start dragging
@@ -246,6 +269,7 @@ function ComputerGui:mouse_pressed(o, button, x, y)
 			self:set_active_window(app.name)
 
 			self._pointer.gui:set_texture_rect(60,0,19,23) -- type "grab"
+			return
 		end
 
 		-- If inside a window, set it as active
@@ -282,7 +306,7 @@ function ComputerGui:remove_mouse()
 end
 
 function ComputerGui:inside_app_icon(x,y)
-	for app_index, app in pairs(self._applications) do
+	for app_index, app in pairs(self._config.applications) do
 		if self._desktop_apps[app_index]:inside(x,y) and self:item_visible(self._desktop_apps[app_index], x, y) then
 			return true, app_index, app
 		end
@@ -291,7 +315,7 @@ function ComputerGui:inside_app_icon(x,y)
 end
 
 function ComputerGui:inside_app_window(x,y)
-	for app_index, app in pairs(self._applications) do
+	for app_index, app in pairs(self._config.applications) do
 		if self._windows[app.name] and self._windows[app.name].open then
 			if self._windows[app.name].gui.panel:child("bg"):inside(x,y) and self:item_visible(self._windows[app.name].gui.panel:child("bg"), x, y) then
 				return true, app_index, app
@@ -302,7 +326,7 @@ function ComputerGui:inside_app_window(x,y)
 end
 
 function ComputerGui:inside_app_window_close_button(x, y)
-	for app_index, app in pairs(self._applications) do
+	for app_index, app in pairs(self._config.applications) do
 		if self._windows[app.name] and self._windows[app.name].gui.panel:child("close_button"):inside(x,y) and self:item_visible(self._windows[app.name].gui.panel:child("close_button"), x, y) and self._windows[app.name].open then
 			return true, app_index, app
 		end
@@ -311,7 +335,7 @@ function ComputerGui:inside_app_window_close_button(x, y)
 end
 
 function ComputerGui:inside_app_window_drag_hitbox(x, y)
-	for app_index, app in pairs(self._applications) do
+	for app_index, app in pairs(self._config.applications) do
 		if self._windows[app.name] and self._windows[app.name].open then
 			if self._windows[app.name].gui.panel:child("drag_hitbox"):inside(x,y) and self:item_visible(self._windows[app.name].gui.panel:child("drag_hitbox"), x, y) then
 				return true, app_index, app
@@ -475,24 +499,25 @@ function ComputerGui:close_window(app_name)
 	local window = self._windows[app_name]
 	window.open = false
 
-	local function close_done()
-		local app_index = nil
-		for stack_index, stack_name in ipairs(self._window_stack) do
-			if app_name == stack_name then
-				app_index = stack_index
-			end
-		end
-
-		if app_index ~= nil then
-			table.remove(self._window_stack, app_index)
+	local app_index = nil
+	for stack_index, stack_name in ipairs(self._window_stack) do
+		if app_name == stack_name then
+			app_index = stack_index
 		end
 	end
 
-	window.gui.panel:animate(callback(nil, _G, "HUDBGBox_animate_window"), nil, window.gui.panel:w(), 0.1, "close", close_done)
+	if app_index ~= nil then
+		table.remove(self._window_stack, app_index)
+	end
+
+	window.gui.panel:animate(callback(nil, _G, "HUDBGBox_animate_window"), nil, window.gui.panel:w(), 0.1, "close")
 end
 
 function ComputerGui:set_active_window(app_name)
 	if not app_name then return end
+
+	local inactive_color = Color(1, 50/255, 50/255, 50/255)
+	local active_color = Color(1, 0, 0, 0)
 
 	if self._window_stack[#self._window_stack] ~= app_name then
 		table.insert(self._window_stack, app_name)
@@ -518,7 +543,11 @@ function ComputerGui:set_active_window(app_name)
 		Rest (in pairs): windows.
 		30 - Mouse pointer
 		]]
+		
+		self._windows[stack_name].gui.panel:child("bg"):set_color(inactive_color)
 	end
+
+	self._windows[app_name].gui.panel:child("bg"):set_color(active_color)
 end
 
 function ComputerGui:get_active_window()
@@ -555,7 +584,7 @@ function ComputerGui:destroy()
 
 		self._ws = nil
 		self._new_gui = nil
-		self._applications = nil
+		self._config = nil
 		self._desktop_apps = nil
 		self._windows = nil
 		self._window_stack = nil
@@ -581,8 +610,8 @@ end
 function ComputerGui:game_resolution_changed()
 	local gui_width, gui_height = managers.gui_data:get_base_res()
 	self._ws:panel():set_size(gui_width, gui_height)
-	self._gui_script.screen_background:set_w(gui_width)
-	self._gui_script.screen_background:set_h(gui_height)
+	self._gui:child("screen_background"):set_w(gui_width)
+	self._gui:child("screen_background"):set_h(gui_height)
 end
 
 function ComputerGui:update(unit, t, dt)

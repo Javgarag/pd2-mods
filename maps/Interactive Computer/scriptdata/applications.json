@@ -1,17 +1,20 @@
-[
-    {
-        "name" : "Recycle Bin",
-        "icon": "guis/textures/computergui/backgrounds/application_icon_trash",
-        "panel" : "guis/computer_gui/prompt_access_denied"
-    },
-    {
-        "name" : "Browser",
-        "icon": "guis/textures/computergui/backgrounds/application_icon_browser",
-        "panel" : "guis/computer_gui/prompt_access_denied"
-    },
-    {
-        "name" : "File Explorer",
-        "icon": "guis/textures/computergui/backgrounds/application_icon_file_explorer",
-        "panel" : "guis/computer_gui/prompt_file_explorer"
-    }
-]
+{
+	"background_texture" : "guis/textures/computergui/backgrounds/xp_bg",
+	"applications" : [
+		{
+			"name" : "Recycle Bin",
+			"icon" : "guis/textures/computergui/backgrounds/application_icon_trash",
+			"panel" : "guis/computer_gui/prompt_access_denied"
+		},
+		{
+			"name" : "Browser",
+			"icon" : "guis/textures/computergui/backgrounds/application_icon_browser",
+			"panel" : "guis/computer_gui/prompt_access_denied"
+		},
+		{
+			"name" : "CrimeGen 2",
+			"icon" : "guis/textures/computergui/backgrounds/application_icon_keygen",
+			"panel" : "guis/computer_gui/prompt_keygen"
+		}
+	]
+}

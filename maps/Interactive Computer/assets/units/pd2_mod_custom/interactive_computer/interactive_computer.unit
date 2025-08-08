@@ -2,9 +2,8 @@
 	<object file="units/pd2_mod_custom/interactive_computer/interactive_computer" />
 	<network sync="spawn"/>
 	<dependencies>
-		<depends_on gui="guis/computer_gui/base" />
 		<depends_on gui="guis/computer_gui/prompt_access_denied" />
-		<depends_on gui="guis/computer_gui/prompt_file_explorer" />
+		<depends_on gui="guis/computer_gui/prompt_keygen" />
 		<depends_on bnk="soundbanks/regular_sfx" />
 	</dependencies>
 	<extensions>
@@ -15,7 +14,7 @@
 		</extension>
 		<extension name="computer_gui" class="ComputerGui">
 			<var name="_gui_object" value="timer_gui" />
-			<var name="_application_config" value="scriptdata/applications" />
+			<var name="_config_file" value="scriptdata/applications" />
 			<var name="_start_event" value="hacking_device" />
 			<var name="_power_off_event" value="hacking_device_power_off" />
 		</extension>

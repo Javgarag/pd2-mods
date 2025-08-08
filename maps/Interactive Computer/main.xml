@@ -1,16 +1,19 @@
 <table min_lib_ver="4.5" name="Interactive Computer">
 	<AddFiles directory="assets">
 		<json path="gamedata/interactive_computer/applications"/>
+		
 		<gui path="guis/computer_gui/base"/>
 		<gui path="guis/computer_gui/prompt_access_denied"/>
-		<gui path="guis/computer_gui/prompt_file_explorer"/>
+		<gui path="guis/computer_gui/prompt_keygen"/>
+		
 		<texture path="guis/textures/computergui/backgrounds/application_icon_usb"/>
-		<texture path="guis/textures/computergui/backgrounds/application_icon_file_explorer"/>
+		<texture path="guis/textures/computergui/backgrounds/application_icon_keygen"/>
 		<texture path="guis/textures/computergui/backgrounds/application_icon_trash"/>
 		<texture path="guis/textures/computergui/backgrounds/application_icon_browser"/>
+		
 		<texture path="guis/textures/computergui/backgrounds/xp_bg"/>
 		
-		<!-- Window corners (can't rotate vanilla texture or else they escape monitor) -->
+		<!-- Window corners (can't rotate vanilla texture or else they escape monitor, Diesel limitation) -->
 		<dds path="guis/textures/pd2/hud_corner_down_left"/>
 		<dds path="guis/textures/pd2/hud_corner_down_right"/>
 		<dds path="guis/textures/pd2/hud_corner_top_right"/>
