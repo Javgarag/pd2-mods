@@ -9,6 +9,7 @@
 	"storyline_continued_chs" : "Chinese"
 	"storyline_continued_ru" : "Russian"
 	"storyline_continued_fr" : "French"
+	"storyline_continued_ko" : "Korean"
 	
 	"sm_act_4_name" : "Rozdział 4: Drużyna B"
 	

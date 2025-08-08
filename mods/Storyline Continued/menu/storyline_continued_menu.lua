@@ -8,7 +8,8 @@ StorylineContinued._languages = {
 	"pl",
 	"chs",
 	"ru",
-	"fr"
+	"fr",
+	"ko"
 }
 
 function StorylineContinued:Save()

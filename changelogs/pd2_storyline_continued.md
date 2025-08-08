@@ -1,4 +1,6 @@
 # Storyline Continued
+## v1.5.0
+Added support for Korean language.
 ## v1.4.0
 Added support for French language.
 ## v1.3.0
