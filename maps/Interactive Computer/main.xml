@@ -21,7 +21,6 @@
 		<loc file="english.txt" language="english"/>
 	</Localization>
 	<Hooks directory="hooks">
-		<hook file="ComputerGuiTweakData.lua" source_file="lib/tweak_data/tweakdata"/>
 		<hook file="UnitNetworkHandler.lua" source_file="lib/network/handlers/unitnetworkhandler"/>
 	</Hooks>
 	<level ai_group_type="america" id="intpc" max_bags="54">
@@ -33,7 +32,6 @@
 		</assets>
 		<classes directory="classes">
 			<class file="ComputerGui/ComputerGui.lua"/>
-			<class file="ComputerGui/modules/ProgressBar.lua"/>
 		</classes>
 		<outro_event/>
 		<packages>

@@ -2,10 +2,7 @@
 -- If you desire, you can make a small environment area covering the computer screen with no bloom, so you can apply bloom effects in your map's other areas.
 
 ComputerGui = ComputerGui or class()
-
-ComputerGui.modules = {
-	ProgressBar = ProgressBar
-}
+ComputerGui.TWEAK_DATA_FILE = "classes/ComputerGui/tweak_data/ComputerGuiTweakData.lua"
 
 -- // INITIALIZATION \\
 
@@ -13,6 +10,10 @@ function ComputerGui:init(unit)
 	if not self.gui_object or not self.tweak_data then
 		log("[ComputerGui:init] ERROR: Missing required extension values. Check .unit file!")
 		return
+	end
+
+	if not tweak_data.computer_gui then
+		dofile(BeardLib.current_level._mod.ModPath .. ComputerGui.TWEAK_DATA_FILE)
 	end
 
 	self._tweak_data = tweak_data.computer_gui[self.tweak_data]
@@ -551,8 +552,8 @@ function ComputerGui:set_active_window(app_name)
 	end
 
 	for stack_index, stack_name in ipairs(self._window_stack) do
-		self._windows[stack_name].gui.panel:set_layer(stack_index + 2 + 1) -- Each window is separated by a layer. This is so HudBGBox can have background on -1.
-		self._windows[stack_name].gui.panel:child("bg"):set_layer(-1) -- Fix for using :script(). Temporary
+		self._windows[stack_name].gui.panel:set_layer(stack_index + 2)
+		self._windows[stack_name].gui.panel:child("bg"):set_layer(0) -- Fix for using :script(). Temporary
 		--[[ Global layer info:
 		1 - Desktop background
 		2 - Desktop apps
