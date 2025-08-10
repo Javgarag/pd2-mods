@@ -13,10 +13,8 @@
 			<var name="tweak_data" value="hack_suburbia_outline" />
 		</extension>
 		<extension name="computer_gui" class="ComputerGui">
-			<var name="_gui_object" value="timer_gui" />
-			<var name="_config_file" value="scriptdata/applications" />
-			<var name="_start_event" value="hacking_device" />
-			<var name="_power_off_event" value="hacking_device_power_off" />
+			<var name="gui_object" value="timer_gui" />
+			<var name="tweak_data" value="development" />
 		</extension>
 	</extensions>
 	<sounds>

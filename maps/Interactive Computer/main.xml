@@ -2,7 +2,6 @@
 	<AddFiles directory="assets">
 		<json path="gamedata/interactive_computer/applications"/>
 		
-		<gui path="guis/computer_gui/base"/>
 		<gui path="guis/computer_gui/prompt_access_denied"/>
 		<gui path="guis/computer_gui/prompt_keygen"/>
 		
@@ -21,6 +20,10 @@
 	<Localization default="english.txt" directory="loc">
 		<loc file="english.txt" language="english"/>
 	</Localization>
+	<Hooks directory="hooks">
+		<hook file="ComputerGuiTweakData.lua" source_file="lib/tweak_data/tweakdata"/>
+		<hook file="UnitNetworkHandler.lua" source_file="lib/network/handlers/unitnetworkhandler"/>
+	</Hooks>
 	<level ai_group_type="america" id="intpc" max_bags="54">
 		<assets>
 			<asset name="ammo_bag"/>

@@ -2,7 +2,6 @@
 -- If you desire, you can make a small environment area covering the computer screen with no bloom, so you can apply bloom effects in your map's other areas.
 
 ComputerGui = ComputerGui or class()
-ComputerGui.BASE_ASSET_PATH = "guis/textures/computergui/"
 
 ComputerGui.modules = {
 	ProgressBar = ProgressBar
@@ -11,21 +10,17 @@ ComputerGui.modules = {
 -- // INITIALIZATION \\
 
 function ComputerGui:init(unit)
-	local config_file = io.open(BeardLib.current_level._mod.ModPath.. self._config_file .. ".json", "r")
-	if not config_file then
-		log("[ComputerGui:setup] Could not find configuration file. Make sure you have included it inside the unit's configuration.")
+	if not self.gui_object or not self.tweak_data then
+		log("[ComputerGui:init] ERROR: Missing required extension values. Check .unit file!")
 		return
 	end
 
-	self._config = json.decode(config_file:read("*all"))
+	self._tweak_data = tweak_data.computer_gui[self.tweak_data]
     self._unit = unit
-	self._visible = true
 	self._cull_distance = self._cull_distance or 5000
-	self._size_multiplier = self._size_multiplier or 1
-	self._gui_object = self._gui_object or "gui_name"
 	self._new_gui = World:newgui()
 
-	self:add_workspace(self._unit:get_object(Idstring(self._gui_object)))
+	self:add_workspace(self._unit:get_object(Idstring(self.gui_object)))
 	self:setup()
 
 	self._unit:set_extension_update_enabled(Idstring("computer_gui"), false)
@@ -45,7 +40,7 @@ function ComputerGui:add_workspace(gui_object)
 	})
 	self._gui:bitmap({
 		name = "screen_background",
-		texture = self._config.background_texture,
+		texture = self._tweak_data.workspace.background_texture,
 		w = gui_width,
 		h = gui_height,
 		layer = 1,
@@ -81,30 +76,38 @@ function ComputerGui:setup()
 	self._windows = {}
 	self._window_stack = {}
 
-	for app_index, app in pairs(self._config.applications) do
+	for app_index, app in pairs(self._tweak_data.applications) do
 		if self:create_window(app_index, app) then
 			self._desktop_apps[app_index] = self._gui:panel({
 				name = app_index,
-				w = 75,
+				w = 95,
 				h = 95,
-				x = 30 ,
+				x = 30,
 				y = 25 + 100 * (app_index - 1),
 				layer = 2
 			})
-			self._desktop_apps[app_index]:bitmap({
+			local icon = self._desktop_apps[app_index]:bitmap({
 				texture = app.icon,
 				name = "app_bg",
+				vertical = "center",
+				valign = "center",
+				align = "center",
+				halign = "center",
 				w = 75,
-				layer = 1,
 				h = 75,
+				layer = 1,
 			})
+			icon:set_center(self._desktop_apps[app_index]:w() / 2, self._desktop_apps[app_index]:h() / 2)
+
 			local name = self._desktop_apps[app_index]:text({
-				text = app.name,
-				font = tweak_data.menu.pd2_large_font,
-				font_size = 20,
+				text = managers.localization:text(app.name),
+				font = tweak_data.menu.pd2_small_font,
+				font_size = tweak_data.menu.pd2_small_font_size,
 				color = Color.black,
 				vertical = "bottom",
+				valign = "center",
 				align = "center",
+				halign = "center",
 			})
 			name:set_bottom(self._desktop_apps[app_index]:h())
 		end
@@ -114,13 +117,13 @@ end
 function ComputerGui:create_window(app_index, app)
 	local app_name = app.name
 
-	if not DB:has(Idstring("gui"), Idstring(self._config.applications[app_index].panel)) then
+	if not DB:has(Idstring("gui"), Idstring(self._tweak_data.applications[app_index].panel)) then
 		log("[ComputerGui:open_window] Couldn't find the .gui window file for app '" .. app_name .. "' in application definition. Check your paths!")
 		return false
 	end
 
 	self._windows[app_name] = {
-		gui = self._gui:gui(Idstring(self._config.applications[app_index].panel)):script(),
+		gui = self._gui:gui(Idstring(self._tweak_data.applications[app_index].panel)):script(),
 		open = false
 	}
 
@@ -129,7 +132,7 @@ function ComputerGui:create_window(app_index, app)
 		w = window.panel:w(),
 		h = window.panel:h()
 	})
-
+	
 	local drag_hitbox = window.panel:rect({
 		name = "drag_hitbox",
 		w = window.panel:w() - 35,
@@ -146,6 +149,18 @@ function ComputerGui:create_window(app_index, app)
 		x = window.panel:w() - 30,
 		y = 5
 	})
+
+	--[[local title = window.panel:text({
+		name = "title",
+		text = managers.localization:text(app_name),
+		font = tweak_data.menu.pd2_medium_font,
+		font_size = tweak_data.menu.pd2_medium_font_size,
+		color = Color.white,
+		align = "left",
+		x = 5,
+		y = 5,
+		valign = "center"
+	})]]
 
 	return true
 end
@@ -306,7 +321,7 @@ function ComputerGui:remove_mouse()
 end
 
 function ComputerGui:inside_app_icon(x,y)
-	for app_index, app in pairs(self._config.applications) do
+	for app_index, app in pairs(self._tweak_data.applications) do
 		if self._desktop_apps[app_index]:inside(x,y) and self:item_visible(self._desktop_apps[app_index], x, y) then
 			return true, app_index, app
 		end
@@ -315,7 +330,7 @@ function ComputerGui:inside_app_icon(x,y)
 end
 
 function ComputerGui:inside_app_window(x,y)
-	for app_index, app in pairs(self._config.applications) do
+	for app_index, app in pairs(self._tweak_data.applications) do
 		if self._windows[app.name] and self._windows[app.name].open then
 			if self._windows[app.name].gui.panel:child("bg"):inside(x,y) and self:item_visible(self._windows[app.name].gui.panel:child("bg"), x, y) then
 				return true, app_index, app
@@ -326,7 +341,7 @@ function ComputerGui:inside_app_window(x,y)
 end
 
 function ComputerGui:inside_app_window_close_button(x, y)
-	for app_index, app in pairs(self._config.applications) do
+	for app_index, app in pairs(self._tweak_data.applications) do
 		if self._windows[app.name] and self._windows[app.name].gui.panel:child("close_button"):inside(x,y) and self:item_visible(self._windows[app.name].gui.panel:child("close_button"), x, y) and self._windows[app.name].open then
 			return true, app_index, app
 		end
@@ -335,7 +350,7 @@ function ComputerGui:inside_app_window_close_button(x, y)
 end
 
 function ComputerGui:inside_app_window_drag_hitbox(x, y)
-	for app_index, app in pairs(self._config.applications) do
+	for app_index, app in pairs(self._tweak_data.applications) do
 		if self._windows[app.name] and self._windows[app.name].open then
 			if self._windows[app.name].gui.panel:child("drag_hitbox"):inside(x,y) and self:item_visible(self._windows[app.name].gui.panel:child("drag_hitbox"), x, y) then
 				return true, app_index, app
@@ -376,7 +391,7 @@ function HUDBGBox_create_window(panel, params, config)
 		alpha = 1,
 		valign = "grow",
 		color = bg_color,
-		layer = -1,
+		layer = 0,
 	})
 
 	local left_top = box_panel:bitmap({
@@ -537,6 +552,7 @@ function ComputerGui:set_active_window(app_name)
 
 	for stack_index, stack_name in ipairs(self._window_stack) do
 		self._windows[stack_name].gui.panel:set_layer(stack_index + 2 + 1) -- Each window is separated by a layer. This is so HudBGBox can have background on -1.
+		self._windows[stack_name].gui.panel:child("bg"):set_layer(-1) -- Fix for using :script(). Temporary
 		--[[ Global layer info:
 		1 - Desktop background
 		2 - Desktop apps
@@ -584,7 +600,7 @@ function ComputerGui:destroy()
 
 		self._ws = nil
 		self._new_gui = nil
-		self._config = nil
+		self._tweak_data = nil
 		self._desktop_apps = nil
 		self._windows = nil
 		self._window_stack = nil
@@ -620,7 +636,9 @@ function ComputerGui:update(unit, t, dt)
 	end
 end
 
--- ComputerGui:save -> Unknown. Better keep it in.
+-- // DROPIN \\
+
+-- Server
 function ComputerGui:save(data)
 	log("Ran ComputerGui:save()")
 	local state = {
@@ -631,7 +649,7 @@ function ComputerGui:save(data)
 	data.ComputerGui = state
 end
 
--- ComputerGui:load -> Unknown. Better keep it in.
+-- Client
 function ComputerGui:load(data)
 	log("Ran ComputerGui:load()")
 	local state = data.ComputerGui

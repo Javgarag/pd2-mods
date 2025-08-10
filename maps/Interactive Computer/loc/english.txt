@@ -1,3 +1,7 @@
 {
-	"computer_gui_hud_string" : "Press [SPACE] to exit computer view"
+	"computer_gui_hud_string" : "Press [SPACE] to exit computer view",
+	
+	"computer_gui_app_trash" : "Recycle Bin",
+	"computer_gui_app_browser" : "Browser",
+	"computer_gui_app_keygen" : "CrimeGen 2.0"
 }
