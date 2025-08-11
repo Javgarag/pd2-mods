@@ -118,40 +118,40 @@ end
 function ComputerGui:create_window(app_index, app)
 	local app_name = app.name
 
-	if not DB:has(Idstring("gui"), Idstring(self._tweak_data.applications[app_index].panel)) then
-		log("[ComputerGui:open_window] Couldn't find the .gui window file for app '" .. app_name .. "' in application definition. Check your paths!")
-		return false
+	local panel = app.panel:create(self._gui)
+
+	-- Creation order matters. Background first, then foreground, so the window is not entirely black.
+	HUDBGBox_create_window(panel, {
+		w = panel:w(),
+		h = panel:h()
+	})
+
+	for _, child in pairs(app.panel:children()) do
+		child:create(panel)
 	end
 
 	self._windows[app_name] = {
-		gui = self._gui:gui(Idstring(self._tweak_data.applications[app_index].panel)):script(),
+		panel = panel,
 		open = false
 	}
 
-	local window = self._windows[app_name].gui
-	HUDBGBox_create_window(window.panel, {
-		w = window.panel:w(),
-		h = window.panel:h()
-	})
-	
-	local drag_hitbox = window.panel:rect({
+	local drag_hitbox = panel:rect({
 		name = "drag_hitbox",
-		w = window.panel:w() - 35,
+		w = panel:w() - 35,
 		h = 35,
-		alpha = 0,
-		layer = -1
+		alpha = 0
 	})
 
-	local close_button = window.panel:bitmap({
+	local close_button = panel:bitmap({
 		name = "close_button",
 		texture = "guis/textures/pd2/specialization/points_reduce",
 		w = 25,
 		h = 25,
-		x = window.panel:w() - 30,
+		x = panel:w() - 30,
 		y = 5
 	})
 
-	--[[local title = window.panel:text({
+	--[[local title = panel:text({
 		name = "title",
 		text = managers.localization:text(app_name),
 		font = tweak_data.menu.pd2_medium_font,
@@ -250,8 +250,8 @@ function ComputerGui:mouse_moved(o, x, y)
 	if self._pointer.dragging then -- Window dragging
 		local active_window = self:get_active_window()
 
-		active_window.gui.panel:set_x(self._pointer.gui:x() - self._pointer.dragging_offsets.x)
-		active_window.gui.panel:set_y(self._pointer.gui:y() - self._pointer.dragging_offsets.y)
+		active_window.panel:set_x(self._pointer.gui:x() - self._pointer.dragging_offsets.x)
+		active_window.panel:set_y(self._pointer.gui:y() - self._pointer.dragging_offsets.y)
 		self._pointer.gui:set_texture_rect(60,0,19,23) -- type "grab"
 	end
 end
@@ -279,8 +279,8 @@ function ComputerGui:mouse_pressed(o, button, x, y)
 		local inside, app_index, app = self:inside_app_window_drag_hitbox(x, y)
 		if inside and app then
 			self._pointer.dragging = true
-			self._pointer.dragging_offsets.x = self._pointer.gui:x() - self._windows[app.name].gui.panel:x()
-			self._pointer.dragging_offsets.y = self._pointer.gui:y() - self._windows[app.name].gui.panel:y()
+			self._pointer.dragging_offsets.x = self._pointer.gui:x() - self._windows[app.name].panel:x()
+			self._pointer.dragging_offsets.y = self._pointer.gui:y() - self._windows[app.name].panel:y()
 			
 			self:set_active_window(app.name)
 
@@ -333,7 +333,7 @@ end
 function ComputerGui:inside_app_window(x,y)
 	for app_index, app in pairs(self._tweak_data.applications) do
 		if self._windows[app.name] and self._windows[app.name].open then
-			if self._windows[app.name].gui.panel:child("bg"):inside(x,y) and self:item_visible(self._windows[app.name].gui.panel:child("bg"), x, y) then
+			if self._windows[app.name].panel:child("bg"):inside(x,y) and self:item_visible(self._windows[app.name].panel:child("bg"), x, y) then
 				return true, app_index, app
 			end
 		end
@@ -343,7 +343,7 @@ end
 
 function ComputerGui:inside_app_window_close_button(x, y)
 	for app_index, app in pairs(self._tweak_data.applications) do
-		if self._windows[app.name] and self._windows[app.name].gui.panel:child("close_button"):inside(x,y) and self:item_visible(self._windows[app.name].gui.panel:child("close_button"), x, y) and self._windows[app.name].open then
+		if self._windows[app.name] and self._windows[app.name].panel:child("close_button"):inside(x,y) and self:item_visible(self._windows[app.name].panel:child("close_button"), x, y) and self._windows[app.name].open then
 			return true, app_index, app
 		end
 	end
@@ -353,7 +353,7 @@ end
 function ComputerGui:inside_app_window_drag_hitbox(x, y)
 	for app_index, app in pairs(self._tweak_data.applications) do
 		if self._windows[app.name] and self._windows[app.name].open then
-			if self._windows[app.name].gui.panel:child("drag_hitbox"):inside(x,y) and self:item_visible(self._windows[app.name].gui.panel:child("drag_hitbox"), x, y) then
+			if self._windows[app.name].panel:child("drag_hitbox"):inside(x,y) and self:item_visible(self._windows[app.name].panel:child("drag_hitbox"), x, y) then
 				return true, app_index, app
 			end
 		end
@@ -362,14 +362,14 @@ function ComputerGui:inside_app_window_drag_hitbox(x, y)
 end
 
 function ComputerGui:item_visible(item, x, y) -- Will not work to check if a panel is visible.
-	if self:get_active_window() and table.contains(self:get_active_window().gui.panel:children(), item) then
+	if self:get_active_window() and table.contains(self:get_active_window().panel:children(), item) then
 		return true
 	end
 
     for _, window in pairs(self._windows) do
 		if window.open then
-			if not table.contains(window.gui.panel:children(), item) then
-				if window.gui.panel:layer() > item:parent():layer() and window.gui.panel:inside(x, y) then
+			if not table.contains(window.panel:children(), item) then
+				if window.panel:layer() > item:parent():layer() and window.panel:inside(x, y) then
 					return false
 				end
 			end
@@ -392,7 +392,7 @@ function HUDBGBox_create_window(panel, params, config)
 		alpha = 1,
 		valign = "grow",
 		color = bg_color,
-		layer = -1,
+		layer = 0,
 	})
 
 	local left_top = box_panel:bitmap({
@@ -496,7 +496,7 @@ function ComputerGui:open_window(app_index, app)
 
 	if window.open then 
 		self:set_active_window(app.name)
-		window.gui.panel:animate(callback(nil, _G, "HUDBGBox_animate_window_attention"))
+		window.panel:animate(callback(nil, _G, "HUDBGBox_animate_window_attention"))
 		return 
 	end
 
@@ -508,7 +508,7 @@ function ComputerGui:open_window(app_index, app)
 	end
 
 	self:set_active_window(app.name)
-	window.gui.panel:animate(callback(nil, _G, "HUDBGBox_animate_window"), nil, window.gui.panel:w(), 0.1, "open", open_done)
+	window.panel:animate(callback(nil, _G, "HUDBGBox_animate_window"), nil, window.panel:w(), 0.1, "open", open_done)
 end
 
 function ComputerGui:close_window(app_name)
@@ -526,7 +526,7 @@ function ComputerGui:close_window(app_name)
 		table.remove(self._window_stack, app_index)
 	end
 
-	window.gui.panel:animate(callback(nil, _G, "HUDBGBox_animate_window"), nil, window.gui.panel:w(), 0.1, "close")
+	window.panel:animate(callback(nil, _G, "HUDBGBox_animate_window"), nil, window.panel:w(), 0.1, "close")
 end
 
 function ComputerGui:set_active_window(app_name)
@@ -552,7 +552,8 @@ function ComputerGui:set_active_window(app_name)
 	end
 
 	for stack_index, stack_name in ipairs(self._window_stack) do
-		self._windows[stack_name].gui.panel:set_layer(stack_index + 2)
+		self._windows[stack_name].panel:set_layer(stack_index + 2)
+		self._windows[stack_name].panel:child("bg"):set_layer(0) -- Fix for using :script(). Temporary
 		--[[ Global layer info:
 		1 - Desktop background
 		2 - Desktop apps
@@ -560,10 +561,10 @@ function ComputerGui:set_active_window(app_name)
 		30 - Mouse pointer
 		]]
 		
-		self._windows[stack_name].gui.panel:child("bg"):set_color(inactive_color)
+		self._windows[stack_name].panel:child("bg"):set_color(inactive_color)
 	end
 
-	self._windows[app_name].gui.panel:child("bg"):set_color(active_color)
+	self._windows[app_name].panel:child("bg"):set_color(active_color)
 end
 
 function ComputerGui:get_active_window()
