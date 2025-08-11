@@ -392,7 +392,7 @@ function HUDBGBox_create_window(panel, params, config)
 		alpha = 1,
 		valign = "grow",
 		color = bg_color,
-		layer = 0,
+		layer = -1,
 	})
 
 	local left_top = box_panel:bitmap({
@@ -553,7 +553,6 @@ function ComputerGui:set_active_window(app_name)
 
 	for stack_index, stack_name in ipairs(self._window_stack) do
 		self._windows[stack_name].gui.panel:set_layer(stack_index + 2)
-		self._windows[stack_name].gui.panel:child("bg"):set_layer(0) -- Fix for using :script(). Temporary
 		--[[ Global layer info:
 		1 - Desktop background
 		2 - Desktop apps

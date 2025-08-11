@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<tweaks>
+	<tweak version="2" name="anims/fps/fps" extension="animation_state_machine">
+		<search>
+			<state_machine/>
+			<segment name="base"/>
+		</search>
+		
+		<target mode="append">
+			<global name="insert_keycard" value="0"/>
+			<global name="grab" value="0"/>
+			<global name="fix_drill" value="0"/>
+			<global name="answer_radio" value="0"/>
+			<global name="lockpick" value="0"/>
+		</target>
+	</tweak>
+</tweaks>
