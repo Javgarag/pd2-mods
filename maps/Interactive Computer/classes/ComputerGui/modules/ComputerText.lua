@@ -5,7 +5,6 @@ function ComputerText:init(tweak_data)
 end
 
 function ComputerText:create(parent)
-    return parent:text(self._tweak_data.config)
+    self._object = parent:text(self._tweak_data.config)
+    return self._object
 end
-
-return ComputerText

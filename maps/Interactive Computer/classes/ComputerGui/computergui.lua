@@ -78,92 +78,52 @@ function ComputerGui:setup()
 	self._window_stack = {}
 
 	for app_index, app in pairs(self._tweak_data.applications) do
-		if self:create_window(app_index, app) then
-			self._desktop_apps[app_index] = self._gui:panel({
-				name = app_index,
-				w = 95,
-				h = 95,
-				x = 30,
-				y = 25 + 100 * (app_index - 1),
-				layer = 2
-			})
-			local icon = self._desktop_apps[app_index]:bitmap({
-				texture = app.icon,
-				name = "app_bg",
-				vertical = "center",
-				valign = "center",
-				align = "center",
-				halign = "center",
-				w = 75,
-				h = 75,
-				layer = 1,
-			})
-			icon:set_center(self._desktop_apps[app_index]:w() / 2, self._desktop_apps[app_index]:h() / 2)
+		self:create_window(app_index, app)
 
-			local name = self._desktop_apps[app_index]:text({
-				text = managers.localization:text(app.name),
-				font = tweak_data.menu.pd2_small_font,
-				font_size = tweak_data.menu.pd2_small_font_size,
-				color = Color.black,
-				vertical = "bottom",
-				valign = "center",
-				align = "center",
-				halign = "center",
-			})
-			name:set_bottom(self._desktop_apps[app_index]:h())
-		end
+		-- Icons
+		self._desktop_apps[app_index] = self._gui:panel({
+			name = app_index,
+			w = 95,
+			h = 95,
+			x = 30,
+			y = 25 + 100 * (app_index - 1),
+			layer = 2
+		})
+		local icon = self._desktop_apps[app_index]:bitmap({
+			texture = app.icon,
+			name = "app_bg",
+			vertical = "center",
+			valign = "center",
+			align = "center",
+			halign = "center",
+			w = 75,
+			h = 75,
+			layer = 1,
+		})
+		icon:set_center(self._desktop_apps[app_index]:w() / 2, self._desktop_apps[app_index]:h() / 2)
+
+		local name = self._desktop_apps[app_index]:text({
+			text = managers.localization:text(app.name),
+			font = tweak_data.menu.pd2_small_font,
+			font_size = tweak_data.menu.pd2_small_font_size,
+			color = Color.black,
+			vertical = "bottom",
+			valign = "center",
+			align = "center",
+			halign = "center",
+		})
+		name:set_bottom(self._desktop_apps[app_index]:h())
 	end
 end
 
 function ComputerGui:create_window(app_index, app)
 	local app_name = app.name
-
-	local panel = app.panel:create(self._gui)
-
-	-- Creation order matters. Background first, then foreground, so the window is not entirely black.
-	HUDBGBox_create_window(panel, {
-		w = panel:w(),
-		h = panel:h()
-	})
-
-	for _, child in pairs(app.panel:children()) do
-		child:create(panel)
-	end
+	local window_object = app.panel:create(self._gui)
 
 	self._windows[app_name] = {
-		panel = panel,
+		panel = window_object,
 		open = false
 	}
-
-	local drag_hitbox = panel:rect({
-		name = "drag_hitbox",
-		w = panel:w() - 35,
-		h = 35,
-		alpha = 0
-	})
-
-	local close_button = panel:bitmap({
-		name = "close_button",
-		texture = "guis/textures/pd2/specialization/points_reduce",
-		w = 25,
-		h = 25,
-		x = panel:w() - 30,
-		y = 5
-	})
-
-	--[[local title = panel:text({
-		name = "title",
-		text = managers.localization:text(app_name),
-		font = tweak_data.menu.pd2_medium_font,
-		font_size = tweak_data.menu.pd2_medium_font_size,
-		color = Color.white,
-		align = "left",
-		x = 5,
-		y = 5,
-		valign = "center"
-	})]]
-
-	return true
 end
 
 -- // AT ENTER \\
@@ -203,7 +163,22 @@ function ComputerGui:_start()
 	local state = managers.player:get_current_state()
 	state:_toggle_gadget(state._equipped_unit:base())
 
-	-- [SPACE] to exit text
+	self:hud_text()
+	self:setup_mouse()
+	self:set_visible(true)
+end
+
+-- ComputerGui:sync_start -> Network version of ComputerGui:start(), called by UnitNetworkHandler (See /hooks/UnitNetworkHandler.lua)
+function ComputerGui:sync_start() 
+	self:_start()
+end
+
+function ComputerGui:hud_text()
+	if self._text_workspace then
+		Overlay:newgui():destroy_workspace(self._text_workspace)
+		self._text_workspace = nil
+	end
+
 	self._text_workspace = Overlay:newgui()
 	self._hud = self._text_workspace:create_screen_workspace(0, 0, 1, 1)
 	self._quit_text = self._hud:panel():text({
@@ -214,14 +189,6 @@ function ComputerGui:_start()
 		color = Color.white
 	})
 	self._quit_text:set_y(self._quit_text:y() + 50)
-
-	self:setup_mouse()
-	self:set_visible(true)
-end
-
--- ComputerGui:sync_start -> Network version of ComputerGui:start(), called by UnitNetworkHandler (See /hooks/UnitNetworkHandler.lua)
-function ComputerGui:sync_start() 
-	self:_start()
 end
 
 -- ComputerGui:create_camera -> Creates a world camera to run later so the camera can be locked. The model needs to have an object (empty) called "camera_pos".
@@ -333,7 +300,7 @@ end
 function ComputerGui:inside_app_window(x,y)
 	for app_index, app in pairs(self._tweak_data.applications) do
 		if self._windows[app.name] and self._windows[app.name].open then
-			if self._windows[app.name].panel:child("bg"):inside(x,y) and self:item_visible(self._windows[app.name].panel:child("bg"), x, y) then
+			if self._windows[app.name].panel:inside(x,y) and self:item_visible(self._windows[app.name].panel:child("bg"), x, y) then
 				return true, app_index, app
 			end
 		end
@@ -380,66 +347,6 @@ function ComputerGui:item_visible(item, x, y) -- Will not work to check if a pan
 end
 
 -- // SCREEN ACTIONS \\
-
-function HUDBGBox_create_window(panel, params, config)
-	local box_panel = panel
-	local color = config and config.color
-	local bg_color = config and config.bg_color or Color(1, 0, 0, 0)
-
-	box_panel:rect({
-		name = "bg",
-		halign = "grow",
-		alpha = 1,
-		valign = "grow",
-		color = bg_color,
-		layer = 0,
-	})
-
-	local left_top = box_panel:bitmap({
-		texture = "guis/textures/pd2/hud_corner",
-		name = "left_top",
-		y = 0,
-		halign = "left",
-		x = 0,
-		valign = "top"
-	})
-
-	local left_bottom = box_panel:bitmap({
-		texture = "guis/textures/pd2/hud_corner_down_left",
-		name = "left_bottom",
-		x = 0,
-		y = 0,
-		halign = "left",
-		blend_mode = "normal",
-		valign = "bottom"
-	})
-	left_bottom:set_bottom(box_panel:h())
-
-	local right_top = box_panel:bitmap({
-		texture = "guis/textures/pd2/hud_corner_top_right",
-		name = "right_top",
-		x = 0,
-		y = 0,
-		halign = "right",
-		blend_mode = "normal",
-		valign = "top"
-	})
-	right_top:set_right(box_panel:w())
-
-	local right_bottom = box_panel:bitmap({
-		texture = "guis/textures/pd2/hud_corner_down_right",
-		name = "right_bottom",
-		x = 0,
-		y = 0,
-		halign = "right",
-		blend_mode = "normal",
-		valign = "bottom"
-	})
-	right_bottom:set_right(box_panel:w())
-	right_bottom:set_bottom(box_panel:h())
-
-	return box_panel
-end
 
 function HUDBGBox_animate_window(panel, wait_t, target_w, speed, anim, done_cb)
 	local center_x = panel:center_x()
@@ -629,6 +536,8 @@ function ComputerGui:game_resolution_changed()
 	self._ws:panel():set_size(gui_width, gui_height)
 	self._gui:child("screen_background"):set_w(gui_width)
 	self._gui:child("screen_background"):set_h(gui_height)
+
+	self:hud_text()
 end
 
 function ComputerGui:update(unit, t, dt)

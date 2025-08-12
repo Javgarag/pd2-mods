@@ -5,7 +5,6 @@ function ComputerBitmap:init(tweak_data)
 end
 
 function ComputerBitmap:create(parent)
-    return parent:bitmap(self._tweak_data.config)
+    self._object = parent:bitmap(self._tweak_data.config)
+    return self._object
 end
-
-return ComputerBitmap
