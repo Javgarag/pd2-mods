@@ -15,6 +15,7 @@
 		<extension name="computer_gui" class="ComputerGui">
 			<var name="gui_object" value="timer_gui" />
 			<var name="tweak_data" value="development" />
+			<var name="camera_object" value="camera_pos" />
 		</extension>
 	</extensions>
 	<sounds>

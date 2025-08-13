@@ -4,7 +4,9 @@ function ComputerRect:init(tweak_data)
     ComputerRect.super.init(self, tweak_data)
 end
 
-function ComputerRect:create(parent)
-    self._object = parent:rect(self._tweak_data.config)
+function ComputerRect:create(parent_object, extension, parent)
+    ComputerRect.super.create(self, parent_object, extension, parent)
+
+    self._object = parent_object:rect(self._tweak_data.config)
     return self._object
 end
