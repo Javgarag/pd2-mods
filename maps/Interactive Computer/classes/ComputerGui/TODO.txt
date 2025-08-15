@@ -1,0 +1,2 @@
+Window layer logic in ComputerWindow.
+fix: mouse icons not changing on nonactives. 

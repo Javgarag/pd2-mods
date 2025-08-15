@@ -3,6 +3,12 @@
 
 ComputerGui = ComputerGui or class()
 ComputerGui.TWEAK_DATA_FILE = "classes/ComputerGui/tweak_data/ComputerGuiTweakData.lua"
+ComputerGui.mouse_variants = {
+	arrow = {0, 0, 19, 23}, -- Default
+	link = {20, 0, 19, 23},
+	hand = {40, 0, 19, 23},
+	grab = {60, 0, 19, 23}
+}
 
 -- // INITIALIZATION \\
 
@@ -59,12 +65,7 @@ function ComputerGui:add_workspace(gui_object)
 	})
 
 	self._pointer = {
-		gui = self._gui:child("pointer"),
-		dragging = false,
-		dragging_offsets = {
-			x = nil,
-			y = nil
-		}
+		gui = self._gui:child("pointer")
 	}
 
 	self._gui:child("screen_background"):set_w(gui_width)
@@ -197,7 +198,14 @@ function ComputerGui:create_camera()
 	self._camera:add_point(self._camera_pos:position(), self._camera_pos:rotation())
 end
 
--- // MOUSE MOVEMENT HANDLING \\
+-- // MOUSE HANDLING \\
+
+function ComputerGui:change_mouse_texture_from_window_position(window, x, y)
+	if window then
+		local mouse_variant = window:mouse_variant(x, y)
+		self._pointer.gui:set_texture_rect(unpack(self.mouse_variants[mouse_variant]))
+	end
+end
 
 function ComputerGui:mouse_moved(o, x, y)
 	if not alive(self._unit) then return end -- Prevent crash on restart
@@ -205,19 +213,20 @@ function ComputerGui:mouse_moved(o, x, y)
 	self._pointer.gui:set_x(x)
 	self._pointer.gui:set_y(y)
 
-	if  self:inside_app_window_drag_hitbox(x, y) and not self._pointer.dragging then
-		self._pointer.gui:set_texture_rect(40,0,19,23) -- type "hand"
-	elseif self:inside_app_icon(x, y) or self:inside_app_window_close_button(x, y) then
-		self._pointer.gui:set_texture_rect(20,0,19,23) -- type "link"
-	else
-		self._pointer.gui:set_texture_rect(0,0,19,23) -- type "arrow"
+	local active_window = self:get_active_window()
+	self:change_mouse_texture_from_window_position(active_window, x, y)
+
+	for _, window in pairs(self._windows) do
+		if window:is_open() and window:object():inside(x, y) and window:is_visible(x, y) then
+			window:trigger_event("mouse_over", x, y)
+		end
 	end
 
-	if self._pointer.dragging then -- Window dragging
-		local active_window = self:get_active_window()
-
-		active_window:object():set_x(self._pointer.gui:x() - self._pointer.dragging_offsets.x)
-		active_window:object():set_y(self._pointer.gui:y() - self._pointer.dragging_offsets.y)
+	if self._pointer.dragging_offsets and active_window then
+		active_window:update_dragging_offset_position({
+			x = self._pointer.gui:x() - self._pointer.dragging_offsets.x,
+			y = self._pointer.gui:y() - self._pointer.dragging_offsets.y
+		})
 		self._pointer.gui:set_texture_rect(60,0,19,23) -- type "grab"
 	end
 end
@@ -225,49 +234,30 @@ end
 function ComputerGui:mouse_pressed(o, button, x, y)
 	if button == Idstring("0") then
 
+		for _, window in pairs(self._windows) do
+			if window:is_open() and window:object():inside(x, y) and window:is_visible(x, y) then
+				if not window:is_active_window() then
+					window:trigger_event("gained_focus")
+				end
+				self:set_active_window(window:object())
+				window:trigger_event("mouse_pressed", button, x, y)
+			end
+		end
+
 		local inside, app_index, app = self:inside_app_icon(x, y)
 		if inside then
 			self:open_window(app_index, app)
 			self._pointer.gui:set_texture_rect(0,0,19,23) -- type "arrow"
 			return
 		end
-
-		-- Close the window if click over the button to close
-		local inside, app_index, app = self:inside_app_window_close_button(x, y)
-		if inside and app then
-			self:close_window(app.name, app)
-			self:set_active_window(self:get_stack_top_app_name())
-			self._pointer.gui:set_texture_rect(0,0,19,23) -- type "arrow"
-			return
-		end
-
-		-- Start dragging
-		local inside, app_index, app = self:inside_app_window_drag_hitbox(x, y)
-		if inside and app then
-			self._pointer.dragging = true
-			self._pointer.dragging_offsets.x = self._pointer.gui:x() - self._windows[app.name]:object():x()
-			self._pointer.dragging_offsets.y = self._pointer.gui:y() - self._windows[app.name]:object():y()
-			
-			self:set_active_window(app.name)
-
-			self._pointer.gui:set_texture_rect(60,0,19,23) -- type "grab"
-			return
-		end
-
-		-- If inside a window, set it as active
-		local inside, app_index, app = self:inside_app_window(x, y)
-		if inside and app then
-			self:set_active_window(app.name)
-		end
 	end
 end
 
-function ComputerGui:mouse_released(button, x, y)
-	if self._pointer.dragging then -- Stop dragging
-		self._pointer.dragging = false
-		self._pointer.dragging_offsets.x = nil
-		self._pointer.dragging_offsets.y = nil
-		self._pointer.gui:set_texture_rect(40,0,19,23) -- type "hand"
+function ComputerGui:mouse_released(o, button, x, y)
+	for _, window in pairs(self._windows) do
+		if window:is_open() and window:object():inside(x, y) and window:is_visible(x, y) then
+			window:trigger_event("mouse_released", button, x, y)
+		end
 	end
 end
 
@@ -287,41 +277,23 @@ function ComputerGui:remove_mouse()
 	managers.mouse_pointer:remove_mouse("computer_gui_mouse")
 end
 
+function ComputerGui:start_dragging(window_object)
+	self._pointer.dragging_offsets = {
+		x = self._pointer.gui:x() - window_object:x(),
+		y = self._pointer.gui:y() - window_object:y()
+	}
+	self._pointer.gui:set_texture_rect(unpack(self.mouse_variants.grab))
+end
+
+function ComputerGui:stop_dragging()
+	self._pointer.dragging_offsets = nil
+	self._pointer.gui:set_texture_rect(40,0,19,23) -- type "hand"
+end
+
 function ComputerGui:inside_app_icon(x,y)
 	for app_index, app in pairs(self._tweak_data.applications) do
 		if self._desktop_apps[app_index]:inside(x,y) and self:item_visible(self._desktop_apps[app_index], x, y) then
 			return true, app_index, app
-		end
-	end
-	return false
-end
-
-function ComputerGui:inside_app_window(x,y)
-	for app_index, app in pairs(self._tweak_data.applications) do
-		if self._windows[app.name] and self._windows[app.name]:is_open() then
-			if self._windows[app.name]:object():inside(x,y) and self:item_visible(self._windows[app.name]:object():child("bg"), x, y) then
-				return true, app_index, app
-			end
-		end
-	end
-	return false
-end
-
-function ComputerGui:inside_app_window_close_button(x, y)
-	for app_index, app in pairs(self._tweak_data.applications) do
-		if self._windows[app.name] and self._windows[app.name]:object():child("close_button"):inside(x,y) and self:item_visible(self._windows[app.name]:object():child("close_button"), x, y) and self._windows[app.name]:is_open() then
-			return true, app_index, app
-		end
-	end
-	return false
-end
-
-function ComputerGui:inside_app_window_drag_hitbox(x, y)
-	for app_index, app in pairs(self._tweak_data.applications) do
-		if self._windows[app.name] and self._windows[app.name]:is_open() then
-			if self._windows[app.name]:object():child("drag_hitbox"):inside(x,y) and self:item_visible(self._windows[app.name]:object():child("drag_hitbox"), x, y) then
-				return true, app_index, app
-			end
 		end
 	end
 	return false
@@ -355,36 +327,31 @@ function ComputerGui:open_window(app_index, app)
 	end
 
 	if window:is_open() then
-		self:set_active_window(app.name)
+		self:set_active_window(window:object())
 		window:trigger_event("attention")
 		return
 	end
 
-	self:set_active_window(app.name)
+	self:set_active_window(window:object())
 	window:trigger_event("open")
 end
 
-function ComputerGui:close_window(app_name, app)
-	local window = self._windows[app_name]
-
-	self:remove_from_window_stack(app_name)
-
-	window:trigger_event("close")
-end
-
-function ComputerGui:set_active_window(app_name)
-	if not app_name then return end
+function ComputerGui:set_active_window(window_object)
+	if not alive(window_object) then
+		log("[ComputerGui:set_active_window] ERROR: Nil window object provided.")
+		return
+	end
 
 	local inactive_color = Color(1, 50/255, 50/255, 50/255)
 	local active_color = Color(1, 0, 0, 0)
 
-	if self.window_stack[#self.window_stack] ~= app_name then
-		table.insert(self.window_stack, app_name)
+	if self.window_stack[#self.window_stack] ~= window_object then
+		table.insert(self.window_stack, window_object)
 	end
 
 	local new_active_old_index = nil
-	for stack_index, stack_name in ipairs(self.window_stack) do -- Iterates in order
-		if app_name == stack_name then
+	for stack_index, stack_object in ipairs(self.window_stack) do -- Iterates in order
+		if window_object == stack_object then
 			new_active_old_index = stack_index
 			break
 		end
@@ -394,8 +361,8 @@ function ComputerGui:set_active_window(app_name)
 		table.remove(self.window_stack, new_active_old_index)
 	end
 
-	for stack_index, stack_name in ipairs(self.window_stack) do
-		self._windows[stack_name]:object():set_layer(stack_index + 2)
+	for stack_index, stack_object in ipairs(self.window_stack) do
+		stack_object:set_layer(stack_index + 2)
 		--[[ Global layer info:
 		1 - Desktop background
 		2 - Desktop apps
@@ -403,22 +370,23 @@ function ComputerGui:set_active_window(app_name)
 		30 - Mouse pointer
 		]]
 		
-		self._windows[stack_name]:object():child("bg"):set_color(inactive_color)
+		stack_object:child("bg"):set_color(inactive_color)
 	end
 
-	self._windows[app_name]:object():child("bg"):set_color(active_color)
+	window_object:child("bg"):set_color(active_color)
 end
 
-function ComputerGui:remove_from_window_stack(app_name)
-	local app_index = nil
-	for stack_index, stack_name in ipairs(self.window_stack) do
-		if app_name == stack_name then
-			app_index = stack_index
+function ComputerGui:remove_from_window_stack(window_object)
+	local window_index = nil
+	for stack_index, stack_object in ipairs(self.window_stack) do
+		if window_object == stack_object then
+			window_index = stack_index
+			break
 		end
 	end
 
-	if app_index ~= nil then
-		table.remove(self.window_stack, app_index)
+	if window_index ~= nil then
+		table.remove(self.window_stack, window_index)
 	end
 end
 
@@ -439,11 +407,19 @@ function ComputerGui:get_open_windows()
 end
 
 function ComputerGui:get_active_window()
-	return self._windows[self:get_stack_top_app_name()]
+	for _, window in pairs(self._windows) do
+		if window:object() == self:get_active_window_object() then
+			return window
+		end
+	end
 end
 
-function ComputerGui:get_stack_top_app_name()
+function ComputerGui:get_active_window_object()
 	return self.window_stack[#self.window_stack]
+end
+
+function ComputerGui:get_pointer()
+	return self._pointer
 end
 
 function ComputerGui:hide()

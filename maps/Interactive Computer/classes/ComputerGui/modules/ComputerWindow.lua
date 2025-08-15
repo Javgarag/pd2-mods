@@ -116,13 +116,20 @@ function ComputerWindow:init(tweak_data)
             alpha = 0
         },
 		events = {
-			mouse_click = {
+			mouse_pressed = {
 				type = "func",
-				event = function(window, x, y)
-					log("Drag")
+				event = function(window, button, x, y)
+					window.extension:start_dragging(window:object())
+				end
+			},
+			mouse_released = {
+				type = "func",
+				event = function(window, button, x, y)
+					window.extension:stop_dragging()
 				end
 			}
-		}
+		},
+		mouse_variant = "hand"
 	}))
 
     table.insert(self._tweak_data.children, ComputerBitmap:new({
@@ -135,13 +142,20 @@ function ComputerWindow:init(tweak_data)
             y = 5
         },
 		events = {
-			mouse_click = {
+			mouse_released = {
 				type = "func",
-				event = function(window, x, y)
+				event = function(window, button, x, y)
 					window:trigger_event("close")
+					window.extension:remove_from_window_stack(window:object())
+
+					local active_window_object = window.extension:get_active_window_object()
+					if active_window_object then
+						window.extension:set_active_window(active_window_object)
+					end
 				end
 			}
-		}
+		},
+		mouse_variant = "link"
     }))
 end
 
@@ -154,7 +168,7 @@ function ComputerWindow:create(parent_object, extension)
     HUDBGBox_create_window(self._object, self._tweak_data)
 
     for _, child in pairs(self._tweak_data.children) do
-        child:create(self._object, self._extension, self)
+        child:create(self._object, self.extension, self)
     end
 
     return self._object
@@ -176,7 +190,13 @@ function ComputerWindow:trigger_event(event_name, ...)
 			end
 		end,
 
-		mouse_click = function(child, x, y)
+		mouse_pressed = function(child, button, x, y)
+			if child:object():inside(x, y) and child:is_visible(x, y) then
+				return true
+			end
+		end,
+
+		mouse_released = function(child, button, x, y)
 			if child:object():inside(x, y) and child:is_visible(x, y) then
 				return true
 			end
@@ -193,7 +213,39 @@ function ComputerWindow:trigger_event(event_name, ...)
 end
 
 function ComputerWindow:is_active_window()
-	return self._extension:get_active_window().panel == self._object
+	return self.extension:get_active_window_object() == self._object or self.extension:get_active_window_object() == self._parent
+end
+
+function ComputerWindow:is_visible(x, y)
+	if self:is_active_window() then
+		return true
+	end
+
+	for _, window in pairs(self.extension:get_open_windows()) do
+		if not window == self then
+			if window:object():layer() > self:object():layer() and window:object():inside(x, y) then
+				return false
+			end
+		end
+	end
+
+	return true
+end
+
+function ComputerWindow:mouse_variant(x, y)
+	local variant
+	for _, child in pairs(self._tweak_data.children) do
+		if child:object():inside(x, y) then
+			variant = variant or child:mouse_variant()
+		end
+	end
+
+	return variant or "arrow"
+end
+
+function ComputerWindow:update_dragging_offset_position(dragging_offsets)
+	self:object():set_x(dragging_offsets.x)
+	self:object():set_y(dragging_offsets.y)
 end
 
 function ComputerWindow:is_open()
@@ -212,7 +264,7 @@ function ComputerWindow:clbk_open()
 		self._open = true
 	end
 
-	local num_open_windows = #self._extension:get_window_stack()
+	local num_open_windows = #self.extension:get_window_stack()
 
 	self._object:set_x(200 + num_open_windows * 50)
 	self._object:set_y(50 + num_open_windows * 50)

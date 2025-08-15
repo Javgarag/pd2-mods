@@ -29,7 +29,6 @@ function ComputerObjectBase:setup_events()
 
             self._tweak_data.events[event_name].event = callback(self, self, event_data.event)
         end
-        -- TODO: setup "spawn" events
     end
 end
 
@@ -42,23 +41,19 @@ function ComputerObjectBase:trigger_event(event_name, ...)
     return false
 end
 
-function ComputerObjectBase:set_parent(parent)
-    self._parent = parent
-end
-
 function ComputerObjectBase:create(parent_object, extension, parent)
-    self._extension = extension
+    self.extension = extension
     self._parent = parent
 
     self:compute_properties()
 end
 
 function ComputerObjectBase:is_visible(x, y)
-    if self._parent:is_active_window() then
+    if self._parent and self._parent:is_active_window() then
         return true
     end
 
-    for _, window in pairs(self._extension:get_open_windows()) do
+    for _, window in pairs(self.extension:get_open_windows()) do
         if not table.contains(window:children(), self) then
             if window:object():layer() > self._parent:object():layer() and window:object():inside(x, y) then
                 return false
@@ -67,6 +62,10 @@ function ComputerObjectBase:is_visible(x, y)
     end
 
     return true
+end
+
+function ComputerObjectBase:mouse_variant()
+    return self._tweak_data.mouse_variant
 end
 
 function ComputerObjectBase:object()
