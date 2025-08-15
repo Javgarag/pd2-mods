@@ -1,12 +1,12 @@
 local MODULE_DIRECTORY = BeardLib.current_level._mod.ModPath .. "classes/ComputerGui/modules/"
 local modules = {
-    "ComputerWindow.lua",
-	"ComputerBitmap.lua",
-    "ComputerText.lua",
-    "ComputerRect.lua"
+    "base/ComputerWindow.lua",
+	"base/ComputerBitmap.lua",
+    "base/ComputerText.lua",
+    "base/ComputerRect.lua"
 }
 
-dofile(MODULE_DIRECTORY .. "ComputerObjectBase.lua")
+dofile(MODULE_DIRECTORY .. "base/ComputerObjectBase.lua")
 for _, module in pairs(modules) do
 	dofile(MODULE_DIRECTORY .. module)
 end
@@ -49,14 +49,17 @@ local presets = {
         events = {
             open = {
                 type = "callback",
+                enabled = true,
                 event = "clbk_open"
             },
             close = {
                 type = "callback",
+                enabled = true,
                 event = "clbk_close"
             },
             attention = {
                 type = "callback",
+                enabled = true,
                 event = "clbk_attention"
             }
         }
@@ -78,12 +81,12 @@ tweak_data.computer_gui = {
                 name = "computer_gui_app_browser",
                 icon = "guis/textures/computergui/backgrounds/application_icon_browser",
                 window = deep_clone(presets.access_denied)
-            }
-            --[[{
+            },
+            {
                 name = "computer_gui_app_keygen",
                 icon = "guis/textures/computergui/backgrounds/application_icon_keygen",
-                panel = "guis/computer_gui/prompt_keygen"
-            }]]
+                window = deep_clone(presets.access_denied)
+            }
         }
     }
 }

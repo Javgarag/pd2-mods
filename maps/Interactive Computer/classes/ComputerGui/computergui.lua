@@ -132,7 +132,7 @@ function ComputerGui:start()
 	if not self._started then
 		self:_start()
 		if managers.network:session() then
-			managers.network:session():send_to_peers_synched("start_computer_gui", self._unit) -- Will sync other clients' units so they too see the computer gui.
+			managers.network:session():send_to_peers_synched("start_computer_gui", self._unit)
 		end
 	end
 end
@@ -214,12 +214,18 @@ function ComputerGui:mouse_moved(o, x, y)
 	self._pointer.gui:set_y(y)
 
 	local active_window = self:get_active_window()
-	self:change_mouse_texture_from_window_position(active_window, x, y)
+	local open_windows = self:get_open_windows()
 
-	for _, window in pairs(self._windows) do
-		if window:is_open() and window:object():inside(x, y) and window:is_visible(x, y) then
-			window:trigger_event("mouse_over", x, y)
+	local changed_texture = false
+	for _, window in pairs(open_windows) do
+		if window:object():inside(x, y) and window:is_visible(x, y) then
+			changed_texture = true
+			self:change_mouse_texture_from_window_position(window, x, y)
+			window:trigger_event("mouse_enter", x, y)
 		end
+	end
+	if not changed_texture then
+		self._pointer.gui:set_texture_rect(unpack(self.mouse_variants.arrow))
 	end
 
 	if self._pointer.dragging_offsets and active_window then
@@ -227,19 +233,18 @@ function ComputerGui:mouse_moved(o, x, y)
 			x = self._pointer.gui:x() - self._pointer.dragging_offsets.x,
 			y = self._pointer.gui:y() - self._pointer.dragging_offsets.y
 		})
-		self._pointer.gui:set_texture_rect(60,0,19,23) -- type "grab"
+		self._pointer.gui:set_texture_rect(unpack(self.mouse_variants.grab))
 	end
 end
 
 function ComputerGui:mouse_pressed(o, button, x, y)
 	if button == Idstring("0") then
-
-		for _, window in pairs(self._windows) do
-			if window:is_open() and window:object():inside(x, y) and window:is_visible(x, y) then
+		for _, window in pairs(self:get_open_windows()) do
+			if window:object():inside(x, y) and window:is_visible(x, y) then
 				if not window:is_active_window() then
+					self:set_active_window(window:object())
 					window:trigger_event("gained_focus")
 				end
-				self:set_active_window(window:object())
 				window:trigger_event("mouse_pressed", button, x, y)
 			end
 		end
@@ -247,16 +252,23 @@ function ComputerGui:mouse_pressed(o, button, x, y)
 		local inside, app_index, app = self:inside_app_icon(x, y)
 		if inside then
 			self:open_window(app_index, app)
-			self._pointer.gui:set_texture_rect(0,0,19,23) -- type "arrow"
+			self._pointer.gui:set_texture_rect(unpack(self.mouse_variants.arrow))
 			return
 		end
 	end
 end
 
 function ComputerGui:mouse_released(o, button, x, y)
-	for _, window in pairs(self._windows) do
-		if window:is_open() and window:object():inside(x, y) and window:is_visible(x, y) then
-			window:trigger_event("mouse_released", button, x, y)
+	for _, window in pairs(self:get_open_windows()) do
+		if window:object():inside(x, y) and window:is_visible(x, y) then
+			local click_event = window:trigger_event("mouse_released", button, x, y)
+			if click_event then
+				if window:is_open() then
+					self._pointer.gui:set_texture_rect(unpack(self.mouse_variants[window:mouse_variant(x, y)]))
+				else
+					self._pointer.gui:set_texture_rect(unpack(self.mouse_variants.arrow))
+				end
+			end
 		end
 	end
 end
@@ -287,7 +299,6 @@ end
 
 function ComputerGui:stop_dragging()
 	self._pointer.dragging_offsets = nil
-	self._pointer.gui:set_texture_rect(40,0,19,23) -- type "hand"
 end
 
 function ComputerGui:inside_app_icon(x,y)
@@ -304,12 +315,10 @@ function ComputerGui:item_visible(item, x, y) -- Will not work to check if a pan
 		return true
 	end
 
-    for _, window in pairs(self._windows) do
-		if window:is_open() then
-			if not table.contains(window:object():children(), item) then
-				if window:object():layer() > item:parent():layer() and window:object():inside(x, y) then
-					return false
-				end
+    for _, window in pairs(self:get_open_windows()) do
+		if not table.contains(window:object():children(), item) then
+			if window:object():layer() > item:parent():layer() and window:object():inside(x, y) then
+				return false
 			end
 		end
     end
@@ -435,11 +444,6 @@ function ComputerGui:set_visible(visible)
 	self._gui:set_visible(visible)
 end
 
-function ComputerGui:lock_gui()
-	self._ws:set_cull_distance(self._cull_distance)
-	self._ws:set_frozen(true)
-end
-
 -- // AT EXIT \\
 
 function ComputerGui:destroy()
@@ -468,8 +472,6 @@ function ComputerGui:_close()
 	self._unit:set_extension_update_enabled(Idstring("computer_gui"), false)
 	self._update_enabled = false
 end
-
--- // MISC. \\
 
 function ComputerGui:game_resolution_changed()
 	local gui_width, gui_height = managers.gui_data:get_base_res()

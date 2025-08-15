@@ -34,7 +34,8 @@ end
 
 function ComputerObjectBase:trigger_event(event_name, ...)
     local event = self._tweak_data.events[event_name] and self._tweak_data.events[event_name].event
-    if event then
+    local event_enabled = self._tweak_data.events[event_name] and self._tweak_data.events[event_name].enabled
+    if event and event_enabled then
         event(...)
         return true
     end

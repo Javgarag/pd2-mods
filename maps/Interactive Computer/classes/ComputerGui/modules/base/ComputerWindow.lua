@@ -118,12 +118,14 @@ function ComputerWindow:init(tweak_data)
 		events = {
 			mouse_pressed = {
 				type = "func",
+				enabled = true,
 				event = function(window, button, x, y)
 					window.extension:start_dragging(window:object())
 				end
 			},
 			mouse_released = {
 				type = "func",
+				enabled = true,
 				event = function(window, button, x, y)
 					window.extension:stop_dragging()
 				end
@@ -144,6 +146,7 @@ function ComputerWindow:init(tweak_data)
 		events = {
 			mouse_released = {
 				type = "func",
+				enabled = true,
 				event = function(window, button, x, y)
 					window:trigger_event("close")
 					window.extension:remove_from_window_stack(window:object())
@@ -175,7 +178,7 @@ function ComputerWindow:create(parent_object, extension)
 end
 
 function ComputerWindow:trigger_event(event_name, ...)
-	ComputerWindow.super.trigger_event(self, event_name, ...)
+	local did_event = ComputerWindow.super.trigger_event(self, event_name, ...)
 
 	local event_filters = {
 		mouse_enter = function(child, x, y)
@@ -192,12 +195,14 @@ function ComputerWindow:trigger_event(event_name, ...)
 
 		mouse_pressed = function(child, button, x, y)
 			if child:object():inside(x, y) and child:is_visible(x, y) then
+				child.pressing_mouse = true
 				return true
 			end
 		end,
 
 		mouse_released = function(child, button, x, y)
-			if child:object():inside(x, y) and child:is_visible(x, y) then
+			if child:object():inside(x, y) and child:is_visible(x, y) and child.pressing_mouse then
+				child.pressing_mouse = false
 				return true
 			end
 		end
@@ -205,11 +210,13 @@ function ComputerWindow:trigger_event(event_name, ...)
 
 	for _, child in pairs(self._tweak_data.children) do
 		if event_filters[event_name] and event_filters[event_name](child, ...) == true then
-			child:trigger_event(event_name, self, ...)
+			did_event = did_event or child:trigger_event(event_name, self, ...)
 		elseif not event_filters[event_name] then
-			child:trigger_event(event_name, self, ...)
+			did_event = did_event or child:trigger_event(event_name, self, ...)
 		end
     end
+
+	return did_event or false
 end
 
 function ComputerWindow:is_active_window()
@@ -222,8 +229,8 @@ function ComputerWindow:is_visible(x, y)
 	end
 
 	for _, window in pairs(self.extension:get_open_windows()) do
-		if not window == self then
-			if window:object():layer() > self:object():layer() and window:object():inside(x, y) then
+		if window:object() ~= self._object then
+			if window:object():layer() > self._object:layer() and window:object():inside(x, y) then
 				return false
 			end
 		end
