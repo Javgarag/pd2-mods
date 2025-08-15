@@ -221,6 +221,8 @@ function ComputerGui:mouse_moved(o, x, y)
 		if window:object():inside(x, y) and window:is_visible(x, y) then
 			changed_texture = true
 			self:change_mouse_texture_from_window_position(window, x, y)
+
+			window:trigger_event("mouse_exit", x, y)
 			window:trigger_event("mouse_enter", x, y)
 		end
 	end
@@ -242,8 +244,7 @@ function ComputerGui:mouse_pressed(o, button, x, y)
 		for _, window in pairs(self:get_open_windows()) do
 			if window:object():inside(x, y) and window:is_visible(x, y) then
 				if not window:is_active_window() then
-					self:set_active_window(window:object())
-					window:trigger_event("gained_focus")
+					self:set_active_window(window)
 				end
 				window:trigger_event("mouse_pressed", button, x, y)
 			end
@@ -336,19 +337,27 @@ function ComputerGui:open_window(app_index, app)
 	end
 
 	if window:is_open() then
-		self:set_active_window(window:object())
+		self:set_active_window(window)
 		window:trigger_event("attention")
 		return
 	end
 
-	self:set_active_window(window:object())
+	self:set_active_window(window)
 	window:trigger_event("open")
 end
 
-function ComputerGui:set_active_window(window_object)
+function ComputerGui:set_active_window(window)
+	local window_object = window:object()
+	local old_active_window = self:get_active_window()
+
 	if not alive(window_object) then
 		log("[ComputerGui:set_active_window] ERROR: Nil window object provided.")
 		return
+	end
+
+	if old_active_window then
+		old_active_window:trigger_event("lost_focus")
+		window:trigger_event("gained_focus")
 	end
 
 	local inactive_color = Color(1, 50/255, 50/255, 50/255)
@@ -427,10 +436,6 @@ function ComputerGui:get_active_window_object()
 	return self.window_stack[#self.window_stack]
 end
 
-function ComputerGui:get_pointer()
-	return self._pointer
-end
-
 function ComputerGui:hide()
 	self._ws:hide()
 end
@@ -473,6 +478,14 @@ function ComputerGui:_close()
 	self._update_enabled = false
 end
 
+function ComputerGui:post_event(event, clbk, flags)
+	if not event then
+		return
+	end
+
+	self._unit:sound_source():post_event(event, clbk, nil, unpack(flags))
+end
+
 function ComputerGui:game_resolution_changed()
 	local gui_width, gui_height = managers.gui_data:get_base_res()
 	self._ws:panel():set_size(gui_width, gui_height)
@@ -483,6 +496,10 @@ function ComputerGui:game_resolution_changed()
 end
 
 function ComputerGui:update(unit, t, dt)
+	for _, window in pairs(self._windows) do
+		window:update(t, dt)
+	end
+
 	if Input:keyboard():down(Idstring("space")) then
 		self:_close()
 	end

@@ -8,5 +8,4 @@ function ComputerBitmap:create(parent_object, extension, parent)
     ComputerBitmap.super.create(self, parent_object, extension, parent)
 
     self._object = parent_object:bitmap(self._tweak_data.config)
-    return self._object
 end

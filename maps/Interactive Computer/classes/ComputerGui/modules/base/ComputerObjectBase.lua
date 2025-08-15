@@ -11,13 +11,6 @@ function ComputerObjectBase:compute_properties()
             self._tweak_data.config[name] = property(self)
         end
     end
-
-    -- Example of a computed property:
-    --[[
-    w = function(self)
-        return self._parent._tweak_data.config.w - 35
-    end
-    ]]
 end
 
 function ComputerObjectBase:setup_events()
@@ -33,10 +26,12 @@ function ComputerObjectBase:setup_events()
 end
 
 function ComputerObjectBase:trigger_event(event_name, ...)
-    local event = self._tweak_data.events[event_name] and self._tweak_data.events[event_name].event
-    local event_enabled = self._tweak_data.events[event_name] and self._tweak_data.events[event_name].enabled
-    if event and event_enabled then
-        event(...)
+    local event_table = self._tweak_data.events[event_name]
+    if event_table and event_table.event and event_table.enabled then
+        event_table.event(...)
+        if event_table.post_event then
+            self.extension:post_event(event_table.post_event.sound_event_id, event_table.post_event.clbk, event_table.post_event.flags)
+        end
         return true
     end
     return false
@@ -75,4 +70,7 @@ end
 
 function ComputerObjectBase:children()
     return self._tweak_data.children
+end
+
+function ComputerObjectBase:update(t, dt)
 end

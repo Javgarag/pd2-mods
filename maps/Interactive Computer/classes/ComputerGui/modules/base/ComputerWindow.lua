@@ -151,9 +151,9 @@ function ComputerWindow:init(tweak_data)
 					window:trigger_event("close")
 					window.extension:remove_from_window_stack(window:object())
 
-					local active_window_object = window.extension:get_active_window_object()
-					if active_window_object then
-						window.extension:set_active_window(active_window_object)
+					local active_window = window.extension:get_active_window()
+					if active_window then
+						window.extension:set_active_window(active_window)
 					end
 				end
 			}
@@ -178,17 +178,17 @@ function ComputerWindow:create(parent_object, extension)
 end
 
 function ComputerWindow:trigger_event(event_name, ...)
-	local did_event = ComputerWindow.super.trigger_event(self, event_name, ...)
-
 	local event_filters = {
 		mouse_enter = function(child, x, y)
-			if child:object():inside(x, y) and child:is_visible(x, y) then
+			if child:object():inside(x, y) and child:is_visible(x, y) and not child.mouse_inside then
+				child.mouse_inside = true
 				return true
 			end
 		end,
 
 		mouse_exit = function(child, x, y)
-			if child:object():inside(x, y) and child:is_visible(x, y) then
+			if not child:object():inside(x, y) and child.mouse_inside then
+				child.mouse_inside = false
 				return true
 			end
 		end,
@@ -208,6 +208,13 @@ function ComputerWindow:trigger_event(event_name, ...)
 		end
 	}
 
+	local did_event
+	if event_filters[event_name] and event_filters[event_name](self, ...) == true then
+		did_event = ComputerWindow.super.trigger_event(self, event_name, ...)
+	elseif not event_filters[event_name] then
+		did_event = ComputerWindow.super.trigger_event(self, event_name, ...)
+	end
+
 	for _, child in pairs(self._tweak_data.children) do
 		if event_filters[event_name] and event_filters[event_name](child, ...) == true then
 			did_event = did_event or child:trigger_event(event_name, self, ...)
@@ -220,7 +227,7 @@ function ComputerWindow:trigger_event(event_name, ...)
 end
 
 function ComputerWindow:is_active_window()
-	return self.extension:get_active_window_object() == self._object or self.extension:get_active_window_object() == self._parent
+	return self.extension:get_active_window_object() == self._object or self.extension:get_active_window() == self._parent
 end
 
 function ComputerWindow:is_visible(x, y)
@@ -285,4 +292,10 @@ end
 
 function ComputerWindow:clbk_attention()
 	self._object:animate(callback(nil, _G, "HUDBGBox_animate_window_attention"))
+end
+
+function ComputerWindow:update(t, dt)
+	for _, child in pairs(self._tweak_data.children) do
+		child:update(t, dt)
+	end	
 end

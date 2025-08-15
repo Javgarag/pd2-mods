@@ -8,5 +8,4 @@ function ComputerRect:create(parent_object, extension, parent)
     ComputerRect.super.create(self, parent_object, extension, parent)
 
     self._object = parent_object:rect(self._tweak_data.config)
-    return self._object
 end

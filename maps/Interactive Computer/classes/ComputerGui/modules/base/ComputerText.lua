@@ -8,5 +8,4 @@ function ComputerText:create(parent_object, extension, parent)
     ComputerText.super.create(self, parent_object, extension, parent)
 
     self._object = parent_object:text(self._tweak_data.config)
-    return self._object
 end
