@@ -483,9 +483,6 @@ function ComputerGui:_close()
 	state:_toggle_gadget(state._equipped_unit:base())
 	self._unit:interaction():set_active(true)
 	self._started = false
-
-	self._unit:set_extension_update_enabled(Idstring("computer_gui"), false)
-	self._update_enabled = false
 end
 
 function ComputerGui:post_event(event, clbk, flags)
