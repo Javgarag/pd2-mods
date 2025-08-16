@@ -6,9 +6,10 @@ local REQUIRED_MODULES = {
 local modules = {
     "base/ComputerBitmap.lua",
     "base/ComputerText.lua",
-    "base/ComputerRect.lua"
+    "base/ComputerRect.lua",
 
     -- Add any additional modules here
+    "slow/ComputerProgressBar.lua"
 }
 
 for _, module in pairs(REQUIRED_MODULES) do
@@ -52,24 +53,35 @@ local presets = {
                 },
                 events = {}
             })
-        },
-        events = {
-            open = {
-                type = "callback",
-                enabled = true,
-                event = "clbk_open"
-            },
-            close = {
-                type = "callback",
-                enabled = true,
-                event = "clbk_close"
-            },
-            attention = {
-                type = "callback",
-                enabled = true,
-                event = "clbk_attention"
-            }
         }
+    },
+    keygen = {
+        config = {
+            halign = "grow",
+            valign = "grow",
+            w = 600,
+            h = 200
+        },
+        children = {
+            ComputerProgressBar:new({
+                config = {
+                    name = "progress_bar",
+                    w = 600,
+                    h = 200
+                },
+                events = {
+                    open = {
+                        type = "callback",
+                        enabled = true,
+                        event = "clbk_start",
+                        post_event = {
+                            sound_event_id = "bar_train_panel_hacking"
+                        }
+                    }
+                }
+            })
+        },
+        background_color = Color.black
     }
 }
 
@@ -92,7 +104,7 @@ tweak_data.computer_gui = {
             {
                 name = "computer_gui_app_keygen",
                 icon = "guis/textures/computergui/backgrounds/application_icon_keygen",
-                window = deep_clone(presets.access_denied)
+                window = deep_clone(presets.keygen)
             }
         }
     }

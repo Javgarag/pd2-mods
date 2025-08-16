@@ -106,8 +106,31 @@ end
 ComputerWindow = ComputerWindow or class(ComputerObjectBase)
 
 function ComputerWindow:init(tweak_data)
+	tweak_data.events = tweak_data.events or {}
+	local events = {
+		open = {
+			type = "callback",
+			enabled = true,
+			event = "clbk_open"
+		},
+		close = {
+			type = "callback",
+			enabled = true,
+			event = "clbk_close"
+		},
+		attention = {
+			type = "callback",
+			enabled = true,
+			event = "clbk_attention"
+		}
+	}
+	for key, event in pairs(events) do
+		tweak_data.events[key] = event
+	end
+
     ComputerWindow.super.init(self, tweak_data)
 
+	self._tweak_data.children = self._tweak_data.children or {}
     table.insert(self._tweak_data.children, ComputerRect:new({
         config = {
             name = "drag_hitbox",
@@ -172,8 +195,10 @@ function ComputerWindow:create(parent_object, extension)
 
     for _, child in pairs(self._tweak_data.children) do
         child:create(self._object, self.extension, self)
+		child:post_create()
     end
 
+	ComputerWindow.super.post_create(self)
     return self._object
 end
 
@@ -217,9 +242,11 @@ function ComputerWindow:trigger_event(event_name, ...)
 
 	for _, child in pairs(self._tweak_data.children) do
 		if event_filters[event_name] and event_filters[event_name](child, ...) == true then
-			did_event = did_event or child:trigger_event(event_name, self, ...)
+			local event = child:trigger_event(event_name, self, ...)
+			did_event = did_event or event
 		elseif not event_filters[event_name] then
-			did_event = did_event or child:trigger_event(event_name, self, ...)
+			local event = child:trigger_event(event_name, self, ...)
+			did_event = did_event or event
 		end
     end
 

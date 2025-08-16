@@ -22,8 +22,9 @@
 		<unit path="units/payday2/architecture/mkp/mkp_int_cube_1x1"/>
 	</add>
 	<add from_db="true" path="units/dev_tools/editable_text_long/editable_text_long" type="unit">
-		<unit path="units/dev_tools/editable_text_long/editable_text_long"/>
-		<object path="units/dev_tools/editable_text_long/editable_text_long"/>
 		<material_config path="units/dev_tools/editable_text_long/editable_text_long"/>
+		<object path="units/dev_tools/editable_text_long/editable_text_long"/>
+		<unit path="units/dev_tools/editable_text_long/editable_text_long"/>
 	</add>
+	<add from_db="true" path="soundbanks/sfx_und" type="bnk"/>
 </table>

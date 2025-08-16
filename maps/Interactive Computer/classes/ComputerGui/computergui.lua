@@ -493,7 +493,11 @@ function ComputerGui:post_event(event, clbk, flags)
 		return
 	end
 
-	self._unit:sound_source():post_event(event, clbk, nil, unpack(flags))
+	if clbk and flags then
+		self._unit:sound_source():post_event(event, clbk, nil, unpack(flags))
+	else
+		self._unit:sound_source():post_event(event)
+	end
 end
 
 function ComputerGui:game_resolution_changed()

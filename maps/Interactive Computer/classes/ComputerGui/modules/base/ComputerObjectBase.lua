@@ -2,7 +2,6 @@ ComputerObjectBase = ComputerObjectBase or class()
 
 function ComputerObjectBase:init(tweak_data)
     self._tweak_data = tweak_data
-    self:setup_events()
 end
 
 function ComputerObjectBase:compute_properties()
@@ -44,6 +43,10 @@ function ComputerObjectBase:create(parent_object, extension, parent)
     self:compute_properties()
 end
 
+function ComputerObjectBase:post_create()
+    self:setup_events()
+end
+
 function ComputerObjectBase:is_visible(x, y)
     if self._parent and self._parent:is_active_window() then
         return true
@@ -55,6 +58,10 @@ function ComputerObjectBase:is_visible(x, y)
                 return false
             end
         end
+    end
+
+    if not self._object:visible() then
+        return false
     end
 
     return true

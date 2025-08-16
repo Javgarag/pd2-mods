@@ -4,24 +4,21 @@
 		<texture path="guis/textures/computergui/backgrounds/application_icon_keygen"/>
 		<texture path="guis/textures/computergui/backgrounds/application_icon_trash"/>
 		<texture path="guis/textures/computergui/backgrounds/application_icon_browser"/>
-		
 		<texture path="guis/textures/computergui/backgrounds/xp_bg"/>
-		
-		<!-- Window corners (can't rotate vanilla texture or else they escape monitor, Diesel limitation) -->
 		<dds path="guis/textures/pd2/hud_corner_down_left"/>
 		<dds path="guis/textures/pd2/hud_corner_down_right"/>
 		<dds path="guis/textures/pd2/hud_corner_top_right"/>
 	</AddFiles>
-	<Localization default="english.txt" directory="loc">
-		<loc file="english.txt" language="english"/>
-	</Localization>
-	<Hooks directory="hooks">
-		<hook file="UnitNetworkHandler.lua" source_file="lib/network/handlers/unitnetworkhandler"/>
-	</Hooks>
 	<Elements directory="elements">
 		<element name="ComputerSetValue"/>
 		<element name="ComputerValueFilter"/>
 	</Elements>
+	<Hooks directory="hooks">
+		<hook file="UnitNetworkHandler.lua" source_file="lib/network/handlers/unitnetworkhandler"/>
+	</Hooks>
+	<Localization default="english.txt" directory="loc">
+		<loc file="english.txt" language="english"/>
+	</Localization>
 	<level ai_group_type="america" id="intpc" max_bags="54">
 		<assets>
 			<asset name="ammo_bag"/>
@@ -35,6 +32,8 @@
 		<outro_event/>
 		<packages>
 			<value_node value="levels/instances/unique/kenaz/toilets/world"/>
+			<value_node value="levels/narratives/classics/man/world_sounds"/>
+			<value_node value="levels/narratives/classics/nmh/world_sounds"/>
 		</packages>
 		<script_data_mods directory="scriptdata">
 			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
