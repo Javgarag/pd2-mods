@@ -1,12 +1,19 @@
 local MODULE_DIRECTORY = BeardLib.current_level._mod.ModPath .. "classes/ComputerGui/modules/"
+local REQUIRED_MODULES = {
+    "base/ComputerObjectBase.lua",
+    "base/ComputerWindow.lua"
+}
 local modules = {
-    "base/ComputerWindow.lua",
-	"base/ComputerBitmap.lua",
+    "base/ComputerBitmap.lua",
     "base/ComputerText.lua",
     "base/ComputerRect.lua"
+
+    -- Add any additional modules here
 }
 
-dofile(MODULE_DIRECTORY .. "base/ComputerObjectBase.lua")
+for _, module in pairs(REQUIRED_MODULES) do
+	dofile(MODULE_DIRECTORY .. module)
+end
 for _, module in pairs(modules) do
 	dofile(MODULE_DIRECTORY .. module)
 end

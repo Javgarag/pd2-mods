@@ -77,6 +77,7 @@ function ComputerGui:setup()
 	self._desktop_apps = {}
 	self._windows = {}
 	self.window_stack = {}
+	self.values = {}
 
 	for app_index, app in pairs(self._tweak_data.applications) do
 		self:create_window(app_index, app)
@@ -189,6 +190,15 @@ function ComputerGui:hud_text()
 		color = Color.white
 	})
 	self._quit_text:set_y(self._quit_text:y() + 50)
+end
+
+function ComputerGui:get_value(key)
+	return self.values[key]
+end
+
+function ComputerGui:set_value(key, value)
+	self.values[key] = value
+	return self.values[key]
 end
 
 -- ComputerGui:create_camera -> Creates a world camera to run later so the camera can be locked. The model needs to have an object (empty) called "camera_pos".

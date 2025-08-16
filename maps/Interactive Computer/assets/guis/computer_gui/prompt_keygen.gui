@@ -1,8 +1,0 @@
-<gui>
-	<preload texture="guis/textures/pd2/specialization/points_reduce"/>
-	
-	<panel name_s="panel" halign_s="grow" valign_s="grow" w="425" h="230" x="175" y="75">
-		<bitmap name_s="icon" texture_s="guis/textures/pd2/feature_crimenet_heat" w="64" h="64" x="10" y="10"/>
-		<text name_s="text" text_s="Access denied." x="85" vertical_s="center" font_s="fonts/font_medium_noshadow_mf" render_template_s="Text" font_size="40" color="Color.white"/>
-	</panel>
-</gui>

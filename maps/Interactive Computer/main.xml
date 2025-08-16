@@ -1,10 +1,5 @@
 <table min_lib_ver="4.5" name="Interactive Computer">
 	<AddFiles directory="assets">
-		<json path="gamedata/interactive_computer/applications"/>
-		
-		<gui path="guis/computer_gui/prompt_access_denied"/>
-		<gui path="guis/computer_gui/prompt_keygen"/>
-		
 		<texture path="guis/textures/computergui/backgrounds/application_icon_usb"/>
 		<texture path="guis/textures/computergui/backgrounds/application_icon_keygen"/>
 		<texture path="guis/textures/computergui/backgrounds/application_icon_trash"/>
@@ -23,6 +18,10 @@
 	<Hooks directory="hooks">
 		<hook file="UnitNetworkHandler.lua" source_file="lib/network/handlers/unitnetworkhandler"/>
 	</Hooks>
+	<Elements directory="elements">
+		<element name="ComputerSetValue"/>
+		<element name="ComputerValueFilter"/>
+	</Elements>
 	<level ai_group_type="america" id="intpc" max_bags="54">
 		<assets>
 			<asset name="ammo_bag"/>
