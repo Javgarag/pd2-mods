@@ -19,7 +19,11 @@ function ComputerObjectBase:setup_events()
                 log("[ComputerObjectBase:setup_events] ERROR: No method defined for callback type event '" .. event_name .. "'.")
             end
 
-            self._tweak_data.events[event_name].event = callback(self, self, event_data.event)
+            function self.event_callback_func()
+                return callback(self, self, event_data.event)
+            end
+
+            self._tweak_data.events[event_name].event = self:event_callback_func()
         end
     end
 end
@@ -27,7 +31,7 @@ end
 function ComputerObjectBase:trigger_event(event_name, ...)
     local event_table = self._tweak_data.events[event_name]
     if event_table and event_table.event and event_table.enabled then
-        event_table.event(...)
+        event_table.event(self, ...)
         if event_table.post_event then
             self.extension:post_event(event_table.post_event.sound_event_id, event_table.post_event.clbk, event_table.post_event.flags)
         end
@@ -41,9 +45,6 @@ function ComputerObjectBase:create(parent_object, extension, parent)
     self._parent = parent
 
     self:compute_properties()
-end
-
-function ComputerObjectBase:post_create()
     self:setup_events()
 end
 

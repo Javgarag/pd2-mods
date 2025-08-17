@@ -15,6 +15,7 @@
 	</Elements>
 	<Hooks directory="hooks">
 		<hook file="UnitNetworkHandler.lua" source_file="lib/network/handlers/unitnetworkhandler"/>
+		<hook file="FPCameraPlayerBase.lua" source_file="lib/units/cameras/fpcameraplayerbase"/>
 	</Hooks>
 	<Localization default="english.txt" directory="loc">
 		<loc file="english.txt" language="english"/>

@@ -8,7 +8,7 @@ function HUDBGBox_create_window(panel, params)
 		alpha = 1,
 		valign = "grow",
 		color = bg_color,
-		layer = 0,
+		layer = -1,
 	})
 
 	local left_top = box_panel:bitmap({
@@ -142,15 +142,15 @@ function ComputerWindow:init(tweak_data)
 			mouse_pressed = {
 				type = "func",
 				enabled = true,
-				event = function(window, button, x, y)
-					window.extension:start_dragging(window:object())
+				event = function(button, x, y)
+					self.extension:start_dragging(self:object())
 				end
 			},
 			mouse_released = {
 				type = "func",
 				enabled = true,
-				event = function(window, button, x, y)
-					window.extension:stop_dragging()
+				event = function(button, x, y)
+					self.extension:stop_dragging()
 				end
 			}
 		},
@@ -170,13 +170,13 @@ function ComputerWindow:init(tweak_data)
 			mouse_released = {
 				type = "func",
 				enabled = true,
-				event = function(window, button, x, y)
-					window:trigger_event("close")
-					window.extension:remove_from_window_stack(window:object())
+				event = function(button, x, y)
+					self:trigger_event("close")
+					self.extension:remove_from_window_stack(self:object())
 
-					local active_window = window.extension:get_active_window()
+					local active_window = self.extension:get_active_window()
 					if active_window then
-						window.extension:set_active_window(active_window)
+						self.extension:set_active_window(active_window)
 					end
 				end
 			}
@@ -195,10 +195,9 @@ function ComputerWindow:create(parent_object, extension)
 
     for _, child in pairs(self._tweak_data.children) do
         child:create(self._object, self.extension, self)
-		child:post_create()
     end
 
-	ComputerWindow.super.post_create(self)
+	self._object:set_visible(false)
     return self._object
 end
 
@@ -242,10 +241,10 @@ function ComputerWindow:trigger_event(event_name, ...)
 
 	for _, child in pairs(self._tweak_data.children) do
 		if event_filters[event_name] and event_filters[event_name](child, ...) == true then
-			local event = child:trigger_event(event_name, self, ...)
+			local event = child:trigger_event(event_name, ...)
 			did_event = did_event or event
 		elseif not event_filters[event_name] then
-			local event = child:trigger_event(event_name, self, ...)
+			local event = child:trigger_event(event_name, ...)
 			did_event = did_event or event
 		end
     end

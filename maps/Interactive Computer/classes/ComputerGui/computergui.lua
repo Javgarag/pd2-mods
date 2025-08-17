@@ -32,6 +32,7 @@ function ComputerGui:init(unit)
 
 	self._unit:set_extension_update_enabled(Idstring("computer_gui"), false)
 	self._update_enabled = false
+
 end
 
 function ComputerGui:add_workspace(gui_object)
@@ -39,6 +40,7 @@ function ComputerGui:add_workspace(gui_object)
 	managers.viewport:add_resolution_changed_func(callback(self, self, "game_resolution_changed"))
 
 	self._ws = self._new_gui:create_object_workspace(gui_width, gui_height, gui_object, Vector3(0, 0, 0))
+	self._ws:set_cull_distance(self._cull_distance)
 	self._gui = self._ws:panel():panel({
 		name = "panel",
 		halign = "grow",
@@ -142,34 +144,37 @@ function ComputerGui:_start()
 	self._started = true
 	self._unit:set_extension_update_enabled(Idstring("computer_gui"), true)
 	self._update_enabled = true
-	--self:post_event(self._start_event)
+
+	local post_event = self._tweak_data.workspace.start_post_event
+	if post_event then
+		self:post_event(post_event.sound_event_id, post_event.clbk, post_event.flags)
+	end
 
 	self:show()
+	self:set_visible(true)
 
 	if Network:is_client() then
 		return
 	end
 
 	self._camera_pos = self._unit:get_object(Idstring(self.camera_object or "camera_pos"))
-	self._teleport_pos = self._unit:get_object(Idstring("teleport_pos"))
-	if not (self._camera_pos or self._teleport_pos) then
+	if not self._camera_pos then
 		log("[ComputerGui:_start] ERROR: Position object missing. Check model and/or extension configuration!")
 		return
 	end
 
 	self:create_camera()
 	managers.worldcamera:play_world_camera("computer_gui_camera")
+	managers.player:player_unit():camera():camera_unit():base().interacting_with_computer = true
+	managers.player:player_unit():character_damage():add_listener("ComputerGui", {
+		"hurt"
+	}, callback(self, self, "clbk_player_damage"))
 
-	managers.player:warp_to(self._teleport_pos:position(), self._teleport_pos:rotation())
-	local state = managers.player:get_current_state()
-	state:_toggle_gadget(state._equipped_unit:base())
 
 	self:hud_text()
 	self:setup_mouse()
-	self:set_visible(true)
 end
 
--- ComputerGui:sync_start -> Network version of ComputerGui:start(), called by UnitNetworkHandler (See /hooks/UnitNetworkHandler.lua)
 function ComputerGui:sync_start() 
 	self:_start()
 end
@@ -389,19 +394,59 @@ function ComputerGui:set_active_window(window)
 		table.remove(self.window_stack, new_active_old_index)
 	end
 
-	for stack_index, stack_object in ipairs(self.window_stack) do
-		stack_object:set_layer(stack_index + 2)
-		--[[ Global layer info:
-		1 - Desktop background
-		2 - Desktop apps
-		Rest: windows.
-		30 - Mouse pointer
-		]]
-		
+	local BASE_LAYER = 2 -- 0: workspace background, 1: app icons
+	local last_allocated = 2 -- First window's background + contents
+	local last_layer
+	for _, stack_object in ipairs(self.window_stack) do
+		stack_object:set_layer((last_layer and last_layer or BASE_LAYER) + last_allocated)
+
+		last_layer = stack_object:layer()
+		last_allocated = self:allocate_layers(stack_object)
+
 		stack_object:child("bg"):set_color(inactive_color)
 	end
 
+	self._pointer.gui:set_layer(last_layer + last_allocated + 1)
 	window_object:child("bg"):set_color(active_color)
+end
+
+function ComputerGui:allocate_layers(window_object)
+	local function recursive_panel_allocate_layers(panel)
+		local layers = 0
+		local child_layers = {}
+		local negative_layers = {}
+		local difference_layers = {}
+
+		for _, child in pairs(panel:children()) do
+			if child.children then -- Child is panel
+				layers = layers + recursive_panel_allocate_layers(child)
+			else
+				if math.abs(child:layer()) ~= child:layer() and not table.contains(negative_layers, child:layer()) then
+					table.insert(negative_layers, child:layer())
+				elseif not table.contains(child_layers, child:layer() == 0 and 1 or child:layer()) then
+					table.insert(child_layers, child:layer() == 0 and 1 or child:layer())
+				end
+			end
+		end
+
+		for _, layer in pairs(negative_layers) do
+			if (#child_layers - 1) - math.abs(layer) < 0 then
+				table.insert(difference_layers, math.abs((#child_layers - 1) - math.abs(layer)))
+			end
+		end
+
+		if #difference_layers > 0 then
+			layers = layers + math.max(unpack(child_layers)) + math.max(unpack(difference_layers))
+		else
+			layers = layers + math.max(unpack(child_layers))
+		end
+
+		return layers
+	end
+
+	local layers = recursive_panel_allocate_layers(window_object)
+
+	return layers
 end
 
 function ComputerGui:remove_from_window_stack(window_object)
@@ -475,12 +520,13 @@ function ComputerGui:destroy()
 end
 
 function ComputerGui:_close()
-	managers.worldcamera:stop_world_camera()
 	self._text_workspace:destroy_workspace(self._hud)
 	self:remove_mouse()
 
-	local state = managers.player:get_current_state()
-	state:_toggle_gadget(state._equipped_unit:base())
+	managers.worldcamera:stop_world_camera()
+	managers.player:player_unit():camera():camera_unit():base().interacting_with_computer = false
+	managers.player:player_unit():character_damage():remove_listener("ComputerGui")
+
 	self._unit:interaction():set_active(true)
 	self._started = false
 end
@@ -504,6 +550,10 @@ function ComputerGui:game_resolution_changed()
 	self._gui:child("screen_background"):set_h(gui_height)
 
 	self:hud_text()
+end
+
+function ComputerGui:clbk_player_damage()
+	self:_close()
 end
 
 function ComputerGui:update(unit, t, dt)

@@ -26,7 +26,8 @@ function ComputerProgressBar:create(parent_object, extension, parent)
         w = self._parent:object():w() - self._parent:object():w() / 3,
         h = 50,
         y = self._parent:object():h() / 2 + 10,
-        vertical = "center"
+        vertical = "center",
+        layer = 1
     })
     self._timer:set_center_x(self._parent:object():w() / 2)
 
@@ -36,13 +37,14 @@ function ComputerProgressBar:create(parent_object, extension, parent)
         alpha = 0.5,
         w = self._timer:w() + 10,
         h = self._timer:h() + 10,
-        vertical = "center"
+        vertical = "center",
+        layer = 0
     })
     self._timer_bg:set_center(self._timer:center())
 end
 
 function ComputerProgressBar:clbk_start(window, ...)
-    if not self._started and not self._complete and self._timer then
+    if not self._started and not self._complete then
         self._started = true
         self._tweak_data.events.open.enabled = false
 
