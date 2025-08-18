@@ -88,6 +88,3 @@ end
 function ComputerObjectBase:is_window()
     return false
 end
-
-function ComputerObjectBase:update(t, dt)
-end

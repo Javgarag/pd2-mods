@@ -36,7 +36,7 @@ function ComputerGui:init(unit)
 end
 
 function ComputerGui:add_workspace(gui_object)
-	local gui_width, gui_height = managers.gui_data:get_base_res() -- VERY IMPORTANT. This is so the mouse movement is ALWAYS synced with the user's resolution.
+	local gui_width, gui_height = managers.gui_data:get_base_res() -- This is so the mouse movement is always synced with the user's resolution.
 	managers.viewport:add_resolution_changed_func(callback(self, self, "game_resolution_changed"))
 
 	self._ws = self._new_gui:create_object_workspace(gui_width, gui_height, gui_object, Vector3(0, 0, 0))
@@ -104,7 +104,7 @@ function ComputerGui:setup()
 			h = 75,
 			layer = 1,
 		})
-		icon:set_center(self._desktop_apps[app_index]:w() / 2, self._desktop_apps[app_index]:h() / 2)
+		icon:set_center(self._desktop_apps[app_index]:w() / 2, (self._desktop_apps[app_index]:h() - 5) / 2)
 
 		local name = self._desktop_apps[app_index]:text({
 			text = managers.localization:text(app.name),
@@ -116,7 +116,7 @@ function ComputerGui:setup()
 			align = "center",
 			halign = "center",
 		})
-		name:set_bottom(self._desktop_apps[app_index]:h())
+		name:set_bottom(icon:h() + 20)
 	end
 end
 

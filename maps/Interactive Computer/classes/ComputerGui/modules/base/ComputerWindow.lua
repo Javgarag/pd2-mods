@@ -391,6 +391,8 @@ end
 
 function ComputerWindow:update(t, dt)
 	for _, child in pairs(self._tweak_data.children) do
-		child:update(t, dt)
-	end	
+		if child.update then
+			child:update(t, dt)
+		end
+	end
 end
