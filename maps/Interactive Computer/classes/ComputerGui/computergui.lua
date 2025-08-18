@@ -41,13 +41,13 @@ function ComputerGui:add_workspace(gui_object)
 
 	self._ws = self._new_gui:create_object_workspace(gui_width, gui_height, gui_object, Vector3(0, 0, 0))
 	self._ws:set_cull_distance(self._cull_distance)
-	self._gui = self._ws:panel():panel({
+	self.gui = self._ws:panel():panel({
 		name = "panel",
 		halign = "grow",
 		valign = "grow",
 		layer = 0,
 	})
-	self._gui:bitmap({
+	self.gui:bitmap({
 		name = "screen_background",
 		texture = self._tweak_data.workspace.background_texture,
 		w = gui_width,
@@ -55,7 +55,7 @@ function ComputerGui:add_workspace(gui_object)
 		layer = 1,
 		color = Color(1, 1, 1)
 	})
-	self._gui:bitmap({
+	self.gui:bitmap({
 		name = "pointer",
 		texture = "guis/textures/mouse_pointer",
 		texture_rect = {0, 0, 19, 23},
@@ -67,12 +67,12 @@ function ComputerGui:add_workspace(gui_object)
 	})
 
 	self._pointer = {
-		gui = self._gui:child("pointer")
+		gui = self.gui:child("pointer")
 	}
 
-	self._gui:child("screen_background"):set_w(gui_width)
-	self._gui:child("screen_background"):set_h(gui_height)
-	self._gui:set_size(self._gui:parent():size())
+	self.gui:child("screen_background"):set_w(gui_width)
+	self.gui:child("screen_background"):set_h(gui_height)
+	self.gui:set_size(self.gui:parent():size())
 end
 
 function ComputerGui:setup()
@@ -85,7 +85,7 @@ function ComputerGui:setup()
 		self:create_window(app_index, app)
 
 		-- Icons
-		self._desktop_apps[app_index] = self._gui:panel({
+		self._desktop_apps[app_index] = self.gui:panel({
 			name = app_index,
 			w = 95,
 			h = 95,
@@ -124,7 +124,7 @@ function ComputerGui:create_window(app_index, app)
 	local app_name = app.name
 
 	local window = ComputerWindow:new(app.window)
-	window:create(self._gui, self)
+	window:create(self.gui, self)
 
 	self._windows[app_name] = window
 end
@@ -258,6 +258,12 @@ function ComputerGui:mouse_pressed(o, button, x, y)
 	if button == Idstring("0") then
 		for _, window in pairs(self:get_open_windows()) do
 			if window:object():inside(x, y) and window:is_visible(x, y) then
+				if window:is_locked() then
+					local final_child_window = self:final_child_window(window.child_window)
+					self:set_active_window(final_child_window)
+					final_child_window:trigger_event("attention")
+					return
+				end
 				if not window:is_active_window() then
 					self:set_active_window(window)
 				end
@@ -352,8 +358,14 @@ function ComputerGui:open_window(app_index, app)
 	end
 
 	if window:is_open() then
-		self:set_active_window(window)
-		window:trigger_event("attention")
+		if not window:is_locked() then
+			self:set_active_window(window)
+			window:trigger_event("attention")
+		else
+			local final_child_window = self:final_child_window(window.child_window)
+			self:set_active_window(final_child_window)
+			final_child_window:trigger_event("attention")
+		end
 		return
 	end
 
@@ -374,9 +386,6 @@ function ComputerGui:set_active_window(window)
 		old_active_window:trigger_event("lost_focus")
 		window:trigger_event("gained_focus")
 	end
-
-	local inactive_color = Color(1, 50/255, 50/255, 50/255)
-	local active_color = Color(1, 0, 0, 0)
 
 	if self.window_stack[#self.window_stack] ~= window_object then
 		table.insert(self.window_stack, window_object)
@@ -402,12 +411,16 @@ function ComputerGui:set_active_window(window)
 
 		last_layer = stack_object:layer()
 		last_allocated = self:allocate_layers(stack_object)
+		self:get_window_from_window_object(stack_object):set_allocated_layers(last_allocated)
 
+		local bg_color = self:get_window_from_window_object(stack_object):background_color()
+		local inactive_color = Color(1, bg_color.r + (1 - bg_color.r) * 0.2, bg_color.g + (1 - bg_color.g) * 0.2, bg_color.b + (1 - bg_color.b) * 0.2)
 		stack_object:child("bg"):set_color(inactive_color)
 	end
 
 	self._pointer.gui:set_layer(last_layer + last_allocated + 1)
-	window_object:child("bg"):set_color(active_color)
+
+	window_object:child("bg"):set_color(window:background_color())
 end
 
 function ComputerGui:allocate_layers(window_object)
@@ -449,6 +462,12 @@ function ComputerGui:allocate_layers(window_object)
 	return layers
 end
 
+function ComputerGui:add_spawned_window(window)
+	table.insert(self._windows, window)
+	table.insert(self.window_stack, window:object())
+	self:set_active_window(window)
+end
+
 function ComputerGui:remove_from_window_stack(window_object)
 	local window_index = nil
 	for stack_index, stack_object in ipairs(self.window_stack) do
@@ -487,8 +506,26 @@ function ComputerGui:get_active_window()
 	end
 end
 
+function ComputerGui:get_window_from_window_object(window_object)
+	for _, window in pairs(self._windows) do
+		if window:object() == window_object then
+			return window
+		end
+	end
+
+	return nil
+end
+
 function ComputerGui:get_active_window_object()
 	return self.window_stack[#self.window_stack]
+end
+
+function ComputerGui:final_child_window(child_window)
+	if child_window.child_window then
+		return self:final_child_window(child_window.child_window)
+	end
+
+	return child_window
 end
 
 function ComputerGui:hide()
@@ -501,7 +538,7 @@ end
 
 function ComputerGui:set_visible(visible)
 	self._visible = visible
-	self._gui:set_visible(visible)
+	self.gui:set_visible(visible)
 end
 
 -- // AT EXIT \\
@@ -546,8 +583,8 @@ end
 function ComputerGui:game_resolution_changed()
 	local gui_width, gui_height = managers.gui_data:get_base_res()
 	self._ws:panel():set_size(gui_width, gui_height)
-	self._gui:child("screen_background"):set_w(gui_width)
-	self._gui:child("screen_background"):set_h(gui_height)
+	self.gui:child("screen_background"):set_w(gui_width)
+	self.gui:child("screen_background"):set_h(gui_height)
 
 	self:hud_text()
 end

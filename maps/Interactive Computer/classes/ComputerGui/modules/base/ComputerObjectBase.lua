@@ -19,11 +19,11 @@ function ComputerObjectBase:setup_events()
                 log("[ComputerObjectBase:setup_events] ERROR: No method defined for callback type event '" .. event_name .. "'.")
             end
 
-            function self.event_callback_func()
-                return callback(self, self, event_data.event)
-            end
+            self._tweak_data.events[event_name].event = callback(self, self, event_data.event)
+        end
 
-            self._tweak_data.events[event_name].event = self:event_callback_func()
+        if event_data.type == "spawn" then
+            event_data.event:create(self.extension.gui, self.extension, self:is_window() and self or self._parent)
         end
     end
 end
@@ -31,7 +31,12 @@ end
 function ComputerObjectBase:trigger_event(event_name, ...)
     local event_table = self._tweak_data.events[event_name]
     if event_table and event_table.event and event_table.enabled then
-        event_table.event(self, ...)
+        if type(event_table.event) == "function" then
+            event_table.event(self, ...)
+        elseif event_table.type == "spawn" then
+            event_table.event:trigger_event("open")
+        end
+
         if event_table.post_event then
             self.extension:post_event(event_table.post_event.sound_event_id, event_table.post_event.clbk, event_table.post_event.flags)
         end
@@ -78,6 +83,10 @@ end
 
 function ComputerObjectBase:children()
     return self._tweak_data.children
+end
+
+function ComputerObjectBase:is_window()
+    return false
 end
 
 function ComputerObjectBase:update(t, dt)

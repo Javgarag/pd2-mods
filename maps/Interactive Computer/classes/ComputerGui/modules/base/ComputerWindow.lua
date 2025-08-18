@@ -129,33 +129,44 @@ function ComputerWindow:init(tweak_data)
 	end
 
     ComputerWindow.super.init(self, tweak_data)
+end
+
+function ComputerWindow:create(parent_object, extension, parent)
+	ComputerWindow.super.create(self, parent_object, extension, parent)
+
+    self._object = parent_object:panel(self._tweak_data.config)
+
+    -- Creation order matters. Background first, then foreground, so the window is not entirely black.
+    HUDBGBox_create_window(self._object, self._tweak_data)
 
 	self._tweak_data.children = self._tweak_data.children or {}
-    table.insert(self._tweak_data.children, ComputerRect:new({
-        config = {
-            name = "drag_hitbox",
-            w = self._tweak_data.config.w - 35,
-            h = 35,
-            alpha = 0
-        },
-		events = {
-			mouse_pressed = {
-				type = "func",
-				enabled = true,
-				event = function(button, x, y)
-					self.extension:start_dragging(self:object())
-				end
+	if not self._parent then
+		table.insert(self._tweak_data.children, ComputerRect:new({
+			config = {
+				name = "drag_hitbox",
+				w = self._tweak_data.config.w - 35,
+				h = 35,
+				alpha = 0
 			},
-			mouse_released = {
-				type = "func",
-				enabled = true,
-				event = function(button, x, y)
-					self.extension:stop_dragging()
-				end
-			}
-		},
-		mouse_variant = "hand"
-	}))
+			events = {
+				mouse_pressed = {
+					type = "func",
+					enabled = true,
+					event = function(button, x, y)
+						self.extension:start_dragging(self:object())
+					end
+				},
+				mouse_released = {
+					type = "func",
+					enabled = true,
+					event = function(button, x, y)
+						self.extension:stop_dragging()
+					end
+				}
+			},
+			mouse_variant = "hand"
+		}))
+	end
 
     table.insert(self._tweak_data.children, ComputerBitmap:new({
         config = {
@@ -174,30 +185,30 @@ function ComputerWindow:init(tweak_data)
 					self:trigger_event("close")
 					self.extension:remove_from_window_stack(self:object())
 
-					local active_window = self.extension:get_active_window()
-					if active_window then
-						self.extension:set_active_window(active_window)
+					if self._parent then
+						self.extension:set_active_window(self._parent)
+					else
+						local active_window = self.extension:get_active_window()
+						if active_window then
+							self.extension:set_active_window(active_window)
+						end
 					end
 				end
 			}
 		},
 		mouse_variant = "link"
     }))
-end
-
-function ComputerWindow:create(parent_object, extension)
-	ComputerWindow.super.create(self, parent_object, extension)
-
-    self._object = parent_object:panel(self._tweak_data.config)
-
-    -- Creation order matters. Background first, then foreground, so the window is not entirely black.
-    HUDBGBox_create_window(self._object, self._tweak_data)
 
     for _, child in pairs(self._tweak_data.children) do
         child:create(self._object, self.extension, self)
     end
 
 	self._object:set_visible(false)
+
+	if self._parent then
+		self.extension:add_spawned_window(self)
+	end
+
     return self._object
 end
 
@@ -239,6 +250,17 @@ function ComputerWindow:trigger_event(event_name, ...)
 		did_event = ComputerWindow.super.trigger_event(self, event_name, ...)
 	end
 
+	if self.child_window then
+		if event_filters[event_name] and event_filters[event_name](self.child_window, ...) == true then
+			local event = self.child_window:trigger_event(event_name, ...)
+			did_event = did_event or event
+		elseif not event_filters[event_name] then
+			local event = self.child_window:trigger_event(event_name, ...)
+			did_event = did_event or event
+		end
+		return did_event or false
+	end
+
 	for _, child in pairs(self._tweak_data.children) do
 		if event_filters[event_name] and event_filters[event_name](child, ...) == true then
 			local event = child:trigger_event(event_name, ...)
@@ -253,7 +275,7 @@ function ComputerWindow:trigger_event(event_name, ...)
 end
 
 function ComputerWindow:is_active_window()
-	return self.extension:get_active_window_object() == self._object or self.extension:get_active_window() == self._parent
+	return self.extension:get_active_window_object() == self._object
 end
 
 function ComputerWindow:is_visible(x, y)
@@ -274,9 +296,11 @@ end
 
 function ComputerWindow:mouse_variant(x, y)
 	local variant
-	for _, child in pairs(self._tweak_data.children) do
-		if child:object():inside(x, y) then
-			variant = variant or child:mouse_variant()
+	if not self._locked then
+		for _, child in pairs(self._tweak_data.children) do
+			if child:object():inside(x, y) then
+				variant = variant or child:mouse_variant()
+			end
 		end
 	end
 
@@ -297,6 +321,12 @@ function ComputerWindow:is_opening()
 end
 
 function ComputerWindow:clbk_open()
+	if self._parent then
+		self._parent:lock()
+		self._parent.child_window = self
+		self.extension:set_active_window(self)
+	end
+
 	self._opening = true
 
 	local function open_done() 
@@ -306,18 +336,57 @@ function ComputerWindow:clbk_open()
 
 	local num_open_windows = #self.extension:get_window_stack()
 
-	self._object:set_x(200 + num_open_windows * 50)
-	self._object:set_y(50 + num_open_windows * 50)
+	self._object:set_x(self._parent and (self._parent:object():x() + 50) or 200 + num_open_windows * 50)
+	self._object:set_y(self._parent and (self._parent:object():y() + 50) or 50 + num_open_windows * 50)
     self._object:animate(callback(nil, _G, "HUDBGBox_animate_window"), nil, self._object:w(), 0.1, "open", open_done)
 end
 
 function ComputerWindow:clbk_close()
+	if self._parent then
+		self._parent:unlock()
+		self._parent.child_window = nil
+	end
+
 	self._open = false
     self._object:animate(callback(nil, _G, "HUDBGBox_animate_window"), nil, self._object:w(), 0.1, "close")
 end
 
 function ComputerWindow:clbk_attention()
 	self._object:animate(callback(nil, _G, "HUDBGBox_animate_window_attention"))
+end
+
+function ComputerWindow:lock()
+	self._locked = true
+	self._object:child("bg"):set_color(Color(1, 50/255, 50/255, 50/255))
+end
+
+function ComputerWindow:unlock()
+	self._locked = false
+	self._object:child("bg"):set_color(Color(1, 0, 0, 0))
+end
+
+function ComputerWindow:is_locked()
+	return self._locked
+end
+
+function ComputerWindow:is_window()
+	return true
+end
+
+function ComputerWindow:is_spawned()
+	return self._parent and true or false
+end
+
+function ComputerWindow:set_allocated_layers(layers)
+	self._allocated_layers = layers
+end
+
+function ComputerWindow:allocated_layers()
+	return self._allocated_layers
+end
+
+function ComputerWindow:background_color()
+	return self._tweak_data.background_color or Color.black
 end
 
 function ComputerWindow:update(t, dt)
