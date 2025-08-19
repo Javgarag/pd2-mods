@@ -139,6 +139,7 @@ end
 
 function ComputerGui:_start(player_unit)
 	self._started = true
+	self._interacting_player = player_unit
 	self._unit:set_extension_update_enabled(Idstring("computer_gui"), true)
 	self._update_enabled = true
 
@@ -151,7 +152,7 @@ function ComputerGui:_start(player_unit)
 	self:set_visible(true)
 	self._unit:interaction():set_active(false)
 
-	if managers.player:player_unit() ~= player_unit then
+	if managers.player:player_unit() ~= self._interacting_player then
 		return
 	end
 
@@ -163,8 +164,8 @@ function ComputerGui:_start(player_unit)
 
 	self:create_camera()
 	managers.worldcamera:play_world_camera("computer_gui_camera")
-	player_unit:camera():camera_unit():base().interacting_with_computer = true
-	player_unit:character_damage():add_listener("ComputerGui", {
+	self._interacting_player:camera():camera_unit():base().interacting_with_computer = true
+	self._interacting_player:character_damage():add_listener("ComputerGui", {
 		"hurt"
 	}, callback(self, self, "clbk_player_damage"))
 
@@ -251,13 +252,13 @@ function ComputerGui:mouse_moved(o, x, y)
 		self._pointer.gui:set_texture_rect(unpack(self.mouse_variants.grab))
 	end
 
-	if managers.network:session() and Network:is_server() then
+	if managers.network:session() and self._interacting_player == managers.player:player_unit() then
 		managers.network:session():send_to_peers_synched("computer_gui_mouse", self._unit, nil, x, y, "moved")
 	end
 end
 
 function ComputerGui:mouse_pressed(o, button, x, y)
-	if managers.network:session() and Network:is_server() then
+	if managers.network:session() and self._interacting_player == managers.player:player_unit() then
 		managers.network:session():send_to_peers_synched("computer_gui_mouse", self._unit, button, x, y, "pressed")
 	end
 
@@ -300,7 +301,7 @@ function ComputerGui:mouse_released(o, button, x, y)
 		end
 	end
 
-	if managers.network:session() and Network:is_server() then
+	if managers.network:session() and self._interacting_player == managers.player:player_unit() then
 		managers.network:session():send_to_peers_synched("computer_gui_mouse", self._unit, button, x, y, "released")
 	end
 end
@@ -382,8 +383,17 @@ function ComputerGui:open_window(app_index, app)
 	self:set_active_window(window)
 	window:trigger_event("open")
 
-	if managers.network:session() and Network:is_server() then
+	if managers.network:session() and self._interacting_player == managers.player:player_unit() then
 		managers.network:session():send_to_peers_synched("computer_gui_open_window", self._unit, app_index, app)
+	end
+end
+
+function ComputerGui:sync_open_window(app_index, app_name)
+	for _, app in pairs(self._tweak_data.applications) do
+		if app.name == app_name then
+			self:open_window(app_index, app)
+			return
+		end
 	end
 end
 
@@ -582,12 +592,14 @@ function ComputerGui:_close()
 	self:remove_mouse()
 
 	managers.worldcamera:stop_world_camera()
-	managers.player:player_unit():camera():camera_unit():base().interacting_with_computer = false
-	managers.player:player_unit():character_damage():remove_listener("ComputerGui")
+	self._interacting_player:camera():camera_unit():base().interacting_with_computer = false
+	self._interacting_player:character_damage():remove_listener("ComputerGui")
 
-	if managers.network:session() and Network:is_server() then
+	if managers.network:session() and self._interacting_player == managers.player:player_unit() then
 		managers.network:session():send_to_peers_synched("computer_gui_close", self._unit)
 	end
+
+	self._interacting_player = nil
 end
 
 function ComputerGui:post_event(event, clbk, flags)

@@ -1,0 +1,19 @@
+<table search="rpc" mode="insert">
+	<message name="close_computer_gui" delivery="ordered" receiver="unit">
+		<param type="unit" />		<!-- computer unit -->
+	</message>
+	
+	<message name="computer_gui_open_window" delivery="ordered" receiver="unit">
+		<param type="unit" />		<!-- computer unit -->
+		<param type="int" />		<!-- app index -->
+		<param type="int" />		<!-- app name -->
+	</message>
+	
+	<message name="computer_gui_mouse" delivery="unreliable" receiver="unit">
+		<param type="unit" />		<!-- computer unit -->
+		<param type="int" />		<!-- mouse button idstring -->
+		<param type="int" />		<!-- mouse x -->
+		<param type="int" />		<!-- mouse y -->
+		<param type="string" />		<!-- mouse action -->
+	</message>
+</table>

@@ -1,4 +1,5 @@
 UnitNetworkHandler = UnitNetworkHandler or class(BaseNetworkHandler)
+
 function UnitNetworkHandler:close_computer_gui(unit, sender)
 	if not self:_quick_verification(sender) then
 		return
@@ -8,13 +9,13 @@ function UnitNetworkHandler:close_computer_gui(unit, sender)
 	unit:computer_gui():sync_close()
 end
 
-function UnitNetworkHandler:computer_gui_open_window(unit, app_index, app, sender)
+function UnitNetworkHandler:computer_gui_open_window(unit, app_index, app_name, sender)
     if not self:_quick_verification(sender) then
 		return
 	end
 
 	log("Sync Open")
-	unit:computer_gui():open_window(app_index, app)
+	unit:computer_gui():sync_open_window(app_index, app_name)
 end
 
 function UnitNetworkHandler:computer_gui_mouse(unit, button, x, y, action, sender)
