@@ -10,7 +10,7 @@
 			<function extension="'computer_gui'" function="'set_visible'" param1="false"/>
 		</sequence>
 		<sequence editable_state="false" name="'interact'" triggable="false">
-			<function extension="'computer_gui'" function="'start'" param1="'100'"/>
+			<function extension="'computer_gui'" function="'start'" param1="params.unit"/>
 			<function extension="'computer_gui'" function="'set_visible'" param1="true"/>
 			<object enabled="true" name="'g_off'"/>
 			<object enabled="false" name="'g_on_v1'"/>

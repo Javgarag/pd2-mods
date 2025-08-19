@@ -131,16 +131,13 @@ end
 
 -- // AT ENTER \\
 
-function ComputerGui:start()
+function ComputerGui:start(player_unit)
 	if not self._started then
-		self:_start()
-		if managers.network:session() then
-			managers.network:session():send_to_peers_synched("start_computer_gui", self._unit)
-		end
+		self:_start(player_unit)
 	end
 end
 
-function ComputerGui:_start()
+function ComputerGui:_start(player_unit)
 	self._started = true
 	self._unit:set_extension_update_enabled(Idstring("computer_gui"), true)
 	self._update_enabled = true
@@ -152,8 +149,9 @@ function ComputerGui:_start()
 
 	self:show()
 	self:set_visible(true)
+	self._unit:interaction():set_active(false)
 
-	if Network:is_client() then
+	if managers.player:player_unit() ~= player_unit then
 		return
 	end
 
@@ -165,8 +163,8 @@ function ComputerGui:_start()
 
 	self:create_camera()
 	managers.worldcamera:play_world_camera("computer_gui_camera")
-	managers.player:player_unit():camera():camera_unit():base().interacting_with_computer = true
-	managers.player:player_unit():character_damage():add_listener("ComputerGui", {
+	player_unit:camera():camera_unit():base().interacting_with_computer = true
+	player_unit:character_damage():add_listener("ComputerGui", {
 		"hurt"
 	}, callback(self, self, "clbk_player_damage"))
 
@@ -175,8 +173,8 @@ function ComputerGui:_start()
 	self:setup_mouse()
 end
 
-function ComputerGui:sync_start() 
-	self:_start()
+function ComputerGui:sync_close()
+	self:_close()
 end
 
 function ComputerGui:hud_text()
@@ -252,9 +250,17 @@ function ComputerGui:mouse_moved(o, x, y)
 		})
 		self._pointer.gui:set_texture_rect(unpack(self.mouse_variants.grab))
 	end
+
+	if managers.network:session() and Network:is_server() then
+		managers.network:session():send_to_peers_synched("computer_gui_mouse", self._unit, nil, x, y, "moved")
+	end
 end
 
 function ComputerGui:mouse_pressed(o, button, x, y)
+	if managers.network:session() and Network:is_server() then
+		managers.network:session():send_to_peers_synched("computer_gui_mouse", self._unit, button, x, y, "pressed")
+	end
+
 	if button == Idstring("0") then
 		for _, window in pairs(self:get_open_windows()) do
 			if window:object():inside(x, y) and window:is_visible(x, y) then
@@ -292,6 +298,10 @@ function ComputerGui:mouse_released(o, button, x, y)
 				end
 			end
 		end
+	end
+
+	if managers.network:session() and Network:is_server() then
+		managers.network:session():send_to_peers_synched("computer_gui_mouse", self._unit, button, x, y, "released")
 	end
 end
 
@@ -371,6 +381,10 @@ function ComputerGui:open_window(app_index, app)
 
 	self:set_active_window(window)
 	window:trigger_event("open")
+
+	if managers.network:session() and Network:is_server() then
+		managers.network:session():send_to_peers_synched("computer_gui_open_window", self._unit, app_index, app)
+	end
 end
 
 function ComputerGui:set_active_window(window)
@@ -557,6 +571,13 @@ function ComputerGui:destroy()
 end
 
 function ComputerGui:_close()
+	self._unit:interaction():set_active(true)
+	self._started = false
+
+	if Network:is_client() then
+		return
+	end 
+
 	self._text_workspace:destroy_workspace(self._hud)
 	self:remove_mouse()
 
@@ -564,8 +585,9 @@ function ComputerGui:_close()
 	managers.player:player_unit():camera():camera_unit():base().interacting_with_computer = false
 	managers.player:player_unit():character_damage():remove_listener("ComputerGui")
 
-	self._unit:interaction():set_active(true)
-	self._started = false
+	if managers.network:session() and Network:is_server() then
+		managers.network:session():send_to_peers_synched("computer_gui_close", self._unit)
+	end
 end
 
 function ComputerGui:post_event(event, clbk, flags)
@@ -607,20 +629,20 @@ end
 
 -- Server
 function ComputerGui:save(data)
-	log("Ran ComputerGui:save()")
 	local state = {
 		started = self._started,
 		update_enabled = self._update_enabled,
 		visible = self._visible,
+		window_stack = self.window_stack
 	}
 	data.ComputerGui = state
 end
 
 -- Client
 function ComputerGui:load(data)
-	log("Ran ComputerGui:load()")
 	local state = data.ComputerGui
 
 	self:set_visible(state.visible)
 	self._unit:set_extension_update_enabled(Idstring("computer_gui"), state.update_enabled and true or false)
+	self.window_stack = state.window_stack
 end
