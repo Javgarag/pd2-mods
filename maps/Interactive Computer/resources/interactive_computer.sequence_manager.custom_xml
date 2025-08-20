@@ -1,8 +1,6 @@
 <table>
 	<unit>
 		<sequence editable_state="true" name="'state_reset'" triggable="true">
-			<function extension="'computer_gui'" function="'
-			'" param1="false"/>
 			<function extension="'computer_gui'" function="'reset'" start_time="0/30"/>
 			<interaction enabled="true"/>
 		</sequence>
