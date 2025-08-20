@@ -14,12 +14,8 @@
 		<element name="ComputerValueFilter"/>
 	</Elements>
 	<Hooks directory="hooks">
-		<hook file="UnitNetworkHandler.lua" source_file="lib/network/handlers/unitnetworkhandler"/>
 		<hook file="FPCameraPlayerBase.lua" source_file="lib/units/cameras/fpcameraplayerbase"/>
 	</Hooks>
-	<ScriptMods directory="assets">
-		<mod file="settings/network" type="custom_xml" target_path="settings/network" target_type="network_settings" merge_mode="script_merge"/>
-	</ScriptMods>
 	<Localization default="english.txt" directory="loc">
 		<loc file="english.txt" language="english"/>
 	</Localization>

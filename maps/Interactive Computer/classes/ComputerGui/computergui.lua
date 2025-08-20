@@ -22,17 +22,23 @@ function ComputerGui:init(unit)
 		dofile(BeardLib.current_level._mod.ModPath .. ComputerGui.TWEAK_DATA_FILE)
 	end
 
+	if not tweak_data.computer_gui[self.tweak_data] then
+		log("[ComputerGui:init] ERROR: No tweak data table defined in the lua configuration.")
+		return
+	end
+
 	self._tweak_data = tweak_data.computer_gui[self.tweak_data]
     self._unit = unit
+	self._unit_id = tostring(unit:id())
 	self._cull_distance = self._cull_distance or 5000
 	self._new_gui = World:newgui()
 
 	self:add_workspace(self._unit:get_object(Idstring(self.gui_object)))
 	self:setup()
+	self:add_network_hooks()
 
 	self._unit:set_extension_update_enabled(Idstring("computer_gui"), false)
 	self._update_enabled = false
-
 end
 
 function ComputerGui:add_workspace(gui_object)
@@ -205,7 +211,6 @@ function ComputerGui:set_value(key, value)
 	return self.values[key]
 end
 
--- ComputerGui:create_camera -> Creates a world camera to run later so the camera can be locked. The model needs to have an object (empty) called "camera_pos".
 function ComputerGui:create_camera()
 	self._camera = managers.worldcamera:create_world_camera("computer_gui_camera")
 	self._camera:set_duration(10000000000)
@@ -218,6 +223,23 @@ function ComputerGui:change_mouse_texture_from_window_position(window, x, y)
 	if window then
 		local mouse_variant = window:mouse_variant(x, y)
 		self._pointer.gui:set_texture_rect(unpack(self.mouse_variants[mouse_variant]))
+	end
+end
+
+function ComputerGui:send_mouse_network_event(event, button, x, y)
+	self._last_sent_mouse_move_event = self._last_sent_mouse_move_event or 0
+	self._last_sent_mouse_move_event = self._last_sent_mouse_move_event + 1
+
+	if managers.network:session() and self._interacting_player == managers.player:player_unit() then
+		if event == "moved" and self._last_sent_mouse_move_event < 10 then
+			return 
+		end
+
+		NetworkHelper:SendToPeers("computer_gui_mouse_" .. self._unit_id, (button and button:key() or "none") .. "," .. tostring(x) .. "," .. tostring(y) .. "," .. event)
+
+		if event == "moved" then
+			self._last_sent_mouse_move_event = 0
+		end
 	end
 end
 
@@ -252,17 +274,13 @@ function ComputerGui:mouse_moved(o, x, y)
 		self._pointer.gui:set_texture_rect(unpack(self.mouse_variants.grab))
 	end
 
-	if managers.network:session() and self._interacting_player == managers.player:player_unit() then
-		managers.network:session():send_to_peers_synched("computer_gui_mouse", self._unit, nil, x, y, "moved")
-	end
+	self:send_mouse_network_event("moved", nil, x, y)
 end
 
 function ComputerGui:mouse_pressed(o, button, x, y)
-	if managers.network:session() and self._interacting_player == managers.player:player_unit() then
-		managers.network:session():send_to_peers_synched("computer_gui_mouse", self._unit, button, x, y, "pressed")
-	end
+	self:send_mouse_network_event("pressed", button, x, y)
 
-	if button == Idstring("0") then
+	if button == Idstring("0") or button == Idstring("0"):key() then
 		for _, window in pairs(self:get_open_windows()) do
 			if window:object():inside(x, y) and window:is_visible(x, y) then
 				if window:is_locked() then
@@ -278,9 +296,9 @@ function ComputerGui:mouse_pressed(o, button, x, y)
 			end
 		end
 
-		local inside, app_index, app = self:inside_app_icon(x, y)
+		local inside, app = self:inside_app_icon(x, y)
 		if inside then
-			self:open_window(app_index, app)
+			self:open_window(app)
 			self._pointer.gui:set_texture_rect(unpack(self.mouse_variants.arrow))
 			return
 		end
@@ -301,9 +319,7 @@ function ComputerGui:mouse_released(o, button, x, y)
 		end
 	end
 
-	if managers.network:session() and self._interacting_player == managers.player:player_unit() then
-		managers.network:session():send_to_peers_synched("computer_gui_mouse", self._unit, button, x, y, "released")
-	end
+	self:send_mouse_network_event("released", button, x, y)
 end
 
 function ComputerGui:setup_mouse()
@@ -337,7 +353,7 @@ end
 function ComputerGui:inside_app_icon(x,y)
 	for app_index, app in pairs(self._tweak_data.applications) do
 		if self._desktop_apps[app_index]:inside(x,y) and self:item_visible(self._desktop_apps[app_index], x, y) then
-			return true, app_index, app
+			return true, app
 		end
 	end
 	return false
@@ -361,7 +377,7 @@ end
 
 -- // SCREEN ACTIONS \\
 
-function ComputerGui:open_window(app_index, app)
+function ComputerGui:open_window(app)
 	local window = self._windows[app.name]
 
 	if window:is_opening() then 
@@ -382,16 +398,12 @@ function ComputerGui:open_window(app_index, app)
 
 	self:set_active_window(window)
 	window:trigger_event("open")
-
-	if managers.network:session() and self._interacting_player == managers.player:player_unit() then
-		managers.network:session():send_to_peers_synched("computer_gui_open_window", self._unit, app_index, app)
-	end
 end
 
-function ComputerGui:sync_open_window(app_index, app_name)
+function ComputerGui:sync_open_window(app_name)
 	for _, app in pairs(self._tweak_data.applications) do
 		if app.name == app_name then
-			self:open_window(app_index, app)
+			self:open_window(app)
 			return
 		end
 	end
@@ -584,9 +596,10 @@ function ComputerGui:_close()
 	self._unit:interaction():set_active(true)
 	self._started = false
 
-	if Network:is_client() then
+	if self._interacting_player ~= managers.player:player_unit() then
+		self._interacting_player = nil
 		return
-	end 
+	end
 
 	self._text_workspace:destroy_workspace(self._hud)
 	self:remove_mouse()
@@ -596,7 +609,7 @@ function ComputerGui:_close()
 	self._interacting_player:character_damage():remove_listener("ComputerGui")
 
 	if managers.network:session() and self._interacting_player == managers.player:player_unit() then
-		managers.network:session():send_to_peers_synched("computer_gui_close", self._unit)
+		NetworkHelper:SendToPeers("computer_gui_close_" .. self._unit_id)
 	end
 
 	self._interacting_player = nil
@@ -632,7 +645,11 @@ function ComputerGui:update(unit, t, dt)
 		window:update(t, dt)
 	end
 
-	if Input:keyboard():down(Idstring("space")) then
+	if not alive(self._interacting_player) then
+		self:_close()
+	end
+
+	if Input:keyboard():down(Idstring("space")) and self._started and self._interacting_player == managers.player:player_unit() then
 		self:_close()
 	end
 end
@@ -645,7 +662,8 @@ function ComputerGui:save(data)
 		started = self._started,
 		update_enabled = self._update_enabled,
 		visible = self._visible,
-		window_stack = self.window_stack
+		window_stack = self.window_stack,
+		unit_id = self._unit_id
 	}
 	data.ComputerGui = state
 end
@@ -653,8 +671,35 @@ end
 -- Client
 function ComputerGui:load(data)
 	local state = data.ComputerGui
+	self._unit_id = state.unit_id
 
 	self:set_visible(state.visible)
 	self._unit:set_extension_update_enabled(Idstring("computer_gui"), state.update_enabled and true or false)
 	self.window_stack = state.window_stack
+end
+
+function ComputerGui:add_network_hooks()
+	local extension = self
+	NetworkHelper:AddReceiveHook("computer_gui_close_" .. self._unit_id, "computer_gui_receive_hook_close_" .. tostring(self._unit:key()), function(data, sender)
+		extension:sync_close()
+	end)
+
+	NetworkHelper:AddReceiveHook("computer_gui_mouse_" .. self._unit_id, "computer_gui_receive_hook_mouse_" .. tostring(self._unit:key()), function(data, sender)
+		local params = string.split(data, ",")
+
+		local button = params[1]
+		local x = tonumber(params[2])
+		local y = tonumber(params[3])
+		local action = params[4]
+
+		if action == "moved" then
+			extension:mouse_moved(nil, x, y)
+		elseif action == "pressed" then
+			extension:mouse_moved(nil, x, y)
+			extension:mouse_pressed(nil, button, x, y)
+		elseif action == "released" then
+			extension:mouse_moved(nil, x, y)
+			extension:mouse_released(nil, button, x, y)
+		end
+	end)
 end
