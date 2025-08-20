@@ -27,7 +27,10 @@
 			<unit_data _prev_pos="0 475 75" _prev_rot="0 0 0 -1" continent="world" local_pos="-300 0 0" local_rot="0 0 0 1" name="units/payday2/architecture/mkp/mkp_int_cube_1x1" name_id="mkp_int_cube_1x1_006" position="0 475 225" rotation="0 0 0 -1" unit_id="100009"/>
 		</table>
 		<table>
-			<unit_data _prev_pos="200 276 75.15" _prev_rot="-3.09086e-008 0.707107 0.707107 -3.09086e-008" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="state_interaction_enabled" name="units/pd2_mod_custom/interactive_computer/interactive_computer" name_id="interactive_computer_001" position="200 276 96.15" rotation="-3.09086e-008 0.707107 0.707107 -3.09086e-008" unit_id="100004"/>
+			<unit_data _prev_pos="200 276 96.15" _prev_rot="-3.09086e-008 0.707107 0.707107 -3.09086e-008" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="state_interaction_enabled" name="units/pd2_mod_custom/interactive_computer/interactive_computer" name_id="interactive_computer_001" position="250 276 96.15" rotation="3.09086e-008 0.707107 0.707107 3.09086e-008" unit_id="100004"/>
+		</table>
+		<table>
+			<unit_data _prev_pos="200 276 96.15" _prev_rot="-3.09086e-008 0.707107 0.707107 -3.09086e-008" continent="world" local_pos="0 0 0" local_rot="0 0 0 1" mesh_variation="state_interaction_enabled" name="units/pd2_mod_custom/interactive_computer/interactive_computer" name_id="interactive_computer_002" position="150 276 96.15" rotation="3.09086e-008 0.707107 0.707107 3.09086e-008" unit_id="100003"/>
 		</table>
 	</statics>
 	<values>

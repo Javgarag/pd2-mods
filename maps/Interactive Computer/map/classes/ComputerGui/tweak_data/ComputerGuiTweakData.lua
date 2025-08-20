@@ -91,21 +91,12 @@ tweak_data.computer_gui = {
             background_texture = "guis/textures/computergui/backgrounds/xp_bg",
         },
         applications = {
-            {
-                name = "computer_gui_app_trash",
-                icon = "guis/textures/computergui/backgrounds/application_icon_trash",
-                window = deep_clone(presets.access_denied)
-            },
+
             {
                 name = "computer_gui_app_browser",
                 icon = "guis/textures/computergui/backgrounds/application_icon_browser",
                 window = deep_clone(presets.access_denied)
             },
-            {
-                name = "computer_gui_app_keygen",
-                icon = "guis/textures/computergui/backgrounds/application_icon_keygen",
-                window = deep_clone(presets.keygen)
-            }
         }
     }
 }

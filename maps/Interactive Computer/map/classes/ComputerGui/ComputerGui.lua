@@ -27,7 +27,7 @@ function ComputerGui:init(unit)
 		return
 	end
 
-	self._tweak_data = tweak_data.computer_gui[self.tweak_data]
+	self._tweak_data = deep_clone(tweak_data.computer_gui[self.tweak_data])
     self._unit = unit
 	self._unit_id = tostring(unit:id())
 	self._cull_distance = self._cull_distance or 5000
@@ -596,6 +596,10 @@ function ComputerGui:_close()
 	self._unit:interaction():set_active(true)
 	self._started = false
 
+	if not alive(self._interacting_player) then
+		return
+	end
+
 	if self._interacting_player ~= managers.player:player_unit() then
 		self._interacting_player = nil
 		return
@@ -676,6 +680,15 @@ function ComputerGui:load(data)
 	self:set_visible(state.visible)
 	self._unit:set_extension_update_enabled(Idstring("computer_gui"), state.update_enabled and true or false)
 	self.window_stack = state.window_stack
+
+	if self.window_stack then
+		for _, window in pairs(self._windows) do
+			if table.contains(self.window_stack, window:object()) then
+				self:open_window(window)
+			end
+		end
+		self:set_active_window(self:get_active_window())
+	end
 end
 
 function ComputerGui:add_network_hooks()
