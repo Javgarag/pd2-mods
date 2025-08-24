@@ -10,8 +10,6 @@ ComputerGui.mouse_variants = {
 	grab = {60, 0, 19, 23}
 }
 
--- // INITIALIZATION \\
-
 function ComputerGui:init(unit)
 	if not self.gui_object or not self.tweak_data then
 		log("[ComputerGui:init] ERROR: Missing required extension values. Check .unit file!")
@@ -619,9 +617,13 @@ function ComputerGui:_close()
 	self._interacting_player = nil
 end
 
-function ComputerGui:post_event(event, clbk, flags)
+function ComputerGui:post_event(event, clbk, flags, stop_previous)
 	if not event then
 		return
+	end
+
+	if stop_previous then
+		self._unit:sound_source():stop()
 	end
 
 	if clbk and flags then

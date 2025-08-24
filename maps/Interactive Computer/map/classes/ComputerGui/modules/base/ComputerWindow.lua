@@ -128,11 +128,21 @@ function ComputerWindow:init(tweak_data)
 		tweak_data.events[key] = event
 	end
 
+	tweak_data.can_user_close = tweak_data.can_user_close
+	if tweak_data.can_user_close == nil then
+		tweak_data.can_user_close = true
+	end
+
     ComputerWindow.super.init(self, tweak_data)
 end
 
 function ComputerWindow:create(parent_object, extension, parent)
 	ComputerWindow.super.create(self, parent_object, extension, parent)
+
+	self._tweak_data.can_user_drag = self._parent and false or self._tweak_data.can_user_drag
+	if self._tweak_data.can_user_drag == nil then
+		self._tweak_data.can_user_drag = true
+	end
 
     self._object = parent_object:panel(self._tweak_data.config)
 
@@ -140,7 +150,7 @@ function ComputerWindow:create(parent_object, extension, parent)
     HUDBGBox_create_window(self._object, self._tweak_data)
 
 	self._tweak_data.children = self._tweak_data.children or {}
-	if not self._parent then
+	if self._tweak_data.can_user_drag then
 		table.insert(self._tweak_data.children, ComputerRect:new({
 			config = {
 				name = "drag_hitbox",
@@ -168,36 +178,28 @@ function ComputerWindow:create(parent_object, extension, parent)
 		}))
 	end
 
-    table.insert(self._tweak_data.children, ComputerBitmap:new({
-        config = {
-            name = "close_button",
-            texture = "guis/textures/pd2/specialization/points_reduce",
-            w = 25,
-            h = 25,
-            x = self._tweak_data.config.w - 30,
-            y = 5
-        },
-		events = {
-			mouse_released = {
-				type = "func",
-				enabled = true,
-				event = function(button, x, y)
-					self:trigger_event("close")
-					self.extension:remove_from_window_stack(self:object())
-
-					if self._parent then
-						self.extension:set_active_window(self._parent)
-					else
-						local active_window = self.extension:get_active_window()
-						if active_window then
-							self.extension:set_active_window(active_window)
-						end
+	if self._tweak_data.can_user_close then
+		table.insert(self._tweak_data.children, ComputerBitmap:new({
+			config = {
+				name = "close_button",
+				texture = "guis/textures/pd2/specialization/points_reduce",
+				w = 25,
+				h = 25,
+				x = self._tweak_data.config.w - 30,
+				y = 5
+			},
+			events = {
+				mouse_released = {
+					type = "func",
+					enabled = true,
+					event = function(button, x, y)
+						self:trigger_event("close")
 					end
-				end
-			}
-		},
-		mouse_variant = "link"
-    }))
+				}
+			},
+			mouse_variant = "link"
+		}))
+	end
 
     for _, child in pairs(self._tweak_data.children) do
         child:create(self._object, self.extension, self)
@@ -349,6 +351,17 @@ function ComputerWindow:clbk_close()
 
 	self._open = false
     self._object:animate(callback(nil, _G, "HUDBGBox_animate_window"), nil, self._object:w(), 0.1, "close")
+
+	self.extension:remove_from_window_stack(self:object())
+
+	if self._parent then
+		self.extension:set_active_window(self._parent)
+	else
+		local active_window = self.extension:get_active_window()
+		if active_window then
+			self.extension:set_active_window(active_window)
+		end
+	end
 end
 
 function ComputerWindow:clbk_attention()
@@ -377,6 +390,17 @@ function ComputerWindow:is_spawned()
 	return self._parent and true or false
 end
 
+function ComputerWindow:active_child_window()
+	return self.child_window and self.extension:final_child_window(self.child_window)
+end
+
+function ComputerWindow:close_child_windows(child_of_child)
+	local child_window = child_of_child or self.child_window
+	if not child_window then return end
+
+	child_window:trigger_event("close")
+end
+
 function ComputerWindow:set_allocated_layers(layers)
 	self._allocated_layers = layers
 end
@@ -391,7 +415,7 @@ end
 
 function ComputerWindow:update(t, dt)
 	for _, child in pairs(self._tweak_data.children) do
-		if child.update then
+		if child.update and child:update_enabled() then
 			child:update(t, dt)
 		end
 	end

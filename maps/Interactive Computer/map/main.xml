@@ -30,11 +30,7 @@
 			<class file="ComputerGui/ComputerGui.lua"/>
 		</classes>
 		<outro_event/>
-		<packages>
-			<value_node value="levels/instances/unique/kenaz/toilets/world"/>
-			<value_node value="levels/narratives/classics/man/world_sounds"/>
-			<value_node value="levels/narratives/classics/nmh/world_sounds"/>
-		</packages>
+		<packages/>
 		<script_data_mods directory="scriptdata">
 			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
 				<options merge_mode="add" mode="add"/>

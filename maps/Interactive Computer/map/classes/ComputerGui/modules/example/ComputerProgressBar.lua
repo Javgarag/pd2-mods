@@ -44,6 +44,17 @@ function ComputerProgressBar:create(parent_object, extension, parent)
 end
 
 function ComputerProgressBar:clbk_start(window, ...)
+    if not self._sent_event then
+        self._sent_event = true
+        managers.mission:call_global_event("hack_window_opened")
+    end
+
+    if self.extension.values.inserted_drive == "false" then
+        self._parent:trigger_event("prompt_insert_drive")
+        self._timer:set_visible(false)
+        return
+    end
+
     if not self._started and not self._complete then
         self._started = true
         self._tweak_data.events.open.enabled = false
@@ -51,6 +62,8 @@ function ComputerProgressBar:clbk_start(window, ...)
         self._timer_amount = 10
         self._current_timer = self._timer_amount
         self._timer_length = self._timer:w()
+        self._timer:set_color(Color.yellow)
+        self._timer:set_visible(true)
 
         self._timer:set_w(self._timer_length * (1 - self._current_timer / self._timer_amount))
         self._text:set_text("Progress: " .. math.floor((1 - self._current_timer / self._timer_amount) * 100) .. "%")
@@ -61,11 +74,20 @@ function ComputerProgressBar:done()
     self._started = false
     self._complete = true
     self._timer:set_color(Color.green)
-    self.extension:post_event("bar_train_panel_hacking_finished")
-    self.extension:post_event("keypad_correct_code")
+    self.extension:post_event("und_harddrive_shutdown", nil, nil, true)
+    self._next_window_timer = 4
 end
 
 function ComputerProgressBar:update(t, dt)
+    if self._parent:active_child_window() and not self._complete then
+        if self.extension.values.inserted_drive == "true" then
+            self._parent:active_child_window():trigger_event("close")
+            self:clbk_start() -- Call it again, but this time set self._started.
+        else
+            return
+        end
+    end
+
     if self._started and not self._complete then
         self._current_timer = self._current_timer - dt
         self._timer:set_w(self._timer_length * (1 - self._current_timer / self._timer_amount))
@@ -73,6 +95,20 @@ function ComputerProgressBar:update(t, dt)
 
         if self._current_timer <= 0 then
             self:done()
+        end
+
+        if not self._audio then
+            self._audio = true
+            self.extension:post_event("und_harddrive_access")
+        end
+    end
+
+    if self._next_window_timer then
+        self._next_window_timer = self._next_window_timer - dt
+
+        if self._next_window_timer <= 0 then
+            self._next_window_timer = nil
+            self._parent:trigger_event("play_video")
         end
     end
 end

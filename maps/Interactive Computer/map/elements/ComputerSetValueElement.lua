@@ -11,17 +11,11 @@ function ComputerSetValueElement:client_on_executed(...)
 end
 
 function ComputerSetValueElement:on_script_activated()
-	if not Network:is_server() then
-		return
-	end
+	for _, id in ipairs(self._values.units or {}) do
+		local unit = managers.worlddefinition:get_unit_on_load(id, callback(self, self, "_load_unit"))
 
-	if self._values.units then
-		for _, id in ipairs(self._values.units) do
-			local unit = managers.worlddefinition:get_unit_on_load(id, callback(self, self, "_load_unit"))
-
-			if unit then
-				table.insert(self._units, unit)
-			end
+		if unit then
+			self:_load_unit(unit)
 		end
 	end
 end
@@ -41,7 +35,9 @@ function ComputerSetValueElement:on_executed(instigator)
 	end
 
 	for _, unit in ipairs(self._units) do
-		unit:computer_gui():set_value(self._values.key, self._values.value)
+		if unit:computer_gui() then
+			unit:computer_gui():set_value(self._values.key, self._values.value)
+		end
 	end
 
 	self.super.on_executed(self, instigator)

@@ -4,12 +4,12 @@ local REQUIRED_MODULES = {
     "base/ComputerWindow.lua"
 }
 local modules = {
+    -- Add any additional modules here
     "base/ComputerBitmap.lua",
     "base/ComputerText.lua",
     "base/ComputerRect.lua",
-
-    -- Add any additional modules here
-    "slow/ComputerProgressBar.lua"
+    "base/ComputerVideo.lua",
+    "example/ComputerProgressBar.lua"
 }
 
 for _, module in pairs(REQUIRED_MODULES) do
@@ -73,13 +73,78 @@ local presets = {
                     open = {
                         type = "callback",
                         enabled = true,
-                        event = "clbk_start",
-                        post_event = {
-                            sound_event_id = "bar_train_panel_hacking"
-                        }
+                        event = "clbk_start"
                     }
-                }
+                },
+                update_enabled = true
             })
+        },
+        events = {
+            prompt_insert_drive = {
+                type = "spawn",
+                enabled = true,
+                event = ComputerWindow:new({
+                    config = {
+                        halign = "grow",
+                        valign = "grow",
+                        w = 340,
+                        h = 84
+                    },
+                    background_color = Color.red,
+                    can_user_close = false,
+                    children = {
+                        ComputerText:new({
+                            config = {
+                                name = "insert_drive_text",
+                                text = "ERROR: Insert drive.",
+                                font = "fonts/font_medium_noshadow_mf",
+                                render_template = "Text",
+                                font_size = 40,
+                                color = Color.white,
+                                y = function(self) 
+                                    return self._parent:object():y() / 2 
+                                end,
+                                x = function(self) 
+                                    return self._parent:object():x() / 2 + 10
+                                end,
+                                vertical = "center"
+                            }
+                        })
+                    }
+                })
+            },
+            play_video = {
+                type = "spawn",
+                enabled = true,
+                event = ComputerWindow:new({
+                    config = {
+                        halign = "grow",
+                        valign = "grow",
+                        w = 660,
+                        h = 380
+                    },
+                    background_color = Color.black,
+                    can_user_close = false,
+                    children = {
+                        ComputerVideo:new({
+                            config = {
+                                video = "movies/money_count0",
+                                width = 640,
+                                height = 360,
+                                x = 10,
+                                y = 10
+                            },
+                            events = {
+                                open = {
+                                    type = "callback",
+                                    enabled = true,
+                                    event = "play_video"
+                                }
+                            }
+                        })
+                    }
+                })
+            }
         },
         background_color = Color.black
     }
@@ -91,11 +156,15 @@ tweak_data.computer_gui = {
             background_texture = "guis/textures/computergui/backgrounds/xp_bg",
         },
         applications = {
-
             {
                 name = "computer_gui_app_browser",
                 icon = "guis/textures/computergui/backgrounds/application_icon_browser",
                 window = deep_clone(presets.access_denied)
+            },
+            {
+                name = "computer_gui_app_keygen",
+                icon = "guis/textures/computergui/backgrounds/application_icon_keygen",
+                window = deep_clone(presets.keygen)
             },
         }
     }

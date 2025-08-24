@@ -2,6 +2,7 @@ ComputerObjectBase = ComputerObjectBase or class()
 
 function ComputerObjectBase:init(tweak_data)
     self._tweak_data = tweak_data
+    self:set_update_enabled(self._tweak_data.update_enabled or true)
 end
 
 function ComputerObjectBase:compute_properties()
@@ -29,7 +30,7 @@ function ComputerObjectBase:setup_events()
 end
 
 function ComputerObjectBase:trigger_event(event_name, ...)
-    local event_table = self._tweak_data.events[event_name]
+    local event_table = self._tweak_data.events and self._tweak_data.events[event_name]
     if event_table and event_table.event and event_table.enabled then
         if type(event_table.event) == "function" then
             event_table.event(self, ...)
@@ -38,7 +39,7 @@ function ComputerObjectBase:trigger_event(event_name, ...)
         end
 
         if event_table.post_event then
-            self.extension:post_event(event_table.post_event.sound_event_id, event_table.post_event.clbk, event_table.post_event.flags)
+            self.extension:post_event(event_table.post_event.sound_event_id, event_table.post_event.clbk, event_table.post_event.flags, event_table.post_event.stop_previous)
         end
         return true
     end
@@ -73,6 +74,14 @@ function ComputerObjectBase:is_visible(x, y)
     return true
 end
 
+function ComputerObjectBase:set_update_enabled(state)
+    self._update_enabled = state or true
+end
+
+function ComputerObjectBase:update_enabled()
+    return self._update_enabled or true
+end
+
 function ComputerObjectBase:mouse_variant()
     return self._tweak_data.mouse_variant
 end
@@ -82,7 +91,11 @@ function ComputerObjectBase:object()
 end
 
 function ComputerObjectBase:children()
-    return self._tweak_data.children
+    return self._tweak_data.children or {}
+end
+
+function ComputerObjectBase:parent()
+    return self._parent
 end
 
 function ComputerObjectBase:is_window()

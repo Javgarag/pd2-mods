@@ -40,10 +40,17 @@ function ComputerValueFilterElement:on_executed(instigator)
 		return 
 	end
 
+	if #self._units == 0 then
+		log("[ComputerValueFilterElement:on_executed] WARN: No units defined. Not executing.")
+		return
+	end
+
 	for _, unit in ipairs(self._units) do
-		local value = unit:computer_gui():get_value(self._values.key)
-		if not (value == self._values.value) then
-			return
+		if unit:computer_gui() then
+			local value = unit:computer_gui():get_value(self._values.key)
+			if value ~= self._values.value then
+				return
+			end
 		end
 	end
 
