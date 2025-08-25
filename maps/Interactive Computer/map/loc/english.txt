@@ -1,7 +1,11 @@
 {
 	"computer_gui_hud_string" : "Press [SPACE] to exit computer view",
 	
-	"computer_gui_app_trash" : "Recycle Bin",
 	"computer_gui_app_browser" : "Browser",
-	"computer_gui_app_keygen" : "CrimeGen 2.0"
+	"computer_gui_app_keygen" : "CrimeGen 2.0",
+	
+	"heist_intpc_narr_name" : "Interactive Computer",
+	"heist_intpc_name" : "Interactive Computer",
+	"heist_intpc_narr_brief" : "Use example",
+	"heist_intpc_brief" : "have fun"
 }

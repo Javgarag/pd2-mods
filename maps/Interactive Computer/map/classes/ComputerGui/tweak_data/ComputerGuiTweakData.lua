@@ -128,7 +128,7 @@ local presets = {
                     children = {
                         ComputerVideo:new({
                             config = {
-                                video = "movies/money_count0",
+                                video = "movies/attract",
                                 width = 640,
                                 height = 360,
                                 x = 10,

@@ -172,7 +172,7 @@ function ComputerGui:_start(player_unit)
 	self._interacting_player:character_damage():add_listener("ComputerGui", {
 		"hurt"
 	}, callback(self, self, "clbk_player_damage"))
-
+	self._interacting_player:network():send("sync_interaction_anim", true, "")
 
 	self:hud_text()
 	self:setup_mouse()
@@ -609,6 +609,7 @@ function ComputerGui:_close()
 	managers.worldcamera:stop_world_camera()
 	self._interacting_player:camera():camera_unit():base().interacting_with_computer = false
 	self._interacting_player:character_damage():remove_listener("ComputerGui")
+	self._interacting_player:network():send("sync_interaction_anim", false, "")
 
 	if managers.network:session() and self._interacting_player == managers.player:player_unit() then
 		NetworkHelper:SendToPeers("computer_gui_close_" .. self._unit_id)
