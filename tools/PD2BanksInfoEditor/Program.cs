@@ -224,7 +224,27 @@ namespace PD2BanksInfoEditor
                 isStream = char.ToLowerInvariant(Console.ReadKey(intercept: true).KeyChar);
             }
 
-            BanksInfoObject.RemoveObject(nameString, isStream == 'y' ? true : false);
+            char? isBank = '?';
+            if (isStream == 'n')
+            {
+                while (isBank == '?')
+                {
+                    Console.WriteLine("Is the file a .bnk file? [Y/N]: ");
+                    isBank = char.ToLowerInvariant(Console.ReadKey(intercept: true).KeyChar);
+                }
+            }
+
+            string bankPath = "";
+            if (isBank == 'y')
+            {
+                while (bankPath == "")
+                {
+                    Console.WriteLine("Path to the soundbank: ");
+                    bankPath = Console.ReadLine();
+                }
+            }
+
+            BanksInfoObject.RemoveObject(nameString, isStream == 'y' ? true : false, isBank == 'y' ? bankPath : null);
             AnyKeyListenerEditing();
         }
     }
