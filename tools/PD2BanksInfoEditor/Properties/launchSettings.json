@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PD2BanksInfoEditor": {
+      "commandName": "Project",
+      "commandLineArgs": "existing_banks.banksinfo"
+    }
+  }
+}
