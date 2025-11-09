@@ -10,6 +10,7 @@
 	"storyline_continued_ru" : "Russian"
 	"storyline_continued_fr" : "French"
 	"storyline_continued_ko" : "Korean"
+	"storyline_continued_es" : "Spanish"
 
 	"sm_act_4_name" : "第4章: 暗度陈仓"
 	

@@ -1,4 +1,6 @@
 # Storyline Continued
+## v1.6.0
+Added support for Spanish language.
 ## v1.5.0
 Added support for Korean language.
 ## v1.4.0

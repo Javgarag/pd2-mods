@@ -1,0 +1,78 @@
+{
+	"storyline_continued_title" : "Storyline Continued"
+	"storyline_continued_desc" : "Cambiar los ajustes de este mod"
+	"storyline_continued_language_title" : "Language"
+	"storyline_continued_language_desc" : "Change the language for the mod. Reload required."
+	
+	"storyline_continued_en" : "English"
+	"storyline_continued_pl" : "Polish"
+	"storyline_continued_chs" : "Chinese"
+	"storyline_continued_ru" : "Russian"
+	"storyline_continued_fr" : "French"
+	"storyline_continued_ko" : "Korean"
+	"storyline_continued_es" : "Spanish"
+	
+	"sm_act_4_name" : "Capítulo 4: Los equipos de respaldo"
+	
+	"sm_54_name" : "En algún lugar de México"
+	"sm_54_desc" : "Durante las semanas previas al atraco a la Casa Blanca, algunos equipos de cuatro atracadores viajaron a distintas ubicaciones para atar cabos sueltos. Fue entonces cuando se les ocurrió dificultar los negocios de Murkywater."
+	"sm_54_obj" : "Completa el trabajo CRUZANDO LA FRONTERA en dificultad MUY DIFÍCIL o superior. \nPara completar este segmento, debes permanecer en la partida desde la sala de planificación hasta terminar el trabajo."
+	"menu_sm_very_hard_mex" : "CRUZANDO LA FRONTERA"
+	
+	"sm_55_name" : "Devolución"
+	"sm_55_desc" : "Tras los eventos en la frontera, el primer equipo recibió una llamada inesperada de Vlad, quien, a cambio de haber ayudado a la pandilla durante todos estos años, necesitaba una ayuda con otro trabajo."
+	"sm_55_obj" : "Completa el trabajo BANCO DE SAN MARTÍN en dificultad MUY DIFÍCIL o superior. \nPara completar este segmento, debes permanecer en la partida desde la sala de planificación hasta terminar el trabajo."
+	"menu_sm_very_hard_bex" : "BANCO DE SAN MARTÍN"
+	
+	"sm_56_name" : "Una Fuga Problemática"
+	"sm_56_desc" : "La policía mexicana causaría buenos problemas tras el atraco al San Martín; el hermano de Vlad, Hajrudin, sería arrestado tras su participación, siendo encarcelado en una prisión de máxima seguridad en Tijuana. La pandilla debía liberarle."
+	"sm_56_obj" : "Completa el trabajo DESAYUNO EN TIJUANA en dificultad MUY DIFÍCIL o superior. \nPara completar este segmento, debes permanecer en la partida desde la sala de planificación hasta terminar el trabajo."
+	"menu_sm_very_hard_pex" : "DESAYUNO EN TIJUANA"
+	
+	"sm_57_name" : "Dios del Trueno"
+	"sm_57_desc" : "Una vez que Vlad dio las gracias a la pandilla PAYDAY por toda esta ayuda, les volvió a pedir otro favor. Resulta que Buluc, el líder del cártel Coyopa, había sido el responsable del arresto de Hajrudin. El equipo debía asesinarle y robarle su lista de contactos, a lo Ernesto Sosa."
+	"sm_57_obj" : "Completa el trabajo LA MANSIÓN DE BULUC en dificultad MUY DIFÍCIL o superior. \nPara completar este segmento, debes permanecer en la partida desde la sala de planificación hasta terminar el trabajo."
+	"menu_sm_very_hard_fex" : "LA MANSIÓN DE BULUC"
+	
+	
+	"sm_58_name" : "El Dragón Dorado"
+	"sm_58_desc" : "Mientras cuatro atracadores llevaban a cabo trabajos en México, otros cuatro habían sido contratados por Jiu Feng para que robasen una tienda en el barrio chino. Así, este habló con Locke, y pusieron manos a la obra."
+	"sm_58_obj" : "Completa el trabajo ATRACO DRAGÓN en dificultad MUY DIFÍCIL o superior. \nPara completar este segmento, debes permanecer en la partida desde la sala de planificación hasta terminar el trabajo."
+	"menu_sm_very_hard_chas" : "ATRACO DRAGÓN"
+	
+	"sm_59_name" : "Gran Interrupción"
+	"sm_59_desc" : "La tríada de la que robaron la estatua del dragón ahora intentaba sabotear al equipo. Por medio de su red de contactos, dieron con Vlad y le tomaron de rehén, torturándole en pos de la ubicación de la pandilla. Así, Jiu Feng se ofreció para ayudar a rescatarle."
+	"sm_59_obj" : "Completa el trabajo EL PRISIONERO UCRANIANO en dificultad MUY DIFÍCIL o superior. \nPara completar este segmento, debes permanecer en la partida desde la sala de planificación hasta terminar el trabajo."
+	"menu_sm_very_hard_sand" : "EL PRISIONERO UCRANIANO"
+	
+	"sm_60_name" : "Nadie es Insumergible"
+	"sm_60_desc" : "Vlad, como era de esperar, buscó venganza contra la tríada, y, sobre todo, Xun Kang. Su último encargo para la pandilla consistió en un asalto al Black Cat, un crucero operado por la Golden Dagger."
+	"sm_60_obj" : "Completa el trabajo EL BLACK CAT en dificultad MUY DIFÍCIL o superior. \nPara completar este segmento, debes permanecer en la partida desde la sala de planificación hasta terminar el trabajo."
+	"menu_sm_very_hard_chca" : "EL BLACK CAT"
+	
+	"sm_61_name" : "La Cabeza de la Serpiente"
+	"sm_61_desc" : "Con Xun Hang apaciguado, la pandilla tenía planes de volver a Washington D.C. Sin embargo, Shayu, miembra de la Golden Dagger, tenía otros planes para ellos. Su objetivo era convertirse en líder de la tríada, y para ello, Yufu Wang debía desaparecer. ¿Y quién mejor para ello, que la mismísima pandilla?"
+	"sm_61_obj" : "Completa el trabajo MAESTRO DE LA MONTAÑA en dificultad MUY DIFÍCIL o superior. \nPara completar este segmento, debes permanecer en la partida desde la sala de planificación hasta terminar el trabajo."
+	"menu_sm_very_hard_pent" : "MAESTRO DE LA MONTAÑA"
+	
+	
+	"sm_62_name" : "El Estado de la Estrella Solitaria"
+	"sm_62_desc" : "La aventura del cuarto y último equipo comenzó cuando Gemma McShay contactó con la pandilla para que llevasen a cabo trabajos en Texas. Su primer encargo sería un tanto inusual: el asesinato de Esteban Santiago. Unas curiosas primeras impresiones de la contratista."
+	"sm_62_obj" : "Completa el trabajo EL RANCHO TEXANO en dificultad MUY DIFÍCIL o superior. \nPara completar este segmento, debes permanecer en la partida desde la sala de planificación hasta terminar el trabajo."
+	"menu_sm_very_hard_ranc" : "EL RANCHO TEXANO"
+	
+	"sm_63_name" : "Tal y como en Florida"
+	"sm_63_desc" : "Gemma tenía un nuevo trabajo para el equipo. Como estaban familiarizados con robar placas de impresión, fueron los primeros con quien Gemma contactó cuando se enteró de que los militares estaban llevando unas cuantas en vagones de tren."
+	"sm_63_obj" : "Completa el trabajo PERDIDOS EN EL CAMINO en dificultad MUY DIFÍCIL o superior. \nPara completar este segmento, debes permanecer en la partida desde la sala de planificación hasta terminar el trabajo."
+	"menu_sm_very_hard_trai" : "PERDIDOS EN EL CAMINO"
+	
+	"sm_64_name" : "Haciéndose Paso"
+	"sm_64_desc" : "El asociado de McShay, Blaine Keegan, ahora también quería que la pandilla PAYDAY trabajase para él. Su competidora en la industria del aceite, SERA, estaba impidiendo que desarrollase nuevas tecnologías. ¿Cuál era la mejor manera de destronar a su directora ejecutiva, Alice Rainey? Pues claro; exponiendo sus operaciones ilícitas a la prensa."
+	"sm_64_obj" : "Completa el trabajo ADQUISICIÓN HOSTIL en dificultad MUY DIFÍCIL o superior. \nPara completar este segmento, debes permanecer en la partida desde la sala de planificación hasta terminar el trabajo."
+	"menu_sm_very_hard_corp" : "ADQUISICIÓN HOSTIL"
+	
+	"sm_65_name" : "Un Crudo Despertar"
+	"sm_65_desc" : "Y, finalmente, con el atraco a la Casa Blanca aproximándose, Keegan quería rematar a SERA, destruyendo todo lo que le quedaba a Alice Rainey. Así, desaparecería con un gran acto final, así como lo haría la pandilla PAYDAY."
+	"sm_65_obj" : "Completa el trabajo UN CRUDO DESPERTAR en dificultad MUY DIFÍCIL o superior. \nPara completar este segmento, debes permanecer en la partida desde la sala de planificación hasta terminar el trabajo."
+	"menu_sm_very_hard_deep" : "UN CRUDO DESPERTAR"
+}
