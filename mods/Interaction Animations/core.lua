@@ -39,25 +39,17 @@ function PlayerStandard:_play_interact_redirect(t)
 	end
 
 	self._state_data.interact_redirect_t = t + 1
-	
 	self._interaction_anim = self._camera_unit:base():set_interaction_anim(tweak_data.interaction.animations[self._interaction_unit:interaction().tweak_data])
 
-	if not self._interaction_anim or not self._can_play_interact_anim then
+	local has_akimbo = alive(self._equipped_unit) and self._equipped_unit:base().akimbo
+
+	if not self._interaction_anim or not self._can_play_interact_anim or has_akimbo then
 		self._ext_camera:play_redirect(self:get_animation("use"))
 		return
 	end
 
 	self._camera_unit:anim_state_machine():set_global(self._interaction_anim.weight, 1)
-
-	if self._camera_unit:base().has_unequipped_for_interaction then
-		self._ext_camera:play_redirect(Idstring("interact"))
-		return
-	end
-
-	local unequip_speed_multiplier = 3
-	local tweak_data = self._equipped_unit:base():weapon_tweak_data()
-	self._unequip_weapon_on_interaction_expire_t = t + (tweak_data.timers.unequip or 0.5) / unequip_speed_multiplier
-	self:_play_unequip_animation(unequip_speed_multiplier)
+	self._ext_camera:play_redirect(Idstring("interact"))
 end
 
 -- Timed interactions (hard overwrite)
@@ -240,8 +232,7 @@ function FPCameraPlayerBase:anim_clbk_unspawn_interaction_items()
 	self._interaction_item_units = {}
 end
 
-function FPCameraPlayerBase:anim_clbk_interact_instant_exit()
-	self.has_unequipped_for_interaction = false
+function FPCameraPlayerBase:anim_clbk_offhand_exit()
 	self:clear_interaction_anim()
 end
 

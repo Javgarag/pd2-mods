@@ -5,9 +5,8 @@
     </search>
 
     <target>
-        <anim name="insert_keycard" file="anims/fps/interacts/keycard_insert" blend_set="all"/>
-		
-		<anim name="grab" file="anims/fps/interacts/grab" blend_set="all"/>
+        <anim name="insert_keycard" file="anims/fps/interacts/keycard_insert" blend_set="offhand"/>
+		<anim name="grab" file="anims/fps/interacts/grab" blend_set="offhand"/>
 		
 		<anim name="fix_drill_enter" file="anims/fps/interacts/fix_drill/fix_drill_enter" blend_set="all"/>
 		<anim name="fix_drill_loop" file="anims/fps/interacts/fix_drill/fix_drill_loop" blend_set="all"/>
