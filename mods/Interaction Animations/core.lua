@@ -48,8 +48,7 @@ function PlayerStandard:_play_interact_redirect(t)
 		return
 	end
 
-	self._camera_unit:anim_state_machine():set_global(self._interaction_anim.weight, 1)
-	self._ext_camera:play_redirect(Idstring("interact"))
+	self._ext_camera:play_redirect(Idstring(self._interaction_anim.animation_state_machine_name))
 end
 
 -- Timed interactions (hard overwrite)
@@ -70,8 +69,8 @@ function PlayerStandard:_start_action_interact(t, input, timer, interact_object)
 	}
 	
 	self._interaction_anim = self._camera_unit:base():set_interaction_anim(tweak_data.interaction.animations[self._interaction_unit:interaction().tweak_data])
+
 	if self._interaction_anim then
-		self._camera_unit:anim_state_machine():set_global(self._interaction_anim.weight, 1)
 		local tweak_data = self._equipped_unit:base():weapon_tweak_data()
 		self._unequip_weapon_on_interaction_expire_t = t + ((tweak_data.timers.unequip or 0.5) / (self._interaction_anim.unequip_speed_multiplier or 1))
 	end
@@ -107,7 +106,7 @@ function PlayerStandard:_interupt_action_interact(t, input, complete)
 		end
 
 		managers.hud:hide_interaction_bar(complete)
-		self._unit:network():send("sync_interaction_anim", false, "") -- Vanilla third person animation, has nothing to do with what we're doing
+		self._unit:network():send("sync_interaction_anim", false, "") -- Vanilla third person animation
 	end
 end
 
@@ -126,6 +125,7 @@ function PlayerStandard:_play_equip_animation(speed_multiplier)
 			self._camera_unit:base():show_weapon()
 		end
 		self._camera_unit:base():clear_interaction_anim()
+		self._camera_unit:base():clear_interact_object()
 	end
 end
 
@@ -141,8 +141,7 @@ function PlayerStandard:_changing_weapon()
 	return self._unequip_weapon_expire_t or self._equip_weapon_expire_t or self._camera_unit:base().interaction_interupt_anim_playing
 end
 
--- Update unequip interaction timers
--- This is called every frame to check if the unequip interaction timer has expired
+-- Called every frame to check if the unequip interaction timer has expired
 function PlayerStandard:_update_unequip_interaction_timers(t)
 	if self._camera_unit:base():interaction_anim() and self._unequip_weapon_on_interaction_expire_t and self._unequip_weapon_on_interaction_expire_t <= t then
 		self._unequip_weapon_on_interaction_expire_t = nil
@@ -154,7 +153,8 @@ function PlayerStandard:_update_unequip_interaction_timers(t)
 		self._camera_unit:base().has_unequipped_for_interaction = true
 
 		if self._interact_params and self._interact_params.timer > 0 then
-			self._ext_camera:play_redirect(Idstring("interact_enter"))
+			self._camera_unit:base():set_interact_object(self._interact_params.object)
+			self._ext_camera:play_redirect(Idstring(self._interaction_anim.animation_state_machine_name))
 
 			if self._interaction_anim.hide_weapon then
 				self._camera_unit:base():hide_weapon()
@@ -179,6 +179,34 @@ function FPCameraPlayerBase:clear_interaction_anim()
 		self._unit:anim_state_machine():set_global(self._interaction_anim.weight, 0)
 		self:set_interaction_anim(nil)
 	end
+end
+
+-- Arm direction
+
+function FPCameraPlayerBase:set_interact_object(interact_object)
+	self._interact_object = interact_object
+end
+
+function FPCameraPlayerBase:clear_interact_object()
+	self._interact_object = nil
+end
+
+local orig_update_rot = FPCameraPlayerBase._update_rot
+function FPCameraPlayerBase:_update_rot(axis, unscaled_axis)
+	orig_update_rot(self, axis, unscaled_axis)
+	if not self._interact_object then return end
+
+	local interact_position = self._interact_object:interaction():interact_position()
+	local arm_position = self._unit:position()
+	local arm_rot = self._unit:rotation()
+	local relative = interact_position - arm_position
+	local interact_arm_offset_rot = Rotation()
+	local final_rot = Rotation()
+
+	mrotation.set_look_at(interact_arm_offset_rot, relative, math.UP)
+	mrotation.multiply(final_rot, interact_arm_offset_rot, arm_rot)
+
+	self:set_rotation(final_rot)
 end
 
 -- Animation callbacks
@@ -234,6 +262,7 @@ end
 
 function FPCameraPlayerBase:anim_clbk_offhand_exit()
 	self:clear_interaction_anim()
+	self:clear_interact_object()
 end
 
 function FPCameraPlayerBase:anim_clbk_interact_hold_enter()
@@ -264,4 +293,5 @@ function FPCameraPlayerBase:anim_clbk_interact_interupt_exit()
 	end
 
 	self:clear_interaction_anim()
+	self:clear_interact_object()
 end

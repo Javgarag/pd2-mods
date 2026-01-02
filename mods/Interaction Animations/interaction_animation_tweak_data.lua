@@ -2,7 +2,7 @@ InteractionTweakData = InteractionTweakData or class()
 
 local animations = {
 	insert_gensec_keycard = {
-		weight = "insert_keycard",
+		animation_state_machine_name = "insert_keycard",
 		units = {
 			{
 				unit_path = "units/payday2/pickups/gen_pku_keycard/gen_pku_keycard",  -- For per-object rigging, see FPCameraPlayerBase:spawn_melee_item
@@ -15,10 +15,10 @@ local animations = {
 		}
 	},
 	grab = {
-		weight = "grab"
+		animation_state_machine_name = "grab"
 	},
 	fix_drill = {
-		weight = "fix_drill",
+		animation_state_machine_name = "fix_drill",
 		units = {
 			{
 				unit_path = "units/pd2_dlc_glace/props/glc_prop_construction_tool/glc_prop_contruction_tool_wrench01",
@@ -30,7 +30,7 @@ local animations = {
 		}
 	},
 	answer_radio = {
-		weight = "answer_radio",
+		animation_state_machine_name = "answer_radio",
 		units = {
 			{
 				unit_path = "mods/int_anim/units/fps_interact_radio/fps_interact_radio",
@@ -41,7 +41,7 @@ local animations = {
 		}
 	},
 	lockpick = {
-		weight = "lockpick",
+		animation_state_machine_name = "lockpick",
 		units = {
 			{
 				unit_path = "mods/int_anim/units/fps_lockpick/fps_lockpick",

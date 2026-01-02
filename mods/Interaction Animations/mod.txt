@@ -4,6 +4,7 @@
 	"author" : "Javgarag",
 	"contact" : "Discord: javgarag",
 	"version" : "1.0.0",
+	"priority" : 1000,
 	"blt_version" : 2,
 	"color" : "255 128 0",
 	"hooks" : [
@@ -22,6 +23,14 @@
 		{
 			"hook_id" : "lib/tweak_data/interactiontweakdata",
 			"script_path" : "interaction_animation_tweak_data.lua"
+		}
+	],
+	"updates" : [
+		{
+			"identifier" : "pd2_interaction_animations",
+			"host" : {
+				"meta" : "https://github.com/Javgarag/pd2-mods/releases/download/metafiles/pd2_interaction_animations.meta.json"
+			}
 		}
 	]
 }
