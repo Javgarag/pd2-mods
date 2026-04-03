@@ -489,6 +489,7 @@ weapon_vhs
 weapon_vityaz
 weapon_vityaz_x
 weapon_walther_ppk
+weapon_welrod
 weapon_white
 weapon_xeno
 weapon_zsniper
@@ -529,10 +530,10 @@ reflections_sniper
 sfx
 stingers
 turret_gunfire
-# 2182193123
 # 1148611026
 # 1297066785
 # 1782503638
+# 2182193123
 # 3143935399
 # 838887756
 # 3088451749
@@ -13186,6 +13187,44 @@ suppressed_b
 suppressed_c
 suppressed_d
 
+### EVENT NAMES (weapon_welrod.bnk)
+welrod_fire
+welrod_npc1a_1shot
+welrod_npc1b_1shot
+welrod_npc1c_1shot
+wp_welrod_bolt_in
+wp_welrod_bolt_lock
+wp_welrod_bolt_out
+wp_welrod_bolt_out_slide
+wp_welrod_bolt_unlock
+wp_welrod_mag_contact
+wp_welrod_mag_flick
+wp_welrod_mag_in
+
+### VARIABLE NAMES (weapon_welrod.bnk)
+acoustic_flag
+suppressed
+
+### VALUE NAMES (weapon_welrod.bnk)
+acoustic_flat
+acoustic_forest
+acoustic_indoors_huge
+acoustic_indoors_large
+acoustic_indoors_medium
+acoustic_indoors_small
+acoustic_outdoors_large
+acoustic_outdoors_medium
+acoustic_outdoors_small
+acoustic_tunnel_medium
+acoustic_tunnel_small
+none
+regular
+regular_b
+suppressed_a
+suppressed_b
+suppressed_c
+suppressed_d
+
 ### EVENT NAMES (weapon_white.bnk)
 white_explosion
 white_handle
@@ -24261,3 +24300,4 @@ wave_flag
 assault
 Control
 none
+

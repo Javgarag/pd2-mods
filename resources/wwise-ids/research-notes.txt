@@ -1,0 +1,143 @@
+File last updated on 01/08/2025
+
+Every single sound event mentioned in the following file types is included:
+.mission
+.world_sounds
+.sequence_manager
+.dialog
+.animation_states
+
+blackmarket: fire_single* , melee_weapons.sounds -- DONE
+* tweak_data.weapon[weapon_name_id].sounds -- DONE
+* tweak_data.projectiles[projectile_name_id].sounds -- DONE
+
+-------- START NPC PREFIX DOCS
+
+
+Only NPC weapons have prefix. FPS weapons are in their corresponding soundbank.
+
+Structure for weapons is:
+
+AUTOFIRE:
+[tweak_data.weapon[WEAPON].sounds.prefix] + 
+user_sound_variant (hardset to 1 on RayCastWeaponBase, but used to be 1, 2 or 3) +
+self._voice (can be "a", "b" or "c") +
+{nr_shots and "_" + tostring(nr_shots) + "shot", otherwise "_loop"} (nr_shots is either 1, 2, or 3)
+
+AUTOFIRE END:
+[tweak_data.weapon[WEAPON].sounds.prefix] + 
+user_sound_variant (hardset to 1 on RayCastWeaponBase, but used to be 1, 2 or 3) +
+self._voice (can be "a", "b" or "c") +
+"_end"
+
+FLAMETHROWER AND SAW:
+sounds.fire
+sounds.stop_fire
+
+
+-------- END NPC PREFIX DOCS
+
+-------- BEGIN VOICELINE PREFIX DOCS
+
+:say(sound_name, sync, important_say, ignore_prefix, callback)
+on PlayerSound there are no prefixes
+
+for CopSound:
+:say(sound_name, sync, skip_prefix, important, callback)
+will append self._prefix to sound_name. Then pass SoundDevice:string_to_id(full_sound) to UnitNetworkHandler...
+fire_hurt_sounds
+
+cpw_a05 (phalanx_vip)
+post_tasing_taunt
+taunt_line (line 1241 playerdamage)
+
+on Death Sentence, _speech_prefix_p2 will be "d", otherwise "n"
+
+for calling civilian:
+_a01x_any
+stockholm_syndrome
+
+BossDamage:
+"armorbreak" or armorbreak_str
+
+BossLogicAttack:
+combat_str or "combat"
+combat_str_alt or "combat_alt"
+
+CopDamage:
+death_comments_lookup
+self._aoe_data.play_voiceline
+
+
+
+-------- END VOICELINE PREFIX DOCS
+
+
+
+butler (btl) -- DONE
+die_sound_event - TDATA -- DONE
+spawn_sound_event - TDATA -- DONE
+tweak_data.vehicles.[VEHICLE].sound - TDATA -- DONE
+narrative tweak data -- DONE
+levels tweak data -- DONE
+hints (Global.hint_manager) -- DONE
+jukebox -- DONE
+codex -- DONE
+Global.music_manager.current_event -- doneish
+env_effect tweak data - DONE
+spooc_sound_events -- DONE
+interaction start end and interrupt -- DONE
+additional_impact_sound -- DONE
+taunt_line - DONE
+_taunt_after_assault - DONE
+_taunt_during_assault - DONE
+chatter_tweak.queue - part of prefixing bullshit
+entrance_chatter_cue - part of prefixing bullshit
+unique_death_callout - DONE
+aoe_str - part of prefixing bullshit
+(to_mark:base():char_tweak().priority_shout .. "x_any")
+
+for NPC footsteps: _flush_footsteps
+FOOTSTEP_EVENT = "footstep_npc_" .. self._footwear .. "_" .. self._footstep_style
+
+gameplaycentral: _play_sound, announcer_say
+
+for GLOBAL VARIABLES WWISER:
+sound_sources: set_rtpc() function
+
+for "SWITCHES": 
+sound_sources: set_switch() function
+
+for "STATES" WWISE VARIABLES:
+sound_sources: set_state() function
+
+for UNIT FILES:
+footstep sounds may depend on footwear. types: bulldozer (hardsole), 
+
+name containing snd_event --> value of "value" is sound id (see SentryGunWeapon)
+extensions with name="sound":
+- BossSound: _prefix, combat_str, etc. Just have a look at that class :)
+- BossDamage: armorbreak_str
+- TeamAISound
+- PlayerSound
+- CopSound
+- SafehouseNPCInteractionExt: "character", then concatenante the value of that to: "Play_%s_answering" where %s is character
+- AmmoClip: _pickup_event
+- CopMovement: _footstep_style, _footwear (for finding footstep event IDs)
+
+for TimerGui and SecurityLockGui: _start_event, _jam_event, _resume_event, _done_event
+for UnitDamage: _collision_event
+for HandExt: post_event is NOT used, no need to worry.
+for HuskPlayerMovement: _play_weapon_reload_animation_sfx is NEVER called, no need to worry.
+for PlayerSound: play(), say(). Look into those.
+for CivilianHeisterSound: anim_clbk_play_sound, should be sorted out, although it uses param2 instead of param1 in possible animation_states.
+for CopMovement: no worries.
+for CopSound: research self._prefix and CopSound:say().
+for CopDamage: _head_gear_play_sound
+for WeaponGadgetBase: _on_event and _off_event.
+
+need to re-do search on animation_states for "stop_sound" IDs instead of "play_sound". Some extensions have it too.
+
+Add all the teammatecomments in teammatecommentelement.
+
+set_minigame_response
