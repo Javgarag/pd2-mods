@@ -329,6 +329,7 @@ weapon_contraband
 weapon_corgi
 weapon_czech
 weapon_czech_x
+weapon_dart
 weapon_deagle
 weapon_desertfox
 weapon_ecp
@@ -414,10 +415,12 @@ weapon_p226r
 weapon_p90
 weapon_p90_x
 weapon_packrat
+weapon_pivot
 weapon_pl14
 weapon_pm9
 weapon_pm9_x
 weapon_pmkr45
+weapon_pmm
 weapon_polymer
 weapon_polymer_x
 weapon_qbu88
@@ -489,6 +492,7 @@ weapon_vhs
 weapon_vityaz
 weapon_vityaz_x
 weapon_walther_ppk
+weapon_watch
 weapon_welrod
 weapon_white
 weapon_xeno
@@ -4798,6 +4802,8 @@ lakner_npc1a_1shot
 lakner_npc1b_1shot
 lakner_npc1c_1shot
 lakner_take_new_mag
+laser_impact_gen_loop
+laser_impact_gen_loop_stop
 legacy_fire
 legacy_npc1a_1shot
 legacy_npc1b_1shot
@@ -4989,6 +4995,10 @@ msr_npc1a_1shot
 msr_npc1b_1shot
 msr_npc1c_1shot
 mtl_explosion
+musket_fire
+musket_npc1a_1shot
+musket_npc1b_1shot
+musket_npc1c_1shot
 nagant_fire
 nagant_npc1a_1shot
 nagant_npc1b_1shot
@@ -5426,6 +5436,10 @@ w_ppk_fire
 w_ppk_npc1a_1shot
 w_ppk_npc1b_1shot
 w_ppk_npc1c_1shot
+welrod_fire
+welrod_npc1a_1shot
+welrod_npc1b_1shot
+welrod_npc1c_1shot
 white_explosion
 wp_3p_bleedout_reload
 wp_3p_gun_gen_mag_in
@@ -7853,6 +7867,34 @@ acoustic_outdoors_small
 acoustic_tunnel_medium
 acoustic_tunnel_small
 none
+regular
+regular_b
+suppressed_a
+suppressed_b
+suppressed_c
+suppressed_d
+
+### EVENT NAMES (weapon_dart.bnk)
+dart_charge
+dart_charge_cancel
+dart_npc1a_1shot
+dart_npc1b_1shot
+dart_npc1c_1shot
+dart_release
+dart_release_fail
+wp_dart_reload_chamber_close
+wp_dart_reload_chamber_open
+wp_dart_reload_dart_in
+wp_dart_reload_valve_close
+wp_dart_reload_valve_open
+# 1174535389
+# 2679507652
+# 3244706379
+
+### VARIABLE NAMES (weapon_dart.bnk)
+suppressed
+
+### VALUE NAMES (weapon_dart.bnk)
 regular
 regular_b
 suppressed_a
@@ -10683,6 +10725,45 @@ suppressed_b
 suppressed_c
 suppressed_d
 
+### EVENT NAMES (weapon_pivot.bnk)
+pivot_fire
+pivot_npc1a_1shot
+pivot_npc1b_1shot
+pivot_npc1c_1shot
+wp_pivot_equip_bolt_close
+wp_pivot_equip_rotate
+wp_pivot_equip_rotate_snap
+wp_pivot_reload_bolt_close
+wp_pivot_reload_bolt_open
+wp_pivot_reload_mag_in
+wp_pivot_reload_mag_out
+wp_pivot_unequip_bolt_open
+wp_pivot_unequip_rotate
+
+### VARIABLE NAMES (weapon_pivot.bnk)
+acoustic_flag
+suppressed
+
+### VALUE NAMES (weapon_pivot.bnk)
+acoustic_flat
+acoustic_forest
+acoustic_indoors_huge
+acoustic_indoors_large
+acoustic_indoors_medium
+acoustic_indoors_small
+acoustic_outdoors_large
+acoustic_outdoors_medium
+acoustic_outdoors_small
+acoustic_tunnel_medium
+acoustic_tunnel_small
+none
+regular
+regular_b
+suppressed_a
+suppressed_b
+suppressed_c
+suppressed_d
+
 ### EVENT NAMES (weapon_pl14.bnk)
 pl14_fire
 pl14_npc1a_1shot
@@ -10808,6 +10889,40 @@ acoustic_flag
 suppressed
 
 ### VALUE NAMES (weapon_pmkr45.bnk)
+acoustic_flat
+acoustic_forest
+acoustic_indoors_huge
+acoustic_indoors_large
+acoustic_indoors_medium
+acoustic_indoors_small
+acoustic_outdoors_large
+acoustic_outdoors_medium
+acoustic_outdoors_small
+acoustic_tunnel_medium
+acoustic_tunnel_small
+none
+regular
+regular_b
+suppressed_a
+suppressed_b
+suppressed_c
+suppressed_d
+
+### EVENT NAMES (weapon_pmm.bnk)
+pmm_fire
+pmm_npc1a_1shot
+pmm_npc1b_1shot
+pmm_npc1c_1shot
+wp_pmm_reload_bolt_release
+wp_pmm_reload_empty_mag_out
+wp_pmm_reload_mag_in
+wp_pmm_reload_mag_out
+
+### VARIABLE NAMES (weapon_pmm.bnk)
+acoustic_flag
+suppressed
+
+### VALUE NAMES (weapon_pmm.bnk)
 acoustic_flat
 acoustic_forest
 acoustic_indoors_huge
@@ -13186,6 +13301,10 @@ suppressed_a
 suppressed_b
 suppressed_c
 suppressed_d
+
+### EVENT NAMES (weapon_watch.bnk)
+watch_fire
+watch_stop
 
 ### EVENT NAMES (weapon_welrod.bnk)
 welrod_fire
@@ -24300,4 +24419,3 @@ wave_flag
 assault
 Control
 none
-
