@@ -60,7 +60,6 @@ char_sydney
 char_tony
 christmas_2013
 concussion_grenade
-core
 debrief_but_crojob
 debrief_den_diamond
 debrief_den_hotline
@@ -197,6 +196,7 @@ melee_bbq_poker
 melee_bbq_spatula
 melee_bbq_tenderizer
 melee_beardy
+melee_bonk
 melee_boxcutter
 melee_branding_iron
 melee_brick
@@ -338,6 +338,7 @@ weapon_erma
 weapon_erma_x
 weapon_famas
 weapon_flamethrower
+weapon_flare
 weapon_flint
 weapon_fmg9
 weapon_fn_fal
@@ -534,10 +535,11 @@ reflections_sniper
 sfx
 stingers
 turret_gunfire
+# 2182193123
 # 1148611026
 # 1297066785
 # 1782503638
-# 2182193123
+# 1877231729
 # 3143935399
 # 838887756
 # 3088451749
@@ -545,7 +547,6 @@ turret_gunfire
 # 679220183
 # 3779928933
 # 3803692087
-# 1877231729
 # 845787994
 # 4207163833
 # 750342875
@@ -653,6 +654,13 @@ rain
 regular
 smoke
 snow
+
+### EVENT NAMES (15713435403958b8.bnk)
+bonk_charge
+bonk_equip
+bonk_hit_air
+bonk_hit_body
+bonk_hit_gen
 
 ### EVENT NAMES (ambiences.bnk)
 ambience_ext_big_city_day
@@ -795,6 +803,23 @@ mariachi_sober_violin
 mariachi_trumpet_stop
 mariachi_violin_stop
 
+### EVENT NAMES (c84423c442b24c63.bnk)
+flare_fire
+flare_npc1a_1shot
+flare_npc1b_1shot
+flare_npc1c_1shot
+
+### VARIABLE NAMES (c84423c442b24c63.bnk)
+suppressed
+
+### VALUE NAMES (c84423c442b24c63.bnk)
+regular
+regular_b
+suppressed_a
+suppressed_b
+suppressed_c
+suppressed_d
+
 ### EVENT NAMES (car_falcogini.bnk)
 falcogini
 falcogini_engine_broken_loop
@@ -897,10 +922,6 @@ acoustic_outdoors_small
 acoustic_tunnel_medium
 acoustic_tunnel_small
 none
-
-### EVENT NAMES (core.bnk)
-mute
-unmute
 
 ### EVENT NAMES (des_sfx.bnk)
 bar_laser_weapon_button_push_finished
@@ -4596,6 +4617,8 @@ famas_npc1a_end
 famas_npc1a_loop
 famas_stop
 flamethrower_dryfire
+flare_flyby
+flare_flyby_stop
 flashbang_bounce
 flashbang_explode_sfx_player
 flashbang_explosion
@@ -5025,6 +5048,10 @@ packrat_fire
 packrat_npc1a_1shot
 packrat_npc1b_1shot
 packrat_npc1c_1shot
+pivot_fire
+pivot_npc1a_1shot
+pivot_npc1b_1shot
+pivot_npc1c_1shot
 pl14_fire
 pl14_npc1a_1shot
 pl14_npc1b_1shot
@@ -5052,6 +5079,10 @@ pmkr45_fire
 pmkr45_npc1a_1shot
 pmkr45_npc1b_1shot
 pmkr45_npc1c_1shot
+pmm_fire
+pmm_npc1a_1shot
+pmm_npc1b_1shot
+pmm_npc1c_1shot
 polymer_fire
 polymer_npc1a_1shot
 polymer_npc1a_2shot
