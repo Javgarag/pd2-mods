@@ -655,7 +655,7 @@ regular
 smoke
 snow
 
-### EVENT NAMES (15713435403958b8.bnk)
+### EVENT NAMES (melee_bonk.bnk)
 bonk_charge
 bonk_equip
 bonk_hit_air
