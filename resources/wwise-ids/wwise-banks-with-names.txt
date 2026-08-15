@@ -500,6 +500,10 @@ weapon_xeno
 weapon_zsniper
 zipline
 
+### LANGUAGE NAMES
+sfx
+# 684519430
+
 ### BUS NAMES
 acoustics_indoor_default
 acoustics_indoor_large_hiecho
@@ -535,18 +539,18 @@ reflections_sniper
 sfx
 stingers
 turret_gunfire
-# 2182193123
 # 1148611026
+# 2182193123
 # 1297066785
 # 1782503638
-# 1877231729
 # 3143935399
+# 2132867720
 # 838887756
 # 3088451749
-# 2132867720
 # 679220183
 # 3779928933
 # 3803692087
+# 1877231729
 # 845787994
 # 4207163833
 # 750342875
@@ -586,6 +590,8 @@ pd2_acoustics_outdoor_small_echo
 pd2_acoustics_tunnel_medium
 pd2_acoustics_tunnel_small
 Pitch_Shifter_TEST
+# 2317455096
+# 3859886410
 
 ### BASE RTPC/GAME-VARIABLE NAMES (init.bnk)
 ammo_left
@@ -616,6 +622,7 @@ zipline_speed
 # 385350134
 # 1183220101
 # 1397191865
+# 2109227954
 # 2392952846
 # 2526499546
 
@@ -654,13 +661,6 @@ rain
 regular
 smoke
 snow
-
-### EVENT NAMES (melee_bonk.bnk)
-bonk_charge
-bonk_equip
-bonk_hit_air
-bonk_hit_body
-bonk_hit_gen
 
 ### EVENT NAMES (ambiences.bnk)
 ambience_ext_big_city_day
@@ -802,23 +802,6 @@ mariachi_sober_trumpet
 mariachi_sober_violin
 mariachi_trumpet_stop
 mariachi_violin_stop
-
-### EVENT NAMES (c84423c442b24c63.bnk)
-flare_fire
-flare_npc1a_1shot
-flare_npc1b_1shot
-flare_npc1c_1shot
-
-### VARIABLE NAMES (c84423c442b24c63.bnk)
-suppressed
-
-### VALUE NAMES (c84423c442b24c63.bnk)
-regular
-regular_b
-suppressed_a
-suppressed_b
-suppressed_c
-suppressed_d
 
 ### EVENT NAMES (car_falcogini.bnk)
 falcogini
@@ -975,6 +958,11 @@ set_flashbang_state_deaf
 set_flashbang_state_normal
 surround_off
 surround_on
+# 4156973894
+# 4173751505
+
+### RTPC/GAME-VARIABLE NAMES (engine.bnk)
+# 2109227954
 
 ### VARIABLE NAMES (engine.bnk)
 flashbang_state
@@ -1033,22 +1021,6 @@ Play_witch_sneeze
 Play_wood_creak_01
 Play_wood_creak_02
 whisper_occasionals
-
-### EVENT NAMES (halloween_2015.bnk)
-nail_blender
-nail_blender_end
-nail_cloaker_detect
-nail_cloaker_detect_stop
-nail_cloaker_presence_loop
-nail_cloaker_presence_stop
-nail_cloaker_spawn
-nail_gas_loop
-nail_gas_loop_stop
-spider_attack
-spider_die
-spider_enter
-spider_hurt
-spider_idle
 
 ### EVENT NAMES (halloween_2016.bnk)
 clk_hlp_drill_attack_enter
@@ -1281,6 +1253,13 @@ beardy_equip
 beardy_hit_air
 beardy_hit_body
 beardy_hit_gen
+
+### EVENT NAMES (melee_bonk.bnk)
+bonk_charge
+bonk_equip
+bonk_hit_air
+bonk_hit_body
+bonk_hit_gen
 
 ### EVENT NAMES (melee_boxcutter.bnk)
 boxcutter_charge
@@ -1547,7 +1526,17 @@ rb1
 rb10
 rb11
 rb12
+rb13
+rb14
+rb15
+rb16
+rb17
+rb18
+rb19
 rb2
+rb20
+rb21
+rb22
 rb3
 rb4
 rb5
@@ -8161,6 +8150,23 @@ flamethrower_stop
 ### RTPC/GAME-VARIABLE NAMES (weapon_flamethrower.bnk)
 camera_suspicion_level
 
+### EVENT NAMES (weapon_flare.bnk)
+flare_fire
+flare_npc1a_1shot
+flare_npc1b_1shot
+flare_npc1c_1shot
+
+### VARIABLE NAMES (weapon_flare.bnk)
+suppressed
+
+### VALUE NAMES (weapon_flare.bnk)
+regular
+regular_b
+suppressed_a
+suppressed_b
+suppressed_c
+suppressed_d
+
 ### EVENT NAMES (weapon_flint.bnk)
 flint_fire
 flint_fire_single
@@ -13435,7 +13441,7 @@ zipline_unhook
 ### RTPC/GAME-VARIABLE NAMES (zipline.bnk)
 zipline_speed
 
-### EVENT NAMES (langs/accomplice_boat_1.english.bnk)
+### EVENT NAMES (langs/accomplice_boat_1.bnk)
 Play_bot_a02
 Play_bot_a03
 Play_bot_a04
@@ -13501,7 +13507,7 @@ Play_bot_a67
 Play_bot_a68
 Play_this_is_the_boat
 
-### EVENT NAMES (langs/accomplice_driver_1.english.bnk)
+### EVENT NAMES (langs/accomplice_driver_1.bnk)
 Play_dr1_a01
 Play_dr1_a02
 Play_dr1_a03
@@ -13584,7 +13590,7 @@ Play_dr1_a80
 Play_dr1_a81
 Play_dr1_a82
 
-### EVENT NAMES (langs/accomplice_driver_2.english.bnk)
+### EVENT NAMES (langs/accomplice_driver_2.bnk)
 Play_dr2_a01
 Play_dr2_a02
 Play_dr2_a03
@@ -13654,8 +13660,10 @@ Play_dr2_a67
 Play_dr2_a68
 Play_dr2_a69
 Play_dr2_a70
+snowthrower_npc_fire
+snowthrower_npc_fire_stop
 
-### EVENT NAMES (langs/accomplice_heli_1.english.bnk)
+### EVENT NAMES (langs/accomplice_heli_1.bnk)
 Play_plt_a01
 Play_plt_a02
 Play_plt_a03
@@ -13724,7 +13732,7 @@ Play_plt_a65
 Play_plt_a66
 Play_plt_a67
 
-### EVENT NAMES (langs/accomplice_sniper_1.english.bnk)
+### EVENT NAMES (langs/accomplice_sniper_1.bnk)
 Play_snp_cnt
 Play_snp_few_01
 Play_snp_gen_01
@@ -13736,7 +13744,7 @@ Play_snp_pre_02
 Play_snp_rld_01
 Play_snp_tip_01
 
-### EVENT NAMES (langs/bain_storyquest.english.bnk)
+### EVENT NAMES (langs/bain_storyquest.bnk)
 Play_loc_stq_01
 Play_loc_stq_02
 Play_loc_stq_03
@@ -13794,116 +13802,116 @@ Play_pln_stq_47
 Play_pln_stq_48
 Play_pln_stq_49
 
-### EVENT NAMES (langs/briefing_a_pda9_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_a_pda9_stage1.bnk)
 Play_alm_pda9_cbf
 
-### EVENT NAMES (langs/briefing_a_xmas22_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_a_xmas22_stage1.bnk)
 Play_alm_xmas22_cbf
 
-### EVENT NAMES (langs/briefing_b_dah_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_b_dah_stage1.bnk)
 Play_pln_dah_cbf_01
 Play_pln_dah_cnc_01
 
-### EVENT NAMES (langs/briefing_b_glace_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_b_glace_stage1.bnk)
 Play_pln_glc_cbf_01
 Play_pln_glc_cnc_01
 
-### EVENT NAMES (langs/briefing_b_nmh_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_b_nmh_stage1.bnk)
 Play_pln_nmh_cnc_01
 Play_rb1_nmh_cbf_01
 
-### EVENT NAMES (langs/briefing_b_run_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_b_run_stage1.bnk)
 Play_loc_run_cbf_01
 Play_loc_run_cnc_01
 
-### EVENT NAMES (langs/briefing_l_bex_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_l_bex_stage1.bnk)
 Play_vld_bex_cbf_01
 Play_vld_bex_cnc_01
 
-### EVENT NAMES (langs/briefing_l_bph_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_l_bph_stage1.bnk)
 Play_loc_bph_cbf_01
 Play_loc_bph_cnc_01
 
-### EVENT NAMES (langs/briefing_l_brb_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_l_brb_stage1.bnk)
 Play_loc_brb_cbf_01
 Play_loc_brb_cnc_01
 
-### EVENT NAMES (langs/briefing_l_chas_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_l_chas_stage1.bnk)
 Play_jfe_chas_cbf_01
 Play_jfe_chas_cnc_01
 
-### EVENT NAMES (langs/briefing_l_corp_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_l_corp_stage1.bnk)
 keegan_quote_set_a
 Play_kee_corp_cbf
 Play_kee_corp_cnc
 
-### EVENT NAMES (langs/briefing_l_deep_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_l_deep_stage1.bnk)
 Play_kee_deep_cbf
 Play_kee_deep_cnc
 
-### EVENT NAMES (langs/briefing_l_des_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_l_des_stage1.bnk)
 Play_loc_des_cnc_01
 Play_rb22_des_cbf_01
 
-### EVENT NAMES (langs/briefing_l_fex_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_l_fex_stage1.bnk)
 Play_vld_fex_cbf_01
 Play_vld_fex_cnc_01
 
-### EVENT NAMES (langs/briefing_l_mex_cook_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_l_mex_cook_stage1.bnk)
 Play_loc_mex_cook_cbf_01
 Play_loc_mex_cook_cnc_01
 
-### EVENT NAMES (langs/briefing_l_mex_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_l_mex_stage1.bnk)
 Play_loc_mex_cbf_01
 Play_loc_mex_cnc_01
 
-### EVENT NAMES (langs/briefing_l_pent_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_l_pent_stage1.bnk)
 Play_sha_pent_cbf_01
 Play_sha_pent_cnc_01
 sha_quote_set_a
 
-### EVENT NAMES (langs/briefing_l_pex_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_l_pex_stage1.bnk)
 Play_loc_pex_cbf_01
 Play_loc_pex_cnc_01
 
-### EVENT NAMES (langs/briefing_l_ranc_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_l_ranc_stage1.bnk)
 gemma_quote_set_a
 Play_gem_ranc_cbf
 Play_gem_ranc_cnc
 
-### EVENT NAMES (langs/briefing_l_rvd_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_l_rvd_stage1.bnk)
 Play_pln_rvd_cbf_01
 Play_pln_rvd_cnc_01
 
-### EVENT NAMES (langs/briefing_l_sah_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_l_sah_stage1.bnk)
 Play_loc_sah_cnc_01
 Play_rb22_sah_cbf_01
 
-### EVENT NAMES (langs/briefing_l_sand_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_l_sand_stage1.bnk)
 Play_jfe_sand_cbf_01
 Play_jfe_sand_cnc_01
 
-### EVENT NAMES (langs/briefing_l_tag_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_l_tag_stage1.bnk)
 Play_loc_tag_cbf_01
 Play_loc_tag_cnc_01
 
-### EVENT NAMES (langs/briefing_l_trai_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_l_trai_stage1.bnk)
 Play_gem_trai_cbf
 Play_gem_trai_cnc
 
-### EVENT NAMES (langs/briefing_l_vit_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_l_vit_stage1.bnk)
 Play_loc_vit_cnc_01
 Play_pln_vit_cbf_01
 
-### EVENT NAMES (langs/briefing_l_wwh_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_l_wwh_stage1.bnk)
 Play_loc_wwh_cbf_01
 Play_loc_wwh_cnc_01
 
-### EVENT NAMES (langs/briefing_v_chca_stage1.english.bnk)
+### EVENT NAMES (langs/briefing_v_chca_stage1.bnk)
 Play_vld_chca_cbf_01
 Play_vld_chca_cnc_01
 
-### EVENT NAMES (langs/briefings.english.bnk)
+### EVENT NAMES (langs/briefings.bnk)
 butcher_cr1_cbf_01
 butcher_cr1_cbf_02
 butcher_cr1_cbf_03
@@ -14066,63 +14074,63 @@ vld_quote_set_a
 vld_ukranian_brf
 vld_ukranian_cnc_01
 
-### SFX NAMES (langs/briefings.english.bnk)
+### SFX NAMES (langs/briefings.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/debrief_but_crojob.english.bnk)
+### EVENT NAMES (langs/debrief_but_crojob.bnk)
 butcher_cr1_debrief_01
 butcher_cr1_debrief_02
 butcher_cr1_debrief_03
 
-### EVENT NAMES (langs/debrief_den_diamond.english.bnk)
+### EVENT NAMES (langs/debrief_den_diamond.bnk)
 dentist_hd1_debrief_01
 dentist_hd1_debrief_02
 
-### EVENT NAMES (langs/debrief_den_hotline.english.bnk)
+### EVENT NAMES (langs/debrief_den_hotline.bnk)
 dentist_hm1_debrief
 
-### EVENT NAMES (langs/debrief_den_kenaz.english.bnk)
+### EVENT NAMES (langs/debrief_den_kenaz.bnk)
 dentist_ca1_debrief_01
 dentist_ca1_debrief_02
 
-### EVENT NAMES (langs/debrief_elp_bigoil.english.bnk)
+### EVENT NAMES (langs/debrief_elp_bigoil.bnk)
 elp_bigoil_debrief
 
-### EVENT NAMES (langs/debrief_elp_election.english.bnk)
+### EVENT NAMES (langs/debrief_elp_election.bnk)
 elp_election_debrief
 
-### EVENT NAMES (langs/debrief_elp_framing.english.bnk)
+### EVENT NAMES (langs/debrief_elp_framing.bnk)
 elp_framing_debrief
 
-### EVENT NAMES (langs/debrief_gus_bigbank.english.bnk)
+### EVENT NAMES (langs/debrief_gus_bigbank.bnk)
 gus_bb1_debrief_01
 gus_bb1_debrief_02
 
-### EVENT NAMES (langs/debrief_hct_firestarter.english.bnk)
+### EVENT NAMES (langs/debrief_hct_firestarter.bnk)
 hct_firestarter_debrief
 
-### EVENT NAMES (langs/debrief_hct_rats.english.bnk)
+### EVENT NAMES (langs/debrief_hct_rats.bnk)
 hct_rats_debrief
 
-### EVENT NAMES (langs/debrief_hct_watchdogs.english.bnk)
+### EVENT NAMES (langs/debrief_hct_watchdogs.bnk)
 hct_watchdogs_debrief
 
-### EVENT NAMES (langs/debrief_hox_hoxton.english.bnk)
+### EVENT NAMES (langs/debrief_hox_hoxton.bnk)
 hoxton_hb3_debrief_01
 
-### EVENT NAMES (langs/debrief_vld_fourstores.english.bnk)
+### EVENT NAMES (langs/debrief_vld_fourstores.bnk)
 vld_fourstores_debrief
 
-### EVENT NAMES (langs/debrief_vld_mallcrashers.english.bnk)
+### EVENT NAMES (langs/debrief_vld_mallcrashers.bnk)
 vld_mallcrashers_debrief
 
-### EVENT NAMES (langs/debrief_vld_nightclub.english.bnk)
+### EVENT NAMES (langs/debrief_vld_nightclub.bnk)
 vld_nightclub_debrief
 
-### EVENT NAMES (langs/debrief_vld_ukranian.english.bnk)
+### EVENT NAMES (langs/debrief_vld_ukranian.bnk)
 vld_ukranian_debrief
 
-### EVENT NAMES (langs/halloween_2015.english.bnk)
+### EVENT NAMES (langs/halloween_2015.bnk)
 big_cloaker_bitch
 big_cloaker_taunt
 nail_blender
@@ -14141,7 +14149,7 @@ spider_exit
 spider_hurt
 spider_idle
 
-### EVENT NAMES (langs/job_a_pda9_stage1.english.bnk)
+### EVENT NAMES (langs/job_a_pda9_stage1.bnk)
 Play_alm_pda9_01
 Play_alm_pda9_02
 Play_alm_pda9_03
@@ -14188,10 +14196,10 @@ Play_alm_pda9_end_pig_04
 Play_alm_pda9_end_pig_05
 Play_alm_pda9_end_pig_06
 
-### SFX NAMES (langs/job_a_pda9_stage1.english.bnk)
+### SFX NAMES (langs/job_a_pda9_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_a_xmas22_stage1.english.bnk)
+### EVENT NAMES (langs/job_a_xmas22_stage1.bnk)
 Play_alm_xmas22_01
 Play_alm_xmas22_02
 Play_alm_xmas22_03
@@ -14207,10 +14215,10 @@ Play_alm_xmas22_brf
 Play_alm_xmas22_end_fail
 Play_alm_xmas22_end_win
 
-### SFX NAMES (langs/job_a_xmas22_stage1.english.bnk)
+### SFX NAMES (langs/job_a_xmas22_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_b_carshop.english.bnk)
+### EVENT NAMES (langs/job_b_carshop.bnk)
 Play_cpl_ch1_01
 Play_cpl_ch1_02
 Play_man_ch1_01
@@ -14258,10 +14266,10 @@ Stop_cpl_ch1_02
 Stop_man_ch1_01
 Stop_rcp_ch1_01
 
-### SFX NAMES (langs/job_b_carshop.english.bnk)
+### SFX NAMES (langs/job_b_carshop.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_b_csbank.english.bnk)
+### EVENT NAMES (langs/job_b_csbank.bnk)
 Play_bkm_cs1_01
 Play_bkm_cs1_02
 Play_blm_cs1_01
@@ -14491,10 +14499,10 @@ Play_pt2_cs1_15
 Play_pt2_cs1_16
 Play_pt2_cs1_17
 
-### SFX NAMES (langs/job_b_csbank.english.bnk)
+### SFX NAMES (langs/job_b_csbank.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_b_dah_stage1.english.bnk)
+### EVENT NAMES (langs/job_b_dah_stage1.bnk)
 Play_cf1_dah_01
 Play_cf2_dah_01
 Play_cfo_dah_01
@@ -14754,10 +14762,10 @@ Stop_pln_dah_97
 Stop_pln_dah_98
 Stop_pln_dah_99
 
-### SFX NAMES (langs/job_b_dah_stage1.english.bnk)
+### SFX NAMES (langs/job_b_dah_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_b_dinner.english.bnk)
+### EVENT NAMES (langs/job_b_dinner.bnk)
 Play_pln_dn1_01
 Play_pln_dn1_02
 Play_pln_dn1_03
@@ -14803,10 +14811,10 @@ Play_pln_dn1_brf_01
 Play_pln_dn1_intro_01
 Play_vld_dn1_01
 
-### SFX NAMES (langs/job_b_dinner.english.bnk)
+### SFX NAMES (langs/job_b_dinner.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_b_familyjewels.english.bnk)
+### EVENT NAMES (langs/job_b_familyjewels.bnk)
 Play_pln_fj1_01
 Play_pln_fj1_02
 Play_pln_fj1_03
@@ -14823,10 +14831,10 @@ Play_pln_fj1_end_01
 Play_pln_fj1_end_02
 Play_pln_fj1_intro_01
 
-### SFX NAMES (langs/job_b_familyjewels.english.bnk)
+### SFX NAMES (langs/job_b_familyjewels.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_b_flat_stage1.english.bnk)
+### EVENT NAMES (langs/job_b_flat_stage1.bnk)
 Play_bnc_flt_01
 Play_bnc_flt_02
 Play_chz_flt_01
@@ -14906,10 +14914,10 @@ Play_thg_flt_01
 Play_thg_flt_02
 Play_ths_flt_01
 
-### SFX NAMES (langs/job_b_flat_stage1.english.bnk)
+### SFX NAMES (langs/job_b_flat_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_b_glace_stage1.english.bnk)
+### EVENT NAMES (langs/job_b_glace_stage1.bnk)
 Play_geo_glc_01
 Play_geo_glc_02
 Play_geo_glc_03
@@ -14958,10 +14966,10 @@ Play_pln_glace_end
 Play_pln_glace_intro
 Play_prisoners_glc_01
 
-### SFX NAMES (langs/job_b_glace_stage1.english.bnk)
+### SFX NAMES (langs/job_b_glace_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_b_help_stage1.english.bnk)
+### EVENT NAMES (langs/job_b_help_stage1.bnk)
 Play_big_clk_help_01
 Play_big_clk_help_02
 Play_big_clk_help_03
@@ -15038,15 +15046,15 @@ Play_pln_hlp_37
 Play_pln_hlp_38
 Play_pln_hlp_39
 
-### SFX NAMES (langs/job_b_help_stage1.english.bnk)
+### SFX NAMES (langs/job_b_help_stage1.bnk)
 bain_static_distortion
 
-### VARIABLE NAMES (langs/job_b_help_stage1.english.bnk)
+### VARIABLE NAMES (langs/job_b_help_stage1.bnk)
 int_ext
 robber
 wave_flag
 
-### VALUE NAMES (langs/job_b_help_stage1.english.bnk)
+### VALUE NAMES (langs/job_b_help_stage1.bnk)
 assault
 Control
 first
@@ -15061,7 +15069,11 @@ rb15
 rb16
 rb17
 rb18
+rb19
 rb2
+rb20
+rb21
+rb22
 rb3
 rb4
 rb5
@@ -15071,7 +15083,7 @@ rb8
 rb9
 third
 
-### EVENT NAMES (langs/job_b_kosugi.english.bnk)
+### EVENT NAMES (langs/job_b_kosugi.bnk)
 Play_pln_ko1_01
 Play_pln_ko1_02
 Play_pln_ko1_03
@@ -15135,10 +15147,10 @@ Play_vld_ko1b_09
 Play_vld_ko1b_10
 Play_vld_ko1b_end_01
 
-### SFX NAMES (langs/job_b_kosugi.english.bnk)
+### SFX NAMES (langs/job_b_kosugi.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_b_man_stage1.english.bnk)
+### EVENT NAMES (langs/job_b_man_stage1.bnk)
 Play_crn_man_01
 Play_crn_man_02
 Play_hnc_man_01
@@ -15252,10 +15264,10 @@ Play_txm_man_11
 Play_txm_man_12
 Play_txm_man_13
 
-### SFX NAMES (langs/job_b_man_stage1.english.bnk)
+### SFX NAMES (langs/job_b_man_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_b_nails.english.bnk)
+### EVENT NAMES (langs/job_b_nails.bnk)
 Play_pln_nai_01
 Play_pln_nai_02
 Play_pln_nai_03
@@ -15281,10 +15293,10 @@ Play_pln_nai_22
 Play_pln_nai_brf_01
 Play_pln_nai_intro_01
 
-### SFX NAMES (langs/job_b_nails.english.bnk)
+### SFX NAMES (langs/job_b_nails.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_b_nmh_stage1.english.bnk)
+### EVENT NAMES (langs/job_b_nmh_stage1.bnk)
 Play_bil_nmh_01_01
 Play_bil_nmh_01_02
 Play_bil_nmh_01_03
@@ -15440,10 +15452,10 @@ Play_pln_nmh_end_fail
 Play_pln_nmh_end_win
 Play_pln_nmh_intro
 
-### SFX NAMES (langs/job_b_nmh_stage1.english.bnk)
+### SFX NAMES (langs/job_b_nmh_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_b_pal_stage1.english.bnk)
+### EVENT NAMES (langs/job_b_pal_stage1.bnk)
 Play_bkn_pal_01
 Play_bkn_pal_02
 Play_bkn_pal_03
@@ -15594,10 +15606,10 @@ Stop_pil_pal_04
 Stop_pmn_pal_01
 Stop_pwn_pal_01
 
-### SFX NAMES (langs/job_b_pal_stage1.english.bnk)
+### SFX NAMES (langs/job_b_pal_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_b_red.english.bnk)
+### EVENT NAMES (langs/job_b_red.bnk)
 Play_be1_fwb_01
 Play_be2_fwb_01
 Play_bm_fwb_01
@@ -15704,10 +15716,10 @@ Stop_fe2_fwb_01
 Stop_mc1_fwb_01
 Stop_mc1_fwb_02
 
-### SFX NAMES (langs/job_b_red.english.bnk)
+### SFX NAMES (langs/job_b_red.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_b_run_stage1.english.bnk)
+### EVENT NAMES (langs/job_b_run_stage1.bnk)
 Play_bru_run_01
 Play_bru_run_02
 Play_bru_run_03
@@ -15766,10 +15778,10 @@ Play_run_street_guy
 Play_run_telephone_guy
 Stop_run_door_guy
 
-### SFX NAMES (langs/job_b_run_stage1.english.bnk)
+### SFX NAMES (langs/job_b_run_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_b_short_stage1_1.english.bnk)
+### EVENT NAMES (langs/job_b_short_stage1_1.bnk)
 Play_pln_sh11_00
 Play_pln_sh11_01
 Play_pln_sh11_02
@@ -15816,10 +15828,10 @@ Play_rb4_sh11_09
 Play_rb4_sh11_10
 Play_rb4_sh11_11
 
-### SFX NAMES (langs/job_b_short_stage1_1.english.bnk)
+### SFX NAMES (langs/job_b_short_stage1_1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_b_short_stage1_2.english.bnk)
+### EVENT NAMES (langs/job_b_short_stage1_2.bnk)
 Play_pln_sh12_01
 Play_pln_sh12_02
 Play_pln_sh12_03
@@ -15871,10 +15883,10 @@ Play_rb4_sh12_16
 Play_rb4_sh12_17
 Play_rb4_sh12_18
 
-### SFX NAMES (langs/job_b_short_stage1_2.english.bnk)
+### SFX NAMES (langs/job_b_short_stage1_2.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_b_short_stage2_1.english.bnk)
+### EVENT NAMES (langs/job_b_short_stage2_1.bnk)
 Play_pln_sh21_01
 Play_pln_sh21_02
 Play_pln_sh21_03
@@ -15896,10 +15908,10 @@ Play_rb4_sh21_04
 Play_rb4_sh21_05
 Play_rb4_sh21_06
 
-### SFX NAMES (langs/job_b_short_stage2_1.english.bnk)
+### SFX NAMES (langs/job_b_short_stage2_1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_b_short_stage2_2.english.bnk)
+### EVENT NAMES (langs/job_b_short_stage2_2.bnk)
 Play_pln_sh22_01
 Play_pln_sh22_02
 Play_pln_sh22_03
@@ -15925,10 +15937,10 @@ Play_rb4_sh22_03
 Play_rb4_sh22_04
 Play_rb4_sh22_05
 
-### SFX NAMES (langs/job_b_short_stage2_2.english.bnk)
+### SFX NAMES (langs/job_b_short_stage2_2.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_b_train.english.bnk)
+### EVENT NAMES (langs/job_b_train.bnk)
 Play_pln_tr1_01
 Play_pln_tr1_02
 Play_pln_tr1_03
@@ -15971,10 +15983,10 @@ Play_pln_tr1b_05
 Play_pln_tr1b_06
 Play_pln_tr1b_07
 
-### SFX NAMES (langs/job_b_train.english.bnk)
+### SFX NAMES (langs/job_b_train.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_b_transport.english.bnk)
+### EVENT NAMES (langs/job_b_transport.bnk)
 Play_pln_at1_brf_01
 Play_pln_at1_brf_02
 Play_pln_at1_brf_03
@@ -16033,10 +16045,10 @@ Play_pln_at1_und_02
 Play_pln_at1_und_03
 Play_pln_at1_und_04
 
-### SFX NAMES (langs/job_b_transport.english.bnk)
+### SFX NAMES (langs/job_b_transport.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_c_fish_stage1.english.bnk)
+### EVENT NAMES (langs/job_c_fish_stage1.bnk)
 Play_civ_fish_01
 Play_civ_fish_02
 Play_civ_fish_03
@@ -16115,10 +16127,10 @@ Stop_ncr_fish_06
 Stop_ncr_fish_07
 Stop_ncr_fish_08
 
-### SFX NAMES (langs/job_c_fish_stage1.english.bnk)
+### SFX NAMES (langs/job_c_fish_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_c_spa_stage1.english.bnk)
+### EVENT NAMES (langs/job_c_spa_stage1.bnk)
 Play_cha_spa_01
 Play_cha_spa_02
 Play_cha_spa_03
@@ -16170,13 +16182,13 @@ Play_pln_spa_28
 Play_pln_spa_intro
 Play_rb6_spa_brf_01
 
-### SFX NAMES (langs/job_c_spa_stage1.english.bnk)
+### SFX NAMES (langs/job_c_spa_stage1.bnk)
 bain_static_distortion
 
-### RTPC/GAME-VARIABLE NAMES (langs/job_c_spa_stage1.english.bnk)
+### RTPC/GAME-VARIABLE NAMES (langs/job_c_spa_stage1.bnk)
 game_speed
 
-### EVENT NAMES (langs/job_crojob_stage_2.english.bnk)
+### EVENT NAMES (langs/job_crojob_stage_2.bnk)
 Play_cpn_cr2_01
 Play_cpn_cr2_02
 Play_pln_cr2_01
@@ -16309,10 +16321,10 @@ Play_pln_cr2_intro_01
 Play_pt1_cr2_01
 Play_pt1_cr2_02
 
-### SFX NAMES (langs/job_crojob_stage_2.english.bnk)
+### SFX NAMES (langs/job_crojob_stage_2.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_crojob_stage_3.english.bnk)
+### EVENT NAMES (langs/job_crojob_stage_3.bnk)
 Play_pln_cr3_01
 Play_pln_cr3_02
 Play_pln_cr3_03
@@ -16374,10 +16386,10 @@ Play_pt1_cr3_01
 Play_pt1_cr3_02
 Play_pt1_cr3_03
 
-### SFX NAMES (langs/job_crojob_stage_3.english.bnk)
+### SFX NAMES (langs/job_crojob_stage_3.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_e_alesso.english.bnk)
+### EVENT NAMES (langs/job_e_alesso.bnk)
 Play_ism_al1_01
 Play_pln_al1_01
 Play_pln_al1_02
@@ -16461,10 +16473,10 @@ Play_pyr_al1_19
 Play_pyr_al1_20
 Play_sys_al1_01
 
-### SFX NAMES (langs/job_e_alesso.english.bnk)
+### SFX NAMES (langs/job_e_alesso.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_e_bigoil_stage1.english.bnk)
+### EVENT NAMES (langs/job_e_bigoil_stage1.bnk)
 Play_pln_bigoil_stage1_brief
 Play_pln_bigoil_stage1_end_a
 Play_pln_bigoil_stage1_end_b
@@ -16489,10 +16501,10 @@ Play_pln_bo1_17
 Play_pln_bo1_18
 Play_pln_bo1_20
 
-### SFX NAMES (langs/job_e_bigoil_stage1.english.bnk)
+### SFX NAMES (langs/job_e_bigoil_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_e_bigoil_stage2.english.bnk)
+### EVENT NAMES (langs/job_e_bigoil_stage2.bnk)
 Play_pln_bigoil_stage2_brief
 Play_pln_bigoil_stage2_end_a
 Play_pln_bigoil_stage2_end_b
@@ -16529,10 +16541,10 @@ Play_pln_bo2_49
 Play_pln_bo2_50
 Play_pln_bo2_51
 
-### SFX NAMES (langs/job_e_bigoil_stage2.english.bnk)
+### SFX NAMES (langs/job_e_bigoil_stage2.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_e_born_stage1.english.bnk)
+### EVENT NAMES (langs/job_e_born_stage1.bnk)
 Play_bkl_brn_01
 Play_bkl_brn_intro
 Play_elp_brn_01
@@ -16579,13 +16591,13 @@ Play_pln_brn_14
 Play_pln_brn_15
 Stop_mch_brn_01
 
-### SFX NAMES (langs/job_e_born_stage1.english.bnk)
+### SFX NAMES (langs/job_e_born_stage1.bnk)
 bain_static_distortion
 
-### RTPC/GAME-VARIABLE NAMES (langs/job_e_born_stage1.english.bnk)
+### RTPC/GAME-VARIABLE NAMES (langs/job_e_born_stage1.bnk)
 game_speed
 
-### EVENT NAMES (langs/job_e_chew_stage1.english.bnk)
+### EVENT NAMES (langs/job_e_chew_stage1.bnk)
 bb1n_g90
 bb1n_x01a_any_3p
 bb1n_x02a_any_3p
@@ -16636,18 +16648,18 @@ Play_plt_chw_01
 Play_plt_chw_02
 Play_plt_chw_intro
 
-### SFX NAMES (langs/job_e_chew_stage1.english.bnk)
+### SFX NAMES (langs/job_e_chew_stage1.bnk)
 bain_static_distortion
 
-### VARIABLE NAMES (langs/job_e_chew_stage1.english.bnk)
+### VARIABLE NAMES (langs/job_e_chew_stage1.bnk)
 wave_flag
 
-### VALUE NAMES (langs/job_e_chew_stage1.english.bnk)
+### VALUE NAMES (langs/job_e_chew_stage1.bnk)
 assault
 Control
 none
 
-### EVENT NAMES (langs/job_e_drk_stage1.english.bnk)
+### EVENT NAMES (langs/job_e_drk_stage1.bnk)
 Play_pln_drk_01
 Play_pln_drk_02
 Play_pln_drk_03
@@ -16701,10 +16713,10 @@ Play_pln_drk_intro_01
 Play_rb14_drk_outro_01
 Play_rb14_drk_outro_02
 
-### SFX NAMES (langs/job_e_drk_stage1.english.bnk)
+### SFX NAMES (langs/job_e_drk_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_e_electionday_stage1.english.bnk)
+### EVENT NAMES (langs/job_e_electionday_stage1.bnk)
 Play_pln_ed1_01
 Play_pln_ed1_02
 Play_pln_ed1_03
@@ -16728,10 +16740,10 @@ Play_pln_ed1_end_b
 Play_pln_ed1_end_c
 Play_pln_ed1_intro_a
 
-### SFX NAMES (langs/job_e_electionday_stage1.english.bnk)
+### SFX NAMES (langs/job_e_electionday_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_e_electionday_stage2.english.bnk)
+### EVENT NAMES (langs/job_e_electionday_stage2.bnk)
 Play_pln_ed2_01
 Play_pln_ed2_02
 Play_pln_ed2_02_crow
@@ -16761,10 +16773,10 @@ Play_pln_ed2_end_a
 Play_pln_ed2_end_b
 Play_pln_ed2_intro_a
 
-### SFX NAMES (langs/job_e_electionday_stage2.english.bnk)
+### SFX NAMES (langs/job_e_electionday_stage2.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_e_electionday_stage3.english.bnk)
+### EVENT NAMES (langs/job_e_electionday_stage3.bnk)
 Play_pln_ed3_01
 Play_pln_ed3_02
 Play_pln_ed3_03
@@ -16798,10 +16810,10 @@ Play_pln_ed3_brf_c
 Play_pln_ed3_end_a
 Play_pln_ed3_intro_a
 
-### SFX NAMES (langs/job_e_electionday_stage3.english.bnk)
+### SFX NAMES (langs/job_e_electionday_stage3.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_e_framing_stage1.english.bnk)
+### EVENT NAMES (langs/job_e_framing_stage1.bnk)
 Play_pln_art_brf
 Play_pln_art_end
 Play_pln_art_intro
@@ -16827,10 +16839,10 @@ Play_pln_framing_stage1_end_a
 Play_pln_framing_stage1_end_b
 Play_pln_framing_stage1_intro_a
 
-### SFX NAMES (langs/job_e_framing_stage1.english.bnk)
+### SFX NAMES (langs/job_e_framing_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_e_framing_stage2.english.bnk)
+### EVENT NAMES (langs/job_e_framing_stage2.bnk)
 Play_dlr_framing_stage2_01
 Play_dlr_framing_stage2_02
 Play_dlr_framing_stage2_03
@@ -16870,10 +16882,10 @@ Play_pln_framing_stage2_end_a
 Play_pln_framing_stage2_end_b
 Play_pln_framing_stage2_intro_a
 
-### SFX NAMES (langs/job_e_framing_stage2.english.bnk)
+### SFX NAMES (langs/job_e_framing_stage2.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_e_framing_stage3.english.bnk)
+### EVENT NAMES (langs/job_e_framing_stage3.bnk)
 Play_pln_ff3_03
 Play_pln_ff3_04
 Play_pln_ff3_05
@@ -16937,10 +16949,10 @@ Play_pln_framing_stage3_end_b
 Play_pln_framing_stage3_end_c
 Play_pln_framing_stage3_intro
 
-### SFX NAMES (langs/job_e_framing_stage3.english.bnk)
+### SFX NAMES (langs/job_e_framing_stage3.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_e_mad_stage1.english.bnk)
+### EVENT NAMES (langs/job_e_mad_stage1.bnk)
 Play_pln_mad_01
 Play_pln_mad_02
 Play_pln_mad_03
@@ -17015,27 +17027,27 @@ Play_plt_mad_07
 Play_plt_mad_intro_01
 Play_rb14_mad_outro_01
 
-### SFX NAMES (langs/job_e_mad_stage1.english.bnk)
+### SFX NAMES (langs/job_e_mad_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_esc_overpass.english.bnk)
+### EVENT NAMES (langs/job_esc_overpass.bnk)
 pln_esc_overpass_more_snipers
 pln_esc_overpass_sniper_on_rooftop
 pln_esc_overpass_swat_heli_incoming
 
-### SFX NAMES (langs/job_esc_overpass.english.bnk)
+### SFX NAMES (langs/job_esc_overpass.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_esc_park.english.bnk)
+### EVENT NAMES (langs/job_esc_park.bnk)
 pln_esc_park_escape_location
 pln_esc_park_marksmen_building
 pln_esc_park_marksmen_rooftop
 pln_esc_park_suggest_park
 
-### SFX NAMES (langs/job_esc_park.english.bnk)
+### SFX NAMES (langs/job_esc_park.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_esc_street.english.bnk)
+### EVENT NAMES (langs/job_esc_street.bnk)
 pln_esc_street_chopper_arrived
 pln_esc_street_full_force
 pln_esc_street_lookout_sniper
@@ -17044,10 +17056,10 @@ pln_esc_street_snipers_deployed
 pln_esc_street_snipers_nearby
 pln_esc_street_swats_deployed
 
-### SFX NAMES (langs/job_esc_street.english.bnk)
+### SFX NAMES (langs/job_esc_street.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_friend_stage1.english.bnk)
+### EVENT NAMES (langs/job_friend_stage1.bnk)
 Play_bos_fri_01
 Play_bos_fri_02
 Play_bos_fri_03
@@ -17139,10 +17151,10 @@ Play_pt1_fri_08
 Play_sec_fri_01
 Stop_pln_fri_48
 
-### SFX NAMES (langs/job_friend_stage1.english.bnk)
+### SFX NAMES (langs/job_friend_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_g_bigbank.english.bnk)
+### EVENT NAMES (langs/job_g_bigbank.bnk)
 Play_gensec_conversation_ending_1
 Play_gensec_conversation_ending_2
 Play_pln_bb1_01
@@ -17220,10 +17232,10 @@ Play_pln_bb1_end_03
 Play_pln_bb1_end_04
 Play_pln_bb1_intro_01
 
-### SFX NAMES (langs/job_g_bigbank.english.bnk)
+### SFX NAMES (langs/job_g_bigbank.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_g_diamond.english.bnk)
+### EVENT NAMES (langs/job_g_diamond.bnk)
 Play_pln_hd1_01
 Play_pln_hd1_02
 Play_pln_hd1_03
@@ -17271,10 +17283,10 @@ Play_pln_hd1_44
 Play_pln_hd1_brf_01
 Play_pln_hd1_intro_01
 
-### SFX NAMES (langs/job_g_diamond.english.bnk)
+### SFX NAMES (langs/job_g_diamond.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_g_hotline.english.bnk)
+### EVENT NAMES (langs/job_g_hotline.bnk)
 Play_com_hm1_01
 Play_com_hm1_02
 Play_com_hm1_03
@@ -17360,10 +17372,10 @@ Play_pln_hm1_brf_01
 Play_pln_hm1_end_01
 Play_pln_hm1_intro_01
 
-### SFX NAMES (langs/job_g_hotline.english.bnk)
+### SFX NAMES (langs/job_g_hotline.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_g_hotline_stage2.english.bnk)
+### EVENT NAMES (langs/job_g_hotline_stage2.bnk)
 Play_com_hm2_01
 Play_com_hm2_02
 Play_com_hm2_03
@@ -17413,10 +17425,10 @@ Stop_thugs_converse_hm2
 tied_guy_screaming
 tied_guy_screaming_stop
 
-### SFX NAMES (langs/job_g_hotline_stage2.english.bnk)
+### SFX NAMES (langs/job_g_hotline_stage2.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_g_hoxton_stage1.english.bnk)
+### EVENT NAMES (langs/job_g_hoxton_stage1.bnk)
 Play_dr1_hb1_01
 Play_dr1_hb1_02
 Play_dr1_hb1_03
@@ -17483,10 +17495,10 @@ Play_rb5_hb1_rb20
 Play_rb5_hb1_rb21
 Play_rb5_hb1_rb22
 
-### SFX NAMES (langs/job_g_hoxton_stage1.english.bnk)
+### SFX NAMES (langs/job_g_hoxton_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_g_hoxton_stage2.english.bnk)
+### EVENT NAMES (langs/job_g_hoxton_stage2.bnk)
 Play_dr1_hb2_01
 Play_dr1_hb2_02
 Play_dr1_hb2_03
@@ -17551,10 +17563,10 @@ Play_sys_hb2_11
 Play_sys_hb2_12
 Play_sys_hb2_13
 
-### SFX NAMES (langs/job_g_hoxton_stage2.english.bnk)
+### SFX NAMES (langs/job_g_hoxton_stage2.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_g_hoxton_stage3.english.bnk)
+### EVENT NAMES (langs/job_g_hoxton_stage3.bnk)
 Play_hct_hb3_01
 Play_hct_hb3_02
 Play_hct_hb3_03
@@ -17630,10 +17642,10 @@ Play_snippet_hb3_04
 Play_snippet_hb3_05
 Play_snippet_hb3_06
 
-### SFX NAMES (langs/job_g_hoxton_stage3.english.bnk)
+### SFX NAMES (langs/job_g_hoxton_stage3.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_g_kenaz.english.bnk)
+### EVENT NAMES (langs/job_g_kenaz.bnk)
 Play_cv2_ca1_01
 Play_cv4_ca1_01
 Play_cv4_ca1_02
@@ -17821,10 +17833,10 @@ Play_zep_ca1_03
 Play_zep_ca1_04
 Play_zep_ca1_05
 
-### SFX NAMES (langs/job_g_kenaz.english.bnk)
+### SFX NAMES (langs/job_g_kenaz.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_h_firestarter_stage1.english.bnk)
+### EVENT NAMES (langs/job_h_firestarter_stage1.bnk)
 Play_pln_firestarter_stage1_brief
 Play_pln_firestarter_stage1_end_a
 Play_pln_firestarter_stage1_end_b
@@ -17844,10 +17856,10 @@ Play_pln_fs1_12
 Play_pln_fs1_13
 Play_pln_fs1_14
 
-### SFX NAMES (langs/job_h_firestarter_stage1.english.bnk)
+### SFX NAMES (langs/job_h_firestarter_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_h_firestarter_stage2.english.bnk)
+### EVENT NAMES (langs/job_h_firestarter_stage2.bnk)
 Play_pln_firestarter_stage2_brief
 Play_pln_firestarter_stage2_end_a
 Play_pln_firestarter_stage2_end_b
@@ -17882,10 +17894,10 @@ Play_pln_fs2_27
 Play_pln_fs2_28
 Play_pln_fs2_29
 
-### SFX NAMES (langs/job_h_firestarter_stage2.english.bnk)
+### SFX NAMES (langs/job_h_firestarter_stage2.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_h_firestarter_stage3.english.bnk)
+### EVENT NAMES (langs/job_h_firestarter_stage3.bnk)
 Play_pln_branchbank_cash_stage1_brief
 Play_pln_branchbank_cash_stage1_intro_a
 Play_pln_branchbank_depositbox_a_intro_a
@@ -17939,10 +17951,10 @@ Play_pln_fs3_07
 Play_pln_fs3_08
 Play_pln_fs3_09
 
-### SFX NAMES (langs/job_h_firestarter_stage3.english.bnk)
+### SFX NAMES (langs/job_h_firestarter_stage3.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_h_rat_stage1.english.bnk)
+### EVENT NAMES (langs/job_h_rat_stage1.bnk)
 Play_pln_rat_stage1_01
 Play_pln_rat_stage1_03
 Play_pln_rat_stage1_07
@@ -18004,10 +18016,10 @@ Play_pln_rt1b_end_03
 Play_pln_rt1b_end_04
 Play_pln_rt1b_intro_01
 
-### SFX NAMES (langs/job_h_rat_stage1.english.bnk)
+### SFX NAMES (langs/job_h_rat_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_h_rat_stage2.english.bnk)
+### EVENT NAMES (langs/job_h_rat_stage2.bnk)
 Play_ga1_rats_stage2_01
 Play_ga1_rats_stage2_02
 Play_ga1_rats_stage2_03
@@ -18045,10 +18057,10 @@ Play_pln_rats_stage2_12
 Play_pln_rats_stage2_13
 Play_pln_rats_stage2_14
 
-### SFX NAMES (langs/job_h_rat_stage2.english.bnk)
+### SFX NAMES (langs/job_h_rat_stage2.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_h_rat_stage3.english.bnk)
+### EVENT NAMES (langs/job_h_rat_stage3.bnk)
 Play_pln_rat_stage3_01
 Play_pln_rat_stage3_02
 Play_pln_rat_stage3_03
@@ -18075,10 +18087,10 @@ Play_plt_rat_stage3_14
 Play_plt_rat_stage3_15
 Play_plt_rat_stage3_16
 
-### SFX NAMES (langs/job_h_rat_stage3.english.bnk)
+### SFX NAMES (langs/job_h_rat_stage3.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_h_watchdogs_stage1.english.bnk)
+### EVENT NAMES (langs/job_h_watchdogs_stage1.bnk)
 Play_drv_watchdogs_stage1_01
 Play_drv_watchdogs_stage1_02
 Play_drv_watchdogs_stage1_03
@@ -18226,10 +18238,10 @@ Play_rb4_watchdogs_stage1_05
 Play_rb4_watchdogs_stage1_06
 Play_rb4_watchdogs_stage1_07
 
-### SFX NAMES (langs/job_h_watchdogs_stage1.english.bnk)
+### SFX NAMES (langs/job_h_watchdogs_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_h_watchdogs_stage2.english.bnk)
+### EVENT NAMES (langs/job_h_watchdogs_stage2.bnk)
 Play_bot_watchdogs_new_stage2_01
 Play_bot_watchdogs_new_stage2_02
 Play_bot_watchdogs_new_stage2_03
@@ -18378,23 +18390,23 @@ Play_rb4_watchdogs_stage2_22
 Play_rb4_watchdogs_stage2_23
 Play_rb4_watchdogs_stage2_24
 
-### SFX NAMES (langs/job_h_watchdogs_stage2.english.bnk)
+### SFX NAMES (langs/job_h_watchdogs_stage2.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_halloween13.english.bnk)
+### EVENT NAMES (langs/job_halloween13.bnk)
 Play_hw13_intro
 
-### SFX NAMES (langs/job_halloween13.english.bnk)
+### SFX NAMES (langs/job_halloween13.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_halloween17.english.bnk)
+### EVENT NAMES (langs/job_halloween17.bnk)
 Play_hvh_brf_01
 Play_hvh_intro_01
 
-### SFX NAMES (langs/job_halloween17.english.bnk)
+### SFX NAMES (langs/job_halloween17.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_bex_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_bex_stage1.bnk)
 Play_alm_bex_01
 Play_alm_bex_02
 Play_alm_bex_03
@@ -18550,10 +18562,10 @@ Play_loc_bex_intro
 # 1781065472
 # 2415065134
 
-### SFX NAMES (langs/job_l_bex_stage1.english.bnk)
+### SFX NAMES (langs/job_l_bex_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_bph_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_bph_stage1.bnk)
 Play_dnt_bph_01
 Play_dnt_bph_02
 Play_dnt_bph_03
@@ -18609,10 +18621,10 @@ Play_pln_bph_04
 Play_pln_bph_05
 Play_pln_bph_06
 
-### SFX NAMES (langs/job_l_bph_stage1.english.bnk)
+### SFX NAMES (langs/job_l_bph_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_brb_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_brb_stage1.bnk)
 Play_loc_brb_00
 Play_loc_brb_01
 Play_loc_brb_02
@@ -18678,10 +18690,10 @@ Play_loc_brb_brf
 Play_loc_brb_end
 Play_loc_brb_intro
 
-### SFX NAMES (langs/job_l_brb_stage1.english.bnk)
+### SFX NAMES (langs/job_l_brb_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_chas_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_chas_stage1.bnk)
 Play_auc_chas_01
 Play_auc_chas_02
 Play_auc_chas_03
@@ -18800,10 +18812,10 @@ Stop_auc_chas_03
 Stop_buyers_chas
 Stop_triad_gangsters
 
-### SFX NAMES (langs/job_l_chas_stage1.english.bnk)
+### SFX NAMES (langs/job_l_chas_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_chca_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_chca_stage1.bnk)
 Play_bar_chca_01
 Play_buyers_chca_01
 Play_chca_meeting_01
@@ -18946,10 +18958,10 @@ Play_yuw_chca_01
 Play_yuw_chca_02
 Stop_loc_chca_20
 
-### SFX NAMES (langs/job_l_chca_stage1.english.bnk)
+### SFX NAMES (langs/job_l_chca_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_corp_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_corp_stage1.bnk)
 col_head_1stfloor_np
 col_head_1stfloor_nq
 col_head_1stfloor_ns
@@ -19052,10 +19064,10 @@ Play_pho_corp_03
 Play_rai_corp_01
 Play_rai_corp_02
 
-### SFX NAMES (langs/job_l_corp_stage1.english.bnk)
+### SFX NAMES (langs/job_l_corp_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_deep_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_deep_stage1.bnk)
 achievement_brb_1_additiona8
 achievement_brb_1_additiona9
 Play_civ_deep_01
@@ -19236,10 +19248,10 @@ Play_loc_deep_end_stealth
 Play_loc_deep_intro
 Play_new_deep_01
 
-### SFX NAMES (langs/job_l_deep_stage1.english.bnk)
+### SFX NAMES (langs/job_l_deep_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_des_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_des_stage1.bnk)
 Play_loc_des_01
 Play_loc_des_02
 Play_loc_des_03
@@ -19353,10 +19365,10 @@ Play_loc_des_brf
 Play_loc_des_end
 Play_loc_des_intro
 
-### SFX NAMES (langs/job_l_des_stage1.english.bnk)
+### SFX NAMES (langs/job_l_des_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_fex_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_fex_stage1.bnk)
 Play_buluc_dragged_01
 Play_buluc_fall_01
 Play_buluc_shoot_drowned_01
@@ -19541,10 +19553,10 @@ Stop_party_girls
 Stop_phone_guy
 Stop_wife_husband
 
-### SFX NAMES (langs/job_l_fex_stage1.english.bnk)
+### SFX NAMES (langs/job_l_fex_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_jerry_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_jerry_stage1.bnk)
 Play_loc_jr1_01
 Play_loc_jr1_02
 Play_loc_jr1_03
@@ -19628,10 +19640,10 @@ Play_pln_jr1_08
 Play_pln_jr1_09
 Play_pln_jr1_brf_01
 
-### SFX NAMES (langs/job_l_jerry_stage1.english.bnk)
+### SFX NAMES (langs/job_l_jerry_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_jerry_stage2.english.bnk)
+### EVENT NAMES (langs/job_l_jerry_stage2.bnk)
 Play_loc_jr2_01
 Play_loc_jr2_02
 Play_loc_jr2_03
@@ -19687,10 +19699,10 @@ Play_pln_jr2_07
 Play_pln_jr2_brf_01
 Play_pln_jr2_intro_01
 
-### SFX NAMES (langs/job_l_jerry_stage2.english.bnk)
+### SFX NAMES (langs/job_l_jerry_stage2.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_mex_cook.english.bnk)
+### EVENT NAMES (langs/job_l_mex_cook.bnk)
 Play_loc_mex_cook_01
 Play_loc_mex_cook_03
 Play_loc_mex_cook_04
@@ -19711,10 +19723,10 @@ Play_loc_mex_cook_23
 Play_loc_mex_cook_brf_01
 Play_loc_mex_cook_intro
 
-### SFX NAMES (langs/job_l_mex_cook.english.bnk)
+### SFX NAMES (langs/job_l_mex_cook.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_mex_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_mex_stage1.bnk)
 Play_ita_mex_01
 Play_ita_mex_02
 Play_loc_med_intro
@@ -19811,10 +19823,10 @@ Play_loc_mex_end_loud_01
 Play_loc_mex_end_stealth_01
 Play_loc_mex_transition
 
-### SFX NAMES (langs/job_l_mex_stage1.english.bnk)
+### SFX NAMES (langs/job_l_mex_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_pent_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_pent_stage1.bnk)
 Play_loc_pent_01
 Play_loc_pent_02
 Play_loc_pent_03
@@ -19930,10 +19942,10 @@ Stop_pent_civs_lobby
 Stop_pent_civs_upstairs
 Stop_yuw_pent_phone
 
-### SFX NAMES (langs/job_l_pent_stage1.english.bnk)
+### SFX NAMES (langs/job_l_pent_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_pex_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_pex_stage1.bnk)
 Play_alm_pex_01
 Play_alm_pex_02
 Play_alm_pex_06
@@ -20085,10 +20097,10 @@ Play_spl_pex_05_04
 Stop_mc1_pex_01
 Stop_mc2_pex_01
 
-### SFX NAMES (langs/job_l_pex_stage1.english.bnk)
+### SFX NAMES (langs/job_l_pex_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_ranc_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_ranc_stage1.bnk)
 Play_civ_ranc_01
 Play_est_ranc_01
 Play_est_ranc_02
@@ -20200,10 +20212,10 @@ Stop_est_ranc_03
 Stop_est_ranc_04
 Stop_est_ranc_05
 
-### SFX NAMES (langs/job_l_ranc_stage1.english.bnk)
+### SFX NAMES (langs/job_l_ranc_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_rvd_jwl_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_rvd_jwl_stage1.bnk)
 Play_mrb_rvd_10
 Play_mrb_rvd_10b
 Play_mrb_rvd_11
@@ -20279,10 +20291,10 @@ Play_pln_rvd_brf
 Play_pln_rvd_end
 Play_pln_rvd_intro
 
-### SFX NAMES (langs/job_l_rvd_jwl_stage1.english.bnk)
+### SFX NAMES (langs/job_l_rvd_jwl_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_rvd_wrh_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_rvd_wrh_stage1.bnk)
 Play_loc_rvd_02
 Play_loc_rvd_03
 Play_loc_rvd_04
@@ -20330,10 +20342,10 @@ Play_mrp_rvd_07
 Play_mrp_rvd_08
 Play_mrp_rvd_09
 
-### SFX NAMES (langs/job_l_rvd_wrh_stage1.english.bnk)
+### SFX NAMES (langs/job_l_rvd_wrh_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_sah_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_sah_stage1.bnk)
 Play_auc_sah_01
 Play_auc_sah_02
 Play_auc_sah_03
@@ -20448,10 +20460,10 @@ Play_loc_sah_end_stealth
 Play_loc_sah_intro
 Play_rec_sah_01
 
-### SFX NAMES (langs/job_l_sah_stage1.english.bnk)
+### SFX NAMES (langs/job_l_sah_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_sand_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_sand_stage1.bnk)
 Play_dock_convo_sand
 Play_jfe_sand_01
 Play_jfe_sand_02
@@ -20627,10 +20639,10 @@ Play_vld_sand_fall_from_wall_01
 Play_vld_sand_get_into_loader_01
 Stop_dock_convo_sand
 
-### SFX NAMES (langs/job_l_sand_stage1.english.bnk)
+### SFX NAMES (langs/job_l_sand_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_tag_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_tag_stage1.bnk)
 Play_gar_tag_01
 Play_gar_tag_02
 Play_gar_tag_04
@@ -20752,13 +20764,13 @@ Stop_garrett
 Stop_npc_tag_poi_01
 tag_garret_phone_reply
 
-### SFX NAMES (langs/job_l_tag_stage1.english.bnk)
+### SFX NAMES (langs/job_l_tag_stage1.bnk)
 bain_static_distortion
 
-### VARIABLE NAMES (langs/job_l_tag_stage1.english.bnk)
+### VARIABLE NAMES (langs/job_l_tag_stage1.bnk)
 acoustic_flag
 
-### VALUE NAMES (langs/job_l_tag_stage1.english.bnk)
+### VALUE NAMES (langs/job_l_tag_stage1.bnk)
 acoustic_flat
 acoustic_forest
 acoustic_indoors_huge
@@ -20772,7 +20784,7 @@ acoustic_tunnel_medium
 acoustic_tunnel_small
 none
 
-### EVENT NAMES (langs/job_l_trai_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_trai_stage1.bnk)
 Play_civ02_trai_01
 Play_civ_trai_01
 Play_gem_trai_01
@@ -20881,10 +20893,10 @@ Play_loc_trai_end_stealth
 Play_loc_trai_intro
 Stop_civ_trai_01
 
-### SFX NAMES (langs/job_l_trai_stage1.english.bnk)
+### SFX NAMES (langs/job_l_trai_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_vit_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_vit_stage1.bnk)
 Play_loc_vit_01
 Play_loc_vit_02
 Play_loc_vit_03
@@ -21032,10 +21044,10 @@ Play_loc_vit_end_fail
 Play_loc_vit_end_win
 Play_loc_vit_intro
 
-### SFX NAMES (langs/job_l_vit_stage1.english.bnk)
+### SFX NAMES (langs/job_l_vit_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_l_wwh_stage1.english.bnk)
+### EVENT NAMES (langs/job_l_wwh_stage1.bnk)
 Play_cpt_wwh_01
 Play_cpt_wwh_02
 Play_cpt_wwh_03
@@ -21075,10 +21087,10 @@ Play_pln_wwh_13
 Play_pln_wwh_brf
 Play_pln_wwh_end
 
-### SFX NAMES (langs/job_l_wwh_stage1.english.bnk)
+### SFX NAMES (langs/job_l_wwh_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_uno_stage1.english.bnk)
+### EVENT NAMES (langs/job_uno_stage1.bnk)
 Play_dnt_uno_01_bodhi
 Play_dnt_uno_01_bonnie
 Play_dnt_uno_01_chains
@@ -21130,10 +21142,10 @@ Play_pln_uno_05
 Play_pln_uno_06
 Play_pln_uno_end_win
 
-### SFX NAMES (langs/job_uno_stage1.english.bnk)
+### SFX NAMES (langs/job_uno_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_v_cane.english.bnk)
+### EVENT NAMES (langs/job_v_cane.bnk)
 Play_pln_can_01
 Play_pln_can_02
 Play_pln_can_03
@@ -21153,10 +21165,10 @@ Play_vld_can_10
 Play_vld_can_11
 Play_vld_can_12
 
-### SFX NAMES (langs/job_v_cane.english.bnk)
+### SFX NAMES (langs/job_v_cane.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_v_fourstores.english.bnk)
+### EVENT NAMES (langs/job_v_fourstores.bnk)
 Play_pln_fost_brf_01
 Play_pln_fost_brf_02
 Play_pln_fost_brf_03
@@ -21180,10 +21192,10 @@ Play_pln_fourstores_stage1_end_a
 Play_pln_fourstores_stage1_end_b
 Play_pln_fourstores_stage1_intro_a
 
-### SFX NAMES (langs/job_v_fourstores.english.bnk)
+### SFX NAMES (langs/job_v_fourstores.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_v_jolly.english.bnk)
+### EVENT NAMES (langs/job_v_jolly.bnk)
 Play_pln_as1_01
 Play_pln_as1_02
 Play_pln_as1_03
@@ -21229,10 +21241,10 @@ Play_vld_as1_15
 Play_vld_as1_16
 Play_vld_as1_17
 
-### SFX NAMES (langs/job_v_jolly.english.bnk)
+### SFX NAMES (langs/job_v_jolly.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_v_mallcrasher.english.bnk)
+### EVENT NAMES (langs/job_v_mallcrasher.bnk)
 Play_pln_mallcrasch_stage1_brief
 Play_pln_mallcrasch_stage1_end_a
 Play_pln_mallcrasch_stage1_end_b
@@ -21252,10 +21264,10 @@ Play_pln_mallcrash_stage1_18
 Play_pln_mcr_01
 Play_pln_mcr_17
 
-### SFX NAMES (langs/job_v_mallcrasher.english.bnk)
+### SFX NAMES (langs/job_v_mallcrasher.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_v_moon_stage1.english.bnk)
+### EVENT NAMES (langs/job_v_moon_stage1.bnk)
 Play_anc_moon_01
 Play_drs_moon_01
 Play_drs_moon_02
@@ -21346,10 +21358,10 @@ Play_vld_moon_39
 Play_vld_moon_end
 Play_vld_moon_intro
 
-### SFX NAMES (langs/job_v_moon_stage1.english.bnk)
+### SFX NAMES (langs/job_v_moon_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_v_nightclub1.english.bnk)
+### EVENT NAMES (langs/job_v_nightclub1.bnk)
 Play_bnc_nightclub_stage1_01
 Play_bnc_nightclub_stage1_03
 Play_bnc_nightclub_stage1_04
@@ -21371,10 +21383,10 @@ Play_pln_nightclub_stage1_pkp_01
 Play_pln_nightclub_stage1_pkp_02
 Play_pln_nightclub_stage1_pkp_03
 
-### SFX NAMES (langs/job_v_nightclub1.english.bnk)
+### SFX NAMES (langs/job_v_nightclub1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_v_peta_stage1.english.bnk)
+### EVENT NAMES (langs/job_v_peta_stage1.bnk)
 Play_brs_pt1_01
 Play_brs_pt1_03
 Play_brs_pt1_04
@@ -21415,10 +21427,10 @@ Play_vld_pt1_06
 Play_vld_pt1_07
 Play_vld_pt1_intro
 
-### SFX NAMES (langs/job_v_peta_stage1.english.bnk)
+### SFX NAMES (langs/job_v_peta_stage1.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_v_peta_stage2.english.bnk)
+### EVENT NAMES (langs/job_v_peta_stage2.bnk)
 Play_brs_pt2_01
 Play_brs_pt2_02
 Play_brs_pt2_03
@@ -21480,10 +21492,10 @@ Play_vld_pt2_02
 Play_vld_pt2_03
 Play_vld_pt2_04
 
-### SFX NAMES (langs/job_v_peta_stage2.english.bnk)
+### SFX NAMES (langs/job_v_peta_stage2.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/job_v_pines.english.bnk)
+### EVENT NAMES (langs/job_v_pines.bnk)
 Play_pln_cp1_01
 Play_pln_cp1_02
 Play_pln_cp1_03
@@ -21526,10 +21538,10 @@ Play_vld_cp1_06
 Play_vld_cp1_end
 Stop_pt2
 
-### SFX NAMES (langs/job_v_pines.english.bnk)
+### SFX NAMES (langs/job_v_pines.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/knock_jewel_a.english.bnk)
+### EVENT NAMES (langs/knock_jewel_a.bnk)
 Play_drv_ukranian_stage1_01
 Play_drv_ukranian_stage1_02
 Play_drv_ukranian_stage1_03
@@ -21612,15 +21624,15 @@ pln_jewelrystore_stage1_intro_04
 pln_jewelrystore_stage1_intro_05
 pln_jewelrystore_stage1_intro_06
 
-### SFX NAMES (langs/knock_jewel_a.english.bnk)
+### SFX NAMES (langs/knock_jewel_a.bnk)
 bain_static_distortion
 
-### VARIABLE NAMES (langs/knock_jewel_a.english.bnk)
+### VARIABLE NAMES (langs/knock_jewel_a.bnk)
 int_ext
 robber
 wave_flag
 
-### VALUE NAMES (langs/knock_jewel_a.english.bnk)
+### VALUE NAMES (langs/knock_jewel_a.bnk)
 assault
 Control
 first
@@ -21635,6 +21647,7 @@ rb15
 rb16
 rb17
 rb18
+rb19
 rb2
 rb20
 rb21
@@ -21648,7 +21661,7 @@ rb8
 rb9
 third
 
-### EVENT NAMES (langs/leaked_recordings.english.bnk)
+### EVENT NAMES (langs/leaked_recordings.bnk)
 play_loc_secr_01
 play_loc_secr_02
 play_loc_secr_03
@@ -21658,7 +21671,7 @@ play_spe_clm_01
 play_spe_ets_01
 play_spe_grt_01
 
-### EVENT NAMES (langs/locke_system.english.bnk)
+### EVENT NAMES (langs/locke_system.bnk)
 Play_loc_b01a
 Play_loc_b01b
 Play_loc_b02a
@@ -21819,17 +21832,17 @@ Play_loc_r02
 Play_loc_r03
 Play_loc_r04
 
-### EVENT NAMES (langs/misc_sidejobs_doghaters.english.bnk)
+### EVENT NAMES (langs/misc_sidejobs_doghaters.bnk)
 Play_pln_misc_sj_dgh_01
 Play_pln_misc_sj_dgh_02
 Play_pln_misc_sj_dgh_03
 Play_pln_misc_sj_dgh_04
 Play_pln_misc_sj_dgh_05
 
-### SFX NAMES (langs/misc_sidejobs_doghaters.english.bnk)
+### SFX NAMES (langs/misc_sidejobs_doghaters.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/npc_biker_thugs.english.bnk)
+### EVENT NAMES (langs/npc_biker_thugs.bnk)
 bik1_aes
 bik1_amb
 bik1_c01
@@ -21861,7 +21874,7 @@ bik2_tra_3
 bik2_x01a_any_3p
 bik2_x02a_any_3p
 
-### EVENT NAMES (langs/npc_cartel_thugs.english.bnk)
+### EVENT NAMES (langs/npc_cartel_thugs.bnk)
 lt1_aes
 lt1_c01
 lt1_count_1
@@ -21918,13 +21931,13 @@ lt2_tra_3
 lt2_x01a_any_3p
 lt2_x02a_any_3p
 
-### EVENT NAMES (langs/npc_cpa.english.bnk)
+### EVENT NAMES (langs/npc_cpa.bnk)
 cpa_a01_01
 cpa_a02_01
 cpa_a03_01
 cpa_a04_01
 
-### EVENT NAMES (langs/npc_inner_city_thugs.english.bnk)
+### EVENT NAMES (langs/npc_inner_city_thugs.bnk)
 ict1_aes
 ict1_c01
 ict1_do
@@ -21970,7 +21983,7 @@ ict2_tra_3
 ict2_x01a_any_3p
 ict2_x02a_any_3p
 
-### EVENT NAMES (langs/npc_megaphone_police.english.bnk)
+### EVENT NAMES (langs/npc_megaphone_police.bnk)
 mga_s01
 mga_s02
 mga_s03
@@ -21980,7 +21993,7 @@ mga_s06
 mga_s07
 mga_t01a_con_plu
 
-### EVENT NAMES (langs/npc_mexican_mercenaries.english.bnk)
+### EVENT NAMES (langs/npc_mexican_mercenaries.bnk)
 m1n_a07a
 m1n_a23
 m1n_burndeath
@@ -22069,15 +22082,15 @@ mtsr_tasered
 mtsr_x01a_any_3p
 mtsr_x02a_any_3p
 
-### VARIABLE NAMES (langs/npc_mexican_mercenaries.english.bnk)
+### VARIABLE NAMES (langs/npc_mexican_mercenaries.bnk)
 wave_flag
 
-### VALUE NAMES (langs/npc_mexican_mercenaries.english.bnk)
+### VALUE NAMES (langs/npc_mexican_mercenaries.bnk)
 assault
 Control
 none
 
-### EVENT NAMES (langs/npc_russian_mercenaries.english.bnk)
+### EVENT NAMES (langs/npc_russian_mercenaries.bnk)
 dsp_radio_russian
 r1n_a07a
 r1n_a23
@@ -22159,15 +22172,15 @@ rtsr_tasered
 rtsr_x01a_any_3p
 rtsr_x02a_any_3p
 
-### VARIABLE NAMES (langs/npc_russian_mercenaries.english.bnk)
+### VARIABLE NAMES (langs/npc_russian_mercenaries.bnk)
 wave_flag
 
-### VALUE NAMES (langs/npc_russian_mercenaries.english.bnk)
+### VALUE NAMES (langs/npc_russian_mercenaries.bnk)
 assault
 Control
 none
 
-### EVENT NAMES (langs/npc_russian_thugs.english.bnk)
+### EVENT NAMES (langs/npc_russian_thugs.bnk)
 rt1_aes
 rt1_c01
 rt1_do
@@ -22206,7 +22219,7 @@ rt2_tra_3
 rt2_x01a_any_3p
 rt2_x02a_any_3p
 
-### EVENT NAMES (langs/npc_zombies.english.bnk)
+### EVENT NAMES (langs/npc_zombies.bnk)
 z1n_a07a
 z1n_a23
 z1n_burndeath
@@ -22268,15 +22281,15 @@ z4n_rdy
 z4n_x01a_any_3p
 z4n_x02a_any_3p
 
-### VARIABLE NAMES (langs/npc_zombies.english.bnk)
+### VARIABLE NAMES (langs/npc_zombies.bnk)
 wave_flag
 
-### VALUE NAMES (langs/npc_zombies.english.bnk)
+### VALUE NAMES (langs/npc_zombies.bnk)
 assault
 Control
 none
 
-### EVENT NAMES (langs/preplanning.english.bnk)
+### EVENT NAMES (langs/preplanning.bnk)
 gus_preplan_01
 gus_preplan_02
 gus_preplan_03
@@ -22333,7 +22346,7 @@ pln_pp_bb1_m
 pln_pp_bb1_n
 pln_pp_bb1_o
 
-### EVENT NAMES (langs/regular_vox.english.bnk)
+### EVENT NAMES (langs/regular_vox.bnk)
 a01x_any
 bain_static_disable
 bain_static_enable
@@ -23746,18 +23759,18 @@ tsr_x01a_any_3p
 tsr_x02a_any_3p
 x01
 
-### SFX NAMES (langs/regular_vox.english.bnk)
+### SFX NAMES (langs/regular_vox.bnk)
 bain_static_distortion
 
-### RTPC/GAME-VARIABLE NAMES (langs/regular_vox.english.bnk)
+### RTPC/GAME-VARIABLE NAMES (langs/regular_vox.bnk)
 stamina
 
-### VARIABLE NAMES (langs/regular_vox.english.bnk)
+### VARIABLE NAMES (langs/regular_vox.bnk)
 int_ext
 robber
 wave_flag
 
-### VALUE NAMES (langs/regular_vox.english.bnk)
+### VALUE NAMES (langs/regular_vox.bnk)
 assault
 Control
 first
@@ -23786,7 +23799,7 @@ rb8
 rb9
 third
 
-### EVENT NAMES (langs/robbers_mission_gen.english.bnk)
+### EVENT NAMES (langs/robbers_mission_gen.bnk)
 p01
 p02
 p03
@@ -23892,12 +23905,12 @@ v56
 v57
 v58
 
-### VARIABLE NAMES (langs/robbers_mission_gen.english.bnk)
+### VARIABLE NAMES (langs/robbers_mission_gen.bnk)
 int_ext
 robber
 wave_flag
 
-### VALUE NAMES (langs/robbers_mission_gen.english.bnk)
+### VALUE NAMES (langs/robbers_mission_gen.bnk)
 assault
 Control
 first
@@ -23926,7 +23939,7 @@ rb8
 rb9
 third
 
-### EVENT NAMES (langs/safe_house.english.bnk)
+### EVENT NAMES (langs/safe_house.bnk)
 Play_drv_sh_01
 Play_drv_sh_02
 Play_pln_sh_int_01
@@ -23976,7 +23989,10 @@ Play_pln_sh_int_77
 Play_pln_sh_int_78
 Play_pln_sh_intro
 
-### EVENT NAMES (langs/safehouse_vo.english.bnk)
+### SFX NAMES (langs/safe_house.bnk)
+bain_static_distortion
+
+### EVENT NAMES (langs/safehouse_vo.bnk)
 Play_bain_safehouse_tape
 Play_btl_acc_80
 Play_btl_ach_01
@@ -24304,7 +24320,7 @@ vlad_bex_safehouse_tape
 # 3183354465
 # 3797738289
 
-### VARIABLE NAMES (langs/safehouse_vo.english.bnk)
+### VARIABLE NAMES (langs/safehouse_vo.bnk)
 int_ext
 robber
 safehouse_minigame
@@ -24312,7 +24328,7 @@ safehouse_state
 safehouse_toggle_robber
 wave_flag
 
-### VALUE NAMES (langs/safehouse_vo.english.bnk)
+### VALUE NAMES (langs/safehouse_vo.bnk)
 arc_01
 assault
 Control
@@ -24347,7 +24363,7 @@ state_03
 third
 win
 
-### EVENT NAMES (langs/sfx_dia.english.bnk)
+### EVENT NAMES (langs/sfx_dia.bnk)
 alarm_01
 alarm_01_echo
 body_hit_glass
@@ -24364,7 +24380,7 @@ fluorescent_lights_on
 scream
 security_door_open
 
-### EVENT NAMES (langs/skirmish.english.bnk)
+### EVENT NAMES (langs/skirmish.bnk)
 Play_loc_skm_01
 Play_loc_skm_02
 Play_loc_skm_03
@@ -24414,10 +24430,10 @@ Play_neg_skm_15
 Play_neg_skm_16
 Play_neg_skm_17
 
-### SFX NAMES (langs/skirmish.english.bnk)
+### SFX NAMES (langs/skirmish.bnk)
 bain_static_distortion
 
-### EVENT NAMES (langs/special_medic.english.bnk)
+### EVENT NAMES (langs/special_medic.bnk)
 mdc_burndeath
 mdc_burnhurt
 mdc_c01
@@ -24443,10 +24459,10 @@ rmdc_heal
 rmdc_x01a_any_3p
 rmdc_x02a_any_3p
 
-### VARIABLE NAMES (langs/special_medic.english.bnk)
+### VARIABLE NAMES (langs/special_medic.bnk)
 wave_flag
 
-### VALUE NAMES (langs/special_medic.english.bnk)
+### VALUE NAMES (langs/special_medic.bnk)
 assault
 Control
 none
