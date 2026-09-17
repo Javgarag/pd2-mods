@@ -10,6 +10,7 @@ bain_storyquest
 bex_mariachi
 briefing_a_pda9_stage1
 briefing_a_xmas22_stage1
+briefing_b_auc_stage1
 briefing_b_dah_stage1
 briefing_b_glace_stage1
 briefing_b_nmh_stage1
@@ -88,6 +89,7 @@ hud
 init
 job_a_pda9_stage1
 job_a_xmas22_stage1
+job_b_auc_stage1
 job_b_carshop
 job_b_csbank
 job_b_dah_stage1
@@ -312,6 +314,7 @@ weapon_beer_x
 weapon_benelli_m4
 weapon_beretta
 weapon_blazer
+weapon_bleckert
 weapon_boot
 weapon_bow
 weapon_breech
@@ -501,8 +504,8 @@ weapon_zsniper
 zipline
 
 ### LANGUAGE NAMES
+English(US)
 sfx
-# 684519430
 
 ### BUS NAMES
 acoustics_indoor_default
@@ -539,26 +542,26 @@ reflections_sniper
 sfx
 stingers
 turret_gunfire
-# 1148611026
 # 2182193123
-# 1297066785
 # 1782503638
-# 3143935399
+# 1148611026
 # 2132867720
-# 838887756
-# 3088451749
-# 679220183
-# 3779928933
 # 3803692087
-# 1877231729
+# 1821261031
+# 3088451749
 # 845787994
+# 1877231729
 # 4207163833
 # 750342875
 # 1890049418
-# 1821261031
-# 736616270
 # 827923852
 # 2921741436
+# 679220183
+# 3779928933
+# 838887756
+# 3143935399
+# 1297066785
+# 736616270
 # 3351130653
 # 4252625240
 # 4252625242
@@ -2014,6 +2017,7 @@ track_77
 track_78
 track_79
 track_80
+track_81
 track_pth_01
 track_pth_02
 track_pth_03
@@ -7256,6 +7260,40 @@ acoustic_flag
 suppressed
 
 ### VALUE NAMES (weapon_blazer.bnk)
+acoustic_flat
+acoustic_forest
+acoustic_indoors_huge
+acoustic_indoors_large
+acoustic_indoors_medium
+acoustic_indoors_small
+acoustic_outdoors_large
+acoustic_outdoors_medium
+acoustic_outdoors_small
+acoustic_tunnel_medium
+acoustic_tunnel_small
+none
+regular
+regular_b
+suppressed_a
+suppressed_b
+suppressed_c
+suppressed_d
+
+### EVENT NAMES (weapon_bleckert.bnk)
+bleckert_fire
+bleckert_npc1a_1shot
+bleckert_npc1b_1shot
+bleckert_npc1c_1shot
+wp_bleckert_casing_land_hard
+wp_bleckert_pull_handle
+wp_bleckert_rotate_mag
+wp_bleckert_shell_insert
+
+### VARIABLE NAMES (weapon_bleckert.bnk)
+acoustic_flag
+suppressed
+
+### VALUE NAMES (weapon_bleckert.bnk)
 acoustic_flat
 acoustic_forest
 acoustic_indoors_huge
@@ -13808,6 +13846,10 @@ Play_alm_pda9_cbf
 ### EVENT NAMES (langs/briefing_a_xmas22_stage1.bnk)
 Play_alm_xmas22_cbf
 
+### EVENT NAMES (langs/briefing_b_auc_stage1.bnk)
+Play_pln_auc_cbf_01
+Play_pln_auc_cnc_01
+
 ### EVENT NAMES (langs/briefing_b_dah_stage1.bnk)
 Play_pln_dah_cbf_01
 Play_pln_dah_cnc_01
@@ -14217,6 +14259,137 @@ Play_alm_xmas22_end_win
 
 ### SFX NAMES (langs/job_a_xmas22_stage1.bnk)
 bain_static_distortion
+
+### EVENT NAMES (langs/job_b_auc_stage1.bnk)
+Play_ban_auc_03
+Play_ban_auc_04
+Play_ban_auc_05
+Play_ban_auc_06
+Play_ban_auc_07
+Play_ban_auc_08
+Play_ban_auc_09
+Play_ban_auc_10
+Play_ban_auc_11
+Play_ban_auc_12
+Play_cm1_auc_01
+Play_cm2_auc_01
+Play_lcu_auc_01
+Play_lcu_auc_02
+Play_lcu_auc_03
+Play_lcu_auc_04
+Play_lcu_auc_05
+Play_pel_auc_01
+Play_pln_auc_01
+Play_pln_auc_02
+Play_pln_auc_03
+Play_pln_auc_04
+Play_pln_auc_05
+Play_pln_auc_06
+Play_pln_auc_07
+Play_pln_auc_08
+Play_pln_auc_09
+Play_pln_auc_10
+Play_pln_auc_11
+Play_pln_auc_12
+Play_pln_auc_13
+Play_pln_auc_14
+Play_pln_auc_15
+Play_pln_auc_17
+Play_pln_auc_18
+Play_pln_auc_19
+Play_pln_auc_20
+Play_pln_auc_21
+Play_pln_auc_22
+Play_pln_auc_23
+Play_pln_auc_24
+Play_pln_auc_25
+Play_pln_auc_26
+Play_pln_auc_27
+Play_pln_auc_28
+Play_pln_auc_29
+Play_pln_auc_30
+Play_pln_auc_31
+Play_pln_auc_32_00
+Play_pln_auc_32_01
+Play_pln_auc_32_02
+Play_pln_auc_32_03
+Play_pln_auc_32_04
+Play_pln_auc_32_05
+Play_pln_auc_32_06
+Play_pln_auc_32_07
+Play_pln_auc_32_08
+Play_pln_auc_32_09
+Play_pln_auc_33
+Play_pln_auc_34
+Play_pln_auc_34b
+Play_pln_auc_35
+Play_pln_auc_35b
+Play_pln_auc_36
+Play_pln_auc_37
+Play_pln_auc_38
+Play_pln_auc_39
+Play_pln_auc_40
+Play_pln_auc_41
+Play_pln_auc_42
+Play_pln_auc_43
+Play_pln_auc_44
+Play_pln_auc_45
+Play_pln_auc_46
+Play_pln_auc_47
+Play_pln_auc_48
+Play_pln_auc_49
+Play_pln_auc_50
+Play_pln_auc_51
+Play_pln_auc_52
+Play_pln_auc_53
+Play_pln_auc_54
+Play_pln_auc_55
+Play_pln_auc_56
+Play_pln_auc_57
+Play_pln_auc_58
+Play_pln_auc_59
+Play_pln_auc_60
+Play_pln_auc_61
+Play_pln_auc_62
+Play_pln_auc_63
+Play_pln_auc_64
+Play_pln_auc_65
+Play_pln_auc_66
+Play_pln_auc_67
+Play_pln_auc_68
+Play_pln_auc_69
+Play_pln_auc_70
+Play_pln_auc_71
+Play_pln_auc_72
+Play_pln_auc_73
+Play_pln_auc_74
+Play_pln_auc_75
+Play_pln_auc_76
+Play_pln_auc_77
+Play_pln_auc_78
+Play_pln_auc_79
+Play_pln_auc_80
+Play_pln_auc_81
+Play_pln_auc_82
+Play_pln_auc_83
+Play_pln_auc_84
+Play_pln_auc_85
+Play_pln_auc_86
+Play_pln_auc_brf_01
+play_pln_auc_end
+Play_pln_auc_intro_01
+Stop_cm2_auc_01
+
+### SFX NAMES (langs/job_b_auc_stage1.bnk)
+bain_static_distortion
+
+### VARIABLE NAMES (langs/job_b_auc_stage1.bnk)
+wave_flag
+
+### VALUE NAMES (langs/job_b_auc_stage1.bnk)
+assault
+Control
+none
 
 ### EVENT NAMES (langs/job_b_carshop.bnk)
 Play_cpl_ch1_01
