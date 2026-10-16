@@ -4,7 +4,7 @@
 	"contact" : "",
 	"version" : "1.0.0",
 	"blt_version" : 2,
-	"priority" : 500
+	"priority" : 500,
 	"hooks" : [
 		{
 			"hook_id" : "lib/tweak_data/interactiontweakdata",
