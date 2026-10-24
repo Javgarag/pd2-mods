@@ -1,4 +1,6 @@
 # Interaction Animations
+## 1.0.4
+Fix crash related to me not properly testing everything >:)
 ## 1.0.3
 Fix crash related to contour mods.
 ## 1.0.2
