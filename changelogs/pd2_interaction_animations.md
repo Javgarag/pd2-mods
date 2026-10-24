@@ -1,4 +1,6 @@
 # Interaction Animations
+## 1.0.5
+Fix crash related to trying to spawn the keycard during its animation as a client.
 ## 1.0.4
 Fix crash related to me not properly testing everything >:)
 ## 1.0.3
