@@ -1,4 +1,10 @@
 # Interaction Animations
+## 1.1.1
+Added two new animations:
+- Pressing buttons
+- Picking up the phone in Scarface's mansion
+
+Will aim to keep adding more of these, slowly, but surely.
 ## 1.1.0
 - Beardlib is no longer required
 - Fixed crash when restarting while playing an animation
