@@ -1,4 +1,8 @@
 # Interaction Animations
+## 1.1.2
+Added compatibility for Restoration mod. 
+
+*Do note that animations will be disabled if you're running Resmod's skill that allows you to shoot while interacting*.
 ## 1.1.1
 Added two new animations:
 - Pressing buttons
